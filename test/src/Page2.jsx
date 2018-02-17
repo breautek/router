@@ -1,6 +1,6 @@
 import {Component} from 'react';
 
-export class Page1 extends Component {
+export class Page2 extends Component {
     constructor(props) {
         super(props);
     }
@@ -8,7 +8,7 @@ export class Page1 extends Component {
     render() {
         return (
             <div>
-                <div>Component 1</div>
+                <div>Component 2</div>
                 <div>{this.props.children}</div>
             </div>
         );

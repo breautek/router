@@ -1,9 +1,9 @@
 'use strict';
 
-import {Component, ReactNode, ReactElement} from 'react';
+import {Component, ReactNode, ReactElement, cloneElement} from 'react';
 import RouterStrategy from './RouterStrategy';
 import DefaultStrategy from './DefaultStrategy';
-import URLPattern from 'url-pattern';
+import RouteMatcher from './RouteMatcher';
 import * as Path from 'path';
 
 class Router extends Component {
@@ -18,9 +18,11 @@ class Router extends Component {
 			Strategy = props.strategy;
 		}
 
+		var strategy = new Strategy(this);
+
 		this.state = {
-			strategy: new Strategy(this),
-			url: window.location.pathname
+			strategy: strategy,
+			url : strategy.getLocation()
 		};
 
 		this._onURLChange = this._onURLChange.bind(this);
@@ -52,24 +54,7 @@ class Router extends Component {
 	}
 
 	render() {
-		var url = this.state.url;
-		console.log(url);
-		// var pattern = new URLPattern(u)
-
-		var ComponentToRender = null;
-
-		var children = this._getChildren();
-		for (var i = 0; i < children.length; i++) {
-			var route = children[i];
-			var pattern = new URLPattern(route.props.path);
-			var match = pattern.match(url);
-			if (match) {
-				ComponentToRender = route;
-				break;
-			}
-		}
-
-		return ComponentToRender;
+		return RouteMatcher.match(this.state.url || '/', this._getChildren(), '', this._getIndexRoute());
 	}
 
 	getHistoryLength() {

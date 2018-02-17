@@ -7,14 +7,17 @@ import {
 } from '@breautek/router';
 
 import {Page1} from './Page1';
-
-// console.log(Router);
+import {Page2} from './Page2';
+import {Page3} from './Page3';
 
 ReactDOM.render(
     <Router>
-        <Route path="/anotherPage" component={Page1} />
-        <Route index path="/" component={Page1} />
-        <Route path="/test" component={Page1} />
+        <Route path="/" component={Page1} index>
+            <Route path="anotherPage" component={Page1} />
+            <Route path="test/" component={Page2}>
+                <Route path=":id" component={Page3} />
+            </Route>
+        </Route>
     </Router>,
     document.getElementById('app')
 );
