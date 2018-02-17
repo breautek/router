@@ -2,7 +2,7 @@
   "name": "@breautek/router",
   "version": "0.0.1",
   "description": "An alternate react router.",
-  "main": "dist/router.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib"
   },
