@@ -7,6 +7,6 @@ export class Page1 extends Component {
     }
 
     render() {
-        return <div>Page 1</div>;
+        return <div>{this.props.url}</div>;
     }
 }

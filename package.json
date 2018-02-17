@@ -30,13 +30,9 @@
   "devDependencies": {
     "esdoc": "1.0.4",
     "esdoc-standard-plugin": "1.0.0",
-    "jasmine": "3.0.0",
-    "ts-loader": "3.5.0",
-    "typescript": "2.7.1"
+    "jasmine": "3.0.0"
   },
   "dependencies": {
-    "@types/react": "16.0.36",
-    "@types/react-dom": "16.0.3",
     "url-pattern": "1.0.3"
   }
 }
