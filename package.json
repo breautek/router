@@ -21,7 +21,7 @@
     "router"
   ],
   "author": "norman@normanbreau.com",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "homepage": "https://bitbucket.org/breautek/router#readme",
   "peerDependencies": {
     "react": ">=16.0.0 <17.0.0",

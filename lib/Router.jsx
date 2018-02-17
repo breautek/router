@@ -3,7 +3,7 @@
 import {Component, ReactNode, ReactElement} from 'react';
 import RouterStrategy from './RouterStrategy';
 import DefaultStrategy from './DefaultStrategy';
-import * as URLPattern from 'url-pattern';
+import URLPattern from 'url-pattern';
 import * as Path from 'path';
 
 class Router extends Component {
