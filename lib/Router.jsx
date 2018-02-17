@@ -20,7 +20,7 @@ class Router extends Component {
 
 		this.state = {
 			strategy: new Strategy(this),
-			url: window.location.href
+			url: window.location.pathname
 		};
 
 		this._onURLChange = this._onURLChange.bind(this);
