@@ -19,3 +19,10 @@ class Route extends Component<RouteProps, RouteState> {
         return null;
     }
 }
+
+export default Route;
+export {
+    Route,
+    RouteProps,
+    RouteState
+}

@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "./node_modules/http-server/bin/http-server ./test/",
     "build-debug": "NODE_ENV=\"development\" webpack",
     "build-release": "NODE_ENV=\"production\" webpack"
   },
