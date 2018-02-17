@@ -7,6 +7,6 @@ export class Page1 extends Component {
     }
 
     render() {
-        return <div>{this.props.url}</div>;
+        return <div>{this.props.url || 'URL NOT DEFINED!'}</div>;
     }
 }

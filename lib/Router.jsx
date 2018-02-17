@@ -119,7 +119,6 @@ class Router extends Component {
 }
 
 export {
-	Router,
-	RouterProps
+	Router
 };
 export default Router;

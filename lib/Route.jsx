@@ -16,7 +16,5 @@ class Route extends Component {
 
 export default Route;
 export {
-    Route,
-    RouteProps,
-    RouteState
+    Route
 }
