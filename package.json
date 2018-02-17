@@ -1,0 +1,41 @@
+{
+  "name": "@breautek/router",
+  "version": "0.0.1",
+  "description": "An alternate react router.",
+  "main": "dist/router.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-debug": "NODE_ENV=\"development\" webpack",
+    "build-release": "NODE_ENV=\"production\" webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/breautek/router.git"
+  },
+  "keywords": [
+    "react",
+    "router"
+  ],
+  "author": "norman@normanbreau.com",
+  "license": "UNLICENSED",
+  "homepage": "https://bitbucket.org/breautek/router#readme",
+  "peerDependencies": {
+    "react": ">=16.0.0 <17.0.0",
+    "react-dom": ">=16.0.0 <17.0.0"
+  },
+  "devDependencies": {
+    "esdoc": "1.0.4",
+    "esdoc-standard-plugin": "1.0.0",
+    "jasmine": "3.0.0",
+    "ts-loader": "3.5.0",
+    "typescript": "2.7.1"
+  },
+  "dependencies": {
+    "@types/react": "16.0.36",
+    "@types/react-dom": "16.0.3",
+    "url-pattern": "1.0.3"
+  }
+}
