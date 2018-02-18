@@ -12,7 +12,9 @@ export class RouteMatcher {
 		var componentToRender = null;
 		for (var i = 0; i < children.length; i++) {
 			var route = children[i];
-			var pattern = new URLPattern('*' + base + route.props.path + '*');
+			var pattern = new URLPattern('*' + base + route.props.path + '*', {
+                segmentValueCharset : 'a-zA-Z0-9\.\-'
+            });
 			var match = pattern.match(url);
 			if (match) {
 				componentToRender = route;
