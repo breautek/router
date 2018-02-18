@@ -4,11 +4,11 @@ import URLPattern from 'url-pattern';
 import {cloneElement} from 'react';
 
 export class RouteMatcher {
-    constructor() {
-        throw new Error('RouteMatcher is static.');
+    constructor(routerStrategy) {
+        this.routerStrategy = routerStrategy;
     }
 
-    static match(url, children, base, indexRoute) {
+    match(url, children, base, indexRoute) {
 		var componentToRender = null;
 		for (var i = 0; i < children.length; i++) {
 			var route = children[i];
@@ -34,8 +34,10 @@ export class RouteMatcher {
         var props = {
             url : url,
             base: base + componentToRender.props.path,
+            matcher: this,
             componentProps: {
-                url : url
+                url : url,
+                router: this.routerStrategy
             }
         };
 

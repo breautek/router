@@ -26,6 +26,7 @@ class Router extends Component {
 		};
 
 		this._onURLChange = this._onURLChange.bind(this);
+		this.matcher = new RouteMatcher(strategy);
 	}
 	
 	_onURLChange(url) {
@@ -54,7 +55,7 @@ class Router extends Component {
 	}
 
 	render() {
-		return RouteMatcher.match(this.state.url || '/', this._getChildren(), '', this._getIndexRoute());
+		return this.routeMatcher.match(this.state.url || '/', this._getChildren(), '', this._getIndexRoute());
 	}
 
 	getHistoryLength() {
