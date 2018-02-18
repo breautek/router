@@ -6,6 +6,16 @@ import DefaultStrategy from './DefaultStrategy';
 import RouteMatcher from './RouteMatcher';
 import * as Path from 'path';
 
+var instance = null;
+
+export var getRouter = () => {
+	if (!instance) {
+		return null;
+	}
+
+	return instance.getRouterStrategy();
+};
+
 class Router extends Component {
 	constructor(props) {
 		super(props);
@@ -28,6 +38,10 @@ class Router extends Component {
 		this._onURLChange = this._onURLChange.bind(this);
 		this.matcher = new RouteMatcher(strategy);
 	}
+
+	getRouterStrategy() {
+		return this.state.strategy;
+	}
 	
 	_onURLChange(url) {
 		this.setState({
@@ -36,10 +50,12 @@ class Router extends Component {
 	}
 
 	componentWillMount() {
+		instance = this;
 		this.state.strategy.addURLChangeCallback(this._onURLChange);
 	}
 
 	componentWillUnmount() {
+		instance = null;
 		this.state.strategy.removeURLChangeCallback(this._onURLChange);
 	};
 
