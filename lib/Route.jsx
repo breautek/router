@@ -20,7 +20,7 @@ class Route extends Component {
         var ViewComponent = component.props.component;
         var child;
 
-        var routeComponent = RouteMatcher.match(url, this._getChildren(component), base);
+        var routeComponent = component.props.matcher.match(url, this._getChildren(component), base);
         if (routeComponent) {
             child = this.getComponentsToRender(routeComponent);
         }

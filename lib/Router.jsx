@@ -55,7 +55,7 @@ class Router extends Component {
 	}
 
 	render() {
-		return this.routeMatcher.match(this.state.url || '/', this._getChildren(), '', this._getIndexRoute());
+		return this.matcher.match(this.state.url || '/', this._getChildren(), '', this._getIndexRoute());
 	}
 
 	getHistoryLength() {
