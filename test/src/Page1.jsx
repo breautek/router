@@ -3,6 +3,7 @@ import {Component} from 'react';
 export class Page1 extends Component {
     constructor(props) {
         super(props);
+        window.r = props.router;
     }
 
     render() {
