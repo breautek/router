@@ -22,13 +22,13 @@
   ],
   "author": "norman@normanbreau.com",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/breautek/router#readme",
+  "homepage": "https://github.com/breautek/router",
   "peerDependencies": {
     "react": ">=16.0.0 <17.0.0",
     "react-dom": ">=16.0.0 <17.0.0"
   },
   "devDependencies": {
-    "esdoc": "1.0.4",
+    "esdoc": "^1.1.0",
     "esdoc-standard-plugin": "1.0.0",
     "jasmine": "3.0.0"
   },
