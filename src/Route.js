@@ -1,6 +1,6 @@
 'use strict';
 
-import {Component, ReactNode, cloneElement} from 'react';
+import {Component} from 'react';
 import RouteMatcher from './RouteMatcher';
 import * as URLPattern from 'url-pattern';
 

@@ -1,6 +1,5 @@
 'use strict';
 
-import Router from "./Router";
 import {EventEmitter} from 'events';
 
 export const EVENT_URL_CHANGE = 'urlchange';

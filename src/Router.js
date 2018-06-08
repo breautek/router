@@ -1,6 +1,6 @@
 'use strict';
 
-import {Component, ReactNode, ReactElement, cloneElement} from 'react';
+import {Component} from 'react';
 import RouterStrategy from './RouterStrategy';
 import DefaultStrategy from './DefaultStrategy';
 import RouteMatcher from './RouteMatcher';

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@breautek/router": "git+ssh://git@bitbucket.org/breautek/router.git",
+    "@breautek/router": "file:../breautek-router-0.0.7.tgz",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
@@ -19,6 +19,7 @@
     ]
   },
   "devDependencies": {
+    "source-map-loader": "^0.2.3",
     "webpack": "^3.11.0"
   },
   "scripts": {

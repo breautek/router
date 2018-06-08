@@ -1,6 +1,5 @@
 'use strict';
 
-import Router from './Router';
 import RouterStrategy from './RouterStrategy';
 
 class HashStrategy extends RouterStrategy {

@@ -3,7 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {
     Router,
-    Route
+    Route,
+    version
 } from '@breautek/router';
 
 import {Page1} from './Page1';
