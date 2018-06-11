@@ -1,15 +1,20 @@
 import {Component} from 'react';
 
-export class Page2 extends Component {
+import {Page} from '@breautek/router';
+
+export class Page2 extends Page {
     constructor(props) {
         super(props);
     }
 
-    render() {
+    _render() {
         return (
-            <div>
-                <div>Component 2</div>
-                <div>{this.props.children}</div>
+            <div style={{
+                width: '100%',
+                height: '100%',
+                backgroundColor: 'green'
+            }}>
+                Component 2
             </div>
         );
     }

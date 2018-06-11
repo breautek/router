@@ -37,6 +37,7 @@ export class RouteMatcher {
             url : url,
             base: base + componentToRender.props.path,
             matcher: this,
+            transition: componentToRender.props.transition,
             componentProps: {
                 url : url,
                 router: this.routerStrategy

@@ -35,6 +35,8 @@ class Router extends Component {
 			url : strategy.getLocation()
 		};
 
+		this._lastRenderedRoute = null;
+
 		this._onURLChange = this._onURLChange.bind(this);
 		this.matcher = new RouteMatcher(strategy);
 	}
@@ -45,7 +47,8 @@ class Router extends Component {
 	
 	_onURLChange(url) {
 		this.setState({
-			url: url
+			url: url,
+			shouldTransition : true
 		});
 	}
 
@@ -71,7 +74,37 @@ class Router extends Component {
 	}
 
 	render() {
-		return this.matcher.match(this.state.url || '/', this._getChildren(), '', this._getIndexRoute());
+		var currentRoute = this.matcher.match(this.state.url || '/', this._getChildren(), '', this._getIndexRoute());
+		
+		if (currentRoute.props.transition && this.state.shouldTransition) {
+			currentRoute.props.transition.execute(currentRoute, this._lastRenderedRoute).then(() => {
+				this._lastRenderedRoute = currentRoute;
+				this.setState({
+					shouldTransition: false
+				});
+			});
+
+			return [this._lastRenderedRoute, currentRoute];
+		}
+		else {
+			this._lastRenderedRoute = currentRoute;	
+			return currentRoute;
+		}
+		
+		// if (this.props.transition && this.state.shouldTransition) {
+		// 	this.props.transition.execute(currentRoute, this._lastRenderedRoute).then(() => {
+		// 		this._lastRenderedRoute = currentRoute;
+		// 		this.setState({
+		// 			shouldTransition: false
+		// 		});
+		// 	});
+
+		// 	return [this._lastRenderedRoute, currentRoute];
+		// }
+		// else {
+			// this._lastRenderedRoute = currentRoute;	
+			// return currentRoute;
+		// }
 	}
 
 	getHistoryLength() {
