@@ -9,8 +9,8 @@ export class Page extends Component {
 		this._node = null;
 	}
 
-	_render() {
-		throw new Error('Page.render is abstract');
+	$render() {
+		throw new Error('Page.$render is abstract');
 	}
 
 	getNode() {
