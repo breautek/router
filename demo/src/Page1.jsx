@@ -14,6 +14,8 @@ export class Page1 extends Page {
                 width: '100%',
                 height: '100%',
                 backgroundColor: 'red'
+            }} onClick={() => {
+                this.props.router.replaceState('/test2');
             }}>
                 Component 1
             </div>

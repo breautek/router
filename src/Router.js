@@ -1,6 +1,6 @@
 'use strict';
 
-import {Component} from 'react';
+import {Component, cloneElement} from 'react';
 import RouterStrategy from './RouterStrategy';
 import DefaultStrategy from './DefaultStrategy';
 import RouteMatcher from './RouteMatcher';
@@ -77,34 +77,37 @@ class Router extends Component {
 		var currentRoute = this.matcher.match(this.state.url || '/', this._getChildren(), '', this._getIndexRoute());
 		
 		if (currentRoute.props.transition && this.state.shouldTransition) {
-			currentRoute.props.transition.execute(currentRoute, this._lastRenderedRoute).then(() => {
-				this._lastRenderedRoute = currentRoute;
-				this.setState({
-					shouldTransition: false
-				});
+			this._awaitingTransition = true;
+			var exiting = cloneElement(this._lastRenderedRoute, {
+				ref : (node) => {
+					this._exitingNode = node;
+				}
+			});
+			var incoming = cloneElement(currentRoute, {
+				ref : (node) => {
+					this._incomingNode = node;
+				}
 			});
 
-			return [this._lastRenderedRoute, currentRoute];
+			return [exiting, incoming];
 		}
 		else {
 			this._lastRenderedRoute = currentRoute;	
 			return currentRoute;
 		}
-		
-		// if (this.props.transition && this.state.shouldTransition) {
-		// 	this.props.transition.execute(currentRoute, this._lastRenderedRoute).then(() => {
-		// 		this._lastRenderedRoute = currentRoute;
-		// 		this.setState({
-		// 			shouldTransition: false
-		// 		});
-		// 	});
+	}
 
-		// 	return [this._lastRenderedRoute, currentRoute];
-		// }
-		// else {
-			// this._lastRenderedRoute = currentRoute;	
-			// return currentRoute;
-		// }
+	componentDidUpdate() {
+		if (this._awaitingTransition) {
+			this._awaitingTransition = false;
+			if (this._incomingNode.props.transition) {
+				this._incomingNode.props.transition.execute(this._incomingNode.getNode(), this._exitingNode.getNode()).then(() => {
+					this._incomingNode = null;
+					this._exitingNode = null;
+					this.setState({shouldTransition: false});
+				});
+			}
+		}
 	}
 
 	getHistoryLength() {

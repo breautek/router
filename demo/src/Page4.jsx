@@ -2,7 +2,7 @@ import {Component} from 'react';
 
 import {Page} from '@breautek/router';
 
-export class Page2 extends Page {
+export class Page4 extends Page {
     constructor(props) {
         super(props);
     }
@@ -12,11 +12,11 @@ export class Page2 extends Page {
             <div style={{
                 width: '100%',
                 height: '100%',
-                backgroundColor: 'green'
+                backgroundColor: 'blue'
             }} onClick={() => {
-                this.props.router.replaceState('/test3');
+                this.props.router.replaceState('/test1');
             }}>
-                Component 2
+                Component 4
             </div>
         );
     }

@@ -8,6 +8,16 @@ export class Page3 extends Page {
     }
 
     _render() {
-        return <div>Component 3: ({this.props.id}) {this.props.url || JSON.stringify(this.props)}</div>;
+        return (
+            <div style={{
+                width: '100%',
+                height: '100%',
+                backgroundColor: 'pink'
+            }} onClick={() => {
+                this.props.router.replaceState('/test4');
+            }}>
+                Component 3
+            </div>
+        );
     }
 }
