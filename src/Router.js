@@ -75,7 +75,11 @@ class Router extends Component {
 
 	render() {
 		var currentRoute = this.matcher.match(this.state.url || '/', this._getChildren(), '', this._getIndexRoute());
-		
+		var Root = null;
+		if (this.props.component) {
+			Root = this.props.component;
+		}
+
 		if (currentRoute.props.transition && this.state.shouldTransition) {
 			this._awaitingTransition = true;
 			var exiting = cloneElement(this._lastRenderedRoute, {
@@ -89,11 +93,22 @@ class Router extends Component {
 				}
 			});
 
-			return [exiting, incoming];
+			if (Root) {
+				return <Root router={this.getRouterStrategy()}>{[exiting, incoming]}</Root>;
+			}
+			else {
+				return [exiting, incoming];	
+			}
 		}
 		else {
 			this._lastRenderedRoute = currentRoute;	
-			return currentRoute;
+
+			if (Root) {
+				return <Root router={this.getRouterStrategy()}>{currentRoute}</Root>;
+			}
+			else {
+				return currentRoute;
+			}
 		}
 	}
 

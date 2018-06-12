@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@breautek/router": "file:../breautek-router-0.0.7.tgz",
+    "@breautek/router": "file:../breautek-router-0.1.1-b2.tgz",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
