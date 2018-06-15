@@ -18,7 +18,7 @@ export class Page extends Component {
 	}
 
 	render() {
-		return <div className="bt_router_Page" ref={(n) => { this._node = n; }}>{this._render()}</div>;
+		return <div className="bt_router_Page" ref={(n) => { this._node = n; }}>{this.$render()}</div>;
 	}
 }
 
