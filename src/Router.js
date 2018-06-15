@@ -94,7 +94,7 @@ class Router extends Component {
 			});
 
 			if (Root) {
-				return <Root router={this.getRouterStrategy()}>{[exiting, incoming]}</Root>;
+				return <Root router={this.getRouterStrategy()} url={this.state.url}>{[exiting, incoming]}</Root>;
 			}
 			else {
 				return [exiting, incoming];	
@@ -104,7 +104,7 @@ class Router extends Component {
 			this._lastRenderedRoute = currentRoute;	
 
 			if (Root) {
-				return <Root router={this.getRouterStrategy()}>{currentRoute}</Root>;
+				return <Root router={this.getRouterStrategy()} url={this.state.url}>{currentRoute}</Root>;
 			}
 			else {
 				return currentRoute;
