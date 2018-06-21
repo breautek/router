@@ -69,6 +69,11 @@ class HashStrategy extends RouterStrategy {
     }
 
     pushState(url, state) {
+        if (url === this.getLocation()) {
+            //We are already here, so do nothing.
+            return;
+        }
+
         this._stack[++this._position] = url;
 
         //clear everything after position.
@@ -78,6 +83,11 @@ class HashStrategy extends RouterStrategy {
     }
 
     replaceState(url, state) {
+        if (url === this.getLocation()) {
+            //We are already here, so do nothing.
+            return;
+        }
+        
         if (this._position === -1) {
             this.pushState(url, state);
         }
