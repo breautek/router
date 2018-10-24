@@ -74,6 +74,10 @@ class HashStrategy extends RouterStrategy {
             return;
         }
 
+        if (this._stack.length === 0) {
+            this._stack[++this._position] = this.getLocation();
+        }
+
         this._stack[++this._position] = url;
 
         //clear everything after position.
