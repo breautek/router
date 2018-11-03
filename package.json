@@ -8,7 +8,6 @@
     "run": "./node_modules/http-server/bin/http-server ./test/",
     "build": "rollup -c --environment BUILD:production",
     "build-debug": "rollup -c -m inline --environment BUILD:debug",
-    "publish" : "npm publish",
     "publish-beta": "npm publish --tag beta"
   },
   "repository": {
