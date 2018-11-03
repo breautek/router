@@ -1,12 +1,13 @@
 {
   "name": "@breautek/router",
-  "version": "0.3.0-beta.3",
+  "version": "0.3.0-beta.4",
   "description": "An alternate react router.",
   "main": "dist/router.js",
   "scripts": {
     "test": "jasmine",
     "run": "./node_modules/http-server/bin/http-server ./test/",
-    "build": "rollup -c"
+    "build": "rollup -c --environment BUILD:production",
+    "build-debug": "rollup -c -m inline --environment BUILD:debug"
   },
   "repository": {
     "type": "git",
