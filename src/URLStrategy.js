@@ -107,8 +107,13 @@ export class URLStrategy extends RouterStrategy {
         this._position = -1;
     }
 
-    _navigate(url) {
-        window.location.href = this._base + url;
+    _navigate(url, replace) {
+        if (replace) {
+            window.history.replaceState({}, null, this._base + url);
+        }
+        else {
+            window.history.pushState({}, null, this._base + url);
+        }
         this._fireURLChange(this.getLocation());
     }
 }
