@@ -30,7 +30,7 @@ class HashStrategy extends RouterStrategy {
     }
 
     getHistoryLength() {
-        return this._stack.length;
+        return window.history.length;
     }
 
     getScrollRestoration() {
@@ -38,11 +38,7 @@ class HashStrategy extends RouterStrategy {
     }
 
     canGo(to) {
-        var url = this._stack[this._position + to];
-        if (url === undefined) {
-            return false;
-        } 
-        return this.canRouteTo(url);
+        return this._stack[this._position + to] !== undefined;
     }
 
     canForward() {
@@ -78,10 +74,6 @@ class HashStrategy extends RouterStrategy {
             return;
         }
 
-        if (!this.canRouteTo(url)) {
-            return;
-        }
-
         if (this._stack.length === 0) {
             this._stack[++this._position] = this.getLocation();
         }
@@ -97,10 +89,6 @@ class HashStrategy extends RouterStrategy {
     replaceState(url, state) {
         if (url === this.getLocation()) {
             //We are already here, so do nothing.
-            return;
-        }
-
-        if (!this.canRouteTo(url)) {
             return;
         }
         
