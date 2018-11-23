@@ -35,7 +35,7 @@ export class URLStrategy extends RouterStrategy {
 	}
 
 	getHistoryLength() {
-		return window.history.length;
+		return this._stack.length;
 	}
 
 	getScrollRestoration() {
@@ -43,7 +43,11 @@ export class URLStrategy extends RouterStrategy {
 	}
 
 	canGo(to) {
-		return this._stack[this._position + to] !== undefined;
+		var url = this._stack[this._position + to];
+        if (url === undefined) {
+            return false;
+        } 
+        return this.canRouteTo(url);
 	}
 
 	canForward() {
@@ -79,6 +83,10 @@ export class URLStrategy extends RouterStrategy {
             return;
         }
 
+        if (!this.canRouteTo(url)) {
+            return;
+        }
+
         this._stack[++this._position] = url;
 
         //clear everything after position.
@@ -90,6 +98,10 @@ export class URLStrategy extends RouterStrategy {
     replaceState(url, state) {
         if (url === this.getLocation()) {
             //We are already here, so do nothing.
+            return;
+        }
+
+        if (!this.canRouteTo(url)) {
             return;
         }
         
