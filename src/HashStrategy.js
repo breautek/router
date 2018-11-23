@@ -30,7 +30,7 @@ class HashStrategy extends RouterStrategy {
     }
 
     getHistoryLength() {
-        return window.history.length;
+        return this._stack.length;
     }
 
     getScrollRestoration() {
