@@ -30,7 +30,7 @@ class HashStrategy extends RouterStrategy {
     }
 
     getHistoryLength() {
-        return window.history.length;
+        return this._stack.length;
     }
 
     getScrollRestoration() {
@@ -38,7 +38,11 @@ class HashStrategy extends RouterStrategy {
     }
 
     canGo(to) {
-        return this._stack[this._position + to] !== undefined;
+        var url = this._stack[this._position + to];
+        if (url === undefined) {
+            return false;
+        } 
+        return this.canRouteTo(url);
     }
 
     canForward() {
@@ -74,6 +78,14 @@ class HashStrategy extends RouterStrategy {
             return;
         }
 
+        if (!this.canRouteTo(url)) {
+            return;
+        }
+
+        if (this._stack.length === 0) {
+            this._stack[++this._position] = this.getLocation();
+        }
+
         this._stack[++this._position] = url;
 
         //clear everything after position.
@@ -85,6 +97,10 @@ class HashStrategy extends RouterStrategy {
     replaceState(url, state) {
         if (url === this.getLocation()) {
             //We are already here, so do nothing.
+            return;
+        }
+
+        if (!this.canRouteTo(url)) {
             return;
         }
         

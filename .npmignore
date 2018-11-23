@@ -3,5 +3,7 @@ spec
 node_modules
 webpack.config.js
 rollup.config.js
-demo
+karma.config.js
+test-context.js
+.gitignore
 .babelrc
