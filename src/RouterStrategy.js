@@ -63,6 +63,25 @@ class RouterStrategy extends EventEmitter {
         throw new Error('clear is abstract.');
     }
 
+    canRouteTo(url) {
+        var route = this._router.getRouteByURL(url);
+
+        var result;
+        if (route.props.onPreNavigate) {
+            result = route.props.onPreNavigate();
+        }
+        else {
+            result = true;
+        }
+
+        if (result !== true && result !== false) {
+            console.warn('onPreNavigate should return either true or false');
+            result = !!result;
+        }
+
+        return result;
+    }
+
     _fireURLChange(url) {
         this.emit(EVENT_URL_CHANGE, url);
     }
