@@ -1,12 +1,14 @@
 {
   "name": "@breautek/router",
-  "version": "0.2.4",
+  "version": "0.3.1",
   "description": "An alternate react router.",
   "main": "dist/router.js",
   "scripts": {
     "test": "karma start karma.config.js",
     "run": "./node_modules/http-server/bin/http-server ./test/",
-    "build": "rollup -c"
+    "build": "rollup -c --environment BUILD:production",
+    "build-debug": "rollup -c -m inline --environment BUILD:debug",
+    "publish-beta": "npm publish --tag beta"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,7 @@
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
+    "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
@@ -75,7 +78,6 @@
     "webpack": "^4.26.0"
   },
   "dependencies": {
-    "babel-loader": "^8.0.4",
     "url-pattern": "1.0.3"
   }
 }
