@@ -73,12 +73,8 @@ class Router extends Component {
 		}
 	}
 
-	getRouteByURL(url) {
-		return this.matcher.match(url, this._getChildren(), '', this._getIndexRoute())
-	}
-
 	render() {
-		var currentRoute = this.getRouteByURL(this.state.url || '/');
+		var currentRoute = this.matcher.match(this.state.url || '/', this._getChildren(), '', this._getIndexRoute());
 		var Root = null;
 		if (this.props.component) {
 			Root = this.props.component;

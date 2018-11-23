@@ -21,23 +21,6 @@ class Route extends Component {
         return node;
     }
 
-    _onPreNavigate() {
-        var result;
-        if (this.props.onPreNavigate) {
-            result = this.props.onPreNavigate();
-        }
-        else {
-            result = true;
-        }
-
-        if (result !== true && result !== false) {
-            console.warn('onPreNavigate should return either true or false');
-            result = !!result;
-        }
-
-        return result;
-    }
-
     render() {
         return this.getComponentsToRender(this);
     }
