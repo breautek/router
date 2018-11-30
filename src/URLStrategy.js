@@ -34,6 +34,10 @@ export class URLStrategy extends RouterStrategy {
 		return window.location.pathname.replace('/r', '');
 	}
 
+    getLocationAt(position) {
+        return this._stack[this._position + position];
+    }
+
 	getHistoryLength() {
 		return window.history.length;
 	}

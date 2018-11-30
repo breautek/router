@@ -29,6 +29,10 @@ class HashStrategy extends RouterStrategy {
         return window.location.hash.replace('#', '');
     }
 
+    getLocationAt(position) {
+        return this._stack[this._position + position];
+    }
+
     getHistoryLength() {
         return window.history.length;
     }
