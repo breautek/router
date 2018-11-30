@@ -23,6 +23,13 @@ class RouterStrategy extends EventEmitter {
         this.removeListener(EVENT_URL_CHANGE, callback);
     }
 
+    /*
+        Gets position relative to current position.
+    */
+    getLocationAt(position) {
+        throw new Error('getLocationAt is abstract.');
+    }
+
     getLocation() {
         throw new Error('getLocation is abstract.');
     }
