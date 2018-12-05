@@ -1,3 +1,6 @@
+# 0.3.3 (December 5, 2018)
+- Updated NPM package information
+
 # 0.3.2 (November 30, 2018)
 - Added getLocationAt to router strategies.
 
