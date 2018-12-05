@@ -1,6 +1,6 @@
 {
   "name": "@breautek/router",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "An alternate react router.",
   "main": "dist/router.js",
   "scripts": {
@@ -16,7 +16,10 @@
   },
   "keywords": [
     "react",
-    "router"
+    "router",
+    "page",
+    "screen",
+    "navigation"
   ],
   "author": "norman@normanbreau.com",
   "license": "MIT",
