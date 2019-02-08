@@ -1,3 +1,6 @@
+# 0.3.4 (February 8, 2019)
+- Updated dependencies to resolve third-party vulnerabilities
+
 # 0.3.3 (December 5, 2018)
 - Updated NPM package information
 
