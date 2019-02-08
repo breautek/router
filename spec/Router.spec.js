@@ -38,62 +38,43 @@ describe('@breautek/router', () => {
 
 	beforeEach(() => {
 		jasmineEnzyme();
+		window.location.hash = '/page1';
 		app = undefined;
 	});
 
 	it('It renders index page', () => {
 		var comp = router();
-
 		expect(comp.html()).toBe('<div><div class="bt_router_Page"><span>Page1</span></div></div>');
-
 		comp.unmount();
 	});
 
 	it('getRouter()', () => {
 		expect(getRouter()).toBe(null);
-
 		var comp = router();
-
 		expect(comp.instance().state.strategy).toBe(getRouter());
-
 		comp.unmount();
 	});
 
-	// it('push', (done) => {
-	// 	var comp = router();
+	it('can navigate pages', (done) => {
+		var comp = router();
 
-	// 	var r = getRouter();
-	// 	expect(r.getLocation()).toBe('');
-	// 	expect(r.getHistoryLength()).toBe(0);
-	// 	expect(r.canBack()).toBe(false);
-	// 	expect(comp.html()).toBe('<div><div class="bt_router_Page"><span>Page1</span></div></div>');
+		var r = getRouter();
+		expect(r.getHistoryLength()).toBe(0);
+		expect(r.canBack()).toBe(false);
 
-	// 	var onURLChangeSpy = sinon.spy(comp.instance(), '_onURLChange');
-	// 	console.log(onURLChangeSpy, typeof onURLChangeSpy);
+		var __urlChange = (url) => {
+			comp.state('strategy').removeURLChangeCallback(__urlChange);
+			expect(url).toBe('/page2');
+			expect(r.canBack()).toBe(true);
+			expect(r.getHistoryLength()).toBe(2);
+			expect(comp.html()).toBe('<div><div class="bt_router_Page"><span>Page2</span></div></div>');
 
-	// 	getRouter().addURLChangeCallback(() => {
+			comp.unmount();
+			done();
+		};
+		
+		comp.state('strategy').addURLChangeCallback(__urlChange);
 
-	// 		expect(onURLChangeSpy.calledOnce()).toBe(true);
-	// 		// expect(comp.html()).toBe('<div><div class="bt_router_Page"><span>Page1</span></div></div>');
-
-	// 		done();
-	// 	});
-
-	// 	r.pushState('/page1');
-	// 	expect(r.getLocation()).toBe('/page1');
-	// 	expect(r.getHistoryLength()).toBe(2);
-	// 	expect(r.canBack()).toBe(true);
-	// 	// setTimeout(() => {
-	// 	// 	console.log(comp.html());
-	// 	// 	done();
-	// 	// }, 10);
-
-	// 	// r.pushState('/page2');
-	// 	// expect(r.getLocation()).toBe('/page2');
-	// 	// expect(r.getHistoryLength()).toBe(3);
-	// 	// expect(r.canBack()).toBe(true);
-	// 	// expect(comp.html()).toBe('<div><div class="bt_router_Page"><span>Page2</span></div></div>');
-
-	// 	// comp.unmount();
-	// })
+		r.pushState('/page2');
+	});
 });
