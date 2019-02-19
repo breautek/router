@@ -112,7 +112,7 @@ class HashStrategy extends RouterStrategy {
 
     _navigate(url) {
         window.location.hash = this._base + url;
-        this._fireURLChange(window.location.href);
+        this._fireURLChange(this.getLocation());
     }
 }
 
