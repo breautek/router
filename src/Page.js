@@ -10,10 +10,8 @@ export class Page extends Component {
 	}
 
 	componentWillMount() {
-		var title = this.getTitle().then((title) => {
-			if (title && title.toString()) {
-				this.props.router.setTitle(title.toString());
-			}
+		var title = this.getTitle().then((title) => {	
+			this.props.router.setTitle(title);
 		});
 	}
 
@@ -26,7 +24,7 @@ export class Page extends Component {
 	}
 
 	getTitle() {
-		return Promise.resolve("adsfa");
+		return Promise.resolve(null);
 	}
 
 	render() {
