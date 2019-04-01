@@ -45,6 +45,18 @@ class HashStrategy extends RouterStrategy {
         return this._stack[this._position + to] !== undefined;
     }
 
+    peek(to) {
+        return this._stack[this._position + to];
+    }
+
+    peekForward() {
+        return this.peek(1);
+    }
+
+    peekBack() {
+        return this.peek(-1);
+    }
+
     canForward() {
         return this.canGo(1);
     }

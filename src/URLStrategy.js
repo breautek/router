@@ -46,6 +46,18 @@ export class URLStrategy extends RouterStrategy {
 		return window.history.scrollRestoration;
 	}
 
+    peek(to) {
+        return this._stack[this._position + to];
+    }
+
+    peekForward() {
+        return this.peek(1);
+    }
+
+    peekBack() {
+        return this.peek(-1);
+    }
+
 	canGo(to) {
 		return this._stack[this._position + to] !== undefined;
 	}

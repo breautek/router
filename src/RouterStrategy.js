@@ -58,6 +58,18 @@ class RouterStrategy extends EventEmitter {
         throw new Error('canForward is abstract.');
     }
 
+    peek(to) {
+        throw new Error('peek is abstract.');   
+    }
+
+    peekForward() {
+        throw new Error('peekForward is abstract.');
+    }
+
+    peekBack() {
+        throw new Error('peekBack is abstract.');
+    }
+
     pushState(url, state) {
         throw new Error('pushState is abstract.');
     }

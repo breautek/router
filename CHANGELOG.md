@@ -1,3 +1,6 @@
+# 0.3.5 (April 1, 2019)
+- Peek API
+
 # 0.3.4 (February 8, 2019)
 - Updated dependencies to resolve third-party vulnerabilities
 
