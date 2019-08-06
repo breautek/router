@@ -2,6 +2,9 @@
 - Added support for changing the window/tab title.
 - Fixed a bug in HashStrategy that caused URL change event to fire with inconsistent URL values
 
+# 0.3.5 (April 1, 2019)
+- Peek API
+
 # 0.3.4 (February 8, 2019)
 - Updated dependencies to resolve third-party vulnerabilities
 
