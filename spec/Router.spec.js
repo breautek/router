@@ -18,6 +18,14 @@ import {Route} from '../src/Route';
 
 require('jasmine-sinon');
 
+var tick = function(fn) {
+	setTimeout(fn, 1);
+};
+
+var getTitle = function() {
+	return document.head.getElementsByTagName('title')[0].innerHTML;
+}
+
 describe('@breautek/router', () => {
 	let app;
 
@@ -38,14 +46,19 @@ describe('@breautek/router', () => {
 
 	beforeEach(() => {
 		jasmineEnzyme();
+		// document.head.removeChild(document.head.getElementsByTagName('title')[0]);
 		window.location.hash = '/page1';
 		app = undefined;
 	});
 
-	it('It renders index page', () => {
+	it('It renders index page', (done) => {
 		var comp = router();
 		expect(comp.html()).toBe('<div><div class="bt_router_Page"><span>Page1</span></div></div>');
-		comp.unmount();
+		tick(() => {
+			expect(getTitle()).toBe('Page1');
+			comp.unmount();
+			done();
+		});
 	});
 
 	it('getRouter()', () => {
@@ -63,18 +76,33 @@ describe('@breautek/router', () => {
 		expect(r.canBack()).toBe(false);
 
 		var __urlChange = (url) => {
-			comp.state('strategy').removeURLChangeCallback(__urlChange);
-			expect(url).toBe('/page2');
-			expect(r.canBack()).toBe(true);
-			expect(r.getHistoryLength()).toBe(2);
-			expect(comp.html()).toBe('<div><div class="bt_router_Page"><span>Page2</span></div></div>');
 
-			comp.unmount();
-			done();
+			if (firstFire) {
+				expect(getTitle()).toBe('Page1');
+				firstFire = false;
+				return;
+			}
+
+			comp.state('strategy').removeURLChangeCallback(__urlChange);
+
+			tick(() => {
+				expect(getTitle()).toBe('Page2');
+				expect(url).toBe('/page2');
+				expect(r.canBack()).toBe(true);
+				expect(r.getHistoryLength()).toBe(2);
+				expect(comp.html()).toBe('<div><div class="bt_router_Page"><span>Page2</span></div></div>');
+
+				comp.unmount();
+				done();
+			});
 		};
+
+		var firstFire = true;
 		
 		comp.state('strategy').addURLChangeCallback(__urlChange);
 
-		r.pushState('/page2');
+		tick(() => {
+			r.pushState('/page2');	
+		});
 	});
 });

@@ -15,6 +15,19 @@ class RouterStrategy extends EventEmitter {
         return this._router;
     }
 
+    setTitle(title) {
+        var head = document.head.getElementsByTagName('title')[0];
+
+        if (!head) {
+            head = document.createElement('title');
+            document.head.appendChild(head);
+        }
+
+        if (title && title.toString()) {
+            head.innerText = title.toString();
+        }
+    }
+
     addURLChangeCallback(callback) {
         this.on(EVENT_URL_CHANGE, callback);
     } 
