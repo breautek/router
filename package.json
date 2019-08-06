@@ -6,8 +6,8 @@
   "scripts": {
     "test": "karma start karma.config.js",
     "run": "./node_modules/http-server/bin/http-server ./test/",
-    "build": "rollup -c --environment BUILD:production",
-    "build-debug": "rollup -c -m inline --environment BUILD:debug",
+    "build": "webpack --mode production",
+    "build-debug": "webpack --mode development",
     "publish-beta": "npm publish --tag beta"
   },
   "repository": {
@@ -58,7 +58,8 @@
     "sass-loader": "^7.1.0",
     "sinon": "^7.4.1",
     "style-loader": "^1.0.0",
-    "webpack": "^4.39.1"
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
   },
   "dependencies": {
     "url-pattern": "1.0.3"
