@@ -7,7 +7,6 @@ export class Page extends Component {
 	constructor(props) {
 		super(props);
 		this._node = null;
-		this.getPageStyles = this.getPageStyles.bind(this);
 	}
 
 	componentWillMount() {
