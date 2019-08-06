@@ -1,9 +1,8 @@
-# Unreleased
-- Added getPageStyles to Page. Provides the ability to set inline styles on the bt_router_Page element.
-
 # 0.4.0 (February 18, 2019)
 - Added support for changing the window/tab title.
 - Fixed a bug in HashStrategy that caused URL change event to fire with inconsistent URL values
+- Added getPageStyles to Page. Provides the ability to set inline styles on the bt_router_Page element.
+- Moved to webpack
 
 # 0.3.5 (April 1, 2019)
 - Peek API
