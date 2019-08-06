@@ -27,8 +27,12 @@ export class Page extends Component {
 		return Promise.resolve(null);
 	}
 
+	getPageStyles() {
+		return {};
+	}
+
 	render() {
-		return <div className="bt_router_Page" ref={(n) => { this._node = n; }}>{this.$render()}</div>;
+		return <div className="bt_router_Page" ref={(n) => { this._node = n; }} style={this.getPageStyles()}>{this.$render()}</div>;
 	}
 }
 
