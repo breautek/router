@@ -11,7 +11,8 @@
     "build-module": "webpack --mode production --env=module",
     "build": "npm run build-umd && npm run build-module",
     "build-debug": "webpack --mode development --env=umd && webpack --mode development --env=module",
-    "publish-beta": "npm publish --tag beta"
+    "publish-beta": "npm publish --tag beta",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
