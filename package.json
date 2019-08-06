@@ -3,12 +3,14 @@
   "version": "0.4.0",
   "description": "An alternate react router.",
   "main": "dist/router.js",
-  "module": "src/index.js",
+  "module": "dist/module/index.js",
   "scripts": {
     "test": "karma start karma.config.js",
     "run": "./node_modules/http-server/bin/http-server ./test/",
-    "build": "webpack --mode production",
-    "build-debug": "webpack --mode development",
+    "build-umd": "webpack --mode production --env=umd",
+    "build-module": "webpack --mode production --env=module",
+    "build": "npm run build-umd && npm run build-module",
+    "build-debug": "webpack --mode development --env=umd && webpack --mode development --env=module",
     "publish-beta": "npm publish --tag beta"
   },
   "repository": {
@@ -41,6 +43,7 @@
     "css-loader": "^3.2.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
+    "glob": "^7.1.4",
     "ignore-styles": "^5.0.1",
     "jasmine": "^3.3.1",
     "jasmine-core": "^3.3.0",
