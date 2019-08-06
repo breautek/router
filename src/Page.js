@@ -9,12 +9,22 @@ export class Page extends Component {
 		this._node = null;
 	}
 
+	componentWillMount() {
+		var title = this.getTitle().then((title) => {	
+			this.props.router.setTitle(title);
+		});
+	}
+
 	$render() {
 		throw new Error('Page.$render is abstract');
 	}
 
 	getNode() {
 		return this._node;
+	}
+
+	getTitle() {
+		return Promise.resolve(null);
 	}
 
 	render() {
