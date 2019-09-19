@@ -43,7 +43,9 @@ module.exports = function(config) {
                             {
                                 loader: 'sass-loader',
                                 options: {
-                                    noIeCompat: true //For IE 8, which we don't support
+                                    sassOptions: {
+                                        noIeCompat: true //For IE 8, which we don't support
+                                    }
                                 }
                             }
                         ]
@@ -66,7 +68,7 @@ module.exports = function(config) {
                                 loader: 'babel-loader',
                                 options: {
                                     presets: ['@babel/preset-env', '@babel/preset-react'],
-                                    plugins: [require('@babel/plugin-syntax-dynamic-import')]
+                                    plugins: [require('@babel/plugin-syntax-dynamic-import').default]
                                 }
                             }
                         ],

@@ -52,7 +52,7 @@ class Router extends Component {
 		});
 	}
 
-	componentWillMount() {
+	UNSAFE_componentWillMount() {
 		instance = this;
 		this.state.strategy.addURLChangeCallback(this._onURLChange);
 	}
@@ -62,7 +62,7 @@ class Router extends Component {
 		this.state.strategy.removeURLChangeCallback(this._onURLChange);
 	};
 
-	componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps(nextProps) {
 		if (nextProps.strategy && (this.state.strategy instanceof nextProps.strategy)) {
 			this.state.strategy.removeURLChangeCallback(this._onURLChange);
 			var strat = new nextProps.strategy(this);

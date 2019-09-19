@@ -9,8 +9,8 @@ export class Page extends Component {
 		this._node = null;
 	}
 
-	componentWillMount() {
-		var title = this.getTitle().then((title) => {	
+	componentDidMount() {
+		this.getTitle().then((title) => {	
 			this.props.router.setTitle(title);
 		});
 	}
