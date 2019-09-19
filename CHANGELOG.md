@@ -1,3 +1,6 @@
+# 0.5.0 (September 19, 2019)
+- Replaced deprecated methods with UNSAFE prefixed versions, or refactored them completely
+
 # 0.4.0 (February 18, 2019)
 - Added support for changing the window/tab title.
 - Fixed a bug in HashStrategy that caused URL change event to fire with inconsistent URL values
