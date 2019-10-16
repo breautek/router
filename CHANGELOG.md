@@ -1,3 +1,6 @@
+# 0.6.0 (October 16, 2019)
+- Replaced bundle tool with rollup. Webpack still used for `npm test`
+
 # 0.5.0 (September 19, 2019)
 - Replaced deprecated methods with UNSAFE prefixed versions, or refactored them completely
 
