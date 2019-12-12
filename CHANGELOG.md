@@ -1,3 +1,6 @@
+# 0.6.1 (December 12, 2019)
+- Dep roll for subdependency vulnerabilities
+
 # 0.6.0 (October 16, 2019)
 - Replaced bundle tool with rollup. Webpack still used for `npm test`
 
