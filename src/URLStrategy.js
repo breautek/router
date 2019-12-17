@@ -12,39 +12,39 @@ to the application vs other resources such as images.
 import RouterStrategy from './RouterStrategy';
 
 export class URLStrategy extends RouterStrategy {
-	constructor(router) {
-		super(router);
-		this._base = window.location.origin + '/r'
-		this._stack = [];
-		this._position = -1;
+    constructor(router) {
+        super(router);
+        this._base = window.location.origin + '/r'
+        this._stack = [];
+        this._position = -1;
 
-		window.addEventListener('popstate', (ev) => {
+        window.addEventListener('popstate', (ev) => {
             this._fireURLChange(this.getLocation());
         });
 
         this._init();
-	}
+    }
 
-	_init() {
-		var loc = this.getLocation();
-		return this.pushState(loc);
-	}
+    _init() {
+        var loc = this.getLocation();
+        return this.pushState(loc);
+    }
 
-	getLocation() {
-		return window.location.pathname.replace('/r', '');
-	}
+    getLocation() {
+        return window.location.pathname.replace('/r', '');
+    }
 
     getLocationAt(position) {
         return this._stack[this._position + position];
     }
 
-	getHistoryLength() {
-		return window.history.length;
-	}
+    getHistoryLength() {
+        return window.history.length;
+    }
 
-	getScrollRestoration() {
-		return window.history.scrollRestoration;
-	}
+    getScrollRestoration() {
+        return window.history.scrollRestoration;
+    }
 
     peek(to) {
         return this._stack[this._position + to];
@@ -58,20 +58,20 @@ export class URLStrategy extends RouterStrategy {
         return this.peek(-1);
     }
 
-	canGo(to) {
-		return this._stack[this._position + to] !== undefined;
-	}
+    canGo(to) {
+        return this._stack[this._position + to] !== undefined;
+    }
 
-	canForward() {
-		return this.canGo(1);
-	}
+    canForward() {
+        return this.canGo(1);
+    }
 
-	canBack() {
-		return this.canGo(-1);
-	}
+    canBack() {
+        return this.canGo(-1);
+    }
 
-	go(to) {
-		if (!this.canGo(to)) {
+    go(to) {
+        if (!this.canGo(to)) {
             return;
         }
 
@@ -79,9 +79,9 @@ export class URLStrategy extends RouterStrategy {
         var url = this._stack[this._position];
 
         this._navigate(url);
-	}
+    }
 
-	forward() {
+    forward() {
         this.go(1);
     }
 
@@ -90,7 +90,7 @@ export class URLStrategy extends RouterStrategy {
     }
 
     pushState(url, state) {
-    	if (url === this.getLocation()) {
+        if (url === this.getLocation()) {
             //We are already here, so do nothing.
             return;
         }

@@ -57,15 +57,15 @@ class Route extends Component {
             return [];
         }
 
-		if (component.props.children instanceof Array) {
-			children = component.props.children;
-		}
-		else {
-			children = [component.props.children];
-		}
+        if (component.props.children instanceof Array) {
+            children = component.props.children;
+        }
+        else {
+            children = [component.props.children];
+        }
 
-		return children;
-	}
+        return children;
+    }
 }
 
 export default Route;

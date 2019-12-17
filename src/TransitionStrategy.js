@@ -1,14 +1,14 @@
 'use strict';
 
 export class TransitionStrategy {
-	constructor() {}
+    constructor() {}
 
-	/**
-		Execute the transition. Should return a promise and resolve when the transition is done.
-	*/
-	execute(incomingNode, exitingNode) {
-		throw new Error('TransitionStrategy.execute is abstract.');
-	}
+    /**
+        Execute the transition. Should return a promise and resolve when the transition is done.
+    */
+    execute(incomingNode, exitingNode) {
+        throw new Error('TransitionStrategy.execute is abstract.');
+    }
 }
 
 export default TransitionStrategy;

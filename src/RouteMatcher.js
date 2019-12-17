@@ -9,17 +9,17 @@ export class RouteMatcher {
     }
 
     match(url, children, base, indexRoute) {
-		var componentToRender = null;
-		for (var i = 0; i < children.length; i++) {
-			var route = children[i];
-			var pattern = new URLPattern('*' + base + route.props.path + '*', {
+        var componentToRender = null;
+        for (var i = 0; i < children.length; i++) {
+            var route = children[i];
+            var pattern = new URLPattern('*' + base + route.props.path + '*', {
                 segmentValueCharset : 'a-zA-Z0-9\.\-\_'
             });
-			var match = pattern.match(url);
-			if (match) {
-				componentToRender = route;
-				break;
-			}
+            var match = pattern.match(url);
+            if (match) {
+                componentToRender = route;
+                break;
+            }
         }
 
         if (!componentToRender) {
