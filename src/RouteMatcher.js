@@ -13,7 +13,7 @@ export class RouteMatcher {
 		for (var i = 0; i < children.length; i++) {
 			var route = children[i];
 			var pattern = new URLPattern('*' + base + route.props.path + '*', {
-                segmentValueCharset : 'a-zA-Z0-9\.\-'
+                segmentValueCharset : 'a-zA-Z0-9\.\-\_'
             });
 			var match = pattern.match(url);
 			if (match) {

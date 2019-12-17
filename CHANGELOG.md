@@ -1,3 +1,7 @@
+# 0.6.2 (December 16, 2019)
+- Dep roll
+- Fixed issue with page variables containing underscores being truncated.
+
 # 0.6.1 (December 12, 2019)
 - Dep roll for subdependency vulnerabilities
 
