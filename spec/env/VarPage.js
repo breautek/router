@@ -10,19 +10,19 @@ export class VarPage extends Page {
         _instance = this;
     }
 
-	getClassName() {
-		return 'VarPage';
-	}
+    getClassName() {
+        return 'VarPage';
+    }
 
-	getTitle() {
-		return Promise.resolve(this.getClassName());
+    getTitle() {
+        return Promise.resolve(this.getClassName());
     }
 
     getProps() {
         return this.props;
     }
 
-	$render() {
-		return <span className="var-page">VarPage</span>;
-	}
+    $render() {
+        return <span className="var-page">VarPage</span>;
+    }
 }
