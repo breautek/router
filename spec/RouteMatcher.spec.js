@@ -63,4 +63,17 @@ describe('RouteMatcher', () => {
             });
         });
     });
+
+    it('can pass vars with dots', (done) => {
+        var comp = router();
+        var r = getRouter();
+        tick(() => {
+            r.pushState('/page1/123.456.789');
+            tick(() => {
+                expect(_instance.getProps().var).toBe('123.456.789');
+                comp.unmount();
+                done();
+            });
+        });
+    });
 });
