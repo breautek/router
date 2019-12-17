@@ -1,3 +1,6 @@
+# 0.7.0 (December 16, 2019)
+- Replaced `url-pattern` with a much more simple, but reliable `URLParser`.
+
 # 0.6.2 (December 16, 2019)
 - Dep roll
 - Fixed issue with page variables containing underscores being truncated.

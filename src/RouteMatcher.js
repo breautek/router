@@ -1,6 +1,6 @@
 'use strict';
 
-import URLPattern from 'url-pattern';
+import {URLParser} from './URLParser';
 import {cloneElement} from 'react';
 
 export class RouteMatcher {
@@ -12,11 +12,9 @@ export class RouteMatcher {
         var componentToRender = null;
         for (var i = 0; i < children.length; i++) {
             var route = children[i];
-            var pattern = new URLPattern('*' + base + route.props.path + '*', {
-                segmentValueCharset : 'a-zA-Z0-9\.\-\_'
-            });
-            var match = pattern.match(url);
-            if (match) {
+            var parser = new URLParser(route.props.path);
+            var params = parser.parse(url);
+            if (params) {
                 componentToRender = route;
                 break;
             }
@@ -44,13 +42,9 @@ export class RouteMatcher {
             }
         };
 
-        if (match) {
-            for (var i in match) {
-                if (i === 'url' || i === '_') {
-                    continue;
-                }
-
-                props.componentProps[i] = match[i];
+        if (params) {
+            for (var i in params) {
+                props.componentProps[i] = params[i];
             }
         }
 

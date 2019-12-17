@@ -2,7 +2,6 @@
 
 import {Component} from 'react';
 import RouteMatcher from './RouteMatcher';
-import * as URLPattern from 'url-pattern';
 // import Page from './Page';
 
 class Route extends Component {

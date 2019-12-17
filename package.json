@@ -1,6 +1,6 @@
 {
   "name": "@breautek/router",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "description": "An alternate react router.",
   "main": "dist/router.js",
   "module": "dist/router.js",
@@ -71,7 +71,5 @@
     "webpack": "4.41.3",
     "webpack-cli": "3.3.10"
   },
-  "dependencies": {
-    "url-pattern": "1.0.3"
-  }
+  "dependencies": {}
 }

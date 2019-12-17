@@ -68,9 +68,9 @@ describe('RouteMatcher', () => {
         var comp = router();
         var r = getRouter();
         tick(() => {
-            r.pushState('/page1/123.456.789');
+            r.pushState('/page1/3fQ.-64');
             tick(() => {
-                expect(_instance.getProps().var).toBe('123.456.789');
+                expect(_instance.getProps().var).toBe('3fQ.-64');
                 comp.unmount();
                 done();
             });
