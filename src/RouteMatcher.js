@@ -25,7 +25,8 @@ export class RouteMatcher {
         var componentToRender = null;
         for (var i = 0; i < children.length; i++) {
             var route = children[i];
-            var parser = new URLParser(base + route.props.path, true);
+            var allowPartialMatching = !!route.props.children;
+            var parser = new URLParser(base + route.props.path, allowPartialMatching);
             var params = parser.parse(url);
             if (params) {
                 componentToRender = route;

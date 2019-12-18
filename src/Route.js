@@ -1,7 +1,8 @@
 'use strict';
 
 import {Component} from 'react';
-import RouteMatcher from './RouteMatcher';
+// import * as PropTypes from 'prop-types';
+// import RouteMatcher from './RouteMatcher';
 // import Page from './Page';
 
 class Route extends Component {
@@ -75,6 +76,12 @@ class Route extends Component {
         return children;
     }
 }
+
+// Route.propTypes = {
+//     path: PropTypes.string.isRequired,
+//     component: PropTypes.node.isRequired,
+//     index: PropTypes.bool
+// };
 
 export default Route;
 export {
