@@ -2,17 +2,30 @@
 
 import {URLParser} from './URLParser';
 import {cloneElement} from 'react';
+import {Route} from './Route';
+import {RouterStrategy} from './RouterStrategy';
 
 export class RouteMatcher {
+    /**
+     * 
+     * @param {RouterStrategy} routerStrategy 
+     */
     constructor(routerStrategy) {
         this.routerStrategy = routerStrategy;
     }
 
+    /**
+     * 
+     * @param {string} url 
+     * @param {Array<Route>} children 
+     * @param {string} base The parents url
+     * @param {Route} [indexRoute]
+     */
     match(url, children, base, indexRoute) {
         var componentToRender = null;
         for (var i = 0; i < children.length; i++) {
             var route = children[i];
-            var parser = new URLParser(route.props.path);
+            var parser = new URLParser(base + route.props.path);
             var params = parser.parse(url);
             if (params) {
                 componentToRender = route;

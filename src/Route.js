@@ -24,6 +24,10 @@ class Route extends Component {
         return this.getComponentsToRender(this);
     }
 
+    /**
+     * 
+     * @param {React.Component} component 
+     */
     getComponentsToRender(component) {
         var url = component.props.url;
         var base = component.props.base || '';
@@ -31,6 +35,7 @@ class Route extends Component {
         var ViewComponent = component.props.component;
         var child;
 
+        // console.log('URL', url);
         var routeComponent = component.props.matcher.match(url, this._getChildren(component), base);
         if (routeComponent) {
             child = this.getComponentsToRender(routeComponent);
@@ -45,6 +50,10 @@ class Route extends Component {
         );
     }
 
+    /**
+     * 
+     * @param {React.Component} component 
+     */
     _getChildren(component) {
         var children = null;
 

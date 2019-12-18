@@ -11,6 +11,8 @@ import {
     Page2,
     Page3,
     Page4,
+    OuterView,
+    InnerView
 } from './env';
 
 import {Router, getRouter} from '../src/Router';
@@ -103,6 +105,28 @@ describe('@breautek/router', () => {
 
         tick(() => {
             r.pushState('/page2');	
+        });
+    });
+
+    describe('subviews', () => {
+        it('can render subviews', (done) => {
+            app = mount(
+                <Router component={TestApp}>
+                    <Route key="outer" path="/outerView" component={OuterView} index>
+                        <Route key="inner" path="/innerView" component={InnerView} />
+                    </Route>
+                </Router>
+            );
+    
+            var r = getRouter();
+
+            tick(() => {
+                r.pushState('/outerView/innerView');
+                tick(() => {
+                    expect(app.html()).toBe('<div><div class="bt_router_Page"><div><div>Outer View</div><div class="bt_router_Page"><div>Inner View</div></div></div></div></div>'); 
+                    done();
+                });
+            });
         });
     });
 });
