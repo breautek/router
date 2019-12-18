@@ -124,6 +124,7 @@ describe('@breautek/router', () => {
                 r.pushState('/outerView/innerView');
                 tick(() => {
                     expect(app.html()).toBe('<div><div class="bt_router_Page"><div><div>Outer View</div><div class="bt_router_Page"><div>Inner View</div></div></div></div></div>'); 
+                    app.unmount();
                     done();
                 });
             });
