@@ -2,6 +2,7 @@
 
 import TransitionStrategy from './TransitionStrategy';
 import InvalidPageInterface from './InvalidPageInterface';
+import {Page} from './Page';
 
 export class TransitionSlide extends TransitionStrategy {
     constructor(slideDirection, slideSpeed) {
@@ -13,8 +14,10 @@ export class TransitionSlide extends TransitionStrategy {
     }
 
     /**
-        Incoming  and exiting params are Pages.
-    */
+     * 
+     * @param {Page} incoming The incoming page
+     * @param {Page} exiting The exiting/outgoing page
+     */
     execute(incoming, exiting) {
         if (!incoming.getNode || !exiting.getNode) {
             throw new InvalidPageInterface();
@@ -131,9 +134,9 @@ export class TransitionSlide extends TransitionStrategy {
     }
 }
 
-TransitionSlide.SLIDE_LEFT 	= 0x0001;
+TransitionSlide.SLIDE_LEFT  = 0x0001;
 TransitionSlide.SLIDE_RIGHT = 0x0002;
-TransitionSlide.SLIDE_UP	= 0x0003;
-TransitionSlide.SLIDE_DOWN 	= 0x0004;
+TransitionSlide.SLIDE_UP    = 0x0003;
+TransitionSlide.SLIDE_DOWN  = 0x0004;
 
 export default TransitionSlide;

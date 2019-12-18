@@ -15,6 +15,10 @@ class RouterStrategy extends EventEmitter {
         return this._router;
     }
 
+    /**
+     * 
+     * @param {string} url 
+     */
     setTitle(title) {
         var head = document.head.getElementsByTagName('title')[0];
 
@@ -28,17 +32,26 @@ class RouterStrategy extends EventEmitter {
         }
     }
 
+    /**
+     * 
+     * @param {Function} url 
+     */
     addURLChangeCallback(callback) {
         this.on(EVENT_URL_CHANGE, callback);
     } 
 
+    /**
+     * 
+     * @param {Function} url 
+     */
     removeURLChangeCallback(callback) {
         this.removeListener(EVENT_URL_CHANGE, callback);
     }
 
-    /*
-        Gets position relative to current position.
-    */
+    /**
+     * 
+     * @param {number} url 
+     */
     getLocationAt(position) {
         throw new Error('getLocationAt is abstract.');
     }
@@ -83,10 +96,20 @@ class RouterStrategy extends EventEmitter {
         throw new Error('peekBack is abstract.');
     }
 
+    /**
+     * 
+     * @param {string} url
+     * @param {Object} state 
+     */
     pushState(url, state) {
         throw new Error('pushState is abstract.');
     }
 
+    /**
+     * 
+     * @param {string} url
+     * @param {Object} state 
+     */
     replaceState(url, state) {
         throw new Error('replaceState is abstract.');
     }
@@ -95,6 +118,10 @@ class RouterStrategy extends EventEmitter {
         throw new Error('clear is abstract.');
     }
 
+    /**
+     * 
+     * @param {string} url 
+     */
     _fireURLChange(url) {
         this.emit(EVENT_URL_CHANGE, url);
     }

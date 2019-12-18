@@ -1,9 +1,6 @@
 'use strict';
 
 import {Component} from 'react';
-// import * as PropTypes from 'prop-types';
-// import RouteMatcher from './RouteMatcher';
-// import Page from './Page';
 
 class Route extends Component {
     constructor(props) {
@@ -76,12 +73,6 @@ class Route extends Component {
         return children;
     }
 }
-
-// Route.propTypes = {
-//     path: PropTypes.string.isRequired,
-//     component: PropTypes.node.isRequired,
-//     index: PropTypes.bool
-// };
 
 export default Route;
 export {

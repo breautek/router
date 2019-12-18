@@ -5,6 +5,10 @@ export class URLParser {
         this._pattern = this._stripURL(pattern);
     }
 
+    /**
+     * 
+     * @param {string} url 
+     */
     parse(url) {
         url = this._stripURL(url);
         let parts = this._getParts(url);
@@ -37,6 +41,10 @@ export class URLParser {
         return params;
     }
 
+    /**
+     * 
+     * @param {string} url 
+     */
     _stripURL(url) {
         while (url.charAt(0) === '/') {
             url = url.slice(1);
@@ -49,6 +57,10 @@ export class URLParser {
         return url;
     }
 
+    /**
+     * 
+     * @param {string} url 
+     */
     _getParts(url) {
         url = this._stripURL(url);
         return url.split('/');

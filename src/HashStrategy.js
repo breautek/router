@@ -65,6 +65,10 @@ class HashStrategy extends RouterStrategy {
         return this.canGo(-1);
     }
 
+    /**
+     * 
+     * @param {number} url 
+     */
     go(to) {
         if (!this.canGo(to)) {
             return;
@@ -84,6 +88,11 @@ class HashStrategy extends RouterStrategy {
         return this.go(-1);
     }
 
+    /**
+     * 
+     * @param {url} url 
+     * @param {object} state Note: Not implemented
+     */
     pushState(url, state) {
         if (url === this.getLocation()) {
             //We are already here, so do nothing.
