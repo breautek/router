@@ -1,6 +1,7 @@
 
 export class URLParser {
-    constructor(pattern) {
+    constructor(pattern, allowPartialMatch) {
+        this._allowPartialMatch = allowPartialMatch;
         this._pattern = this._stripURL(pattern);
     }
 
@@ -9,7 +10,7 @@ export class URLParser {
         let parts = this._getParts(url);
         let patternParts = this._getParts(this._pattern);
 
-        if (parts.length !== patternParts.length) {
+        if (!this._allowPartialMatch && parts.length !== patternParts.length) {
             return null;
         }
 
@@ -18,13 +19,18 @@ export class URLParser {
         for (let i = 0; i < patternParts.length; i++) {
             let pPart = patternParts[i];
             let uPart = parts[i];
-            if (pPart.charAt(0) === ':') {
-                params[pPart.slice(1)] = uPart;
+            if (uPart) {
+                if (pPart.charAt(0) === ':') {
+                    params[pPart.slice(1)] = uPart;
+                }
+                else {
+                    if (pPart !== uPart) {
+                        return null;
+                    }
+                }
             }
             else {
-                if (pPart !== uPart) {
-                    return null;
-                }
+                break;
             }
         }
         
