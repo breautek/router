@@ -45,10 +45,12 @@ class Router extends Component {
     }
     
     _onURLChange(url) {
-        this.setState({
-            url: url,
-            shouldTransition : true
-        });
+        if (url !== this.state.url) {
+            this.setState({
+                url: url,
+                shouldTransition : true
+            });
+        }
     }
 
     UNSAFE_componentWillMount() {
