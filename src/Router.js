@@ -135,7 +135,7 @@ class Router extends Component {
                 exitTransitionPromise = Promise.resolve();
             }
 
-            if (this._incomingNode.props.transition) {
+            if (this._incomingNode.props.entryTransition) {
                 entryTransitionPromise = this._incomingNode.props.entryTransition.execute(this._incomingNode.getNode(), this._exitingNode.getNode());
             }
             else {
