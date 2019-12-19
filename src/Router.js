@@ -79,13 +79,25 @@ class Router extends Component {
             Root = this.props.component;
         }
 
-        if (currentRoute.props.transition && this.state.shouldTransition) {
+        if (
+            this.state.shouldTransition && (
+                currentRoute.props.entryTransition || (
+                    this._lastRenderedRoute && 
+                    this._lastRenderedRoute.props.exitTransition
+                )
+            )
+        ) {
             this._awaitingTransition = true;
-            var exiting = cloneElement(this._lastRenderedRoute, {
-                ref : (node) => {
-                    this._exitingNode = node;
-                }
-            });
+            var exiting = null;
+            if (this._lastRenderedRoute) {
+                exiting = cloneElement(this._lastRenderedRoute, {
+                    ref : (node) => {
+                        this._exitingNode = node;
+                    }
+                });
+            }
+
+            // Incoming will always be safe to render, hence no defensive checks
             var incoming = cloneElement(currentRoute, {
                 ref : (node) => {
                     this._incomingNode = node;
@@ -114,13 +126,31 @@ class Router extends Component {
     componentDidUpdate() {
         if (this._awaitingTransition) {
             this._awaitingTransition = false;
-            if (this._incomingNode.props.transition) {
-                this._incomingNode.props.transition.execute(this._incomingNode.getNode(), this._exitingNode.getNode()).then(() => {
-                    this._incomingNode = null;
-                    this._exitingNode = null;
-                    this.setState({shouldTransition: false});
-                });
+            let exitTransitionPromise = null;
+            let entryTransitionPromise = null;
+            if (this._exitingNode && this._exitingNode.props.exitTransition) {
+                exitTransitionPromise = this._exitingNode.props.exitTransition.execute(this._incomingNode.getNode(), this._exitingNode.getNode());
             }
+            else {
+                exitTransitionPromise = Promise.resolve();
+            }
+
+            if (this._incomingNode.props.transition) {
+                entryTransitionPromise = this._incomingNode.props.entryTransition.execute(this._incomingNode.getNode(), this._exitingNode.getNode());
+            }
+            else {
+                entryTransitionPromise = Promise.resolve();
+            }
+
+            exitTransitionPromise.then(() => {
+                return entryTransitionPromise;
+            }).catch((error) => {
+                console.error(error);
+            }).then(() => {
+                this._incomingNode = null;
+                this._exitingNode = null;
+                this.setState({shouldTransition: false});
+            });
         }
     }
 
