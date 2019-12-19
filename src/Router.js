@@ -4,7 +4,6 @@ import {Component, cloneElement} from 'react';
 import RouterStrategy from './RouterStrategy';
 import DefaultStrategy from './DefaultStrategy';
 import RouteMatcher from './RouteMatcher';
-import * as Path from 'path';
 
 var instance = null;
 
@@ -97,11 +96,11 @@ class Router extends Component {
                 return <Root router={this.getRouterStrategy()} url={this.state.url}>{[exiting, incoming]}</Root>;
             }
             else {
-                return [exiting, incoming];	
+                return [exiting, incoming];
             }
         }
         else {
-            this._lastRenderedRoute = currentRoute;	
+            this._lastRenderedRoute = currentRoute;
 
             if (Root) {
                 return <Root router={this.getRouterStrategy()} url={this.state.url}>{currentRoute}</Root>;
