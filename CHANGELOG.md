@@ -1,8 +1,9 @@
 # Changelog
 
-## 0.9.0 (Unreleased)
+## 0.9.0 (January 8, 2020)
 - Transitions rework
 - Fixed URL change event from firing when the URL hasn't changed.
+- [#15](https://github.com/breautek/router/pull/15) - Fixed an issue where a page can be reconstructed when using transitions.
 
 ## 0.8.0 (December 19, 2019)
 - Subview rendering
