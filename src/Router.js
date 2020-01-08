@@ -117,10 +117,10 @@ class Router extends Component {
             this._lastRenderedRoute = currentRoute;
 
             if (Root) {
-                return <Root router={this.getRouterStrategy()} url={this.state.url}>{currentRoute}</Root>;
+                return <Root router={this.getRouterStrategy()} url={this.state.url}>{[currentRoute]}</Root>;
             }
             else {
-                return currentRoute;
+                return [currentRoute];
             }
         }
     }
