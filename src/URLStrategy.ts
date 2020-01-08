@@ -1,4 +1,3 @@
-'use strict';
 
 /*
 Using the URLStrategy requires some backend configuration
@@ -7,13 +6,20 @@ to route URLs back to application.
 To make this easier, by default these URLs are prefixed with
 /r/ to easily differentiate between URLs that needs to be re-routed back
 to the application vs other resources such as images.
- */
+*/
 
-import RouterStrategy from './RouterStrategy';
+import {RouterStrategy} from './RouterStrategy';
+import { Router } from './Router';
+import { IDictionary } from './IDictionary';
 
 export class URLStrategy extends RouterStrategy {
-    constructor(router) {
+    private _base: string;
+    private _stack: Array<string>;
+    private _position: number;
+
+    public constructor(router: Router) {
         super(router);
+
         this._base = window.location.origin + '/r'
         this._stack = [];
         this._position = -1;
@@ -25,71 +31,50 @@ export class URLStrategy extends RouterStrategy {
         this._init();
     }
 
-    _init() {
-        var loc = this.getLocation();
-        return this.pushState(loc);
+    private _init(): void {
+        this.pushState(this.getLocation());
     }
 
-    getLocation() {
+    public getLocation(): string {
         return window.location.pathname.replace('/r', '');
     }
 
-    getLocationAt(position) {
+    public getLocationAt(position: number): string {
         return this._stack[this._position + position];
     }
 
-    getHistoryLength() {
+    public getHistoryLength(): number {
         return window.history.length;
     }
 
-    getScrollRestoration() {
+    public getScrollRestoration(): ScrollRestoration {
         return window.history.scrollRestoration;
     }
 
-    peek(to) {
+    public peek(to: number): string {
         return this._stack[this._position + to];
     }
 
-    peekForward() {
-        return this.peek(1);
-    }
-
-    peekBack() {
-        return this.peek(-1);
-    }
-
-    canGo(to) {
+    public canGo(to: number): boolean {
         return this._stack[this._position + to] !== undefined;
     }
 
-    canForward() {
-        return this.canGo(1);
-    }
-
-    canBack() {
-        return this.canGo(-1);
-    }
-
-    go(to) {
+    public go(to: number): void {
         if (!this.canGo(to)) {
             return;
         }
 
         this._position += to;
-        var url = this._stack[this._position];
+        let url: string = this._stack[this._position];
 
         this._navigate(url);
     }
 
-    forward() {
-        this.go(1);
-    }
+    public pushState(url: string, state?: IDictionary): void {
+        if (state) {
+            console.warn('Warning: The state parameter is not implemented yet.');
+        }
 
-    back() {
-        return this.go(-1);
-    }
-
-    pushState(url, state) {
         if (url === this.getLocation()) {
             //We are already here, so do nothing.
             return;
@@ -103,7 +88,11 @@ export class URLStrategy extends RouterStrategy {
         this._navigate(url);
     }
 
-    replaceState(url, state) {
+    public replaceState(url: string, state?: IDictionary): void {
+        if (state) {
+            console.warn('Warning: The state parameter is not implemented yet.');
+        }
+
         if (url === this.getLocation()) {
             //We are already here, so do nothing.
             return;
@@ -118,12 +107,12 @@ export class URLStrategy extends RouterStrategy {
         }
     }
 
-    clear() {
+    public clear(): void {
         this._stack = [];
         this._position = -1;
     }
 
-    _navigate(url, replace) {
+    private _navigate(url: string, replace: boolean = false) {
         if (replace) {
             window.history.replaceState({}, null, this._base + url);
         }
@@ -133,5 +122,3 @@ export class URLStrategy extends RouterStrategy {
         this._fireURLChange(this.getLocation());
     }
 }
-
-export default URLStrategy;

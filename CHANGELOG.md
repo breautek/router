@@ -3,6 +3,7 @@
 ## 0.9.0 (Unreleased)
 - Transitions rework
 - Fixed URL change event from firing when the URL hasn't changed.
+- Project converted to TypeScript and automatically produces typings.
 
 ## 0.8.0 (December 19, 2019)
 - Subview rendering

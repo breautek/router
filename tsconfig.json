@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "target": "es3",
+        "jsx": "react",
+        "module": "commonjs",
+        "declaration": true,
+        "declarationDir": "./dist",
+        "sourceMap": true,
+        "outDir": "./lib",
+        "importHelpers": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "moduleResolution": "node",
+        "baseUrl": "./src/",
+        "plugins": [],
+        "incremental": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true
+    },
+    "typedocOptions": {
+        "mode": "modules",
+        "out": "docs"
+    },
+    "exclude": [
+        "**/*.spec.ts",
+        "*/.spec.ts",
+        "tests",
+        "lib",
+        "spec",
+        "node_modules"
+    ]
+}
