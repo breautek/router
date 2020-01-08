@@ -117,7 +117,7 @@ class Router extends Component {
             this._lastRenderedRoute = currentRoute;
 
             // currentRoute must be rendered as an array; because, exiting and incoming is rendered as an array.
-            // if currentRoute is not rendered as an array, an bug happens where the exiting screen is reloaded,
+            // if currentRoute is not rendered as an array, a bug happens where the exiting screen is reloaded 
             // calling the constructor again. 
             if (Root) {
                 return <Root router={this.getRouterStrategy()} url={this.state.url}>{[currentRoute]}</Root>;
