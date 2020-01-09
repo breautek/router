@@ -14,7 +14,7 @@ export class URLParser {
         let parts = this._getParts(url);
         let patternParts = this._getParts(this._pattern);
 
-        if (!this._allowPartialMatch && parts.length !== patternParts.length) {
+        if ((!this._allowPartialMatch && parts.length !== patternParts.length) || url === '') {
             return null;
         }
 
