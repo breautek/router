@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.1 (Jan 9, 2020)
+- dev: Travis config added
+- [#17](https://github.com/breautek/router/pull/17) hotfix: `/` now fails matching against any route and will fallback to the index route if available.
+
 ## 0.9.0 (January 8, 2020)
 - Transitions rework
 - Fixed URL change event from firing when the URL hasn't changed.
