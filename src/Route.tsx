@@ -5,13 +5,14 @@ import { RouterStrategy } from './RouterStrategy';
 
 export interface IRouteProps<T> {
     url: string;
-    base?: string;
     component: React.ComponentClass;
-    componentProps: T;
-    matcher: RouteMatcher;
+    index?: boolean;
     entryTransition?: any;
     exitTransition?: any;
-    index?: boolean;
+
+    base?: string;
+    componentProps?: T;
+    matcher?: RouteMatcher;
 }
 
 export interface IComponentProps {

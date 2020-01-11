@@ -2,12 +2,12 @@ import { URLParser } from "../src/URLParser";
 
 describe('URLParser', () => {
     it('_stripURL', () => {
-        let parser = new URLParser('asd');
+        let parser: URLParser = new URLParser('asd');
         expect((<any>parser)._stripURL('/login/')).toBe('login');
     });
 
     describe('_getParts', () => {
-        let parser = new URLParser('asd');
+        let parser: URLParser = new URLParser('asd');
 
         it('/login/', () => {
             expect((<any>parser)._getParts('/login/')).toEqual([ 'login' ]);
@@ -31,7 +31,7 @@ describe('URLParser', () => {
     });
 
     describe('/login/', () => {
-        let parser = null;
+        let parser: URLParser = null;
 
         beforeEach(() => {
             parser = new URLParser('/login/');
@@ -55,7 +55,7 @@ describe('URLParser', () => {
     });
 
     describe('/fname/:fname/', () => {
-        let parser = null;
+        let parser: URLParser = null;
 
         beforeEach(() => {
             parser = new URLParser('/fname/:fname/');
@@ -89,7 +89,7 @@ describe('URLParser', () => {
     });
 
     describe('/name/:fname/:lname', () => {
-        let parser = new URLParser('/name/:fname/:lname');
+        let parser: URLParser = new URLParser('/name/:fname/:lname');
 
         it('empty string', () => {
             expect(parser.parse('')).toBe(null);

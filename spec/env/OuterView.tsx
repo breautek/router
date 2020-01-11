@@ -1,5 +1,5 @@
-'use strict';
 
+import * as React from 'react';
 import {Page} from '../../src/Page';
 
 export class OuterView extends Page {

@@ -1,10 +1,10 @@
-'use strict';
 
+import * as React from 'react';
 import {Page} from '../../src/Page';
 
-export class Page2 extends Page {
+export class InnerView extends Page {
     getClassName() {
-        return 'Page2';
+        return 'InnerView';
     }
 
     getTitle() {
@@ -12,6 +12,8 @@ export class Page2 extends Page {
     }
 
     $render() {
-        return <span>Page2</span>;
+        return (
+            <div>Inner View</div>
+        );
     }
 }

@@ -1,11 +1,15 @@
-'use strict';
 
-import {Page} from '../../src/Page';
+import * as React from 'react';
+import {Page, IPageProps} from '../../src/Page';
 
-export let _instance;
+export let _instance: VarPage;
 
-export class VarPage extends Page {
-    constructor(props) {
+export interface IVarPageProps extends IPageProps {
+    [key: string]: any;
+}
+
+export class VarPage extends Page<IVarPageProps> {
+    constructor(props: IVarPageProps) {
         super(props);
         _instance = this;
     }

@@ -18,8 +18,8 @@ export let getRouter = (): RouterStrategy => {
 }
 
 export interface IRouterProps {
-    strategy: IRouterStrategyClass;
-    component: React.Component;
+    strategy?: IRouterStrategyClass;
+    component: React.ComponentClass;
 }
 
 export interface IRouterState {

@@ -1,8 +1,8 @@
-var webpack = require('webpack');
+let webpack = require('webpack');
 
 module.exports = function(config) {
     config.set({
-        browsers: ['ChromeHeadless', 'FirefoxHeadless'],
+        browsers: ['ChromeHeadless'/*, 'FirefoxHeadless'*/],
          customLaunchers: {
             FirefoxHeadless: {
                 base: 'Firefox',
@@ -26,8 +26,24 @@ module.exports = function(config) {
         webpack: {
             mode: "development",
             devtool: 'inline-source-map',
+            resolve: {
+                extensions: [
+                    '.tsx',
+                    '.ts',
+                    '.js'
+                ]
+            },
             module: {
                 rules : [
+                    {
+                        test: /\.+(ts|tsx)$/,
+                        use: [
+                            {
+                                loader: 'ts-loader'
+                            }
+                        ],
+                        exclude: /node_modules/
+                    },
                     {
                         test: /\.scss$/,
                         use: [
@@ -60,20 +76,20 @@ module.exports = function(config) {
                                 loader: 'css-loader'
                             }
                         ]
-                    },
-                    {
-                        test: /\.js$/,
-                        use :[
-                            {
-                                loader: 'babel-loader',
-                                options: {
-                                    presets: ['@babel/preset-env', '@babel/preset-react'],
-                                    plugins: [require('@babel/plugin-syntax-dynamic-import').default]
-                                }
-                            }
-                        ],
-                        exclude: /node_modules/
                     }
+                    // {
+                    //     test: /\.js$/,
+                    //     use :[
+                    //         {
+                    //             loader: 'babel-loader',
+                    //             options: {
+                    //                 presets: ['@babel/preset-env', '@babel/preset-react'],
+                    //                 plugins: [require('@babel/plugin-syntax-dynamic-import').default]
+                    //             }
+                    //         }
+                    //     ],
+                    //     exclude: /node_modules/
+                    // }
                 ]
             },
             plugins: [

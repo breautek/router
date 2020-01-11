@@ -1,6 +1,6 @@
-'use strict';
 
-import React from 'react';
+
+import * as React from 'react';
 
 export class TestApp extends React.Component {
     render() {
