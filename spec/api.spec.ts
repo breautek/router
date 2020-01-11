@@ -1,5 +1,5 @@
 
-import * as api from '../src/index';
+import * as api from '../src/api';
 import {version} from '../package.json';
 import {Router, getRouter} from '../src/Router';
 import {DefaultStrategy} from '../src/DefaultStrategy';
@@ -11,7 +11,6 @@ import {RouteMatcher} from '../src/RouteMatcher';
 import {TransitionStrategy} from '../src/TransitionStrategy';
 import {TransitionSlide} from '../src/TransitionSlide';
 import {Page} from '../src/Page';
-import {InvalidPageInterface} from '../src/InvalidPageInterface';
 
 describe('Public API', () => {
     it('version', () => {
@@ -60,9 +59,5 @@ describe('Public API', () => {
 
     it('Page', () => {
         expect(api.Page).toBe(Page);
-    });
-
-    it('InvalidPageInterface', () => {
-        expect(api.InvalidPageInterface).toBe(InvalidPageInterface);
     });
 });
