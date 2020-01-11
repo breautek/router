@@ -53,6 +53,14 @@ describe('URLParser', () => {
             expect(parser.parse('/login')).toEqual({});
         });
 
+        it('empty string', () => {
+            expect(parser.parse('')).toBe(null);
+        });
+
+        it('/', () => {
+            expect(parser.parse('/')).toBe(null);
+        });
+
         it('/test123', () => {
             expect(parser.parse('/test123')).toBe(null);
         });
@@ -71,6 +79,14 @@ describe('URLParser', () => {
             });
         });
 
+        it('empty string', () => {
+            expect(parser.parse('')).toBe(null);
+        });
+
+        it('/', () => {
+            expect(parser.parse('/')).toBe(null);
+        });
+
         it('/fname', () => {
             expect(parser.parse('/fname')).toBe(null);
         });
@@ -86,6 +102,14 @@ describe('URLParser', () => {
 
     describe('/name/:fname/:lname', () => {
         let parser = new URLParser('/name/:fname/:lname');
+
+        it('empty string', () => {
+            expect(parser.parse('')).toBe(null);
+        });
+
+        it('/', () => {
+            expect(parser.parse('/')).toBe(null);
+        });
 
         it('/name', () => {
             expect(parser.parse('/name')).toBe(null);

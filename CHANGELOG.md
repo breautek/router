@@ -1,9 +1,16 @@
 # Changelog
 
-## 0.9.0 (Unreleased)
+## 1.0.0-dev
+- Project converted to TypeScript and automatically produces typings.
+
+## 0.9.1 (Jan 9, 2020)
+- dev: Travis config added
+- [#17](https://github.com/breautek/router/pull/17) hotfix: `/` now fails matching against any route and will fallback to the index route if available.
+
+## 0.9.0 (January 8, 2020)
 - Transitions rework
 - Fixed URL change event from firing when the URL hasn't changed.
-- Project converted to TypeScript and automatically produces typings.
+- [#15](https://github.com/breautek/router/pull/15) - Fixed an issue where a page can be reconstructed when using transitions.
 
 ## 0.8.0 (December 19, 2019)
 - Subview rendering

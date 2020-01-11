@@ -6,7 +6,6 @@
   "types": "lib/api.d.ts",
   "scripts": {
     "test": "karma start karma.config.js",
-    "run": "./node_modules/http-server/bin/http-server ./test/",
     "build": "rollup -c rollup.config.js",
     "publish-beta": "npm publish --tag beta",
     "prepublishOnly": "npm run build"
