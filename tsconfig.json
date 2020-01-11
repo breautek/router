@@ -2,7 +2,7 @@
     "compilerOptions": {
         "target": "es3",
         "jsx": "react",
-        "module": "commonjs",
+        "module": "ES2015",
         "declaration": true,
         "declarationDir": "./dist",
         "sourceMap": true,
@@ -27,6 +27,7 @@
         "*/.spec.ts",
         "tests",
         "lib",
+        "dist",
         "spec",
         "node_modules"
     ]

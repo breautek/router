@@ -70,7 +70,6 @@
     "rollup-plugin-json": "4.0.0",
     "rollup-plugin-node-resolve": "5.2.0",
     "rollup-plugin-sass": "1.2.2",
-    "rollup-plugin-ts": "1.2.0",
     "sass-loader": "8.0.0",
     "source-map-loader": "0.2.4",
     "style-loader": "1.1.2",
@@ -83,6 +82,8 @@
   },
   "dependencies": {
     "@types/react": "16.9.17",
-    "@types/react-dom": "16.9.4"
+    "@types/react-dom": "16.9.4",
+    "@wessberg/rollup-plugin-ts": "file:../../third-party/rollup-plugin-ts",
+    "rollup-plugin-typescript2": "0.25.3"
   }
 }

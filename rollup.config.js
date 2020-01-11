@@ -2,9 +2,8 @@
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import json from 'rollup-plugin-json';
-// import babel from 'rollup-plugin-babel';
 import sass from 'rollup-plugin-sass';
-import ts from 'rollup-plugin-ts';
+import typescript from 'rollup-plugin-typescript2';
 
 export default [
     {
@@ -23,33 +22,16 @@ export default [
             }
         ],
         plugins: [
-            ts({
-                exclude: [
-                    "**/*.spec.ts",
-                    "*/.spec.ts",
-                    "tests",
-                    "lib",
-                    "spec",
-                    "node_modules"
-                ]
+            resolve({
+                preferBuiltins: true
             }),
-            // babel({
-            //     exclude: 'node_modules/**',
-            //     presets: [
-            //         '@babel/preset-env',
-            //         '@babel/preset-react'
-            //     ]
-            // }),
+            typescript(),
             sass({
                 insert: true
             }),
-
             // Order matters, most plugins needs to be above commonjs
             commonjs({
                 namedExports: {}
-            }),
-            resolve({
-                preferBuiltins: true
             }),
             json()
         ]
