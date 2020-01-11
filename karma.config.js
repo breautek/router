@@ -2,7 +2,7 @@ let webpack = require('webpack');
 
 module.exports = function(config) {
     config.set({
-        browsers: ['ChromeHeadless'/*, 'FirefoxHeadless'*/],
+        browsers: ['ChromeHeadless', 'FirefoxHeadless'],
          customLaunchers: {
             FirefoxHeadless: {
                 base: 'Firefox',
