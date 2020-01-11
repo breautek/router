@@ -138,7 +138,10 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
             this._lastRenderedRoute = currentRoute;
 
             if (Root) {
-                return <Root router={this.getRouterStrategy()} url={this.state.url}>{currentRoute}</Root>;
+                // currentRoute must be rendered as an array; because, exiting and incoming is rendered as an array.
+                // if currentRoute is not rendered as an array, a bug happens where the exiting screen is reloaded 
+                // calling the constructor again.
+                return <Root router={this.getRouterStrategy()} url={this.state.url}>{[currentRoute]}</Root>;
             }
             else {
                 return currentRoute;
