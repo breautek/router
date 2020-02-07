@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.9.2 (February 7, 2020)
+- Fixed version code
+
 ## 0.9.1 (Jan 9, 2020)
 - dev: Travis config added
 - [#17](https://github.com/breautek/router/pull/17) hotfix: `/` now fails matching against any route and will fallback to the index route if available.
