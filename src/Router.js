@@ -132,7 +132,6 @@ class Router extends Component {
         if (this._awaitingTransition) {
             this._awaitingTransition = false;
             let exitTransitionPromise = null;
-            let entryTransitionPromise = null;
             if (this._exitingNode && this._exitingNode.props.exitTransition) {
                 exitTransitionPromise = this._exitingNode.props.exitTransition.execute(this._incomingNode.getNode(), this._exitingNode.getNode());
             }
@@ -140,14 +139,14 @@ class Router extends Component {
                 exitTransitionPromise = Promise.resolve();
             }
 
-            if (this._incomingNode.props.entryTransition) {
-                entryTransitionPromise = this._incomingNode.props.entryTransition.execute(this._incomingNode.getNode(), this._exitingNode.getNode());
-            }
-            else {
-                entryTransitionPromise = Promise.resolve();
-            }
-
             exitTransitionPromise.then(() => {
+                let entryTransitionPromise = null;
+                if (this._incomingNode.props.entryTransition) {
+                    entryTransitionPromise = this._incomingNode.props.entryTransition.execute(this._incomingNode.getNode(), this._exitingNode.getNode());
+                }
+                else {
+                    entryTransitionPromise = Promise.resolve();
+                }
                 return entryTransitionPromise;
             }).catch((error) => {
                 console.error(error);
