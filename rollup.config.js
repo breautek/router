@@ -4,6 +4,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import json from 'rollup-plugin-json';
 import sass from 'rollup-plugin-sass';
 import typescript from 'rollup-plugin-typescript2';
+import progress from 'rollup-plugin-progress';
 
 export default [
     {
@@ -33,7 +34,8 @@ export default [
             commonjs({
                 namedExports: {}
             }),
-            json()
+            json(),
+            progress()
         ]
     }
 ];
