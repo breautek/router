@@ -153,7 +153,6 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
         if (this._awaitingTransition) {
             this._awaitingTransition = false;
             let exitTransitionPromise: Promise<void> = null;
-            let entryTransitionPromise: Promise<void> = null;
             if (this._exitingNode && this._exitingNode.props.exitTransition) {
                 exitTransitionPromise = this._exitingNode.props.exitTransition.execute(this._incomingNode, this._exitingNode);
             }
@@ -161,14 +160,14 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
                 exitTransitionPromise = Promise.resolve();
             }
 
-            if (this._incomingNode.props.entryTransition) {
-                entryTransitionPromise = this._incomingNode.props.entryTransition.execute(this._incomingNode, this._exitingNode);
-            }
-            else {
-                entryTransitionPromise = Promise.resolve();
-            }
-
             exitTransitionPromise.then(() => {
+                let entryTransitionPromise = null;
+                if (this._incomingNode.props.entryTransition) {
+                    entryTransitionPromise = this._incomingNode.props.entryTransition.execute(this._incomingNode, this._exitingNode);
+                }
+                else {
+                    entryTransitionPromise = Promise.resolve();
+                }
                 return entryTransitionPromise;
             }).catch((error: Error) => {
                 console.error(error);
