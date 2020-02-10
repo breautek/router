@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.0-dev
+### Breaking Changes
+- Project converted to TypeScript and automatically produces typings.
+- `Route` prop `path` now should be `url`
+
 ## 0.9.2 (February 7, 2020)
 - Fixed version code
 

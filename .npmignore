@@ -7,3 +7,5 @@ karma.config.js
 test-context.js
 .gitignore
 .babelrc
+tsconfig.json
+tsconfig-tests.json
