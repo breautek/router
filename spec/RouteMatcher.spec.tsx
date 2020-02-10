@@ -1,30 +1,31 @@
 
-import React from 'react';
-import { mount} from 'enzyme';
+import * as React from 'react';
+import * as Enzyme from 'enzyme';
 import {Router} from '../src/Router';
 import {Route} from '../src/Route';
 import jasmineEnzyme from 'jasmine-enzyme';
-import {RouteMatcher} from '../src/RouteMatcher';
 
 import {
     TestApp,
     VarPage
-} from './env';
+} from './env/index';
 import {_instance} from './env/VarPage';
 import { getRouter } from '../src/Router';
+import { RouterStrategy } from '../src/RouterStrategy';
+import {RouterWrapper} from './support/RouterWrapper';
 
-var tick = function(fn) {
-	setTimeout(fn, 1);
+let tick = function(fn: Function): void {
+    setTimeout(fn, 1);
 };
 
 describe('RouteMatcher', () => {
-    let app;
+    let app: RouterWrapper;
 
-    const router = () => {
+    const router = (): RouterWrapper => {
         if (!app) {
-            app = mount(
+            app = Enzyme.mount<Router>(
                 <Router component={TestApp}>
-                    <Route key="page1" path="/page1/:var" component={VarPage} index />
+                    <Route key="page1" url="/page1/:var" component={VarPage} index />
                 </Router>
             );
         }
@@ -39,8 +40,8 @@ describe('RouteMatcher', () => {
     });
     
     it('can pass vars', (done) => {
-        var comp = router();
-        var r = getRouter();
+        let comp: RouterWrapper = router();
+        let r: RouterStrategy = getRouter();
         tick(() => {
             r.pushState('/page1/test');
             tick(() => {
@@ -52,8 +53,8 @@ describe('RouteMatcher', () => {
     });
 
     it('can pass vars with underscores', (done) => {
-        var comp = router();
-        var r = getRouter();
+        let comp: RouterWrapper = router();
+        let r: RouterStrategy = getRouter();
         tick(() => {
             r.pushState('/page1/test_123');
             tick(() => {
@@ -65,8 +66,8 @@ describe('RouteMatcher', () => {
     });
 
     it('can pass vars with dots', (done) => {
-        var comp = router();
-        var r = getRouter();
+        let comp: RouterWrapper = router();
+        let r: RouterStrategy = getRouter();
         tick(() => {
             r.pushState('/page1/3fQ.-64');
             tick(() => {

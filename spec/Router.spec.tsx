@@ -1,8 +1,6 @@
-'use strict';
 
-import React from 'react';
-import { mount} from 'enzyme';
-import sinon from 'sinon';
+import * as React from 'react';
+import * as Enzyme from 'enzyme';
 import jasmineEnzyme from 'jasmine-enzyme';
 
 import {
@@ -17,28 +15,30 @@ import {
 
 import {Router, getRouter} from '../src/Router';
 import {Route} from '../src/Route';
+import { RouterStrategy } from '../src/RouterStrategy';
+import {RouterWrapper} from './support/RouterWrapper';
 
 require('jasmine-sinon');
 
-var tick = function(fn) {
+var tick = function(fn: Function): void {
     setTimeout(fn, 1);
 };
 
-var getTitle = function() {
+var getTitle = function(): string {
     return document.head.getElementsByTagName('title')[0].innerHTML;
 }
 
 describe('@breautek/router', () => {
-    let app;
+    let app: RouterWrapper;
 
-    const router = () => {
+    const router = (): RouterWrapper => {
         if (!app) {
-            app = mount(
+            app = Enzyme.mount<Router>(
                 <Router component={TestApp}>
-                    <Route key="page1" path="/page1" component={Page1} index />
-                    <Route key="page2" path="/page2" component={Page2} />
-                    <Route key="page3" path="/page3" component={Page3} />
-                    <Route key="page4" path="/page4" component={Page4} />
+                    <Route key="page1" url="/page1" component={Page1} index />
+                    <Route key="page2" url="/page2" component={Page2} />
+                    <Route key="page3" url="/page3" component={Page3} />
+                    <Route key="page4" url="/page4" component={Page4} />
                 </Router>
             );
         }
@@ -54,7 +54,7 @@ describe('@breautek/router', () => {
     });
 
     it('It renders index page', (done) => {
-        var comp = router();
+        let comp: RouterWrapper = router();
         expect(comp.html()).toBe('<div><div class="bt_router_Page"><span>Page1</span></div></div>');
         tick(() => {
             expect(getTitle()).toBe('Page1');
@@ -65,19 +65,19 @@ describe('@breautek/router', () => {
 
     it('getRouter()', () => {
         expect(getRouter()).toBe(null);
-        var comp = router();
+        let comp: RouterWrapper = router();
         expect(comp.instance().state.strategy).toBe(getRouter());
         comp.unmount();
     });
 
     it('can navigate pages', (done) => {
-        var comp = router();
+        let comp: RouterWrapper = router();
 
-        var r = getRouter();
+        let r: RouterStrategy = getRouter();
         expect(r.getHistoryLength()).toBe(0);
         expect(r.canBack()).toBe(false);
 
-        var __urlChange = (url) => {
+        let __urlChange = (url: string) => {
 
             if (firstFire) {
                 expect(getTitle()).toBe('Page1');
@@ -99,7 +99,7 @@ describe('@breautek/router', () => {
             });
         };
 
-        var firstFire = true;
+        let firstFire: boolean = true;
         
         comp.state('strategy').addURLChangeCallback(__urlChange);
 
@@ -110,15 +110,15 @@ describe('@breautek/router', () => {
 
     describe('subviews', () => {
         it('can render subviews', (done) => {
-            app = mount(
+            app = Enzyme.mount<Router>(
                 <Router component={TestApp}>
-                    <Route key="outer" path="/outerView" component={OuterView} index>
-                        <Route key="inner" path="/innerView" component={InnerView} />
+                    <Route key="outer" url="/outerView" component={OuterView} index>
+                        <Route key="inner" url="/innerView" component={InnerView} />
                     </Route>
                 </Router>
             );
     
-            var r = getRouter();
+            let r: RouterStrategy = getRouter();
 
             tick(() => {
                 r.pushState('/outerView/innerView');

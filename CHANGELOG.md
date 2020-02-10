@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.0-dev (TBD)
+### Breaking Changes
+- Project converted to TypeScript and automatically produces typings.
+- `Route` prop `path` now should be `url`
+
 ## 0.9.3 (September 9, 2020)
 - Replaced `UNSAFE_componentWillMount` with `componentDidMount`.
 
