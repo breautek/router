@@ -9,7 +9,8 @@
     "test:watch": "karma start karma.config.js",
     "build": "rollup -c rollup.config.js",
     "publish-beta": "npm publish --tag beta",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build && npm run docs",
+    "docs": "typedoc --options typedoc.json"
   },
   "repository": {
     "type": "git",

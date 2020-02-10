@@ -3,6 +3,13 @@ import {RouterStrategy} from './RouterStrategy';
 import { IDictionary } from './IDictionary';
 import { Router } from './Router';
 
+/**
+    A {@link RouterStrategy} that manages a history stack using inline pound symbols `#`.
+    URLs will have a starting point `/#/`, as a default base.
+
+    For example, if you [pushState("mylink")]{@link pushState}, the url
+    `/#/mylink` will be produced. 
+*/
 export class HashStrategy extends RouterStrategy {
     private _base: string;
     private _stack: Array<string>;

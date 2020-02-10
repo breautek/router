@@ -123,7 +123,7 @@ class MyCustomStrategy extends URLStrategy {
 ### Getting the RouterStrategy from other components
 If you need to get the routing strategy from components outside of Pages, you can simply get the instance of the router component using
 
-```javascripts
+```javascript
 import {getRouter} from '@breautek/router';
 
 getRouter().pushState('/example')...
