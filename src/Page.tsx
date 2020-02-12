@@ -2,7 +2,7 @@
 import * as React from 'react';
 import "./Page.scss";
 import { RouterStrategy } from './RouterStrategy';
-import { IDictionary } from './IDictionary';
+import { IDictionary } from '@totalpave/interfaces';
 import { TransitionStrategy } from './TransitionStrategy';
 
 export interface IPageProps {
