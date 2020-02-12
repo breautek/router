@@ -10,7 +10,7 @@ to the application vs other resources such as images.
 
 import {RouterStrategy} from './RouterStrategy';
 import { Router } from './Router';
-import { IDictionary } from './IDictionary';
+import { IDictionary } from '@totalpave/interfaces';
 
 export class URLStrategy extends RouterStrategy {
     private _base: string;

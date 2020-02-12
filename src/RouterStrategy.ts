@@ -1,5 +1,5 @@
 import { EventEmitter } from 'events';
-import {IDictionary} from './IDictionary';
+import {IDictionary} from '@totalpave/interfaces';
 import { Router } from './Router';
 
 export const EVENT_URL_CHANGE: string = 'urlchange';

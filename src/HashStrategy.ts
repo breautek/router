@@ -1,6 +1,6 @@
 
 import {RouterStrategy} from './RouterStrategy';
-import { IDictionary } from './IDictionary';
+import { IDictionary } from '@totalpave/interfaces';
 import { Router } from './Router';
 
 /**
