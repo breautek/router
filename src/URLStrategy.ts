@@ -1,22 +1,25 @@
 
-/*
-Using the URLStrategy requires some backend configuration
-to route URLs back to application.
-
-To make this easier, by default these URLs are prefixed with
-/r/ to easily differentiate between URLs that needs to be re-routed back
-to the application vs other resources such as images.
-*/
-
 import {RouterStrategy} from './RouterStrategy';
 import { Router } from './Router';
 import { IDictionary } from '@totalpave/interfaces';
 
+/**
+ * @notice Using the URLStrategy requires some backend configuration
+ * to route URLs back to application.
+ *
+ * To make this easier, by default these URLs are prefixed with
+ * `/r/` to easily differentiate between URLs that needs to be re-routed back
+ * to the application vs other resources such as images.
+ */
 export class URLStrategy extends RouterStrategy {
     private _base: string;
     private _stack: Array<string>;
     private _position: number;
 
+    /**
+     * 
+     * @param {Router} router 
+     */
     public constructor(router: Router) {
         super(router);
 

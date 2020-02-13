@@ -29,6 +29,9 @@ export interface IRouteState {
 
 }
 
+/**
+ * This class represents a route that renders a {@link View} component
+ */
 export class Route<TComponentProps extends IComponentProps = IComponentProps, TRouteProps extends IRouteProps<TComponentProps> = IRouteProps<TComponentProps>, TRouteState extends IRouteState = IRouteState> extends React.Component<TRouteProps, TRouteState> {
     private _node: React.Component;
 

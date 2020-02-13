@@ -1,9 +1,9 @@
 
 export * from './TestApp';
-export * from './Page1';
-export * from './Page2';
-export * from './Page3';
-export * from './Page4';
-export {VarPage} from './VarPage';
+export * from './View1';
+export * from './View2';
+export * from './View3';
+export * from './View4';
+export {VarView} from './VarView';
 export * from './OuterView';
 export * from './InnerView';

@@ -2,9 +2,9 @@
 import * as React from 'react';
 import {View} from '../../src/View';
 
-export class InnerView extends View {
+export class View1 extends View {
     getClassName() {
-        return 'InnerView';
+        return 'View1';
     }
 
     getTitle() {
@@ -12,8 +12,6 @@ export class InnerView extends View {
     }
 
     $render() {
-        return (
-            <div>Inner View</div>
-        );
+        return <span>View1</span>;
     }
 }

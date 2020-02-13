@@ -5,7 +5,7 @@ import {DefaultStrategy} from './DefaultStrategy';
 import {RouteMatcher} from './RouteMatcher';
 import { RouterStrategy } from './RouterStrategy';
 import { IRouterStrategyClass } from './IRouterStrategyClass';
-import {Page} from './Page';
+import {View} from './View';
 
 let instance: Router = null;
 
@@ -34,8 +34,8 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
     private _lastRenderedRoute: any;
     private _matcher: RouteMatcher;
     private _awaitingTransition: boolean;
-    private _incomingNode: Page;
-    private _exitingNode: Page;
+    private _incomingNode: View;
+    private _exitingNode: View;
 
     public constructor(props: TRouterProps) {
         super(props);
@@ -61,10 +61,16 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
         this._matcher = new RouteMatcher(strategy);
     }
 
+    /**
+     * Gets the current routing strategy
+     */
     public getRouterStrategy(): RouterStrategy {
         return this.state.strategy;
     }
 
+    /**
+     * @ignore
+     */
     private _onURLChange(url: string): void {
         if (url !== this.state.url) {
             this.setState({
@@ -79,6 +85,9 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
         this.state.strategy.addURLChangeCallback(this._onURLChange);
     }
 
+    /**
+     * @ignore
+     */
     public UNSAFE_componentWillReceiveProps(nextProps: TRouterProps) {
         if (nextProps.strategy && (this.state.strategy instanceof nextProps.strategy)) {
             this.state.strategy.removeURLChangeCallback(this._onURLChange);
@@ -90,11 +99,17 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
         }
     }
 
+    /**
+     * @ignore
+     */
     public componentWillUnmount() {
         instance = null;
         this.state.strategy.removeURLChangeCallback(this._onURLChange);
     }
 
+    /**
+     * @ignore
+     */
     public render(): React.ReactNode {
         let currentRoute: React.ReactElement = this._matcher.match(this.state.url || '/', this._getChildren(), '', this._getIndexRoute());
         let Root: React.ReactType = null;
@@ -114,7 +129,7 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
             var exiting = null;
             if (this._lastRenderedRoute) {
                 exiting = React.cloneElement(this._lastRenderedRoute, {
-                    ref : (node: Page) => {
+                    ref : (node: View) => {
                         this._exitingNode = node;
                     }
                 });
@@ -122,7 +137,7 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
 
             // Incoming will always be safe to render, hence no defensive checks
             var incoming = React.cloneElement(currentRoute, {
-                ref : (node: Page) => {
+                ref : (node: View) => {
                     this._incomingNode = node;
                 }
             });
@@ -149,6 +164,9 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
         }
     }
 
+    /**
+     * @ignore
+     */
     public componentDidUpdate(): void {
         if (this._awaitingTransition) {
             this._awaitingTransition = false;
@@ -179,26 +197,49 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
         }
     }
 
+    /**
+     * Gets the number of history entries. Note this does not count the browser history.
+     * Only the history kept track during the life-cycle of the app.
+     */
     public getHistoryLength(): number {
         return this.state.strategy.getHistoryLength();
     }
 
+    /**
+     * Gets the scroll restoration mode
+     */
     public getScrollRestoration(): ScrollRestoration {
         return this.state.strategy.getScrollRestoration();
     }
 
+    /**
+     *  
+     * @param to An integer, positive means go forward, negative means go backwards. E.g:
+     *              `1`  move forward one step
+     *              `-1` move backward one step
+     *              `0`  navigate to the current page (This is essentially a no-op)
+     */
     public go(to: number): void {
         this.state.strategy.go(to);
     }
 
+    /**
+     * Go back one step. This is an alias for [pushState(-1)]{@link go}.
+     */
     public back(): void {
         this.state.strategy.go(-1);
     }
 
+    /**
+     * Go forward one step. This is an alias for [pushState(1)]{@link go}.
+     */
     public forward(): void {
         this.state.strategy.go(1);
     }
 
+    /**
+     * Gets the potential routes
+     */
     private _getChildren(): Array<React.ReactElement> {
         let children: Array<React.ReactElement> = null;
 
@@ -212,6 +253,9 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
         return children;
     }
 
+    /**
+     * Finds the index route. Returns null if there are no indexed routes.
+     */
     private _getIndexRoute(): React.ReactElement {
         var children = this._getChildren();
         for (var i = 0; i < children.length; i++) {

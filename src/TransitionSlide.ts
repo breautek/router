@@ -1,6 +1,6 @@
 
 import {TransitionStrategy} from './TransitionStrategy';
-import { Page } from './Page';
+import { View } from './View';
 
 export enum TransitionSlideDirection {
     LEFT = 1,
@@ -21,7 +21,7 @@ export class TransitionSlide extends TransitionStrategy {
         this._slideSpeed = slideSpeed || 0.25;
     }
 
-    public execute(incoming: Page, exiting: Page): Promise<void> {
+    protected _execute(incoming: View, exiting: View): Promise<void> {
         return new Promise<void>((resolve, reject) => {
             let incomingNode: HTMLElement = incoming.getNode();
             let exitingNode: HTMLElement = exiting.getNode();

@@ -14,10 +14,18 @@ export abstract class RouterStrategy extends EventEmitter {
         this._router = router;
     }
 
+    /**
+     * Gets the router
+     */
     public getRouter(): Router {
         return this._router;
     }
 
+    /**
+     * Sets the browser title
+     * 
+     * @param {string} title 
+     */
     public setTitle(title: string): void {
         let head: HTMLTitleElement = document.head.getElementsByTagName('title')[0];
 
@@ -31,10 +39,20 @@ export abstract class RouterStrategy extends EventEmitter {
         }
     }
 
+    /**
+     * Listen for URL change events
+     * 
+     * @param callback 
+     */
     public addURLChangeCallback(callback: URLChangeCallback): void {
         this.on(EVENT_URL_CHANGE, callback);
     }
 
+    /**
+     * Removes an existing listener
+     * 
+     * @param callback
+     */
     public removeURLChangeCallback(callback: URLChangeCallback): void {
         this.off(EVENT_URL_CHANGE, callback);
     }
@@ -47,7 +65,7 @@ export abstract class RouterStrategy extends EventEmitter {
 
     /**
      * Gets the current location.
-     * This is the same as calling `peek(0)`
+     * This is the same as calling [peek(0)]{@link peek}
      */
     public abstract getLocation(): string;
 
@@ -70,10 +88,16 @@ export abstract class RouterStrategy extends EventEmitter {
      */
     public abstract go(to: number): void;
 
+    /**
+     * navigate the history forward one entry. This is an alias for [go(1)]{@link go}
+     */
     public forward(): void {
         this.go(1);
     }
 
+    /**
+     * Navigate the history back one entry. This is an alias for [go(-1)]{@link go}
+     */
     public back(): void {
         this.go(-1);
     }
@@ -86,7 +110,7 @@ export abstract class RouterStrategy extends EventEmitter {
 
     /**
      * Returns true if can go back 1 entry.
-     * This is the same as calling `canGo(-1)`
+     * This is the same as calling [canGo(-1)]{@link canGo}
      */
     public canBack(): boolean {
         return this.canGo(-1);
@@ -94,7 +118,7 @@ export abstract class RouterStrategy extends EventEmitter {
 
     /**
      * Returns true if can go forward 1 entry.
-     * This is the same as calling `canGo(1)`
+     * This is the same as calling [canGo(1)]{@link canGo}
      */
     public canForward(): boolean {
         return this.canGo(1);
@@ -108,7 +132,7 @@ export abstract class RouterStrategy extends EventEmitter {
 
     /**
      * Returns the URL one entry forward.
-     * This is the same as calling `peek(1)`
+     * This is the same as calling [peek(1)]{@link peek}
      */
     public peekForward(): string {
         return this.peek(1);
@@ -116,7 +140,7 @@ export abstract class RouterStrategy extends EventEmitter {
 
     /**
      * Returns the URL one entry back.
-     * This is the same as calling `peek(-1)`
+     * This is the same as calling [peek(-1)]{@link peek}
      */
     public peekBack(): string {
         return this.peek(-1);
@@ -142,6 +166,10 @@ export abstract class RouterStrategy extends EventEmitter {
      */
     public abstract clear(): void;
 
+    /**
+     * Fires the {@link EVENT_URL_CHANGE} event
+     * @param url 
+     */
     protected _fireURLChange(url: string): void {
         this.emit(EVENT_URL_CHANGE, url);
     }
