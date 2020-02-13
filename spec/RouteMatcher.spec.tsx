@@ -7,9 +7,9 @@ import jasmineEnzyme from 'jasmine-enzyme';
 
 import {
     TestApp,
-    VarPage
+    VarView
 } from './env/index';
-import {_instance} from './env/VarPage';
+import {_instance} from './env/VarView';
 import { getRouter } from '../src/Router';
 import { RouterStrategy } from '../src/RouterStrategy';
 import {RouterWrapper} from './support/RouterWrapper';
@@ -25,7 +25,7 @@ describe('RouteMatcher', () => {
         if (!app) {
             app = Enzyme.mount<Router>(
                 <Router component={TestApp}>
-                    <Route key="page1" url="/page1/:var" component={VarPage} index />
+                    <Route key="page1" url="/page1/:var" component={VarView} index />
                 </Router>
             );
         }

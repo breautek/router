@@ -10,7 +10,7 @@ import {RouterStrategy} from '../src/RouterStrategy';
 import {RouteMatcher} from '../src/RouteMatcher';
 import {TransitionStrategy} from '../src/TransitionStrategy';
 import {TransitionSlide} from '../src/TransitionSlide';
-import {Page} from '../src/Page';
+import {View} from '../src/View';
 
 describe('Public API', () => {
     it('version', () => {
@@ -57,7 +57,7 @@ describe('Public API', () => {
         expect(api.TransitionSlide).toBe(TransitionSlide);
     });
 
-    it('Page', () => {
-        expect(api.Page).toBe(Page);
+    it('View', () => {
+        expect(api.View).toBe(View);
     });
 });

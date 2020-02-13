@@ -4,6 +4,10 @@ import {cloneElement} from 'react';
 import {IComponentProps, IRouteProps} from './Route';
 import {RouterStrategy} from './RouterStrategy';
 
+/**
+ * This class is reponsible for determing which route to render
+ * based on the URL and the route url patterns.
+ */
 export class RouteMatcher {
     private _strategy: RouterStrategy;
 
@@ -11,6 +15,13 @@ export class RouteMatcher {
         this._strategy = routerStrategy;
     }
 
+    /**
+     * Matches the url to the appropriate renderable route
+     * @param url 
+     * @param children 
+     * @param base 
+     * @param indexRoute 
+     */
     public match(url: string, children: Array<React.ReactElement>, base: string, indexRoute?: React.ReactElement): React.ReactElement {
         let componentToRender: React.ReactElement = null;
         let params: IURLParams = null;

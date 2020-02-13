@@ -5,10 +5,10 @@ import jasmineEnzyme from 'jasmine-enzyme';
 
 import {
     TestApp,
-    Page1,
-    Page2,
-    Page3,
-    Page4,
+    View1,
+    View2,
+    View3,
+    View4,
     OuterView,
     InnerView
 } from './env';
@@ -35,10 +35,10 @@ describe('@breautek/router', () => {
         if (!app) {
             app = Enzyme.mount<Router>(
                 <Router component={TestApp}>
-                    <Route key="page1" url="/page1" component={Page1} index />
-                    <Route key="page2" url="/page2" component={Page2} />
-                    <Route key="page3" url="/page3" component={Page3} />
-                    <Route key="page4" url="/page4" component={Page4} />
+                    <Route key="page1" url="/page1" component={View1} index />
+                    <Route key="page2" url="/page2" component={View2} />
+                    <Route key="page3" url="/page3" component={View3} />
+                    <Route key="page4" url="/page4" component={View4} />
                 </Router>
             );
         }
@@ -55,9 +55,9 @@ describe('@breautek/router', () => {
 
     it('It renders index page', (done) => {
         let comp: RouterWrapper = router();
-        expect(comp.html()).toBe('<div><div class="bt_router_Page"><span>Page1</span></div></div>');
+        expect(comp.html()).toBe('<div><div class="View"><span>View1</span></div></div>');
         tick(() => {
-            expect(getTitle()).toBe('Page1');
+            expect(getTitle()).toBe('View1');
             comp.unmount();
             done();
         });
@@ -80,7 +80,7 @@ describe('@breautek/router', () => {
         let __urlChange = (url: string) => {
 
             if (firstFire) {
-                expect(getTitle()).toBe('Page1');
+                expect(getTitle()).toBe('View1');
                 firstFire = false;
                 return;
             }
@@ -88,11 +88,11 @@ describe('@breautek/router', () => {
             comp.state('strategy').removeURLChangeCallback(__urlChange);
 
             tick(() => {
-                expect(getTitle()).toBe('Page2');
+                expect(getTitle()).toBe('View2');
                 expect(url).toBe('/page2');
                 expect(r.canBack()).toBe(true);
                 expect(r.getHistoryLength()).toBe(2);
-                expect(comp.html()).toBe('<div><div class="bt_router_Page"><span>Page2</span></div></div>');
+                expect(comp.html()).toBe('<div><div class="View"><span>View2</span></div></div>');
 
                 comp.unmount();
                 done();
@@ -123,7 +123,7 @@ describe('@breautek/router', () => {
             tick(() => {
                 r.pushState('/outerView/innerView');
                 tick(() => {
-                    expect(app.html()).toBe('<div><div class="bt_router_Page"><div><div>Outer View</div><div class="bt_router_Page"><div>Inner View</div></div></div></div></div>'); 
+                    expect(app.html()).toBe('<div><div class="View"><div><div>Outer View</div><div class="View"><div>Inner View</div></div></div></div></div>'); 
                     app.unmount();
                     done();
                 });

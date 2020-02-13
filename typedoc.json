@@ -1,4 +1,10 @@
 {
     "mode": "file",
-    "out": "docs"
+    "out": "docs",
+    "excludeProtected": false,
+    "excludePrivate": true,
+    "exclude": [
+        "package.json",
+        "src/api.ts"
+    ]
 }

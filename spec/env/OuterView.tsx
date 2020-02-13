@@ -1,8 +1,8 @@
 
 import * as React from 'react';
-import {Page} from '../../src/Page';
+import {View} from '../../src/View';
 
-export class OuterView extends Page {
+export class OuterView extends View {
     getClassName() {
         return 'OuterView';
     }
