@@ -15,14 +15,22 @@ module.exports = function(config) {
                 watched: false
             }
         ],
-        reporters: ['progress'],
+        reporters: ['progress'],//, 'coverage', 'remap-coverage'],
         summaryReporter: {
             show: 'all'
         },
         frameworks: ['jasmine'],
         preprocessors: {
-            'test-context.js' : ['webpack', 'sourcemap']
+            'test-context.js' : ['webpack', 'sourcemap'],
+            // 'src/**/*.ts': ['coverage'],
+            // './src/**/*.tsx': ['coverage']
         },
+        // remapCoverageReporter: {
+        //     'text-summary': null
+        // },
+        // coverageReporter: {
+        //     type: 'in-memory'
+        // },
         webpack: {
             mode: "development",
             devtool: 'inline-source-map',
@@ -95,7 +103,7 @@ module.exports = function(config) {
             plugins: [
                 new webpack.ProvidePlugin({
                     "React": "react"
-                }),
+                })
             ]
         },
         webpackServer: {

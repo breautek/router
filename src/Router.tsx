@@ -2,7 +2,7 @@
 import * as React from 'react';
 
 import {DefaultStrategy} from './DefaultStrategy';
-import {RouteMatcher} from './RouteMatcher';
+import {RouteMatcher, IOnNoRouteFunction} from './RouteMatcher';
 import { RouterStrategy } from './RouterStrategy';
 import { IRouterStrategyClass } from './IRouterStrategyClass';
 import {View} from './View';
@@ -20,6 +20,7 @@ export let getRouter = (): RouterStrategy => {
 export interface IRouterProps {
     strategy?: IRouterStrategyClass;
     component: React.ComponentClass;
+    onNoRoute?: IOnNoRouteFunction;
 }
 
 export interface IRouterState {
@@ -114,7 +115,7 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
      * @ignore
      */
     public render(): React.ReactNode {
-        let currentRoute: React.ReactElement = this._matcher.match(this.state.url || '/', this._getChildren(), '', this._getIndexRoute());
+        let currentRoute: React.ReactElement = this._matcher.match(this.state.url || '/', this._getChildren(), '', this._getIndexRoute(), this.props.onNoRoute);
         let Root: React.ReactType = null;
         if (this.props.component) {
             Root = this.props.component as unknown as React.ReactType;
