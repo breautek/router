@@ -4,6 +4,12 @@
 ### Breaking Changes
 - Project converted to TypeScript and automatically produces typings.
 - `Route` prop `path` now should be `url`
+- `Page` class has been renamed to `View`
+- `View` now uses the css class `View`, instead of `bt_router_Page`
+
+## Other notable changes
+- `onNoRoute` function prop has been added to `Router`. A default implementation to return the index route is used if prop is not given.
+- Documentation (wahoo!)
 
 ## 0.9.3 (September 9, 2020)
 - Replaced `UNSAFE_componentWillMount` with `componentDidMount`.
