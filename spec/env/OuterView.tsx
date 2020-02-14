@@ -3,20 +3,20 @@ import * as React from 'react';
 import {View} from '../../src/View';
 
 export class OuterView extends View {
-    getClassName() {
+    public getClassName() {
         return 'OuterView';
     }
 
-    getTitle() {
+    public getTitle() {
         return Promise.resolve(this.getClassName());
     }
 
-    $render() {
+    protected _renderView() {
         return (
-            <div>
+            <React.Fragment>
                 <div>Outer View</div>
                 {this.props.children}
-            </div>
+            </React.Fragment>
         );
     }
 }

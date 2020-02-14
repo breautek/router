@@ -22,6 +22,10 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
         this._node = null;
     }
 
+    public getCSSClass() {
+        return '';
+    }
+
     /**
      * @ignore
      */
@@ -55,16 +59,17 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
         return {};
     }
 
-    protected abstract $render(): React.ReactNode;
+    protected abstract _renderView(): React.ReactNode;
 
     public render(): React.ReactNode {
+        let cssClass: string = this.getCSSClass();
         return (
             <div 
-                className="View"
+                className={`View${cssClass ? ' ' + cssClass : ''}`}
                 ref={(n) => { this._node = n; }}
                 style={this.getViewStyles()}
             >
-                {this.$render()}
+                {this._renderView()}
             </div>
         );
     }

@@ -3,15 +3,19 @@ import * as React from 'react';
 import {View} from '../../src/View';
 
 export class View1 extends View {
-    getClassName() {
+    public getClassName() {
         return 'View1';
     }
 
-    getTitle() {
+    public getCSSClass() {
+        return 'View1';
+    }
+
+    public getTitle() {
         return Promise.resolve(this.getClassName());
     }
 
-    $render() {
-        return <span>View1</span>;
+    protected _renderView() {
+        return <React.Fragment>View1</React.Fragment>;
     }
 }
