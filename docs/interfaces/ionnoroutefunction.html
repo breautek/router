@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IViewProps | @breautek/router</title>
+	<title>IOnNoRouteFunction | @breautek/router</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -40,8 +40,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -56,74 +54,71 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_view_.html">&quot;View&quot;</a>
-				</li>
-				<li>
-					<a href="_view_.iviewprops.html">IViewProps</a>
+					<a href="ionnoroutefunction.html">IOnNoRouteFunction</a>
 				</li>
 			</ul>
-			<h1>Interface IViewProps</h1>
+			<h1>Interface IOnNoRouteFunction</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Will be invoked when no routes are found. Default implementation is to simply return the <code>indexRoute</code>.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IViewProps</span>
+						<span class="target">IOnNoRouteFunction</span>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_view_.iviewprops.html#entrytransition" class="tsd-kind-icon">entry<wbr>Transition</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_view_.iviewprops.html#exittransition" class="tsd-kind-icon">exit<wbr>Transition</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_view_.iviewprops.html#router" class="tsd-kind-icon">router</a></li>
+			<section class="tsd-panel">
+				<h3 class="tsd-before-signature">Callable</h3>
+				<ul class="tsd-signatures tsd-kind-interface">
+					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>indexRoute<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReactElement</span>, routes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReactElement</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouteMatcher.ts#L13">src/RouteMatcher.ts:13</a></li>
 							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="entrytransition" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> entry<wbr>Transition</h3>
-					<div class="tsd-signature tsd-kind-icon">entry<wbr>Transition<span class="tsd-signature-symbol">:</span> <a href="../classes/_transitionstrategy_.transitionstrategy.html" class="tsd-signature-type">TransitionStrategy</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/View.tsx#L10">src/View.tsx:10</a></li>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Will be invoked when no routes are found. Default implementation is to simply return the <code>indexRoute</code>.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>indexRoute: <span class="tsd-signature-type">ReactElement</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The <code>ReactElement</code> of a <code>Route</code></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h5>routes: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>An array of <code>ReactElement</code> of <code>Route</code></p>
+									</div>
+								</div>
+							</li>
 						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="exittransition" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> exit<wbr>Transition</h3>
-					<div class="tsd-signature tsd-kind-icon">exit<wbr>Transition<span class="tsd-signature-symbol">:</span> <a href="../classes/_transitionstrategy_.transitionstrategy.html" class="tsd-signature-type">TransitionStrategy</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/View.tsx#L11">src/View.tsx:11</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="router" class="tsd-anchor"></a>
-					<h3>router</h3>
-					<div class="tsd-signature tsd-kind-icon">router<span class="tsd-signature-symbol">:</span> <a href="../classes/_routerstrategy_.routerstrategy.html" class="tsd-signature-type">RouterStrategy</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/View.tsx#L9">src/View.tsx:9</a></li>
-						</ul>
-					</aside>
-				</section>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReactElement</span></h4>
+						<p>An <code>ReactElement</code> of a <code>Route</code></p>
+					</li>
+				</ul>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -132,67 +127,89 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_defaultstrategy_.html">&quot;<wbr>Default<wbr>Strategy&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_hashstrategy_.html">&quot;<wbr>Hash<wbr>Strategy&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_irouterstrategyclass_.html">&quot;IRouter<wbr>Strategy<wbr>Class&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_route_.html">&quot;<wbr>Route&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_routematcher_.html">&quot;<wbr>Route<wbr>Matcher&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_router_.html">&quot;<wbr>Router&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_routerstrategy_.html">&quot;<wbr>Router<wbr>Strategy&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_transitionslide_.html">&quot;<wbr>Transition<wbr>Slide&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_transitionstrategy_.html">&quot;<wbr>Transition<wbr>Strategy&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_urlparser_.html">&quot;URLParser&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_urlstrategy_.html">&quot;URLStrategy&quot;</a>
-					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_view_.html">&quot;<wbr>View&quot;</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../classes/_view_.view.html" class="tsd-kind-icon">View</a>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/transitionslidedirection.html" class="tsd-kind-icon">Transition<wbr>Slide<wbr>Direction</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/hashstrategy.html" class="tsd-kind-icon">Hash<wbr>Strategy</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="../classes/route.html" class="tsd-kind-icon">Route</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/routematcher.html" class="tsd-kind-icon">Route<wbr>Matcher</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="../classes/router.html" class="tsd-kind-icon">Router</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/routerstrategy.html" class="tsd-kind-icon">Router<wbr>Strategy</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/transitionslide.html" class="tsd-kind-icon">Transition<wbr>Slide</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/transitionstrategy.html" class="tsd-kind-icon">Transition<wbr>Strategy</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/urlparser.html" class="tsd-kind-icon">URLParser</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/urlstrategy.html" class="tsd-kind-icon">URLStrategy</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="../classes/view.html" class="tsd-kind-icon">View</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="icomponentprops.html" class="tsd-kind-icon">IComponent<wbr>Props</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_view_.iviewprops.html" class="tsd-kind-icon">IView<wbr>Props</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_view_.iviewprops.html#entrytransition" class="tsd-kind-icon">entry<wbr>Transition</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_view_.iviewprops.html#exittransition" class="tsd-kind-icon">exit<wbr>Transition</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_view_.iviewprops.html#router" class="tsd-kind-icon">router</a>
-							</li>
-						</ul>
+					<li class="current tsd-kind-interface">
+						<a href="ionnoroutefunction.html" class="tsd-kind-icon">IOn<wbr>NoRoute<wbr>Function</a>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="irouteprops.html" class="tsd-kind-icon">IRoute<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="iroutestate.html" class="tsd-kind-icon">IRoute<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="irouterprops.html" class="tsd-kind-icon">IRouter<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="irouterstate.html" class="tsd-kind-icon">IRouter<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="irouterstrategyclass.html" class="tsd-kind-icon">IRouter<wbr>Strategy<wbr>Class</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="iurlparams.html" class="tsd-kind-icon">IURLParams</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="iviewprops.html" class="tsd-kind-icon">IView<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#urlchangecallback" class="tsd-kind-icon">URLChange<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#defaultstrategy" class="tsd-kind-icon">Default<wbr>Strategy</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#event_url_change" class="tsd-kind-icon">EVENT_<wbr>URL_<wbr>CHANGE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#instance" class="tsd-kind-icon">instance</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#getrouter" class="tsd-kind-icon">get<wbr>Router</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
