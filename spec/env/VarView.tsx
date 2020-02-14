@@ -14,19 +14,23 @@ export class VarView extends View<IVarViewProps> {
         _instance = this;
     }
 
-    getClassName() {
+    public getClassName() {
         return 'VarView';
     }
 
-    getTitle() {
+    public getCSSClass() {
+        return 'VarView';
+    }
+
+    public getTitle() {
         return Promise.resolve(this.getClassName());
     }
 
-    getProps() {
+    public getProps() {
         return this.props;
     }
 
-    $render() {
-        return <span className="var-View">VarView</span>;
+    protected _renderView() {
+        return <React.Fragment>VarView</React.Fragment>;
     }
 }

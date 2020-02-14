@@ -3,17 +3,17 @@ import * as React from 'react';
 import {View} from '../../src/View';
 
 export class InnerView extends View {
-    getClassName() {
+    public getClassName() {
         return 'InnerView';
     }
 
-    getTitle() {
+    public getTitle() {
         return Promise.resolve(this.getClassName());
     }
 
-    $render() {
+    protected _renderView() {
         return (
-            <div>Inner View</div>
+            <React.Fragment>Inner View</React.Fragment>
         );
     }
 }

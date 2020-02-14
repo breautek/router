@@ -3,15 +3,15 @@ import * as React from 'react';
 import {View} from '../../src/View';
 
 export class View3 extends View {
-    getClassName() {
+    public getClassName() {
         return 'View3';
     }
 
-    getTitle() {
+    public getTitle() {
         return Promise.resolve(this.getClassName());
     }
 
-    $render() {
-        return <span>View3</span>;
+    protected _renderView() {
+        return <React.Fragment>View3</React.Fragment>;
     }
 }

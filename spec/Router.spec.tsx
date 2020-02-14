@@ -55,7 +55,7 @@ describe('@breautek/router', () => {
 
     it('It renders index page', (done) => {
         let comp: RouterWrapper = router();
-        expect(comp.html()).toBe('<div><div class="View"><span>View1</span></div></div>');
+        expect(comp.html()).toBe('<div class="app"><div class="View View1">View1</div></div>');
         tick(() => {
             expect(getTitle()).toBe('View1');
             comp.unmount();
@@ -92,7 +92,7 @@ describe('@breautek/router', () => {
                 expect(url).toBe('/page2');
                 expect(r.canBack()).toBe(true);
                 expect(r.getHistoryLength()).toBe(2);
-                expect(comp.html()).toBe('<div><div class="View"><span>View2</span></div></div>');
+                expect(comp.html()).toBe('<div class="app"><div class="View">View2</div></div>');
 
                 comp.unmount();
                 done();
@@ -123,7 +123,7 @@ describe('@breautek/router', () => {
             tick(() => {
                 r.pushState('/outerView/innerView');
                 tick(() => {
-                    expect(app.html()).toBe('<div><div class="View"><div><div>Outer View</div><div class="View"><div>Inner View</div></div></div></div></div>'); 
+                    expect(app.html()).toBe('<div class="app"><div class="View"><div>Outer View</div><div class="View">Inner View</div></div></div>'); 
                     app.unmount();
                     done();
                 });
