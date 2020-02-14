@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>URLStrategy | @breautek/router</title>
+	<title>RouterStrategy | @breautek/router</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -40,8 +40,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -56,40 +54,32 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_urlstrategy_.html">&quot;URLStrategy&quot;</a>
-				</li>
-				<li>
-					<a href="_urlstrategy_.urlstrategy.html">URLStrategy</a>
+					<a href="routerstrategy.html">RouterStrategy</a>
 				</li>
 			</ul>
-			<h1>Class URLStrategy</h1>
+			<h1>Class RouterStrategy</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>notice</dt>
-						<dd><p>Using the URLStrategy requires some backend configuration
-							to route URLs back to application.</p>
-							<p>To make this easier, by default these URLs are prefixed with
-								<code>/r/</code> to easily differentiate between URLs that needs to be re-routed back
-							to the application vs other resources such as images.</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_routerstrategy_.routerstrategy.html" class="tsd-signature-type">RouterStrategy</a>
+						<span class="tsd-signature-type">EventEmitter</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">URLStrategy</span>
+								<span class="target">RouterStrategy</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="hashstrategy.html" class="tsd-signature-type">HashStrategy</a>
+									</li>
+									<li>
+										<a href="urlstrategy.html" class="tsd-signature-type">URLStrategy</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -102,55 +92,55 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_urlstrategy_.urlstrategy.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="routerstrategy.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_urlstrategy_.urlstrategy.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="routerstrategy.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_urlstrategy_.urlstrategy.html#_fireurlchange" class="tsd-kind-icon">_fireURLChange</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#addurlchangecallback" class="tsd-kind-icon">addURLChange<wbr>Callback</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#back" class="tsd-kind-icon">back</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#canback" class="tsd-kind-icon">can<wbr>Back</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#canforward" class="tsd-kind-icon">can<wbr>Forward</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_urlstrategy_.urlstrategy.html#cango" class="tsd-kind-icon">can<wbr>Go</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_urlstrategy_.urlstrategy.html#clear" class="tsd-kind-icon">clear</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#emit" class="tsd-kind-icon">emit</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#forward" class="tsd-kind-icon">forward</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_urlstrategy_.urlstrategy.html#gethistorylength" class="tsd-kind-icon">get<wbr>History<wbr>Length</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_urlstrategy_.urlstrategy.html#getlocation" class="tsd-kind-icon">get<wbr>Location</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_urlstrategy_.urlstrategy.html#getlocationat" class="tsd-kind-icon">get<wbr>Location<wbr>At</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#getrouter" class="tsd-kind-icon">get<wbr>Router</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_urlstrategy_.urlstrategy.html#getscrollrestoration" class="tsd-kind-icon">get<wbr>Scroll<wbr>Restoration</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_urlstrategy_.urlstrategy.html#go" class="tsd-kind-icon">go</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#listeners" class="tsd-kind-icon">listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#off" class="tsd-kind-icon">off</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#on" class="tsd-kind-icon">on</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#once" class="tsd-kind-icon">once</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_urlstrategy_.urlstrategy.html#peek" class="tsd-kind-icon">peek</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#peekback" class="tsd-kind-icon">peek<wbr>Back</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#peekforward" class="tsd-kind-icon">peek<wbr>Forward</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_urlstrategy_.urlstrategy.html#pushstate" class="tsd-kind-icon">push<wbr>State</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#removeurlchangecallback" class="tsd-kind-icon">removeURLChange<wbr>Callback</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_urlstrategy_.urlstrategy.html#replacestate" class="tsd-kind-icon">replace<wbr>State</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_urlstrategy_.urlstrategy.html#settitle" class="tsd-kind-icon">set<wbr>Title</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_urlstrategy_.urlstrategy.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="routerstrategy.html#_fireurlchange" class="tsd-kind-icon">_fireURLChange</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="routerstrategy.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#addurlchangecallback" class="tsd-kind-icon">addURLChange<wbr>Callback</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#back" class="tsd-kind-icon">back</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#canback" class="tsd-kind-icon">can<wbr>Back</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#canforward" class="tsd-kind-icon">can<wbr>Forward</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#cango" class="tsd-kind-icon">can<wbr>Go</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#clear" class="tsd-kind-icon">clear</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="routerstrategy.html#emit" class="tsd-kind-icon">emit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="routerstrategy.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#forward" class="tsd-kind-icon">forward</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#gethistorylength" class="tsd-kind-icon">get<wbr>History<wbr>Length</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#getlocation" class="tsd-kind-icon">get<wbr>Location</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#getlocationat" class="tsd-kind-icon">get<wbr>Location<wbr>At</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="routerstrategy.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#getrouter" class="tsd-kind-icon">get<wbr>Router</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#getscrollrestoration" class="tsd-kind-icon">get<wbr>Scroll<wbr>Restoration</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#go" class="tsd-kind-icon">go</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="routerstrategy.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="routerstrategy.html#listeners" class="tsd-kind-icon">listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="routerstrategy.html#off" class="tsd-kind-icon">off</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="routerstrategy.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="routerstrategy.html#once" class="tsd-kind-icon">once</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#peek" class="tsd-kind-icon">peek</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#peekback" class="tsd-kind-icon">peek<wbr>Back</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#peekforward" class="tsd-kind-icon">peek<wbr>Forward</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="routerstrategy.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="routerstrategy.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#pushstate" class="tsd-kind-icon">push<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="routerstrategy.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="routerstrategy.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="routerstrategy.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#removeurlchangecallback" class="tsd-kind-icon">removeURLChange<wbr>Callback</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#replacestate" class="tsd-kind-icon">replace<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="routerstrategy.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="routerstrategy.html#settitle" class="tsd-kind-icon">set<wbr>Title</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="routerstrategy.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a></li>
 							</ul>
 						</section>
 					</div>
@@ -158,33 +148,26 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new URLStrategy<span class="tsd-signature-symbol">(</span>router<span class="tsd-signature-symbol">: </span><a href="_router_.router.html" class="tsd-signature-type">Router</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_urlstrategy_.urlstrategy.html" class="tsd-signature-type">URLStrategy</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Router<wbr>Strategy<span class="tsd-signature-symbol">(</span>router<span class="tsd-signature-symbol">: </span><a href="router.html" class="tsd-signature-type">Router</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="routerstrategy.html" class="tsd-signature-type">RouterStrategy</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/URLStrategy.ts#L17">src/URLStrategy.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L10">src/RouterStrategy.ts:10</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>router: <a href="_router_.router.html" class="tsd-signature-type">Router</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-										</div>
-									</div>
+									<h5>router: <a href="router.html" class="tsd-signature-type">Router</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_urlstrategy_.urlstrategy.html" class="tsd-signature-type">URLStrategy</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="routerstrategy.html" class="tsd-signature-type">RouterStrategy</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -196,7 +179,7 @@
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> default<wbr>Max<wbr>Listeners</h3>
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Max<wbr>Listeners<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#defaultmaxlisteners">defaultMaxListeners</a></p>
+						<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#defaultmaxlisteners">defaultMaxListeners</a></p>
 						<ul>
 							<li>Defined in node_modules/@types/node/events.d.ts:18</li>
 						</ul>
@@ -205,23 +188,22 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 					<a name="_fireurlchange" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _fireURLChange</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">_fireURLChange<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#_fireurlchange">_fireURLChange</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/RouterStrategy.ts#L173">src/RouterStrategy.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L173">src/RouterStrategy.ts:173</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Fires the <a href="../modules/_routerstrategy_.html#event_url_change">EVENT_URL_CHANGE</a> event</p>
+									<p>Fires the <a href="../globals.html#event_url_change">EVENT_URL_CHANGE</a> event</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -245,7 +227,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#addlistener">addListener</a></p>
+								<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#addlistener">addListener</a></p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:20</li>
@@ -282,18 +264,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="addurlchangecallback" class="tsd-anchor"></a>
 					<h3>addURLChange<wbr>Callback</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">addURLChange<wbr>Callback<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><a href="../modules/_routerstrategy_.html#urlchangecallback" class="tsd-signature-type">URLChangeCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">addURLChange<wbr>Callback<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><a href="../globals.html#urlchangecallback" class="tsd-signature-type">URLChangeCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#addurlchangecallback">addURLChangeCallback</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/RouterStrategy.ts#L47">src/RouterStrategy.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L47">src/RouterStrategy.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -304,7 +285,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>callback: <a href="../modules/_routerstrategy_.html#urlchangecallback" class="tsd-signature-type">URLChangeCallback</a></h5>
+									<h5>callback: <a href="../globals.html#urlchangecallback" class="tsd-signature-type">URLChangeCallback</a></h5>
 									<div class="tsd-comment tsd-typography">
 									</div>
 								</li>
@@ -313,115 +294,123 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="back" class="tsd-anchor"></a>
 					<h3>back</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">back<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#back">back</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/RouterStrategy.ts#L101">src/RouterStrategy.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L101">src/RouterStrategy.ts:101</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Navigate the history back one entry. This is an alias for <a href="_urlstrategy_.urlstrategy.html#go">go(-1)</a></p>
+									<p>Navigate the history back one entry. This is an alias for <a href="routerstrategy.html#go">go(-1)</a></p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="canback" class="tsd-anchor"></a>
 					<h3>can<wbr>Back</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">can<wbr>Back<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#canback">canBack</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/RouterStrategy.ts#L115">src/RouterStrategy.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L115">src/RouterStrategy.ts:115</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Returns true if can go back 1 entry.
-									This is the same as calling <a href="_urlstrategy_.urlstrategy.html#cango">canGo(-1)</a></p>
+									This is the same as calling <a href="routerstrategy.html#cango">canGo(-1)</a></p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="canforward" class="tsd-anchor"></a>
 					<h3>can<wbr>Forward</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">can<wbr>Forward<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#canforward">canForward</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/RouterStrategy.ts#L123">src/RouterStrategy.ts:123</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L123">src/RouterStrategy.ts:123</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Returns true if can go forward 1 entry.
-									This is the same as calling <a href="_urlstrategy_.urlstrategy.html#cango">canGo(1)</a></p>
+									This is the same as calling <a href="routerstrategy.html#cango">canGo(1)</a></p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="cango" class="tsd-anchor"></a>
-					<h3>can<wbr>Go</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> can<wbr>Go</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">can<wbr>Go<span class="tsd-signature-symbol">(</span>to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#cango">canGo</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/URLStrategy.ts#L61">src/URLStrategy.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L109">src/RouterStrategy.ts:109</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns true, if can be navigated to the given relative index</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>to: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Must be an integer</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="clear" class="tsd-anchor"></a>
-					<h3>clear</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> clear</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#clear">clear</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/URLStrategy.ts#L113">src/URLStrategy.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L167">src/RouterStrategy.ts:167</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Clears the history stack.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -435,7 +424,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#emit">emit</a></p>
+								<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#emit">emit</a></p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:32</li>
@@ -463,7 +452,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#eventnames">eventNames</a></p>
+								<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#eventnames">eventNames</a></p>
 								<p>Overrides EventEmitter.eventNames</p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:33</li>
@@ -473,83 +462,98 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="forward" class="tsd-anchor"></a>
 					<h3>forward</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">forward<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#forward">forward</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/RouterStrategy.ts#L94">src/RouterStrategy.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L94">src/RouterStrategy.ts:94</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>navigate the history forward one entry. This is an alias for <a href="_urlstrategy_.urlstrategy.html#go">go(1)</a></p>
+									<p>navigate the history forward one entry. This is an alias for <a href="routerstrategy.html#go">go(1)</a></p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="gethistorylength" class="tsd-anchor"></a>
-					<h3>get<wbr>History<wbr>Length</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> get<wbr>History<wbr>Length</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>History<wbr>Length<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#gethistorylength">getHistoryLength</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/URLStrategy.ts#L49">src/URLStrategy.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L75">src/RouterStrategy.ts:75</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the size of the history stack</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getlocation" class="tsd-anchor"></a>
-					<h3>get<wbr>Location</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> get<wbr>Location</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Location<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#getlocation">getLocation</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/URLStrategy.ts#L41">src/URLStrategy.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L70">src/RouterStrategy.ts:70</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the current location.
+									This is the same as calling <a href="routerstrategy.html#peek">peek(0)</a></p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getlocationat" class="tsd-anchor"></a>
-					<h3>get<wbr>Location<wbr>At</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> get<wbr>Location<wbr>At</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Location<wbr>At<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#getlocationat">getLocationAt</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/URLStrategy.ts#L45">src/URLStrategy.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L64">src/RouterStrategy.ts:64</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the URL at the given index in the history stack</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>position: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>index</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -565,7 +569,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#getmaxlisteners">getMaxListeners</a></p>
+								<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#getmaxlisteners">getMaxListeners</a></p>
 								<p>Overrides EventEmitter.getMaxListeners</p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:29</li>
@@ -575,18 +579,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getrouter" class="tsd-anchor"></a>
 					<h3>get<wbr>Router</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Router<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_router_.router.html" class="tsd-signature-type">Router</a></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Router<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="router.html" class="tsd-signature-type">Router</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#getrouter">getRouter</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/RouterStrategy.ts#L20">src/RouterStrategy.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L20">src/RouterStrategy.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -594,46 +597,60 @@
 									<p>Gets the router</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="_router_.router.html" class="tsd-signature-type">Router</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="router.html" class="tsd-signature-type">Router</a></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getscrollrestoration" class="tsd-anchor"></a>
-					<h3>get<wbr>Scroll<wbr>Restoration</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> get<wbr>Scroll<wbr>Restoration</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Scroll<wbr>Restoration<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ScrollRestoration</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#getscrollrestoration">getScrollRestoration</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/URLStrategy.ts#L53">src/URLStrategy.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L80">src/RouterStrategy.ts:80</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the scroll restoration</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ScrollRestoration</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="go" class="tsd-anchor"></a>
-					<h3>go</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> go</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">go<span class="tsd-signature-symbol">(</span>to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#go">go</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/URLStrategy.ts#L65">src/URLStrategy.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L89">src/RouterStrategy.ts:89</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Navigates the history</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>to: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Must be an integer.
+											Negative numbers go back, if possible.
+											Positive goes forward, if possible.
+										Zero does nothing.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -649,7 +666,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#listenercount-1">listenerCount</a></p>
+								<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#listenercount-1">listenerCount</a></p>
 								<p>Overrides EventEmitter.listenerCount</p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:34</li>
@@ -674,7 +691,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#listeners">listeners</a></p>
+								<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#listeners">listeners</a></p>
 								<p>Overrides EventEmitter.listeners</p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:30</li>
@@ -699,7 +716,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#off">off</a></p>
+								<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#off">off</a></p>
 								<p>Overrides EventEmitter.off</p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:26</li>
@@ -745,7 +762,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#on">on</a></p>
+								<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#on">on</a></p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:21</li>
@@ -791,7 +808,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#once">once</a></p>
+								<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#once">once</a></p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:22</li>
@@ -828,72 +845,77 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="peek" class="tsd-anchor"></a>
-					<h3>peek</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> peek</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">peek<span class="tsd-signature-symbol">(</span>to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#peek">peek</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/URLStrategy.ts#L57">src/URLStrategy.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L131">src/RouterStrategy.ts:131</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the URL stored in the history stack at the given relative index.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>to: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Must be an integer</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="peekback" class="tsd-anchor"></a>
 					<h3>peek<wbr>Back</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">peek<wbr>Back<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#peekback">peekBack</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/RouterStrategy.ts#L145">src/RouterStrategy.ts:145</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L145">src/RouterStrategy.ts:145</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Returns the URL one entry back.
-									This is the same as calling <a href="_urlstrategy_.urlstrategy.html#peek">peek(-1)</a></p>
+									This is the same as calling <a href="routerstrategy.html#peek">peek(-1)</a></p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="peekforward" class="tsd-anchor"></a>
 					<h3>peek<wbr>Forward</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">peek<wbr>Forward<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#peekforward">peekForward</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/RouterStrategy.ts#L137">src/RouterStrategy.ts:137</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L137">src/RouterStrategy.ts:137</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Returns the URL one entry forward.
-									This is the same as calling <a href="_urlstrategy_.urlstrategy.html#peek">peek(1)</a></p>
+									This is the same as calling <a href="routerstrategy.html#peek">peek(1)</a></p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -909,7 +931,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#prependlistener">prependListener</a></p>
+								<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#prependlistener">prependListener</a></p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:23</li>
@@ -955,7 +977,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#prependoncelistener">prependOnceListener</a></p>
+								<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#prependoncelistener">prependOnceListener</a></p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:24</li>
@@ -992,20 +1014,24 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="pushstate" class="tsd-anchor"></a>
-					<h3>push<wbr>State</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> push<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">push<wbr>State<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">IDictionary</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#pushstate">pushState</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/URLStrategy.ts#L76">src/URLStrategy.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L154">src/RouterStrategy.ts:154</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Pushes a new entry into the history stack, navigating to the new location.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1013,6 +1039,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">IDictionary</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1028,7 +1056,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#rawlisteners">rawListeners</a></p>
+								<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#rawlisteners">rawListeners</a></p>
 								<p>Overrides EventEmitter.rawListeners</p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:31</li>
@@ -1053,7 +1081,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#removealllisteners">removeAllListeners</a></p>
+								<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#removealllisteners">removeAllListeners</a></p>
 								<p>Overrides EventEmitter.removeAllListeners</p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:27</li>
@@ -1078,7 +1106,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#removelistener">removeListener</a></p>
+								<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#removelistener">removeListener</a></p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:25</li>
@@ -1115,18 +1143,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="removeurlchangecallback" class="tsd-anchor"></a>
 					<h3>removeURLChange<wbr>Callback</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">removeURLChange<wbr>Callback<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><a href="../modules/_routerstrategy_.html#urlchangecallback" class="tsd-signature-type">URLChangeCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">removeURLChange<wbr>Callback<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><a href="../globals.html#urlchangecallback" class="tsd-signature-type">URLChangeCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#removeurlchangecallback">removeURLChangeCallback</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/RouterStrategy.ts#L56">src/RouterStrategy.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L56">src/RouterStrategy.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1137,7 +1164,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>callback: <a href="../modules/_routerstrategy_.html#urlchangecallback" class="tsd-signature-type">URLChangeCallback</a></h5>
+									<h5>callback: <a href="../globals.html#urlchangecallback" class="tsd-signature-type">URLChangeCallback</a></h5>
 									<div class="tsd-comment tsd-typography">
 									</div>
 								</li>
@@ -1146,20 +1173,25 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="replacestate" class="tsd-anchor"></a>
-					<h3>replace<wbr>State</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> replace<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">replace<wbr>State<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">IDictionary</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#replacestate">replaceState</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/URLStrategy.ts#L94">src/URLStrategy.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L162">src/RouterStrategy.ts:162</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Replaces the current entry in the history stack with the new location.
+									This will navigate the screen to the new location.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1167,6 +1199,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">IDictionary</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1182,7 +1216,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#setmaxlisteners">setMaxListeners</a></p>
+								<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#setmaxlisteners">setMaxListeners</a></p>
 								<p>Overrides EventEmitter.setMaxListeners</p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:28</li>
@@ -1198,18 +1232,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="settitle" class="tsd-anchor"></a>
 					<h3>set<wbr>Title</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">set<wbr>Title<span class="tsd-signature-symbol">(</span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#settitle">setTitle</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/breautek/router/blob/f52686f/src/RouterStrategy.ts#L29">src/RouterStrategy.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/breautek/router/blob/829c79d/src/RouterStrategy.ts#L29">src/RouterStrategy.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1238,7 +1271,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_routerstrategy_.routerstrategy.html">RouterStrategy</a>.<a href="_routerstrategy_.routerstrategy.html#listenercount-1">listenerCount</a></p>
+								<p>Inherited from <a href="routerstrategy.html">RouterStrategy</a>.<a href="routerstrategy.html#listenercount-1">listenerCount</a></p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:17</li>
 								</ul>
@@ -1271,172 +1304,208 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_defaultstrategy_.html">&quot;<wbr>Default<wbr>Strategy&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_hashstrategy_.html">&quot;<wbr>Hash<wbr>Strategy&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_irouterstrategyclass_.html">&quot;IRouter<wbr>Strategy<wbr>Class&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_route_.html">&quot;<wbr>Route&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_routematcher_.html">&quot;<wbr>Route<wbr>Matcher&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_router_.html">&quot;<wbr>Router&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_routerstrategy_.html">&quot;<wbr>Router<wbr>Strategy&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_transitionslide_.html">&quot;<wbr>Transition<wbr>Slide&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_transitionstrategy_.html">&quot;<wbr>Transition<wbr>Strategy&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_urlparser_.html">&quot;URLParser&quot;</a>
-					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_urlstrategy_.html">&quot;URLStrategy&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_view_.html">&quot;<wbr>View&quot;</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="../enums/transitionslidedirection.html" class="tsd-kind-icon">Transition<wbr>Slide<wbr>Direction</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="hashstrategy.html" class="tsd-kind-icon">Hash<wbr>Strategy</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="route.html" class="tsd-kind-icon">Route</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="routematcher.html" class="tsd-kind-icon">Route<wbr>Matcher</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="router.html" class="tsd-kind-icon">Router</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_urlstrategy_.urlstrategy.html" class="tsd-kind-icon">URLStrategy</a>
+					<li class="current tsd-kind-class">
+						<a href="routerstrategy.html" class="tsd-kind-icon">Router<wbr>Strategy</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_urlstrategy_.urlstrategy.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="routerstrategy.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="_urlstrategy_.urlstrategy.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
+								<a href="routerstrategy.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_urlstrategy_.urlstrategy.html#_fireurlchange" class="tsd-kind-icon">_fireURLChange</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#addurlchangecallback" class="tsd-kind-icon">addURLChange<wbr>Callback</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#back" class="tsd-kind-icon">back</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#canback" class="tsd-kind-icon">can<wbr>Back</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#canforward" class="tsd-kind-icon">can<wbr>Forward</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_urlstrategy_.urlstrategy.html#cango" class="tsd-kind-icon">can<wbr>Go</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_urlstrategy_.urlstrategy.html#clear" class="tsd-kind-icon">clear</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="routerstrategy.html#_fireurlchange" class="tsd-kind-icon">_fireURLChange</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#emit" class="tsd-kind-icon">emit</a>
+								<a href="routerstrategy.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#addurlchangecallback" class="tsd-kind-icon">addURLChange<wbr>Callback</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#back" class="tsd-kind-icon">back</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#canback" class="tsd-kind-icon">can<wbr>Back</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#canforward" class="tsd-kind-icon">can<wbr>Forward</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#cango" class="tsd-kind-icon">can<wbr>Go</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#clear" class="tsd-kind-icon">clear</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#forward" class="tsd-kind-icon">forward</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_urlstrategy_.urlstrategy.html#gethistorylength" class="tsd-kind-icon">get<wbr>History<wbr>Length</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_urlstrategy_.urlstrategy.html#getlocation" class="tsd-kind-icon">get<wbr>Location</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_urlstrategy_.urlstrategy.html#getlocationat" class="tsd-kind-icon">get<wbr>Location<wbr>At</a>
+								<a href="routerstrategy.html#emit" class="tsd-kind-icon">emit</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
+								<a href="routerstrategy.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#getrouter" class="tsd-kind-icon">get<wbr>Router</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#forward" class="tsd-kind-icon">forward</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_urlstrategy_.urlstrategy.html#getscrollrestoration" class="tsd-kind-icon">get<wbr>Scroll<wbr>Restoration</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#gethistorylength" class="tsd-kind-icon">get<wbr>History<wbr>Length</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_urlstrategy_.urlstrategy.html#go" class="tsd-kind-icon">go</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#getlocation" class="tsd-kind-icon">get<wbr>Location</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#listeners" class="tsd-kind-icon">listeners</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#getlocationat" class="tsd-kind-icon">get<wbr>Location<wbr>At</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#off" class="tsd-kind-icon">off</a>
+								<a href="routerstrategy.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#getrouter" class="tsd-kind-icon">get<wbr>Router</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#getscrollrestoration" class="tsd-kind-icon">get<wbr>Scroll<wbr>Restoration</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#go" class="tsd-kind-icon">go</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#on" class="tsd-kind-icon">on</a>
+								<a href="routerstrategy.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#once" class="tsd-kind-icon">once</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_urlstrategy_.urlstrategy.html#peek" class="tsd-kind-icon">peek</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#peekback" class="tsd-kind-icon">peek<wbr>Back</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#peekforward" class="tsd-kind-icon">peek<wbr>Forward</a>
+								<a href="routerstrategy.html#listeners" class="tsd-kind-icon">listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
+								<a href="routerstrategy.html#off" class="tsd-kind-icon">off</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_urlstrategy_.urlstrategy.html#pushstate" class="tsd-kind-icon">push<wbr>State</a>
+								<a href="routerstrategy.html#on" class="tsd-kind-icon">on</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a>
+								<a href="routerstrategy.html#once" class="tsd-kind-icon">once</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#peek" class="tsd-kind-icon">peek</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#peekback" class="tsd-kind-icon">peek<wbr>Back</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#peekforward" class="tsd-kind-icon">peek<wbr>Forward</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
+								<a href="routerstrategy.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
+								<a href="routerstrategy.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#removeurlchangecallback" class="tsd-kind-icon">removeURLChange<wbr>Callback</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_urlstrategy_.urlstrategy.html#replacestate" class="tsd-kind-icon">replace<wbr>State</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#pushstate" class="tsd-kind-icon">push<wbr>State</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
+								<a href="routerstrategy.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_urlstrategy_.urlstrategy.html#settitle" class="tsd-kind-icon">set<wbr>Title</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="routerstrategy.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="routerstrategy.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#removeurlchangecallback" class="tsd-kind-icon">removeURLChange<wbr>Callback</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#replacestate" class="tsd-kind-icon">replace<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="routerstrategy.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="routerstrategy.html#settitle" class="tsd-kind-icon">set<wbr>Title</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="_urlstrategy_.urlstrategy.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a>
+								<a href="routerstrategy.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class">
+						<a href="transitionslide.html" class="tsd-kind-icon">Transition<wbr>Slide</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="transitionstrategy.html" class="tsd-kind-icon">Transition<wbr>Strategy</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="urlparser.html" class="tsd-kind-icon">URLParser</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="urlstrategy.html" class="tsd-kind-icon">URLStrategy</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="view.html" class="tsd-kind-icon">View</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/icomponentprops.html" class="tsd-kind-icon">IComponent<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ionnoroutefunction.html" class="tsd-kind-icon">IOn<wbr>NoRoute<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="../interfaces/irouteprops.html" class="tsd-kind-icon">IRoute<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iroutestate.html" class="tsd-kind-icon">IRoute<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/irouterprops.html" class="tsd-kind-icon">IRouter<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/irouterstate.html" class="tsd-kind-icon">IRouter<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/irouterstrategyclass.html" class="tsd-kind-icon">IRouter<wbr>Strategy<wbr>Class</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iurlparams.html" class="tsd-kind-icon">IURLParams</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iviewprops.html" class="tsd-kind-icon">IView<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#urlchangecallback" class="tsd-kind-icon">URLChange<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#defaultstrategy" class="tsd-kind-icon">Default<wbr>Strategy</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#event_url_change" class="tsd-kind-icon">EVENT_<wbr>URL_<wbr>CHANGE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#instance" class="tsd-kind-icon">instance</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#getrouter" class="tsd-kind-icon">get<wbr>Router</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
