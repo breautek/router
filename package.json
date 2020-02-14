@@ -10,7 +10,7 @@
     "build": "rollup -c rollup.config.js",
     "publish-beta": "npm publish --tag beta",
     "prepublishOnly": "npm run build && npm run docs",
-    "docs": "typedoc --excludePrivate --excludeNotExported --mode file -readme ./README.md --out ./docs ./src"
+    "docs": "typedoc --excludePrivate --excludeNotExported --includeVersion --mode file -readme ./README.md --out ./docs ./src --theme markdown"
   },
   "repository": {
     "type": "git",
@@ -84,6 +84,7 @@
     "ts-loader": "6.2.1",
     "ts-node": "8.6.2",
     "typedoc": "0.16.9",
+    "typedoc-plugin-markdown": "2.2.16",
     "typescript": "3.7.5",
     "url-loader": "3.0.0",
     "webpack": "4.41.6",
