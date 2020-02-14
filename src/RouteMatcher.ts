@@ -5,6 +5,16 @@ import {IComponentProps, IRouteProps} from './Route';
 import {RouterStrategy} from './RouterStrategy';
 
 /**
+ * Will be invoked when no routes are found. Default implementation is to simply return the `indexRoute`.
+ * @param {React.ReactElement} indexRoute The `ReactElement` of a `Route`
+ * @param {Array<React.ReactElement>} routes An array of `ReactElement` of `Route`
+ * @returns {React.ReactElement} An `ReactElement` of a `Route`
+ */
+export interface IOnNoRouteFunction {
+    (indexRoute: React.ReactElement, routes: Array<React.ReactElement>): React.ReactElement;
+}
+
+/**
  * This class is reponsible for determing which route to render
  * based on the URL and the route url patterns.
  */
@@ -15,14 +25,20 @@ export class RouteMatcher {
         this._strategy = routerStrategy;
     }
 
+    private _defaultNoRouteFunction(indexRoute: React.ReactElement, routes: Array<React.ReactElement>): React.ReactElement {
+        return indexRoute;
+    }
+
     /**
      * Matches the url to the appropriate renderable route
+     * 
      * @param url 
      * @param children 
      * @param base 
      * @param indexRoute 
+     * @param onNoRoute
      */
-    public match(url: string, children: Array<React.ReactElement>, base: string, indexRoute?: React.ReactElement): React.ReactElement {
+    public match(url: string, children: Array<React.ReactElement>, base: string, indexRoute?: React.ReactElement, onNoRoute?: IOnNoRouteFunction): React.ReactElement {
         let componentToRender: React.ReactElement = null;
         let params: IURLParams = null;
         for (let i: number = 0; i < children.length; i++) {
@@ -37,7 +53,7 @@ export class RouteMatcher {
         }
 
         if (!componentToRender) {
-            componentToRender = indexRoute;
+            componentToRender = (onNoRoute ? onNoRoute : this._defaultNoRouteFunction)(indexRoute, children);
         }
 
         if (!componentToRender) {

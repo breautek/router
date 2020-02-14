@@ -13,7 +13,7 @@ import {
     InnerView
 } from './env';
 
-import {Router, getRouter} from '../src/Router';
+import {Router, getRouter, IRouterProps} from '../src/Router';
 import {Route} from '../src/Route';
 import { RouterStrategy } from '../src/RouterStrategy';
 import {RouterWrapper} from './support/RouterWrapper';
@@ -31,10 +31,14 @@ var getTitle = function(): string {
 describe('@breautek/router', () => {
     let app: RouterWrapper;
 
+    let props: IRouterProps = {
+        component: TestApp
+    };
+
     const router = (): RouterWrapper => {
         if (!app) {
             app = Enzyme.mount<Router>(
-                <Router component={TestApp}>
+                <Router {...props}>
                     <Route key="page1" url="/page1" component={View1} index />
                     <Route key="page2" url="/page2" component={View2} />
                     <Route key="page3" url="/page3" component={View3} />
@@ -48,18 +52,70 @@ describe('@breautek/router', () => {
 
     beforeEach(() => {
         jasmineEnzyme();
-        // document.head.removeChild(document.head.getElementsByTagName('title')[0]);
-        window.location.hash = '/page1';
+        window.location.hash = '/';
         app = undefined;
+        props = {
+            component: TestApp
+        };
     });
 
-    it('It renders index page', (done) => {
-        let comp: RouterWrapper = router();
-        expect(comp.html()).toBe('<div class="app"><div class="View View1">View1</div></div>');
-        tick(() => {
-            expect(getTitle()).toBe('View1');
-            comp.unmount();
-            done();
+    describe('on no routes', () => {
+        it('It renders index page', (done) => {
+            let comp: RouterWrapper = router();
+            expect(comp.html()).toBe('<div class="app"><div class="View View1">View1</div></div>');
+            tick(() => {
+                expect(getTitle()).toBe('View1');
+                comp.unmount();
+                done();
+            });
+        });
+
+        it('renders index through onNoRoute hook', (done) => {
+            props.onNoRoute = (index: React.ReactElement, routes: React.ReactElement[]): React.ReactElement => {
+                return index;
+            };
+            spyOn(props, 'onNoRoute').and.callThrough();
+
+            let comp: RouterWrapper = router();
+            expect(comp.html()).toBe('<div class="app"><div class="View View1">View1</div></div>');
+            tick(() => {
+                expect(props.onNoRoute).toHaveBeenCalled();
+                expect(getTitle()).toBe('View1');
+                comp.unmount();
+                done();
+            });
+        });
+
+        it('renders null for index through onNoRoute hook', (done) => {
+            props.onNoRoute = (index: React.ReactElement, routes: React.ReactElement[]): React.ReactElement => {
+                return null;
+            };
+            spyOn(props, 'onNoRoute').and.callThrough();
+            spyOn(console, 'warn');
+
+            let comp: RouterWrapper = router();
+            expect(comp.html()).toBe('<div class="app"></div>');
+            tick(() => {
+                expect(props.onNoRoute).toHaveBeenCalled();
+                expect(console.warn).toHaveBeenCalledWith('No routes matched, and no index route available.');
+                comp.unmount();
+                done();
+            });
+        });
+
+        it('renders a different view for index through onNoRoute hook', (done) => {
+            props.onNoRoute = (index: React.ReactElement, routes: React.ReactElement[]): React.ReactElement => {
+                return routes[2]
+            };
+            spyOn(props, 'onNoRoute').and.callThrough();
+
+            let comp: RouterWrapper = router();
+            expect(comp.html()).toBe('<div class="app"><div class="View">View3</div></div>');
+            tick(() => {
+                expect(props.onNoRoute).toHaveBeenCalled();
+                comp.unmount();
+                done();
+            });
         });
     });
 
