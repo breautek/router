@@ -2,7 +2,11 @@
 
 import * as React from 'react';
 
-export class TestApp extends React.Component {
+interface ITestAppProps {
+    children: React.ReactElement[];
+}
+
+export class TestApp extends React.Component<ITestAppProps> {
     render() {
         return <div className="app">{this.props.children}</div>
     }

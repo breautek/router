@@ -27,7 +27,7 @@ export class URLStrategy extends RouterStrategy {
         this._stack = [];
         this._position = -1;
 
-        window.addEventListener('popstate', (ev) => {
+        window.addEventListener('popstate', () => {
             this._fireURLChange(this.getLocation());
         });
 
@@ -68,9 +68,7 @@ export class URLStrategy extends RouterStrategy {
         }
 
         this._position += to;
-        let url: string = this._stack[this._position];
-
-        this._navigate(url);
+        this._navigate(this._stack[this._position]);
     }
 
     public pushState(url: string, state?: IDictionary): void {
@@ -115,7 +113,7 @@ export class URLStrategy extends RouterStrategy {
         this._position = -1;
     }
 
-    private _navigate(url: string, replace: boolean = false) {
+    private _navigate(url: string, replace: boolean = false): void {
         if (replace) {
             window.history.replaceState({}, null, this._base + url);
         }

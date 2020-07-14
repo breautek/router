@@ -64,7 +64,7 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
     public render(): React.ReactNode {
         let cssClass: string = this.getCSSClass();
         return (
-            <div 
+            <div
                 className={`View${cssClass ? ' ' + cssClass : ''}`}
                 ref={(n) => { this._node = n; }}
                 style={this.getViewStyles()}

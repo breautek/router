@@ -4,7 +4,8 @@ module.exports = {
         "plugin:react/recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:@totalpave/recommendedTS"
+        "plugin:@totalpave/recommendedTS",
+        "plugin:@totalpave/recommendedReactTS"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -17,6 +18,11 @@ module.exports = {
         "@typescript-eslint",
         "@totalpave"
     ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
     "env": {
         "node": true,
         "jasmine": true

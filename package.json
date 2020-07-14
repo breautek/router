@@ -7,6 +7,7 @@
   "scripts": {
     "test": "karma start karma.config.js --single-run",
     "test:watch": "karma start karma.config.js",
+    "lint": "eslint --ext .ts,.tsx '?(src|spec)/**/*.?(ts|tsx)' --cache",
     "build": "rollup -c rollup.config.js",
     "publish-beta": "npm publish --tag beta",
     "prepublishOnly": "npm run build && npm run docs",
@@ -37,7 +38,7 @@
     "@babel/preset-react": "7.8.3",
     "@babel/register": "7.8.3",
     "@breautek/jasmine": "3.5.1",
-    "@totalpave/eslint-plugin": "2.3.3",
+    "@totalpave/eslint-plugin": "3.0.1",
     "@totalpave/karma-summary-reporter": "1.6.0",
     "@types/enzyme": "3.10.5",
     "@types/enzyme-adapter-react-16": "1.0.6",

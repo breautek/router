@@ -91,7 +91,7 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
     public UNSAFE_componentWillReceiveProps(nextProps: TRouterProps) {
         if (nextProps.strategy && (this.state.strategy instanceof nextProps.strategy)) {
             this.state.strategy.removeURLChangeCallback(this._onURLChange);
-            var strat = new nextProps.strategy(this);
+            let strat: RouterStrategy = new nextProps.strategy(this);
             strat.addURLChangeCallback(this._onURLChange);
             this.setState({
                 strategy: strat
@@ -120,13 +120,13 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
         if (
             this.state.shouldTransition && (
                 currentRoute.props.entryTransition || (
-                    this._lastRenderedRoute && 
+                    this._lastRenderedRoute &&
                     this._lastRenderedRoute.props.exitTransition
                 )
             )
         ) {
             this._awaitingTransition = true;
-            var exiting = null;
+            let exiting: React.ReactElement = null;
             if (this._lastRenderedRoute) {
                 exiting = React.cloneElement(this._lastRenderedRoute, {
                     ref : (node: View) => {
@@ -136,17 +136,17 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
             }
 
             // Incoming will always be safe to render, hence no defensive checks
-            var incoming = React.cloneElement(currentRoute, {
+            let incoming: React.ReactElement = React.cloneElement(currentRoute, {
                 ref : (node: View) => {
                     this._incomingNode = node;
                 }
             });
 
             if (Root) {
-                return <Root router={this.getRouterStrategy()} url={this.state.url}>{[exiting, incoming]}</Root>;
+                return <Root router={this.getRouterStrategy()} url={this.state.url}>{[ exiting, incoming ]}</Root>;
             }
             else {
-                return [exiting, incoming];
+                return [ exiting, incoming ];
             }
         }
         else {
@@ -156,7 +156,7 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
                 // currentRoute must be rendered as an array; because, exiting and incoming is rendered as an array.
                 // if currentRoute is not rendered as an array, a bug happens where the exiting screen is reloaded 
                 // calling the constructor again.
-                return <Root router={this.getRouterStrategy()} url={this.state.url}>{[currentRoute]}</Root>;
+                return <Root router={this.getRouterStrategy()} url={this.state.url}>{[ currentRoute ]}</Root>;
             }
             else {
                 return currentRoute;
@@ -240,14 +240,14 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
     /**
      * Gets the potential routes
      */
-    private _getChildren(): Array<React.ReactElement> {
-        let children: Array<React.ReactElement> = null;
+    private _getChildren(): React.ReactElement[] {
+        let children: React.ReactElement[] = null;
 
         if (this.props.children instanceof Array) {
             children = this.props.children as React.ReactElement[];
         }
         else {
-            children = [this.props.children as React.ReactElement];
+            children = [ this.props.children as React.ReactElement ];
         }
 
         return children;
@@ -257,9 +257,9 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
      * Finds the index route. Returns null if there are no indexed routes.
      */
     private _getIndexRoute(): React.ReactElement {
-        var children = this._getChildren();
-        for (var i = 0; i < children.length; i++) {
-            var child = children[i];
+        let children: React.ReactElement[] = this._getChildren();
+        for (let i: number = 0; i < children.length; i++) {
+            let child: React.ReactElement = children[i];
             if (child.props.index) {
                 return child;
             }

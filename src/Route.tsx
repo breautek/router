@@ -25,6 +25,7 @@ export interface IComponentProps {
     [key: string]: any;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface IRouteState {
 
 }
@@ -57,8 +58,8 @@ export class Route<TComponentProps extends IComponentProps = IComponentProps, TR
         }
 
         return (
-            <ViewComponent 
-                {...component.props.componentProps} 
+            <ViewComponent
+                {...component.props.componentProps}
                 ref={(node: React.Component) => {
                     this._node = node;
                 }}
@@ -68,8 +69,8 @@ export class Route<TComponentProps extends IComponentProps = IComponentProps, TR
         );
     }
 
-    private _getChildren(component: React.Component | React.ReactElement): Array<React.ReactElement> {
-        let children: Array<React.ReactElement> = null;
+    private _getChildren(component: React.Component | React.ReactElement): React.ReactElement[] {
+        let children: React.ReactElement[] = null;
 
         if (!component) {
             component = this;
@@ -83,7 +84,7 @@ export class Route<TComponentProps extends IComponentProps = IComponentProps, TR
             children = component.props.children as React.ReactElement[];
         }
         else {
-            children = [component.props.children as React.ReactElement];
+            children = [ component.props.children as React.ReactElement ];
         }
 
         return children;
