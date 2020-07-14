@@ -1,9 +1,9 @@
 {
   "name": "@breautek/router",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "description": "An alternate react router.",
   "main": "dist/router.js",
-  "types": "lib/api.d.ts",
+  "types": "dist/src/api.d.ts",
   "scripts": {
     "test": "karma start karma.config.js --single-run",
     "test:watch": "karma start karma.config.js",
