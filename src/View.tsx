@@ -1,9 +1,12 @@
 
 import * as React from 'react';
-import "./View.scss";
+
 import { RouterStrategy } from './RouterStrategy';
 import { IDictionary } from '@totalpave/interfaces';
 import { TransitionStrategy } from './TransitionStrategy';
+import { IViewStylesheet } from './IViewStylesheet';
+
+import "./View.scss";
 
 export interface IViewProps {
     router: RouterStrategy;
@@ -22,8 +25,18 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
         this._node = null;
     }
 
+    /**
+     * Return the CSS class on this view
+     */
     public getCSSClass() {
         return '';
+    }
+
+    /**
+     * Override to return a webpack API style stylesheet
+     */
+    public getViewStylesheet(): IViewStylesheet {
+        return null;
     }
 
     /**
@@ -33,12 +46,22 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
         this.getTitle().then((title: string) => {
             this.props.router.setTitle(title);
         });
+
+        let stylesheet: IViewStylesheet = this.getViewStylesheet();
+        if (stylesheet) {
+            stylesheet.use();
+        }
     }
 
     /**
      * @ignore
      */
-    public componentWillUnmount(): void {}
+    public componentWillUnmount(): void {
+        let stylesheet: IViewStylesheet = this.getViewStylesheet();
+        if (stylesheet) {
+            stylesheet.unuse();
+        }
+    }
 
     /**
      * Gets the underlying HTML node for this View
@@ -47,6 +70,9 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
         return this._node;
     }
 
+    /**
+     * Get the title of this view
+     */
     public async getTitle(): Promise<string> {
         return null;
     }
