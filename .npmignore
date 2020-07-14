@@ -9,3 +9,7 @@ test-context.js
 .babelrc
 tsconfig.json
 tsconfig-tests.json
+.travis.yml
+.eslintrc.js
+.nojekyll
+.eslintcache
