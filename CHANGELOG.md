@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.9.3 (September 9, 2020)
+- Replaced `UNSAFE_componentWillMount` with `componentDidMount`.
+
 ## 0.9.2 (February 7, 2020)
 - Fixed version code
 
