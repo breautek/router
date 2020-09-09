@@ -53,7 +53,7 @@ class Router extends Component {
         }
     }
 
-    UNSAFE_componentWillMount() {
+    componentDidMount() {
         instance = this;
         this.state.strategy.addURLChangeCallback(this._onURLChange);
     }
