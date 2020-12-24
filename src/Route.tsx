@@ -49,7 +49,8 @@ export class Route<TComponentProps extends IComponentProps = IComponentProps, TR
         let url: string = component.props.url;
         let base: string = component.props.base || '';
 
-        let ViewComponent: React.ReactType = component.props.component;
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        let ViewComponent: React.ElementType = component.props.component;
         let child: React.ReactNode;
 
         let routeComponent = component.props.matcher.match(url, this._getChildren(component), base);

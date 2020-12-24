@@ -28,7 +28,7 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
     /**
      * Return the CSS class on this view
      */
-    public getCSSClass() {
+    public getCSSClass(): string {
         return '';
     }
 

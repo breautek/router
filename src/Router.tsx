@@ -8,16 +8,6 @@ import { IRouterStrategyClass } from './IRouterStrategyClass';
 import {View} from './View';
 import {IOnNoRoute} from './IOnNoRoute';
 
-let instance: Router = null;
-
-export let getRouter = (): RouterStrategy => {
-    if (!instance) {
-        return null;
-    }
-
-    return instance.getRouterStrategy();
-}
-
 export interface IRouterProps {
     strategy?: IRouterStrategyClass;
     component: React.ComponentClass<any>;
@@ -39,9 +29,12 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
     private _incomingNode: View;
     private _exitingNode: View;
 
+    private static _instance: Router;
+
     public constructor(props: TRouterProps) {
         super(props);
 
+        // eslint-disable-next-line @typescript-eslint/naming-convention
         let Strategy: IRouterStrategyClass;
         if (!props.strategy) {
             Strategy = DefaultStrategy;
@@ -61,6 +54,14 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
         this._lastRenderedRoute = null;
         this._onURLChange = this._onURLChange.bind(this);
         this._matcher = new RouteMatcher(strategy);
+    }
+
+    public static getInstance(): RouterStrategy {
+        if (!Router._instance) {
+            return null;
+        }
+    
+        return Router._instance.getRouterStrategy();
     }
 
     /**
@@ -83,14 +84,14 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
     }
 
     public componentDidMount(): void {
-        instance = this;
+        Router._instance = this;
         this.state.strategy.addURLChangeCallback(this._onURLChange);
     }
 
     /**
      * @ignore
      */
-    public UNSAFE_componentWillReceiveProps(nextProps: TRouterProps) {
+    public UNSAFE_componentWillReceiveProps(nextProps: TRouterProps): void {
         if (nextProps.strategy && (this.state.strategy instanceof nextProps.strategy)) {
             this.state.strategy.removeURLChangeCallback(this._onURLChange);
             let strat: RouterStrategy = new nextProps.strategy(this);
@@ -104,8 +105,8 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
     /**
      * @ignore
      */
-    public componentWillUnmount() {
-        instance = null;
+    public componentWillUnmount(): void {
+        Router._instance = null;
         this.state.strategy.removeURLChangeCallback(this._onURLChange);
     }
 
@@ -114,6 +115,7 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
      */
     public render(): React.ReactNode {
         let currentRoute: React.ReactElement = this._matcher.match(this.state.url || '/', this._getChildren(), '', this._getIndexRoute(), this.props.onNoRoute);
+        // eslint-disable-next-line @typescript-eslint/naming-convention
         let Root: React.ElementType = null;
         if (this.props.component) {
             Root = this.props.component as unknown as React.ElementType;
@@ -269,4 +271,9 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
 
         return null;
     }
+}
+
+export let getRouter = (): RouterStrategy => {
+    console.warn('getRouter() is deprecated. use Router.getInstance() instead.');
+    return Router.getInstance();
 }

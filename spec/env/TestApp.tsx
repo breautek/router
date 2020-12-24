@@ -7,7 +7,7 @@ interface ITestAppProps {
 }
 
 export class TestApp extends React.Component<ITestAppProps> {
-    render() {
+    public render(): React.ReactNode {
         return <div className="app">{this.props.children}</div>
     }
 }

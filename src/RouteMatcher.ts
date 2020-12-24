@@ -43,8 +43,8 @@ export class RouteMatcher {
         let params: IURLParams = null;
         for (let i: number = 0; i < children.length; i++) {
             let route: React.ReactElement = children[i];
-            let allowPartialMatching: boolean = !!route.props.children;
-            let parser: URLParser = new URLParser(base + route.props.url, allowPartialMatching);
+            let shouldAllowPartialMatching: boolean = !!route.props.children;
+            let parser: URLParser = new URLParser(base + route.props.url, shouldAllowPartialMatching);
             params = parser.parse(url);
             if (params) {
                 componentToRender = route;

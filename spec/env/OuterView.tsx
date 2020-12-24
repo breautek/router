@@ -3,15 +3,15 @@ import * as React from 'react';
 import {View} from '../../src/View';
 
 export class OuterView extends View {
-    public getClassName() {
+    public getClassName(): string {
         return 'OuterView';
     }
 
-    public getTitle() {
+    public async getTitle(): Promise<string> {
         return Promise.resolve(this.getClassName());
     }
 
-    protected _renderView() {
+    protected _renderView(): React.ReactNode {
         return (
             <React.Fragment>
                 <div>Outer View</div>

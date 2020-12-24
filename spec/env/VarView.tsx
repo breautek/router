@@ -2,7 +2,8 @@
 import * as React from 'react';
 import {View, IViewProps} from '../../src/View';
 
-export let _instance: VarView;
+// eslint-disable-next-line no-use-before-define
+export let instance: VarView;
 
 export interface IVarViewProps extends IViewProps {
     [key: string]: any;
@@ -11,26 +12,26 @@ export interface IVarViewProps extends IViewProps {
 export class VarView extends View<IVarViewProps> {
     constructor(props: IVarViewProps) {
         super(props);
-        _instance = this;
+        instance = this;
     }
 
-    public getClassName() {
+    public getClassName(): string {
         return 'VarView';
     }
 
-    public getCSSClass() {
+    public getCSSClass(): string {
         return 'VarView';
     }
 
-    public getTitle() {
+    public async getTitle(): Promise<string> {
         return Promise.resolve(this.getClassName());
     }
 
-    public getProps() {
+    public getProps(): any {
         return this.props;
     }
 
-    protected _renderView() {
+    protected _renderView(): React.ReactNode {
         return <React.Fragment>VarView</React.Fragment>;
     }
 }
