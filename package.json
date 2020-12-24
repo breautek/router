@@ -93,7 +93,7 @@
   },
   "dependencies": {
     "@totalpave/interfaces": "1.0.0",
-    "@types/react": "16.9.17",
-    "@types/react-dom": "16.9.4"
+    "@types/react": "16.14.2",
+    "@types/react-dom": "16.9.10"
   }
 }
