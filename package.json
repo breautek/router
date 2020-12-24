@@ -85,7 +85,7 @@
     "style-loader": "1.1.2",
     "ts-loader": "6.2.1",
     "ts-node": "8.6.2",
-    "typedoc": "0.16.9",
+    "typedoc": "0.19.2",
     "typescript": "3.7.5",
     "url-loader": "3.0.0",
     "webpack": "4.41.6",
