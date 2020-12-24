@@ -80,7 +80,7 @@
     "rollup-plugin-sass": "1.2.2",
     "rollup-plugin-typescript2": "0.25.3",
     "sass-loader": "10.1.0",
-    "source-map-loader": "0.2.4",
+    "source-map-loader": "2.0.0",
     "style-loader": "1.1.2",
     "ts-loader": "8.0.12",
     "ts-node": "9.1.1",
