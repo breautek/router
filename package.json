@@ -46,7 +46,7 @@
     "@typescript-eslint/eslint-plugin": "2.19.2",
     "@typescript-eslint/parser": "2.19.2",
     "ajv": "6.11.0",
-    "babel-loader": "8.0.6",
+    "babel-loader": "8.2.2",
     "css-loader": "3.4.2",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.5",
