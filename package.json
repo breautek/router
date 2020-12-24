@@ -32,11 +32,11 @@
     "react-dom": ">=16.9.0 <17.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.8.4",
+    "@babel/core": "7.12.10",
     "@babel/plugin-syntax-dynamic-import": "7.8.3",
-    "@babel/preset-env": "7.8.4",
-    "@babel/preset-react": "7.8.3",
-    "@babel/register": "7.8.3",
+    "@babel/preset-env": "7.12.11",
+    "@babel/preset-react": "7.12.10",
+    "@babel/register": "7.12.10",
     "@breautek/jasmine": "3.5.1",
     "@totalpave/eslint-plugin": "3.0.1",
     "@totalpave/karma-summary-reporter": "1.6.0",
