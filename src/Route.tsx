@@ -5,7 +5,7 @@ import { RouterStrategy } from './RouterStrategy';
 
 export interface IRouteProps<T> {
     url: string;
-    component: React.ComponentClass;
+    component: React.ComponentClass<any>;
     index?: boolean;
     entryTransition?: any;
     exitTransition?: any;
