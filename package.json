@@ -11,7 +11,7 @@
     "build": "rollup -c rollup.config.js",
     "publish-beta": "npm publish --tag beta",
     "prepublishOnly": "npm run build && npm run docs",
-    "docs": "typedoc --excludePrivate --excludeNotExported --includeVersion --mode file -readme ./README.md --out ./docs ./src"
+    "docs": "typedoc --excludePrivate --includeVersion -readme ./README.md --out ./docs ./src"
   },
   "repository": {
     "type": "git",
