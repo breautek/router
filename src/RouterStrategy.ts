@@ -34,9 +34,11 @@ export abstract class RouterStrategy extends EventEmitter {
             document.head.appendChild(head);
         }
 
-        if (title && title.toString()) {
-            head.innerText = title.toString();
+        if (!title) {
+            title = '';
         }
+
+        head.innerText = title.toString();
     }
 
     /**

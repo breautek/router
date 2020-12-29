@@ -1,4 +1,7 @@
 
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+
 import * as React from 'react';
 
 import {DefaultStrategy} from './DefaultStrategy';

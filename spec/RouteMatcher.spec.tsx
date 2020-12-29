@@ -1,16 +1,16 @@
 
 import * as React from 'react';
+import renderer from 'react-test-renderer';
 import * as Enzyme from 'enzyme';
-import {Router} from '../src/Router';
 import {Route} from '../src/Route';
-import jasmineEnzyme from 'jasmine-enzyme';
+// import jasmineEnzyme from 'jasmine-enzyme';
 
 import {
     TestApp,
     VarView
 } from './env/index';
-import {_instance} from './env/VarView';
-import { getRouter } from '../src/Router';
+import {instance} from './env/VarView';
+import { Router } from '../src/Router';
 import { RouterStrategy } from '../src/RouterStrategy';
 import {RouterWrapper} from './support/RouterWrapper';
 
@@ -34,18 +34,18 @@ describe('RouteMatcher', () => {
     }
 
     beforeEach(() => {
-        jasmineEnzyme();
+        // jasmineEnzyme();
         window.location.hash = '/page1';
         app = undefined;
     });
     
     it('can pass vars', (done) => {
         let comp: RouterWrapper = router();
-        let r: RouterStrategy = getRouter();
+        let r: RouterStrategy = Router.getInstance();
         tick(() => {
             r.pushState('/page1/test');
             tick(() => {
-                expect(_instance.getProps().var).toBe('test');
+                expect(instance.getProps().var).toBe('test');
                 comp.unmount();
                 done();
             });
@@ -54,11 +54,11 @@ describe('RouteMatcher', () => {
 
     it('can pass vars with underscores', (done) => {
         let comp: RouterWrapper = router();
-        let r: RouterStrategy = getRouter();
+        let r: RouterStrategy = Router.getInstance();
         tick(() => {
             r.pushState('/page1/test_123');
             tick(() => {
-                expect(_instance.getProps().var).toBe('test_123');
+                expect(instance.getProps().var).toBe('test_123');
                 comp.unmount();
                 done();
             });
@@ -67,11 +67,11 @@ describe('RouteMatcher', () => {
 
     it('can pass vars with dots', (done) => {
         let comp: RouterWrapper = router();
-        let r: RouterStrategy = getRouter();
+        let r: RouterStrategy = Router.getInstance();
         tick(() => {
             r.pushState('/page1/3fQ.-64');
             tick(() => {
-                expect(_instance.getProps().var).toBe('3fQ.-64');
+                expect(instance.getProps().var).toBe('3fQ.-64');
                 comp.unmount();
                 done();
             });

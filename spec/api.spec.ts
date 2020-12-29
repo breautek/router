@@ -1,6 +1,6 @@
 
 import * as api from '../src/api';
-import {version} from '../package.json';
+import packageInfo from '../package.json';
 import {Router, getRouter} from '../src/Router';
 import {DefaultStrategy} from '../src/DefaultStrategy';
 import {HashStrategy} from '../src/HashStrategy';
@@ -12,9 +12,11 @@ import {TransitionStrategy} from '../src/TransitionStrategy';
 import {TransitionSlide} from '../src/TransitionSlide';
 import {View} from '../src/View';
 
+const VERSION: string = packageInfo.version;
+
 describe('Public API', () => {
     it('version', () => {
-        expect(api.version).toBe(version);
+        expect(api.version).toBe(VERSION);
     });
 
     it('Router', () => {

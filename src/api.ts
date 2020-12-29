@@ -3,6 +3,9 @@
  * @ignore
  */
 
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+
 export * from './Router';
 export * from './DefaultStrategy';
 export * from './HashStrategy';
@@ -14,4 +17,6 @@ export * from './TransitionStrategy';
 export * from './TransitionSlide';
 export * from './View';
 export * from './IViewStylesheet';
-export {version} from '../package.json';
+import packageInfo from '../package.json';
+const VERSION: string = packageInfo.version;
+export {VERSION as version}

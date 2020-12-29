@@ -1,7 +1,6 @@
 
 import * as React from 'react';
 import * as Enzyme from 'enzyme';
-import jasmineEnzyme from 'jasmine-enzyme';
 
 import {
     TestApp,
@@ -18,14 +17,12 @@ import {Route} from '../src/Route';
 import { RouterStrategy } from '../src/RouterStrategy';
 import {RouterWrapper} from './support/RouterWrapper';
 
-require('jasmine-sinon');
-
 var tick = function(fn: Function): void {
     setTimeout(fn, 1);
 };
 
 var getTitle = function(): string {
-    return document.head.getElementsByTagName('title')[0].innerHTML;
+    return document.head.getElementsByTagName('title')[0].innerText;
 }
 
 describe('@breautek/router', () => {
@@ -51,7 +48,7 @@ describe('@breautek/router', () => {
     }
 
     beforeEach(() => {
-        jasmineEnzyme();
+        // jasmineEnzyme();
         window.location.hash = '/';
         app = undefined;
         props = {
@@ -119,17 +116,17 @@ describe('@breautek/router', () => {
         });
     });
 
-    it('getRouter()', () => {
-        expect(getRouter()).toBe(null);
+    it('getInstance()', () => {
+        expect(Router.getInstance()).toBe(null);
         let comp: RouterWrapper = router();
-        expect(comp.instance().state.strategy).toBe(getRouter());
+        expect(comp.instance().state.strategy).toBe(Router.getInstance());
         comp.unmount();
     });
 
     it('can navigate pages', (done) => {
         let comp: RouterWrapper = router();
 
-        let r: RouterStrategy = getRouter();
+        let r: RouterStrategy = Router.getInstance();
         expect(r.getHistoryLength()).toBe(0);
         expect(r.canBack()).toBe(false);
 
@@ -174,7 +171,7 @@ describe('@breautek/router', () => {
                 </Router>
             );
     
-            let r: RouterStrategy = getRouter();
+            let r: RouterStrategy = Router.getInstance();
 
             tick(() => {
                 r.pushState('/outerView/innerView');
