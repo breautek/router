@@ -13,3 +13,10 @@ tsconfig-tests.json
 .eslintrc.js
 .nojekyll
 .eslintcache
+enzyme.js
+__mocks__
+*.tgz
+jest.config.ts
+./src
+*.map
+docs
