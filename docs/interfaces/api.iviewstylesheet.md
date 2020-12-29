@@ -1,0 +1,30 @@
+[@breautek/router - v1.0.0](../README.md) / [Exports](../modules.md) / [api](../modules/api.md) / IViewStylesheet
+
+# Interface: IViewStylesheet
+
+## Hierarchy
+
+* **IViewStylesheet**
+
+## Index
+
+### Properties
+
+* [unuse](api.iviewstylesheet.md#unuse)
+* [use](api.iviewstylesheet.md#use)
+
+## Properties
+
+### unuse
+
+• **unuse**: () => *void*
+
+Defined in: [src/IViewStylesheet.ts:4](https://github.com/breautek/router/blob/d7a4785/src/IViewStylesheet.ts#L4)
+
+___
+
+### use
+
+• **use**: () => *void*
+
+Defined in: [src/IViewStylesheet.ts:3](https://github.com/breautek/router/blob/d7a4785/src/IViewStylesheet.ts#L3)
