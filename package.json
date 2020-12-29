@@ -10,8 +10,11 @@
     "lint": "eslint --ext .ts,.tsx '?(src|spec)/**/*.?(ts|tsx)' --cache",
     "build": "rollup -c rollup.config.js",
     "publish-beta": "npm publish --tag beta",
-    "prepublishOnly": "npm run build && npm run docs",
-    "docs": "typedoc --excludePrivate --includeVersion -readme ./README.md --out ./docs ./src"
+    "prepublishOnly": "npm run build",
+    "changelog": "auto-changelog --output CHANGELOG.md -p --release-summary --ignore-commit-pattern chore",
+    "docs": "typedoc --excludePrivate --includeVersion -readme ./README.md --out ./docs ./src",
+    "version": "npm run-script build && npm run-script docs && npm run changelog && git add CHANGELOG.md docs && git commit -m 'chore: changelog'",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -45,6 +48,7 @@
     "@typescript-eslint/eslint-plugin": "4.11.1",
     "@typescript-eslint/parser": "4.11.1",
     "ajv": "7.0.2",
+    "auto-changelog": "2.2.1",
     "babel-jest": "26.6.3",
     "core-js": "3.8.1",
     "enzyme": "3.11.0",
