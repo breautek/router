@@ -2,9 +2,7 @@
 
 # Interface: IURLParams
 
-## Hierarchy
-
-* **IURLParams**
+[URLParser](../modules/urlparser.md).IURLParams
 
 ## Indexable
 

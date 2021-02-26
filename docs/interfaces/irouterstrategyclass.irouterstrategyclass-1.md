@@ -2,17 +2,15 @@
 
 # Interface: IRouterStrategyClass
 
+[IRouterStrategyClass](../modules/irouterstrategyclass.md).IRouterStrategyClass
+
 An interface to generically reference a [RouterStrategy](../modules/routerstrategy.md) class
 
-## Hierarchy
-
-* **IRouterStrategyClass**
-
-## Index
+## Table of contents
 
 ### Constructors
 
-* [constructor](irouterstrategyclass.irouterstrategyclass-1.md#constructor)
+- [constructor](irouterstrategyclass.irouterstrategyclass-1.md#constructor)
 
 ## Constructors
 
@@ -23,9 +21,9 @@ An interface to generically reference a [RouterStrategy](../modules/routerstrate
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `router` | [*Router*](../classes/router.router-1.md)<[*IRouterProps*](router.irouterprops.md)\> |
 
 **Returns:** [*RouterStrategy*](../classes/routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/IRouterStrategyClass.ts:8](https://github.com/breautek/router/blob/d7a4785/src/IRouterStrategyClass.ts#L8)
+Defined in: [src/IRouterStrategyClass.ts:8](https://github.com/breautek/router/blob/6c82bce/src/IRouterStrategyClass.ts#L8)

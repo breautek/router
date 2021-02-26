@@ -2,20 +2,18 @@
 
 # Class: TransitionStrategy
 
-## Hierarchy
+[api](../modules/api.md).TransitionStrategy
 
-* **TransitionStrategy**
-
-## Index
+## Table of contents
 
 ### Constructors
 
-* [constructor](api.transitionstrategy.md#constructor)
+- [constructor](api.transitionstrategy.md#constructor)
 
 ### Methods
 
-* [\_execute](api.transitionstrategy.md#_execute)
-* [execute](api.transitionstrategy.md#execute)
+- [\_execute](api.transitionstrategy.md#_execute)
+- [execute](api.transitionstrategy.md#execute)
 
 ## Constructors
 
@@ -25,30 +23,30 @@
 
 **Returns:** [*TransitionStrategy*](transitionstrategy.transitionstrategy-1.md)
 
-Defined in: [src/TransitionStrategy.ts:3](https://github.com/breautek/router/blob/d7a4785/src/TransitionStrategy.ts#L3)
+Defined in: [src/TransitionStrategy.ts:3](https://github.com/breautek/router/blob/6c82bce/src/TransitionStrategy.ts#L3)
 
 ## Methods
 
 ### \_execute
 
-▸ `Protected` `Abstract`**_execute**(`incomingView`: [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\>, `exitingView`: [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\>): *Promise*<*void*\>
+▸ `Protected` `Abstract`**_execute**(`incomingView`: [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\>, `exitingView`: [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\>): *Promise*<void\>
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `incomingView` | [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\> |
 `exitingView` | [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\> |
 
-**Returns:** *Promise*<*void*\>
+**Returns:** *Promise*<void\>
 
-Defined in: [src/TransitionStrategy.ts:25](https://github.com/breautek/router/blob/d7a4785/src/TransitionStrategy.ts#L25)
+Defined in: [src/TransitionStrategy.ts:25](https://github.com/breautek/router/blob/6c82bce/src/TransitionStrategy.ts#L25)
 
 ___
 
 ### execute
 
-▸ **execute**(`incomingView`: [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\>, `exitingView`: [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\>): *Promise*<*void*\>
+▸ **execute**(`incomingView`: [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\>, `exitingView`: [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\>): *Promise*<void\>
 
 Invoked when the transition should begin.
 The promise should only resolve once the transition
@@ -63,11 +61,11 @@ of the transition to avoid "snapping" behaviour.
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`incomingView` | [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\> |  |
-`exitingView` | [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\> |     |
+Name | Type |
+:------ | :------ |
+`incomingView` | [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\> |
+`exitingView` | [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\> |
 
-**Returns:** *Promise*<*void*\>
+**Returns:** *Promise*<void\>
 
-Defined in: [src/TransitionStrategy.ts:21](https://github.com/breautek/router/blob/d7a4785/src/TransitionStrategy.ts#L21)
+Defined in: [src/TransitionStrategy.ts:21](https://github.com/breautek/router/blob/6c82bce/src/TransitionStrategy.ts#L21)

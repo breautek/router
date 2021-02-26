@@ -2,12 +2,12 @@
 
 # Module: RouteMatcher
 
-## Index
+## Table of contents
 
 ### Classes
 
-* [RouteMatcher](../classes/routematcher.routematcher-1.md)
+- [RouteMatcher](../classes/routematcher.routematcher-1.md)
 
 ### Interfaces
 
-* [IOnNoRouteFunction](../interfaces/routematcher.ionnoroutefunction.md)
+- [IOnNoRouteFunction](../interfaces/routematcher.ionnoroutefunction.md)

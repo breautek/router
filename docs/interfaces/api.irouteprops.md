@@ -2,28 +2,26 @@
 
 # Interface: IRouteProps<T\>
 
+[api](../modules/api.md).IRouteProps
+
 ## Type parameters
 
 Name |
------- |
+:------ |
 `T` |
 
-## Hierarchy
-
-* **IRouteProps**
-
-## Index
+## Table of contents
 
 ### Properties
 
-* [base](api.irouteprops.md#base)
-* [component](api.irouteprops.md#component)
-* [componentProps](api.irouteprops.md#componentprops)
-* [entryTransition](api.irouteprops.md#entrytransition)
-* [exitTransition](api.irouteprops.md#exittransition)
-* [index](api.irouteprops.md#index)
-* [matcher](api.irouteprops.md#matcher)
-* [url](api.irouteprops.md#url)
+- [base](api.irouteprops.md#base)
+- [component](api.irouteprops.md#component)
+- [componentProps](api.irouteprops.md#componentprops)
+- [entryTransition](api.irouteprops.md#entrytransition)
+- [exitTransition](api.irouteprops.md#exittransition)
+- [index](api.irouteprops.md#index)
+- [matcher](api.irouteprops.md#matcher)
+- [url](api.irouteprops.md#url)
 
 ## Properties
 
@@ -31,15 +29,15 @@ Name |
 
 • `Optional` **base**: *string*
 
-Defined in: [src/Route.tsx:13](https://github.com/breautek/router/blob/d7a4785/src/Route.tsx#L13)
+Defined in: [src/Route.tsx:13](https://github.com/breautek/router/blob/6c82bce/src/Route.tsx#L13)
 
 ___
 
 ### component
 
-• **component**: *React.ComponentClass*<*any*\>
+• **component**: *ComponentClass*<any, any\>
 
-Defined in: [src/Route.tsx:8](https://github.com/breautek/router/blob/d7a4785/src/Route.tsx#L8)
+Defined in: [src/Route.tsx:8](https://github.com/breautek/router/blob/6c82bce/src/Route.tsx#L8)
 
 ___
 
@@ -47,7 +45,7 @@ ___
 
 • `Optional` **componentProps**: T
 
-Defined in: [src/Route.tsx:14](https://github.com/breautek/router/blob/d7a4785/src/Route.tsx#L14)
+Defined in: [src/Route.tsx:14](https://github.com/breautek/router/blob/6c82bce/src/Route.tsx#L14)
 
 ___
 
@@ -55,7 +53,7 @@ ___
 
 • `Optional` **entryTransition**: *any*
 
-Defined in: [src/Route.tsx:10](https://github.com/breautek/router/blob/d7a4785/src/Route.tsx#L10)
+Defined in: [src/Route.tsx:10](https://github.com/breautek/router/blob/6c82bce/src/Route.tsx#L10)
 
 ___
 
@@ -63,7 +61,7 @@ ___
 
 • `Optional` **exitTransition**: *any*
 
-Defined in: [src/Route.tsx:11](https://github.com/breautek/router/blob/d7a4785/src/Route.tsx#L11)
+Defined in: [src/Route.tsx:11](https://github.com/breautek/router/blob/6c82bce/src/Route.tsx#L11)
 
 ___
 
@@ -71,7 +69,7 @@ ___
 
 • `Optional` **index**: *boolean*
 
-Defined in: [src/Route.tsx:9](https://github.com/breautek/router/blob/d7a4785/src/Route.tsx#L9)
+Defined in: [src/Route.tsx:9](https://github.com/breautek/router/blob/6c82bce/src/Route.tsx#L9)
 
 ___
 
@@ -79,7 +77,7 @@ ___
 
 • `Optional` **matcher**: [*RouteMatcher*](../classes/routematcher.routematcher-1.md)
 
-Defined in: [src/Route.tsx:15](https://github.com/breautek/router/blob/d7a4785/src/Route.tsx#L15)
+Defined in: [src/Route.tsx:15](https://github.com/breautek/router/blob/6c82bce/src/Route.tsx#L15)
 
 ___
 
@@ -87,4 +85,4 @@ ___
 
 • **url**: *string*
 
-Defined in: [src/Route.tsx:7](https://github.com/breautek/router/blob/d7a4785/src/Route.tsx#L7)
+Defined in: [src/Route.tsx:7](https://github.com/breautek/router/blob/6c82bce/src/Route.tsx#L7)

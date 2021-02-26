@@ -2,22 +2,20 @@
 
 # Class: RouteMatcher
 
+[RouteMatcher](../modules/routematcher.md).RouteMatcher
+
 This class is reponsible for determing which route to render
 based on the URL and the route url patterns.
 
-## Hierarchy
-
-* **RouteMatcher**
-
-## Index
+## Table of contents
 
 ### Constructors
 
-* [constructor](routematcher.routematcher-1.md#constructor)
+- [constructor](routematcher.routematcher-1.md#constructor)
 
 ### Methods
 
-* [match](routematcher.routematcher-1.md#match)
+- [match](routematcher.routematcher-1.md#match)
 
 ## Constructors
 
@@ -28,31 +26,31 @@ based on the URL and the route url patterns.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `routerStrategy` | [*RouterStrategy*](routerstrategy.routerstrategy-1.md) |
 
 **Returns:** [*RouteMatcher*](routematcher.routematcher-1.md)
 
-Defined in: [src/RouteMatcher.ts:24](https://github.com/breautek/router/blob/d7a4785/src/RouteMatcher.ts#L24)
+Defined in: [src/RouteMatcher.ts:24](https://github.com/breautek/router/blob/6c82bce/src/RouteMatcher.ts#L24)
 
 ## Methods
 
 ### match
 
-▸ **match**(`url`: *string*, `children`: *ReactElement*<*any*, *string* \| (`props`: *any*) => *ReactElement*<*any*, *string* \| (props: any) =\> ReactElement<any, string \| ... \| (new (props: any) =\> Component<any, any, any\>)\> \| (`props`: *any*) => *Component*<*any*, *any*, *any*\>\> \| (`props`: *any*) => *Component*<*any*, *any*, *any*\>\>[], `base`: *string*, `indexRoute?`: *ReactElement*<*any*, *string* \| (`props`: *any*) => *ReactElement*<*any*, *string* \| (props: any) =\> ReactElement<any, string \| ... \| (new (props: any) =\> Component<any, any, any\>)\> \| (`props`: *any*) => *Component*<*any*, *any*, *any*\>\> \| (`props`: *any*) => *Component*<*any*, *any*, *any*\>\>, `onNoRoute?`: [*IOnNoRouteFunction*](../interfaces/routematcher.ionnoroutefunction.md)): *ReactElement*<*any*, *string* \| (`props`: *any*) => *ReactElement*<*any*, *string* \| (props: any) =\> ReactElement<any, string \| ... \| (new (props: any) =\> Component<any, any, any\>)\> \| (`props`: *any*) => *Component*<*any*, *any*, *any*\>\> \| (`props`: *any*) => *Component*<*any*, *any*, *any*\>\>
+▸ **match**(`url`: *string*, `children`: *ReactElement*<any, string \| (`props`: *any*) => *ReactElement*<any, any\> \| (`props`: *any*) => *Component*<any, any, any\>\>[], `base`: *string*, `indexRoute?`: *ReactElement*<any, string \| (`props`: *any*) => *ReactElement*<any, any\> \| (`props`: *any*) => *Component*<any, any, any\>\>, `onNoRoute?`: [*IOnNoRouteFunction*](../interfaces/routematcher.ionnoroutefunction.md)): *ReactElement*<any, string \| (`props`: *any*) => *ReactElement*<any, any\> \| (`props`: *any*) => *Component*<any, any, any\>\>
 
 Matches the url to the appropriate renderable route
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`url` | *string* |  |
-`children` | *ReactElement*<*any*, *string* \| (`props`: *any*) => *ReactElement*<*any*, *string* \| (props: any) =\> ReactElement<any, string \| ... \| (new (props: any) =\> Component<any, any, any\>)\> \| (`props`: *any*) => *Component*<*any*, *any*, *any*\>\> \| (`props`: *any*) => *Component*<*any*, *any*, *any*\>\>[] |  |
-`base` | *string* |  |
-`indexRoute?` | *ReactElement*<*any*, *string* \| (`props`: *any*) => *ReactElement*<*any*, *string* \| (props: any) =\> ReactElement<any, string \| ... \| (new (props: any) =\> Component<any, any, any\>)\> \| (`props`: *any*) => *Component*<*any*, *any*, *any*\>\> \| (`props`: *any*) => *Component*<*any*, *any*, *any*\>\> |  |
-`onNoRoute?` | [*IOnNoRouteFunction*](../interfaces/routematcher.ionnoroutefunction.md) |     |
+Name | Type |
+:------ | :------ |
+`url` | *string* |
+`children` | *ReactElement*<any, string \| (`props`: *any*) => *ReactElement*<any, any\> \| (`props`: *any*) => *Component*<any, any, any\>\>[] |
+`base` | *string* |
+`indexRoute?` | *ReactElement*<any, string \| (`props`: *any*) => *ReactElement*<any, any\> \| (`props`: *any*) => *Component*<any, any, any\>\> |
+`onNoRoute?` | [*IOnNoRouteFunction*](../interfaces/routematcher.ionnoroutefunction.md) |
 
-**Returns:** *ReactElement*<*any*, *string* \| (`props`: *any*) => *ReactElement*<*any*, *string* \| (props: any) =\> ReactElement<any, string \| ... \| (new (props: any) =\> Component<any, any, any\>)\> \| (`props`: *any*) => *Component*<*any*, *any*, *any*\>\> \| (`props`: *any*) => *Component*<*any*, *any*, *any*\>\>
+**Returns:** *ReactElement*<any, string \| (`props`: *any*) => *ReactElement*<any, any\> \| (`props`: *any*) => *Component*<any, any, any\>\>
 
-Defined in: [src/RouteMatcher.ts:43](https://github.com/breautek/router/blob/d7a4785/src/RouteMatcher.ts#L43)
+Defined in: [src/RouteMatcher.ts:43](https://github.com/breautek/router/blob/6c82bce/src/RouteMatcher.ts#L43)

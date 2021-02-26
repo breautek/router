@@ -2,21 +2,19 @@
 
 # Class: URLParser
 
+[URLParser](../modules/urlparser.md).URLParser
+
 Parses the URL for router paths and url-based variables.
 
-## Hierarchy
-
-* **URLParser**
-
-## Index
+## Table of contents
 
 ### Constructors
 
-* [constructor](urlparser.urlparser-1.md#constructor)
+- [constructor](urlparser.urlparser-1.md#constructor)
 
 ### Methods
 
-* [parse](urlparser.urlparser-1.md#parse)
+- [parse](urlparser.urlparser-1.md#parse)
 
 ## Constructors
 
@@ -27,13 +25,13 @@ Parses the URL for router paths and url-based variables.
 #### Parameters:
 
 Name | Type | Default value | Description |
------- | ------ | ------ | ------ |
+:------ | :------ | :------ | :------ |
 `pattern` | *string* | - | The URL pattern   |
 `allowPartialMatch` | *boolean* | false | If true, the pattern will match again urls that contains the pattern,                                      even if it isn't an exact match.                                      Defaults to false.    |
 
 **Returns:** [*URLParser*](urlparser.urlparser-1.md)
 
-Defined in: [src/URLParser.ts:11](https://github.com/breautek/router/blob/d7a4785/src/URLParser.ts#L11)
+Defined in: [src/URLParser.ts:11](https://github.com/breautek/router/blob/6c82bce/src/URLParser.ts#L11)
 
 ## Methods
 
@@ -47,9 +45,9 @@ Returns null the url does not match the pattern
 #### Parameters:
 
 Name | Type | Description |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `url` | *string* | The url to test    |
 
 **Returns:** [*IURLParams*](../interfaces/urlparser.iurlparams.md)
 
-Defined in: [src/URLParser.ts:31](https://github.com/breautek/router/blob/d7a4785/src/URLParser.ts#L31)
+Defined in: [src/URLParser.ts:31](https://github.com/breautek/router/blob/6c82bce/src/URLParser.ts#L31)

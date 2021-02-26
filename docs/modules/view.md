@@ -2,12 +2,12 @@
 
 # Module: View
 
-## Index
+## Table of contents
 
 ### Classes
 
-* [View](../classes/view.view-1.md)
+- [View](../classes/view.view-1.md)
 
 ### Interfaces
 
-* [IViewProps](../interfaces/view.iviewprops.md)
+- [IViewProps](../interfaces/view.iviewprops.md)

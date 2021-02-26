@@ -2,6 +2,8 @@
 
 # Class: URLStrategy
 
+[api](../modules/api.md).URLStrategy
+
 **`notice`** Using the URLStrategy requires some backend configuration
 to route URLs back to application.
 
@@ -15,55 +17,55 @@ to the application vs other resources such as images.
 
   ↳ **URLStrategy**
 
-## Index
+## Table of contents
 
 ### Constructors
 
-* [constructor](api.urlstrategy.md#constructor)
+- [constructor](api.urlstrategy.md#constructor)
 
 ### Properties
 
-* [defaultMaxListeners](api.urlstrategy.md#defaultmaxlisteners)
+- [defaultMaxListeners](api.urlstrategy.md#defaultmaxlisteners)
 
 ### Methods
 
-* [\_fireURLChange](api.urlstrategy.md#_fireurlchange)
-* [addListener](api.urlstrategy.md#addlistener)
-* [addURLChangeCallback](api.urlstrategy.md#addurlchangecallback)
-* [back](api.urlstrategy.md#back)
-* [canBack](api.urlstrategy.md#canback)
-* [canForward](api.urlstrategy.md#canforward)
-* [canGo](api.urlstrategy.md#cango)
-* [clear](api.urlstrategy.md#clear)
-* [emit](api.urlstrategy.md#emit)
-* [eventNames](api.urlstrategy.md#eventnames)
-* [forward](api.urlstrategy.md#forward)
-* [getHistoryLength](api.urlstrategy.md#gethistorylength)
-* [getLocation](api.urlstrategy.md#getlocation)
-* [getLocationAt](api.urlstrategy.md#getlocationat)
-* [getMaxListeners](api.urlstrategy.md#getmaxlisteners)
-* [getRouter](api.urlstrategy.md#getrouter)
-* [getScrollRestoration](api.urlstrategy.md#getscrollrestoration)
-* [go](api.urlstrategy.md#go)
-* [listenerCount](api.urlstrategy.md#listenercount)
-* [listeners](api.urlstrategy.md#listeners)
-* [off](api.urlstrategy.md#off)
-* [on](api.urlstrategy.md#on)
-* [once](api.urlstrategy.md#once)
-* [peek](api.urlstrategy.md#peek)
-* [peekBack](api.urlstrategy.md#peekback)
-* [peekForward](api.urlstrategy.md#peekforward)
-* [prependListener](api.urlstrategy.md#prependlistener)
-* [prependOnceListener](api.urlstrategy.md#prependoncelistener)
-* [pushState](api.urlstrategy.md#pushstate)
-* [rawListeners](api.urlstrategy.md#rawlisteners)
-* [removeAllListeners](api.urlstrategy.md#removealllisteners)
-* [removeListener](api.urlstrategy.md#removelistener)
-* [removeURLChangeCallback](api.urlstrategy.md#removeurlchangecallback)
-* [replaceState](api.urlstrategy.md#replacestate)
-* [setMaxListeners](api.urlstrategy.md#setmaxlisteners)
-* [setTitle](api.urlstrategy.md#settitle)
-* [listenerCount](api.urlstrategy.md#listenercount)
+- [\_fireURLChange](api.urlstrategy.md#_fireurlchange)
+- [addListener](api.urlstrategy.md#addlistener)
+- [addURLChangeCallback](api.urlstrategy.md#addurlchangecallback)
+- [back](api.urlstrategy.md#back)
+- [canBack](api.urlstrategy.md#canback)
+- [canForward](api.urlstrategy.md#canforward)
+- [canGo](api.urlstrategy.md#cango)
+- [clear](api.urlstrategy.md#clear)
+- [emit](api.urlstrategy.md#emit)
+- [eventNames](api.urlstrategy.md#eventnames)
+- [forward](api.urlstrategy.md#forward)
+- [getHistoryLength](api.urlstrategy.md#gethistorylength)
+- [getLocation](api.urlstrategy.md#getlocation)
+- [getLocationAt](api.urlstrategy.md#getlocationat)
+- [getMaxListeners](api.urlstrategy.md#getmaxlisteners)
+- [getRouter](api.urlstrategy.md#getrouter)
+- [getScrollRestoration](api.urlstrategy.md#getscrollrestoration)
+- [go](api.urlstrategy.md#go)
+- [listenerCount](api.urlstrategy.md#listenercount)
+- [listeners](api.urlstrategy.md#listeners)
+- [off](api.urlstrategy.md#off)
+- [on](api.urlstrategy.md#on)
+- [once](api.urlstrategy.md#once)
+- [peek](api.urlstrategy.md#peek)
+- [peekBack](api.urlstrategy.md#peekback)
+- [peekForward](api.urlstrategy.md#peekforward)
+- [prependListener](api.urlstrategy.md#prependlistener)
+- [prependOnceListener](api.urlstrategy.md#prependoncelistener)
+- [pushState](api.urlstrategy.md#pushstate)
+- [rawListeners](api.urlstrategy.md#rawlisteners)
+- [removeAllListeners](api.urlstrategy.md#removealllisteners)
+- [removeListener](api.urlstrategy.md#removelistener)
+- [removeURLChangeCallback](api.urlstrategy.md#removeurlchangecallback)
+- [replaceState](api.urlstrategy.md#replacestate)
+- [setMaxListeners](api.urlstrategy.md#setmaxlisteners)
+- [setTitle](api.urlstrategy.md#settitle)
+- [listenerCount](api.urlstrategy.md#listenercount)
 
 ## Constructors
 
@@ -73,15 +75,15 @@ to the application vs other resources such as images.
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`router` | [*Router*](router.router-1.md)<[*IRouterProps*](../interfaces/router.irouterprops.md)\> |     |
+Name | Type |
+:------ | :------ |
+`router` | [*Router*](router.router-1.md)<[*IRouterProps*](../interfaces/router.irouterprops.md)\> |
 
 **Returns:** [*URLStrategy*](urlstrategy.urlstrategy-1.md)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:17](https://github.com/breautek/router/blob/d7a4785/src/URLStrategy.ts#L17)
+Defined in: [src/URLStrategy.ts:17](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L17)
 
 ## Properties
 
@@ -103,15 +105,15 @@ Fires the [EVENT_URL_CHANGE](../modules/api.md#event_url_change) event
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`url` | *string* |     |
+Name | Type |
+:------ | :------ |
+`url` | *string* |
 
 **Returns:** *void*
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:175](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L175)
+Defined in: [src/RouterStrategy.ts:175](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L175)
 
 ___
 
@@ -122,7 +124,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -142,15 +144,15 @@ Listen for URL change events
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`callback` | [*URLChangeCallback*](../modules/routerstrategy.md#urlchangecallback) |     |
+Name | Type |
+:------ | :------ |
+`callback` | [*URLChangeCallback*](../modules/routerstrategy.md#urlchangecallback) |
 
 **Returns:** *void*
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:49](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L49)
+Defined in: [src/RouterStrategy.ts:49](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L49)
 
 ___
 
@@ -164,7 +166,7 @@ Navigate the history back one entry. This is an alias for [go(-1)](api.urlstrate
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:103](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L103)
+Defined in: [src/RouterStrategy.ts:103](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L103)
 
 ___
 
@@ -179,7 +181,7 @@ This is the same as calling [canGo(-1)](api.urlstrategy.md#cango)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:117](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L117)
+Defined in: [src/RouterStrategy.ts:117](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L117)
 
 ___
 
@@ -194,7 +196,7 @@ This is the same as calling [canGo(1)](api.urlstrategy.md#cango)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:125](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L125)
+Defined in: [src/RouterStrategy.ts:125](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L125)
 
 ___
 
@@ -205,14 +207,14 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `to` | *number* |
 
 **Returns:** *boolean*
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:61](https://github.com/breautek/router/blob/d7a4785/src/URLStrategy.ts#L61)
+Defined in: [src/URLStrategy.ts:61](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L61)
 
 ___
 
@@ -224,7 +226,7 @@ ___
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:111](https://github.com/breautek/router/blob/d7a4785/src/URLStrategy.ts#L111)
+Defined in: [src/URLStrategy.ts:111](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L111)
 
 ___
 
@@ -235,7 +237,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `...args` | *any*[] |
 
@@ -269,7 +271,7 @@ navigate the history forward one entry. This is an alias for [go(1)](api.urlstra
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:96](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L96)
+Defined in: [src/RouterStrategy.ts:96](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L96)
 
 ___
 
@@ -281,7 +283,7 @@ ___
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:49](https://github.com/breautek/router/blob/d7a4785/src/URLStrategy.ts#L49)
+Defined in: [src/URLStrategy.ts:49](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L49)
 
 ___
 
@@ -293,7 +295,7 @@ ___
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:41](https://github.com/breautek/router/blob/d7a4785/src/URLStrategy.ts#L41)
+Defined in: [src/URLStrategy.ts:41](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L41)
 
 ___
 
@@ -304,14 +306,14 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `position` | *number* |
 
 **Returns:** *string*
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:45](https://github.com/breautek/router/blob/d7a4785/src/URLStrategy.ts#L45)
+Defined in: [src/URLStrategy.ts:45](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L45)
 
 ___
 
@@ -337,7 +339,7 @@ Gets the router
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:20](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L20)
+Defined in: [src/RouterStrategy.ts:20](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L20)
 
 ___
 
@@ -349,7 +351,7 @@ ___
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:53](https://github.com/breautek/router/blob/d7a4785/src/URLStrategy.ts#L53)
+Defined in: [src/URLStrategy.ts:53](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L53)
 
 ___
 
@@ -360,14 +362,14 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `to` | *number* |
 
 **Returns:** *void*
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:65](https://github.com/breautek/router/blob/d7a4785/src/URLStrategy.ts#L65)
+Defined in: [src/URLStrategy.ts:65](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L65)
 
 ___
 
@@ -378,7 +380,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `type` | *string* \| *symbol* |
 
 **Returns:** *number*
@@ -396,7 +398,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 
 **Returns:** Function[]
@@ -414,7 +416,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -433,7 +435,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -452,7 +454,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -471,14 +473,14 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `to` | *number* |
 
 **Returns:** *string*
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:57](https://github.com/breautek/router/blob/d7a4785/src/URLStrategy.ts#L57)
+Defined in: [src/URLStrategy.ts:57](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L57)
 
 ___
 
@@ -493,7 +495,7 @@ This is the same as calling [peek(-1)](api.urlstrategy.md#peek)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:147](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L147)
+Defined in: [src/RouterStrategy.ts:147](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L147)
 
 ___
 
@@ -508,7 +510,7 @@ This is the same as calling [peek(1)](api.urlstrategy.md#peek)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:139](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L139)
+Defined in: [src/RouterStrategy.ts:139](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L139)
 
 ___
 
@@ -519,7 +521,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -538,7 +540,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -552,20 +554,20 @@ ___
 
 ### pushState
 
-▸ **pushState**(`url`: *string*, `state?`: *IDictionary*<*any*\>): *void*
+▸ **pushState**(`url`: *string*, `state?`: *IDictionary*<any\>): *void*
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `url` | *string* |
-`state?` | *IDictionary*<*any*\> |
+`state?` | *IDictionary*<any\> |
 
 **Returns:** *void*
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:74](https://github.com/breautek/router/blob/d7a4785/src/URLStrategy.ts#L74)
+Defined in: [src/URLStrategy.ts:74](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L74)
 
 ___
 
@@ -576,7 +578,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 
 **Returns:** Function[]
@@ -594,7 +596,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event?` | *string* \| *symbol* |
 
 **Returns:** [*URLStrategy*](urlstrategy.urlstrategy-1.md)
@@ -612,7 +614,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -632,34 +634,34 @@ Removes an existing listener
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`callback` | [*URLChangeCallback*](../modules/routerstrategy.md#urlchangecallback) |     |
+Name | Type |
+:------ | :------ |
+`callback` | [*URLChangeCallback*](../modules/routerstrategy.md#urlchangecallback) |
 
 **Returns:** *void*
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:58](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L58)
+Defined in: [src/RouterStrategy.ts:58](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L58)
 
 ___
 
 ### replaceState
 
-▸ **replaceState**(`url`: *string*, `state?`: *IDictionary*<*any*\>): *void*
+▸ **replaceState**(`url`: *string*, `state?`: *IDictionary*<any\>): *void*
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `url` | *string* |
-`state?` | *IDictionary*<*any*\> |
+`state?` | *IDictionary*<any\> |
 
 **Returns:** *void*
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:92](https://github.com/breautek/router/blob/d7a4785/src/URLStrategy.ts#L92)
+Defined in: [src/URLStrategy.ts:92](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L92)
 
 ___
 
@@ -670,7 +672,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `n` | *number* |
 
 **Returns:** [*URLStrategy*](urlstrategy.urlstrategy-1.md)
@@ -689,15 +691,15 @@ Sets the browser title
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`title` | *string* |     |
+Name | Type |
+:------ | :------ |
+`title` | *string* |
 
 **Returns:** *void*
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:29](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L29)
+Defined in: [src/RouterStrategy.ts:29](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L29)
 
 ___
 
@@ -710,7 +712,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `emitter` | *EventEmitter* |
 `event` | *string* \| *symbol* |
 

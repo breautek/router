@@ -2,8 +2,8 @@
 
 # Module: URLStrategy
 
-## Index
+## Table of contents
 
 ### Classes
 
-* [URLStrategy](../classes/urlstrategy.urlstrategy-1.md)
+- [URLStrategy](../classes/urlstrategy.urlstrategy-1.md)

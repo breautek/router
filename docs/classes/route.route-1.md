@@ -2,14 +2,16 @@
 
 # Class: Route<TComponentProps, TRouteProps, TRouteState\>
 
+[Route](../modules/route.md).Route
+
 This class represents a route that renders a [View](../modules/view.md) component
 
 ## Type parameters
 
 Name | Type | Default |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `TComponentProps` | [*IComponentProps*](../interfaces/route.icomponentprops.md) | [*IComponentProps*](../interfaces/route.icomponentprops.md) |
-`TRouteProps` | [*IRouteProps*](../interfaces/route.irouteprops.md)<TComponentProps\> | [*IRouteProps*](../interfaces/route.irouteprops.md)<TComponentProps\\> |
+`TRouteProps` | [*IRouteProps*](../interfaces/route.irouteprops.md)<TComponentProps\> | [*IRouteProps*](../interfaces/route.irouteprops.md)<TComponentProps\> |
 `TRouteState` | [*IRouteState*](../interfaces/route.iroutestate.md) | [*IRouteState*](../interfaces/route.iroutestate.md) |
 
 ## Hierarchy
@@ -18,37 +20,37 @@ Name | Type | Default |
 
   ↳ **Route**
 
-## Index
+## Table of contents
 
 ### Constructors
 
-* [constructor](route.route-1.md#constructor)
+- [constructor](route.route-1.md#constructor)
 
 ### Properties
 
-* [context](route.route-1.md#context)
-* [props](route.route-1.md#props)
-* [refs](route.route-1.md#refs)
-* [state](route.route-1.md#state)
-* [contextType](route.route-1.md#contexttype)
+- [context](route.route-1.md#context)
+- [props](route.route-1.md#props)
+- [refs](route.route-1.md#refs)
+- [state](route.route-1.md#state)
+- [contextType](route.route-1.md#contexttype)
 
 ### Methods
 
-* [UNSAFE\_componentWillMount](route.route-1.md#unsafe_componentwillmount)
-* [UNSAFE\_componentWillReceiveProps](route.route-1.md#unsafe_componentwillreceiveprops)
-* [UNSAFE\_componentWillUpdate](route.route-1.md#unsafe_componentwillupdate)
-* [componentDidCatch](route.route-1.md#componentdidcatch)
-* [componentDidMount](route.route-1.md#componentdidmount)
-* [componentDidUpdate](route.route-1.md#componentdidupdate)
-* [componentWillMount](route.route-1.md#componentwillmount)
-* [componentWillReceiveProps](route.route-1.md#componentwillreceiveprops)
-* [componentWillUnmount](route.route-1.md#componentwillunmount)
-* [componentWillUpdate](route.route-1.md#componentwillupdate)
-* [forceUpdate](route.route-1.md#forceupdate)
-* [getSnapshotBeforeUpdate](route.route-1.md#getsnapshotbeforeupdate)
-* [render](route.route-1.md#render)
-* [setState](route.route-1.md#setstate)
-* [shouldComponentUpdate](route.route-1.md#shouldcomponentupdate)
+- [UNSAFE\_componentWillMount](route.route-1.md#unsafe_componentwillmount)
+- [UNSAFE\_componentWillReceiveProps](route.route-1.md#unsafe_componentwillreceiveprops)
+- [UNSAFE\_componentWillUpdate](route.route-1.md#unsafe_componentwillupdate)
+- [componentDidCatch](route.route-1.md#componentdidcatch)
+- [componentDidMount](route.route-1.md#componentdidmount)
+- [componentDidUpdate](route.route-1.md#componentdidupdate)
+- [componentWillMount](route.route-1.md#componentwillmount)
+- [componentWillReceiveProps](route.route-1.md#componentwillreceiveprops)
+- [componentWillUnmount](route.route-1.md#componentwillunmount)
+- [componentWillUpdate](route.route-1.md#componentwillupdate)
+- [forceUpdate](route.route-1.md#forceupdate)
+- [getSnapshotBeforeUpdate](route.route-1.md#getsnapshotbeforeupdate)
+- [render](route.route-1.md#render)
+- [setState](route.route-1.md#setstate)
+- [shouldComponentUpdate](route.route-1.md#shouldcomponentupdate)
 
 ## Constructors
 
@@ -59,20 +61,20 @@ Name | Type | Default |
 #### Type parameters:
 
 Name | Type | Default |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `TComponentProps` | [*IComponentProps*](../interfaces/route.icomponentprops.md) | [*IComponentProps*](../interfaces/route.icomponentprops.md) |
-`TRouteProps` | [*IRouteProps*](../interfaces/route.irouteprops.md)<TComponentProps, TRouteProps\> | [*IRouteProps*](../interfaces/route.irouteprops.md)<TComponentProps\\> |
+`TRouteProps` | [*IRouteProps*](../interfaces/route.irouteprops.md)<TComponentProps, TRouteProps\> | [*IRouteProps*](../interfaces/route.irouteprops.md)<TComponentProps\> |
 `TRouteState` | [*IRouteState*](../interfaces/route.iroutestate.md) | [*IRouteState*](../interfaces/route.iroutestate.md) |
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `props` | TRouteProps |
 
 **Returns:** [*Route*](route.route-1.md)<TComponentProps, TRouteProps, TRouteState\>
 
-Defined in: [src/Route.tsx:37](https://github.com/breautek/router/blob/d7a4785/src/Route.tsx#L37)
+Defined in: [src/Route.tsx:37](https://github.com/breautek/router/blob/6c82bce/src/Route.tsx#L37)
 
 ## Properties
 
@@ -94,40 +96,42 @@ declare context: React.ContextType<typeof MyContext>
 
 **`see`** https://reactjs.org/docs/context.html
 
-Defined in: node_modules/@types/react/index.d.ts:476
+Defined in: node_modules/@types/react/index.d.ts:480
 
 ___
 
 ### props
 
-• `Readonly` **props**: *Readonly*<P\> & *Readonly*<{ `children?`: ReactNode  }\>
+• `Readonly` **props**: *Readonly*<TRouteProps\> & *Readonly*<{ `children?`: ReactNode  }\>
 
-Defined in: node_modules/@types/react/index.d.ts:501
+Defined in: node_modules/@types/react/index.d.ts:505
 
 ___
 
 ### refs
 
-• **refs**: { [key: string]: ReactInstance;  }
+• **refs**: *object*
 
 **`deprecated`** 
 https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs
 
-Defined in: node_modules/@types/react/index.d.ts:507
+#### Type declaration:
+
+Defined in: node_modules/@types/react/index.d.ts:511
 
 ___
 
 ### state
 
-• **state**: *Readonly*<S\>
+• **state**: *Readonly*<TRouteState\>
 
-Defined in: node_modules/@types/react/index.d.ts:502
+Defined in: node_modules/@types/react/index.d.ts:506
 
 ___
 
 ### contextType
 
-▪ `Optional` `Static` **contextType**: *Context*<*any*\>
+▪ `Optional` `Static` **contextType**: *Context*<any\>
 
 If set, `this.context` will be set at runtime to the current value of the given Context.
 
@@ -148,7 +152,7 @@ class Foo extends React.Component {
 
 **`see`** https://reactjs.org/docs/context.html#classcontexttype
 
-Defined in: node_modules/@types/react/index.d.ts:458
+Defined in: node_modules/@types/react/index.d.ts:462
 
 ## Methods
 
@@ -172,7 +176,7 @@ prevents this from being invoked.
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:712
+Defined in: node_modules/@types/react/index.d.ts:716
 
 ___
 
@@ -200,13 +204,13 @@ prevents this from being invoked.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `nextProps` | *Readonly*<TRouteProps\> |
 `nextContext` | *any* |
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:744
+Defined in: node_modules/@types/react/index.d.ts:748
 
 ___
 
@@ -232,14 +236,14 @@ prevents this from being invoked.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `nextProps` | *Readonly*<TRouteProps\> |
 `nextState` | *Readonly*<TRouteState\> |
 `nextContext` | *any* |
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:772
+Defined in: node_modules/@types/react/index.d.ts:776
 
 ___
 
@@ -253,13 +257,13 @@ the entire component tree to unmount.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `error` | Error |
 `errorInfo` | ErrorInfo |
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:641
+Defined in: node_modules/@types/react/index.d.ts:645
 
 ___
 
@@ -271,7 +275,7 @@ Called immediately after a component is mounted. Setting state here will trigger
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:620
+Defined in: node_modules/@types/react/index.d.ts:624
 
 ___
 
@@ -286,14 +290,14 @@ The snapshot is only present if getSnapshotBeforeUpdate is present and returns n
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `prevProps` | *Readonly*<TRouteProps\> |
 `prevState` | *Readonly*<TRouteState\> |
 `snapshot?` | *any* |
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:683
+Defined in: node_modules/@types/react/index.d.ts:687
 
 ___
 
@@ -315,7 +319,7 @@ prevents this from being invoked.
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:698
+Defined in: node_modules/@types/react/index.d.ts:702
 
 ___
 
@@ -341,13 +345,13 @@ prevents this from being invoked.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `nextProps` | *Readonly*<TRouteProps\> |
 `nextContext` | *any* |
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:727
+Defined in: node_modules/@types/react/index.d.ts:731
 
 ___
 
@@ -360,7 +364,7 @@ cancelled network requests, or cleaning up any DOM elements created in `componen
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:636
+Defined in: node_modules/@types/react/index.d.ts:640
 
 ___
 
@@ -384,14 +388,14 @@ prevents this from being invoked.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `nextProps` | *Readonly*<TRouteProps\> |
 `nextState` | *Readonly*<TRouteState\> |
 `nextContext` | *any* |
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:757
+Defined in: node_modules/@types/react/index.d.ts:761
 
 ___
 
@@ -402,12 +406,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `callback?` | () => *void* |
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:493
+Defined in: node_modules/@types/react/index.d.ts:497
 
 ___
 
@@ -425,13 +429,13 @@ lifecycle events from running.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `prevProps` | *Readonly*<TRouteProps\> |
 `prevState` | *Readonly*<TRouteState\> |
 
 **Returns:** *any*
 
-Defined in: node_modules/@types/react/index.d.ts:677
+Defined in: node_modules/@types/react/index.d.ts:681
 
 ___
 
@@ -441,7 +445,7 @@ ___
 
 **Returns:** ReactNode
 
-Defined in: [src/Route.tsx:44](https://github.com/breautek/router/blob/d7a4785/src/Route.tsx#L44)
+Defined in: [src/Route.tsx:44](https://github.com/breautek/router/blob/6c82bce/src/Route.tsx#L44)
 
 ___
 
@@ -452,19 +456,19 @@ ___
 #### Type parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `K` | *string* \| *number* \| *symbol* |
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `state` | TRouteState \| (`prevState`: *Readonly*<TRouteState\>, `props`: *Readonly*<TRouteProps\>) => TRouteState \| *Pick*<TRouteState, K\> \| *Pick*<TRouteState, K\> |
 `callback?` | () => *void* |
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:488
+Defined in: node_modules/@types/react/index.d.ts:492
 
 ___
 
@@ -484,11 +488,11 @@ and `componentDidUpdate` will not be called.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `nextProps` | *Readonly*<TRouteProps\> |
 `nextState` | *Readonly*<TRouteState\> |
 `nextContext` | *any* |
 
 **Returns:** *boolean*
 
-Defined in: node_modules/@types/react/index.d.ts:631
+Defined in: node_modules/@types/react/index.d.ts:635

@@ -2,6 +2,4 @@
 
 # Interface: IRouteState
 
-## Hierarchy
-
-* **IRouteState**
+[api](../modules/api.md).IRouteState

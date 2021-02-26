@@ -2,8 +2,8 @@
 
 # Module: IOnNoRoute
 
-## Index
+## Table of contents
 
 ### Interfaces
 
-* [IOnNoRoute](../interfaces/ionnoroute.ionnoroute-1.md)
+- [IOnNoRoute](../interfaces/ionnoroute.ionnoroute-1.md)

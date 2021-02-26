@@ -2,6 +2,8 @@
 
 # Class: HashStrategy
 
+[HashStrategy](../modules/hashstrategy.md).HashStrategy
+
 A [RouterStrategy](../modules/routerstrategy.md) that manages a history stack using inline pound symbols `#`.
 URLs will have a starting point `/#/`, as a default base.
 
@@ -14,55 +16,55 @@ For example, if you [pushState("mylink")](hashstrategy.hashstrategy-1.md#pushsta
 
   ↳ **HashStrategy**
 
-## Index
+## Table of contents
 
 ### Constructors
 
-* [constructor](hashstrategy.hashstrategy-1.md#constructor)
+- [constructor](hashstrategy.hashstrategy-1.md#constructor)
 
 ### Properties
 
-* [defaultMaxListeners](hashstrategy.hashstrategy-1.md#defaultmaxlisteners)
+- [defaultMaxListeners](hashstrategy.hashstrategy-1.md#defaultmaxlisteners)
 
 ### Methods
 
-* [\_fireURLChange](hashstrategy.hashstrategy-1.md#_fireurlchange)
-* [addListener](hashstrategy.hashstrategy-1.md#addlistener)
-* [addURLChangeCallback](hashstrategy.hashstrategy-1.md#addurlchangecallback)
-* [back](hashstrategy.hashstrategy-1.md#back)
-* [canBack](hashstrategy.hashstrategy-1.md#canback)
-* [canForward](hashstrategy.hashstrategy-1.md#canforward)
-* [canGo](hashstrategy.hashstrategy-1.md#cango)
-* [clear](hashstrategy.hashstrategy-1.md#clear)
-* [emit](hashstrategy.hashstrategy-1.md#emit)
-* [eventNames](hashstrategy.hashstrategy-1.md#eventnames)
-* [forward](hashstrategy.hashstrategy-1.md#forward)
-* [getHistoryLength](hashstrategy.hashstrategy-1.md#gethistorylength)
-* [getLocation](hashstrategy.hashstrategy-1.md#getlocation)
-* [getLocationAt](hashstrategy.hashstrategy-1.md#getlocationat)
-* [getMaxListeners](hashstrategy.hashstrategy-1.md#getmaxlisteners)
-* [getRouter](hashstrategy.hashstrategy-1.md#getrouter)
-* [getScrollRestoration](hashstrategy.hashstrategy-1.md#getscrollrestoration)
-* [go](hashstrategy.hashstrategy-1.md#go)
-* [listenerCount](hashstrategy.hashstrategy-1.md#listenercount)
-* [listeners](hashstrategy.hashstrategy-1.md#listeners)
-* [off](hashstrategy.hashstrategy-1.md#off)
-* [on](hashstrategy.hashstrategy-1.md#on)
-* [once](hashstrategy.hashstrategy-1.md#once)
-* [peek](hashstrategy.hashstrategy-1.md#peek)
-* [peekBack](hashstrategy.hashstrategy-1.md#peekback)
-* [peekForward](hashstrategy.hashstrategy-1.md#peekforward)
-* [prependListener](hashstrategy.hashstrategy-1.md#prependlistener)
-* [prependOnceListener](hashstrategy.hashstrategy-1.md#prependoncelistener)
-* [pushState](hashstrategy.hashstrategy-1.md#pushstate)
-* [rawListeners](hashstrategy.hashstrategy-1.md#rawlisteners)
-* [removeAllListeners](hashstrategy.hashstrategy-1.md#removealllisteners)
-* [removeListener](hashstrategy.hashstrategy-1.md#removelistener)
-* [removeURLChangeCallback](hashstrategy.hashstrategy-1.md#removeurlchangecallback)
-* [replaceState](hashstrategy.hashstrategy-1.md#replacestate)
-* [setMaxListeners](hashstrategy.hashstrategy-1.md#setmaxlisteners)
-* [setTitle](hashstrategy.hashstrategy-1.md#settitle)
-* [listenerCount](hashstrategy.hashstrategy-1.md#listenercount)
+- [\_fireURLChange](hashstrategy.hashstrategy-1.md#_fireurlchange)
+- [addListener](hashstrategy.hashstrategy-1.md#addlistener)
+- [addURLChangeCallback](hashstrategy.hashstrategy-1.md#addurlchangecallback)
+- [back](hashstrategy.hashstrategy-1.md#back)
+- [canBack](hashstrategy.hashstrategy-1.md#canback)
+- [canForward](hashstrategy.hashstrategy-1.md#canforward)
+- [canGo](hashstrategy.hashstrategy-1.md#cango)
+- [clear](hashstrategy.hashstrategy-1.md#clear)
+- [emit](hashstrategy.hashstrategy-1.md#emit)
+- [eventNames](hashstrategy.hashstrategy-1.md#eventnames)
+- [forward](hashstrategy.hashstrategy-1.md#forward)
+- [getHistoryLength](hashstrategy.hashstrategy-1.md#gethistorylength)
+- [getLocation](hashstrategy.hashstrategy-1.md#getlocation)
+- [getLocationAt](hashstrategy.hashstrategy-1.md#getlocationat)
+- [getMaxListeners](hashstrategy.hashstrategy-1.md#getmaxlisteners)
+- [getRouter](hashstrategy.hashstrategy-1.md#getrouter)
+- [getScrollRestoration](hashstrategy.hashstrategy-1.md#getscrollrestoration)
+- [go](hashstrategy.hashstrategy-1.md#go)
+- [listenerCount](hashstrategy.hashstrategy-1.md#listenercount)
+- [listeners](hashstrategy.hashstrategy-1.md#listeners)
+- [off](hashstrategy.hashstrategy-1.md#off)
+- [on](hashstrategy.hashstrategy-1.md#on)
+- [once](hashstrategy.hashstrategy-1.md#once)
+- [peek](hashstrategy.hashstrategy-1.md#peek)
+- [peekBack](hashstrategy.hashstrategy-1.md#peekback)
+- [peekForward](hashstrategy.hashstrategy-1.md#peekforward)
+- [prependListener](hashstrategy.hashstrategy-1.md#prependlistener)
+- [prependOnceListener](hashstrategy.hashstrategy-1.md#prependoncelistener)
+- [pushState](hashstrategy.hashstrategy-1.md#pushstate)
+- [rawListeners](hashstrategy.hashstrategy-1.md#rawlisteners)
+- [removeAllListeners](hashstrategy.hashstrategy-1.md#removealllisteners)
+- [removeListener](hashstrategy.hashstrategy-1.md#removelistener)
+- [removeURLChangeCallback](hashstrategy.hashstrategy-1.md#removeurlchangecallback)
+- [replaceState](hashstrategy.hashstrategy-1.md#replacestate)
+- [setMaxListeners](hashstrategy.hashstrategy-1.md#setmaxlisteners)
+- [setTitle](hashstrategy.hashstrategy-1.md#settitle)
+- [listenerCount](hashstrategy.hashstrategy-1.md#listenercount)
 
 ## Constructors
 
@@ -73,14 +75,14 @@ For example, if you [pushState("mylink")](hashstrategy.hashstrategy-1.md#pushsta
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `router` | [*Router*](router.router-1.md)<[*IRouterProps*](../interfaces/router.irouterprops.md)\> |
 
 **Returns:** [*HashStrategy*](hashstrategy.hashstrategy-1.md)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:16](https://github.com/breautek/router/blob/d7a4785/src/HashStrategy.ts#L16)
+Defined in: [src/HashStrategy.ts:16](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L16)
 
 ## Properties
 
@@ -102,15 +104,15 @@ Fires the [EVENT_URL_CHANGE](../modules/routerstrategy.md#event_url_change) even
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`url` | *string* |     |
+Name | Type |
+:------ | :------ |
+`url` | *string* |
 
 **Returns:** *void*
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:175](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L175)
+Defined in: [src/RouterStrategy.ts:175](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L175)
 
 ___
 
@@ -121,7 +123,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -141,15 +143,15 @@ Listen for URL change events
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`callback` | [*URLChangeCallback*](../modules/routerstrategy.md#urlchangecallback) |     |
+Name | Type |
+:------ | :------ |
+`callback` | [*URLChangeCallback*](../modules/routerstrategy.md#urlchangecallback) |
 
 **Returns:** *void*
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:49](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L49)
+Defined in: [src/RouterStrategy.ts:49](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L49)
 
 ___
 
@@ -163,7 +165,7 @@ Navigate the history back one entry. This is an alias for [go(-1)](hashstrategy.
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:103](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L103)
+Defined in: [src/RouterStrategy.ts:103](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L103)
 
 ___
 
@@ -178,7 +180,7 @@ This is the same as calling [canGo(-1)](hashstrategy.hashstrategy-1.md#cango)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:117](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L117)
+Defined in: [src/RouterStrategy.ts:117](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L117)
 
 ___
 
@@ -193,7 +195,7 @@ This is the same as calling [canGo(1)](hashstrategy.hashstrategy-1.md#cango)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:125](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L125)
+Defined in: [src/RouterStrategy.ts:125](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L125)
 
 ___
 
@@ -204,14 +206,14 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `to` | *number* |
 
 **Returns:** *boolean*
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:55](https://github.com/breautek/router/blob/d7a4785/src/HashStrategy.ts#L55)
+Defined in: [src/HashStrategy.ts:55](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L55)
 
 ___
 
@@ -223,7 +225,7 @@ ___
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:107](https://github.com/breautek/router/blob/d7a4785/src/HashStrategy.ts#L107)
+Defined in: [src/HashStrategy.ts:107](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L107)
 
 ___
 
@@ -234,7 +236,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `...args` | *any*[] |
 
@@ -268,7 +270,7 @@ navigate the history forward one entry. This is an alias for [go(1)](hashstrateg
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:96](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L96)
+Defined in: [src/RouterStrategy.ts:96](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L96)
 
 ___
 
@@ -280,7 +282,7 @@ ___
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:47](https://github.com/breautek/router/blob/d7a4785/src/HashStrategy.ts#L47)
+Defined in: [src/HashStrategy.ts:47](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L47)
 
 ___
 
@@ -292,7 +294,7 @@ ___
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:39](https://github.com/breautek/router/blob/d7a4785/src/HashStrategy.ts#L39)
+Defined in: [src/HashStrategy.ts:39](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L39)
 
 ___
 
@@ -303,14 +305,14 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `position` | *number* |
 
 **Returns:** *string*
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:43](https://github.com/breautek/router/blob/d7a4785/src/HashStrategy.ts#L43)
+Defined in: [src/HashStrategy.ts:43](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L43)
 
 ___
 
@@ -336,7 +338,7 @@ Gets the router
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:20](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L20)
+Defined in: [src/RouterStrategy.ts:20](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L20)
 
 ___
 
@@ -348,7 +350,7 @@ ___
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:51](https://github.com/breautek/router/blob/d7a4785/src/HashStrategy.ts#L51)
+Defined in: [src/HashStrategy.ts:51](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L51)
 
 ___
 
@@ -359,14 +361,14 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `to` | *number* |
 
 **Returns:** *void*
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:63](https://github.com/breautek/router/blob/d7a4785/src/HashStrategy.ts#L63)
+Defined in: [src/HashStrategy.ts:63](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L63)
 
 ___
 
@@ -377,7 +379,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `type` | *string* \| *symbol* |
 
 **Returns:** *number*
@@ -395,7 +397,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 
 **Returns:** Function[]
@@ -413,7 +415,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -432,7 +434,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -451,7 +453,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -470,14 +472,14 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `to` | *number* |
 
 **Returns:** *string*
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:59](https://github.com/breautek/router/blob/d7a4785/src/HashStrategy.ts#L59)
+Defined in: [src/HashStrategy.ts:59](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L59)
 
 ___
 
@@ -492,7 +494,7 @@ This is the same as calling [peek(-1)](hashstrategy.hashstrategy-1.md#peek)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:147](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L147)
+Defined in: [src/RouterStrategy.ts:147](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L147)
 
 ___
 
@@ -507,7 +509,7 @@ This is the same as calling [peek(1)](hashstrategy.hashstrategy-1.md#peek)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:139](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L139)
+Defined in: [src/RouterStrategy.ts:139](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L139)
 
 ___
 
@@ -518,7 +520,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -537,7 +539,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -551,20 +553,20 @@ ___
 
 ### pushState
 
-▸ **pushState**(`url`: *string*, `state?`: *IDictionary*<*any*\>): *void*
+▸ **pushState**(`url`: *string*, `state?`: *IDictionary*<any\>): *void*
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `url` | *string* |
-`state?` | *IDictionary*<*any*\> |
+`state?` | *IDictionary*<any\> |
 
 **Returns:** *void*
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:74](https://github.com/breautek/router/blob/d7a4785/src/HashStrategy.ts#L74)
+Defined in: [src/HashStrategy.ts:74](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L74)
 
 ___
 
@@ -575,7 +577,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 
 **Returns:** Function[]
@@ -593,7 +595,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event?` | *string* \| *symbol* |
 
 **Returns:** [*HashStrategy*](hashstrategy.hashstrategy-1.md)
@@ -611,7 +613,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -631,34 +633,34 @@ Removes an existing listener
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`callback` | [*URLChangeCallback*](../modules/routerstrategy.md#urlchangecallback) |     |
+Name | Type |
+:------ | :------ |
+`callback` | [*URLChangeCallback*](../modules/routerstrategy.md#urlchangecallback) |
 
 **Returns:** *void*
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:58](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L58)
+Defined in: [src/RouterStrategy.ts:58](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L58)
 
 ___
 
 ### replaceState
 
-▸ **replaceState**(`url`: *string*, `state?`: *IDictionary*<*any*\>): *void*
+▸ **replaceState**(`url`: *string*, `state?`: *IDictionary*<any\>): *void*
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `url` | *string* |
-`state?` | *IDictionary*<*any*\> |
+`state?` | *IDictionary*<any\> |
 
 **Returns:** *void*
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:92](https://github.com/breautek/router/blob/d7a4785/src/HashStrategy.ts#L92)
+Defined in: [src/HashStrategy.ts:92](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L92)
 
 ___
 
@@ -669,7 +671,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `n` | *number* |
 
 **Returns:** [*HashStrategy*](hashstrategy.hashstrategy-1.md)
@@ -688,15 +690,15 @@ Sets the browser title
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`title` | *string* |     |
+Name | Type |
+:------ | :------ |
+`title` | *string* |
 
 **Returns:** *void*
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:29](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L29)
+Defined in: [src/RouterStrategy.ts:29](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L29)
 
 ___
 
@@ -709,7 +711,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `emitter` | *EventEmitter* |
 `event` | *string* \| *symbol* |
 

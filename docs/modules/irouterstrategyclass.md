@@ -2,8 +2,8 @@
 
 # Module: IRouterStrategyClass
 
-## Index
+## Table of contents
 
 ### Interfaces
 
-* [IRouterStrategyClass](../interfaces/irouterstrategyclass.irouterstrategyclass-1.md)
+- [IRouterStrategyClass](../interfaces/irouterstrategyclass.irouterstrategyclass-1.md)

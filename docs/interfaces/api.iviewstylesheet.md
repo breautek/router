@@ -2,16 +2,14 @@
 
 # Interface: IViewStylesheet
 
-## Hierarchy
+[api](../modules/api.md).IViewStylesheet
 
-* **IViewStylesheet**
-
-## Index
+## Table of contents
 
 ### Properties
 
-* [unuse](api.iviewstylesheet.md#unuse)
-* [use](api.iviewstylesheet.md#use)
+- [unuse](api.iviewstylesheet.md#unuse)
+- [use](api.iviewstylesheet.md#use)
 
 ## Properties
 
@@ -19,7 +17,15 @@
 
 • **unuse**: () => *void*
 
-Defined in: [src/IViewStylesheet.ts:4](https://github.com/breautek/router/blob/d7a4785/src/IViewStylesheet.ts#L4)
+#### Type declaration:
+
+▸ (): *void*
+
+**Returns:** *void*
+
+Defined in: [src/IViewStylesheet.ts:4](https://github.com/breautek/router/blob/6c82bce/src/IViewStylesheet.ts#L4)
+
+Defined in: [src/IViewStylesheet.ts:4](https://github.com/breautek/router/blob/6c82bce/src/IViewStylesheet.ts#L4)
 
 ___
 
@@ -27,4 +33,12 @@ ___
 
 • **use**: () => *void*
 
-Defined in: [src/IViewStylesheet.ts:3](https://github.com/breautek/router/blob/d7a4785/src/IViewStylesheet.ts#L3)
+#### Type declaration:
+
+▸ (): *void*
+
+**Returns:** *void*
+
+Defined in: [src/IViewStylesheet.ts:3](https://github.com/breautek/router/blob/6c82bce/src/IViewStylesheet.ts#L3)
+
+Defined in: [src/IViewStylesheet.ts:3](https://github.com/breautek/router/blob/6c82bce/src/IViewStylesheet.ts#L3)

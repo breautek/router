@@ -2,48 +2,48 @@
 
 # Module: api
 
-## Index
+## Table of contents
 
 ### Enumerations
 
-* [TransitionSlideDirection](../enums/api.transitionslidedirection.md)
+- [TransitionSlideDirection](../enums/api.transitionslidedirection.md)
 
 ### Classes
 
-* [HashStrategy](../classes/api.hashstrategy.md)
-* [Route](../classes/api.route.md)
-* [RouteMatcher](../classes/api.routematcher.md)
-* [Router](../classes/api.router.md)
-* [RouterStrategy](../classes/api.routerstrategy.md)
-* [TransitionSlide](../classes/api.transitionslide.md)
-* [TransitionStrategy](../classes/api.transitionstrategy.md)
-* [URLStrategy](../classes/api.urlstrategy.md)
-* [View](../classes/api.view.md)
+- [HashStrategy](../classes/api.hashstrategy.md)
+- [Route](../classes/api.route.md)
+- [RouteMatcher](../classes/api.routematcher.md)
+- [Router](../classes/api.router.md)
+- [RouterStrategy](../classes/api.routerstrategy.md)
+- [TransitionSlide](../classes/api.transitionslide.md)
+- [TransitionStrategy](../classes/api.transitionstrategy.md)
+- [URLStrategy](../classes/api.urlstrategy.md)
+- [View](../classes/api.view.md)
 
 ### Interfaces
 
-* [IComponentProps](../interfaces/api.icomponentprops.md)
-* [IOnNoRouteFunction](../interfaces/api.ionnoroutefunction.md)
-* [IRouteProps](../interfaces/api.irouteprops.md)
-* [IRouteState](../interfaces/api.iroutestate.md)
-* [IRouterProps](../interfaces/api.irouterprops.md)
-* [IRouterState](../interfaces/api.irouterstate.md)
-* [IViewProps](../interfaces/api.iviewprops.md)
-* [IViewStylesheet](../interfaces/api.iviewstylesheet.md)
+- [IComponentProps](../interfaces/api.icomponentprops.md)
+- [IOnNoRouteFunction](../interfaces/api.ionnoroutefunction.md)
+- [IRouteProps](../interfaces/api.irouteprops.md)
+- [IRouteState](../interfaces/api.iroutestate.md)
+- [IRouterProps](../interfaces/api.irouterprops.md)
+- [IRouterState](../interfaces/api.irouterstate.md)
+- [IViewProps](../interfaces/api.iviewprops.md)
+- [IViewStylesheet](../interfaces/api.iviewstylesheet.md)
 
 ### Type aliases
 
-* [URLChangeCallback](api.md#urlchangecallback)
+- [URLChangeCallback](api.md#urlchangecallback)
 
 ### Variables
 
-* [DefaultStrategy](api.md#defaultstrategy)
-* [EVENT\_URL\_CHANGE](api.md#event_url_change)
-* [version](api.md#version)
+- [DefaultStrategy](api.md#defaultstrategy)
+- [EVENT\_URL\_CHANGE](api.md#event_url_change)
+- [version](api.md#version)
 
 ### Functions
 
-* [getRouter](api.md#getrouter)
+- [getRouter](api.md#getrouter)
 
 ## Type aliases
 
@@ -51,7 +51,19 @@
 
 Ƭ **URLChangeCallback**: (`url`: *string*) => *void*
 
-Defined in: [src/RouterStrategy.ts:7](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L7)
+#### Type declaration:
+
+▸ (`url`: *string*): *void*
+
+#### Parameters:
+
+Name | Type |
+:------ | :------ |
+`url` | *string* |
+
+**Returns:** *void*
+
+Defined in: [src/RouterStrategy.ts:7](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L7)
 
 ## Variables
 
@@ -61,7 +73,7 @@ Defined in: [src/RouterStrategy.ts:7](https://github.com/breautek/router/blob/d7
 
 Alias for [HashStrategy](../classes/api.hashstrategy.md)
 
-Defined in: [src/DefaultStrategy.ts:9](https://github.com/breautek/router/blob/d7a4785/src/DefaultStrategy.ts#L9)
+Defined in: [src/DefaultStrategy.ts:9](https://github.com/breautek/router/blob/6c82bce/src/DefaultStrategy.ts#L9)
 
 ___
 
@@ -69,7 +81,7 @@ ___
 
 • `Const` **EVENT\_URL\_CHANGE**: *string*= 'urlchange'
 
-Defined in: [src/RouterStrategy.ts:5](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L5)
+Defined in: [src/RouterStrategy.ts:5](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L5)
 
 ___
 
@@ -77,7 +89,7 @@ ___
 
 • `Const` **version**: *string*
 
-Defined in: [src/api.ts:21](https://github.com/breautek/router/blob/d7a4785/src/api.ts#L21)
+Defined in: [src/api.ts:21](https://github.com/breautek/router/blob/6c82bce/src/api.ts#L21)
 
 ## Functions
 
@@ -87,4 +99,4 @@ Defined in: [src/api.ts:21](https://github.com/breautek/router/blob/d7a4785/src/
 
 **Returns:** [*RouterStrategy*](../classes/routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/Router.tsx:279](https://github.com/breautek/router/blob/d7a4785/src/Router.tsx#L279)
+Defined in: [src/Router.tsx:279](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L279)

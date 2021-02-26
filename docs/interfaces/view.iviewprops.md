@@ -2,17 +2,15 @@
 
 # Interface: IViewProps
 
-## Hierarchy
+[View](../modules/view.md).IViewProps
 
-* **IViewProps**
-
-## Index
+## Table of contents
 
 ### Properties
 
-* [entryTransition](view.iviewprops.md#entrytransition)
-* [exitTransition](view.iviewprops.md#exittransition)
-* [router](view.iviewprops.md#router)
+- [entryTransition](view.iviewprops.md#entrytransition)
+- [exitTransition](view.iviewprops.md#exittransition)
+- [router](view.iviewprops.md#router)
 
 ## Properties
 
@@ -20,7 +18,7 @@
 
 • `Optional` **entryTransition**: [*TransitionStrategy*](../classes/transitionstrategy.transitionstrategy-1.md)
 
-Defined in: [src/View.tsx:16](https://github.com/breautek/router/blob/d7a4785/src/View.tsx#L16)
+Defined in: [src/View.tsx:16](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L16)
 
 ___
 
@@ -28,7 +26,7 @@ ___
 
 • `Optional` **exitTransition**: [*TransitionStrategy*](../classes/transitionstrategy.transitionstrategy-1.md)
 
-Defined in: [src/View.tsx:17](https://github.com/breautek/router/blob/d7a4785/src/View.tsx#L17)
+Defined in: [src/View.tsx:17](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L17)
 
 ___
 
@@ -36,4 +34,4 @@ ___
 
 • **router**: [*RouterStrategy*](../classes/routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/View.tsx:15](https://github.com/breautek/router/blob/d7a4785/src/View.tsx#L15)
+Defined in: [src/View.tsx:15](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L15)

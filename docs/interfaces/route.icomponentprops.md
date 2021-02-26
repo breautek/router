@@ -2,20 +2,18 @@
 
 # Interface: IComponentProps
 
-## Hierarchy
-
-* **IComponentProps**
+[Route](../modules/route.md).IComponentProps
 
 ## Indexable
 
 ▪ [key: *string*]: *any*
 
-## Index
+## Table of contents
 
 ### Properties
 
-* [router](route.icomponentprops.md#router)
-* [url](route.icomponentprops.md#url)
+- [router](route.icomponentprops.md#router)
+- [url](route.icomponentprops.md#url)
 
 ## Properties
 
@@ -23,7 +21,7 @@
 
 • **router**: [*RouterStrategy*](../classes/routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/Route.tsx:20](https://github.com/breautek/router/blob/d7a4785/src/Route.tsx#L20)
+Defined in: [src/Route.tsx:20](https://github.com/breautek/router/blob/6c82bce/src/Route.tsx#L20)
 
 ___
 
@@ -31,4 +29,4 @@ ___
 
 • **url**: *string*
 
-Defined in: [src/Route.tsx:19](https://github.com/breautek/router/blob/d7a4785/src/Route.tsx#L19)
+Defined in: [src/Route.tsx:19](https://github.com/breautek/router/blob/6c82bce/src/Route.tsx#L19)

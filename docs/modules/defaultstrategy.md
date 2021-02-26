@@ -2,11 +2,11 @@
 
 # Module: DefaultStrategy
 
-## Index
+## Table of contents
 
 ### Variables
 
-* [DefaultStrategy](defaultstrategy.md#defaultstrategy)
+- [DefaultStrategy](defaultstrategy.md#defaultstrategy)
 
 ## Variables
 
@@ -16,4 +16,4 @@
 
 Alias for [HashStrategy](hashstrategy.md)
 
-Defined in: [src/DefaultStrategy.ts:9](https://github.com/breautek/router/blob/d7a4785/src/DefaultStrategy.ts#L9)
+Defined in: [src/DefaultStrategy.ts:9](https://github.com/breautek/router/blob/6c82bce/src/DefaultStrategy.ts#L9)

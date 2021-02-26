@@ -2,61 +2,63 @@
 
 # Class: RouterStrategy
 
+[api](../modules/api.md).RouterStrategy
+
 ## Hierarchy
 
 * *EventEmitter*
 
   ↳ **RouterStrategy**
 
-## Index
+## Table of contents
 
 ### Constructors
 
-* [constructor](api.routerstrategy.md#constructor)
+- [constructor](api.routerstrategy.md#constructor)
 
 ### Properties
 
-* [defaultMaxListeners](api.routerstrategy.md#defaultmaxlisteners)
+- [defaultMaxListeners](api.routerstrategy.md#defaultmaxlisteners)
 
 ### Methods
 
-* [\_fireURLChange](api.routerstrategy.md#_fireurlchange)
-* [addListener](api.routerstrategy.md#addlistener)
-* [addURLChangeCallback](api.routerstrategy.md#addurlchangecallback)
-* [back](api.routerstrategy.md#back)
-* [canBack](api.routerstrategy.md#canback)
-* [canForward](api.routerstrategy.md#canforward)
-* [canGo](api.routerstrategy.md#cango)
-* [clear](api.routerstrategy.md#clear)
-* [emit](api.routerstrategy.md#emit)
-* [eventNames](api.routerstrategy.md#eventnames)
-* [forward](api.routerstrategy.md#forward)
-* [getHistoryLength](api.routerstrategy.md#gethistorylength)
-* [getLocation](api.routerstrategy.md#getlocation)
-* [getLocationAt](api.routerstrategy.md#getlocationat)
-* [getMaxListeners](api.routerstrategy.md#getmaxlisteners)
-* [getRouter](api.routerstrategy.md#getrouter)
-* [getScrollRestoration](api.routerstrategy.md#getscrollrestoration)
-* [go](api.routerstrategy.md#go)
-* [listenerCount](api.routerstrategy.md#listenercount)
-* [listeners](api.routerstrategy.md#listeners)
-* [off](api.routerstrategy.md#off)
-* [on](api.routerstrategy.md#on)
-* [once](api.routerstrategy.md#once)
-* [peek](api.routerstrategy.md#peek)
-* [peekBack](api.routerstrategy.md#peekback)
-* [peekForward](api.routerstrategy.md#peekforward)
-* [prependListener](api.routerstrategy.md#prependlistener)
-* [prependOnceListener](api.routerstrategy.md#prependoncelistener)
-* [pushState](api.routerstrategy.md#pushstate)
-* [rawListeners](api.routerstrategy.md#rawlisteners)
-* [removeAllListeners](api.routerstrategy.md#removealllisteners)
-* [removeListener](api.routerstrategy.md#removelistener)
-* [removeURLChangeCallback](api.routerstrategy.md#removeurlchangecallback)
-* [replaceState](api.routerstrategy.md#replacestate)
-* [setMaxListeners](api.routerstrategy.md#setmaxlisteners)
-* [setTitle](api.routerstrategy.md#settitle)
-* [listenerCount](api.routerstrategy.md#listenercount)
+- [\_fireURLChange](api.routerstrategy.md#_fireurlchange)
+- [addListener](api.routerstrategy.md#addlistener)
+- [addURLChangeCallback](api.routerstrategy.md#addurlchangecallback)
+- [back](api.routerstrategy.md#back)
+- [canBack](api.routerstrategy.md#canback)
+- [canForward](api.routerstrategy.md#canforward)
+- [canGo](api.routerstrategy.md#cango)
+- [clear](api.routerstrategy.md#clear)
+- [emit](api.routerstrategy.md#emit)
+- [eventNames](api.routerstrategy.md#eventnames)
+- [forward](api.routerstrategy.md#forward)
+- [getHistoryLength](api.routerstrategy.md#gethistorylength)
+- [getLocation](api.routerstrategy.md#getlocation)
+- [getLocationAt](api.routerstrategy.md#getlocationat)
+- [getMaxListeners](api.routerstrategy.md#getmaxlisteners)
+- [getRouter](api.routerstrategy.md#getrouter)
+- [getScrollRestoration](api.routerstrategy.md#getscrollrestoration)
+- [go](api.routerstrategy.md#go)
+- [listenerCount](api.routerstrategy.md#listenercount)
+- [listeners](api.routerstrategy.md#listeners)
+- [off](api.routerstrategy.md#off)
+- [on](api.routerstrategy.md#on)
+- [once](api.routerstrategy.md#once)
+- [peek](api.routerstrategy.md#peek)
+- [peekBack](api.routerstrategy.md#peekback)
+- [peekForward](api.routerstrategy.md#peekforward)
+- [prependListener](api.routerstrategy.md#prependlistener)
+- [prependOnceListener](api.routerstrategy.md#prependoncelistener)
+- [pushState](api.routerstrategy.md#pushstate)
+- [rawListeners](api.routerstrategy.md#rawlisteners)
+- [removeAllListeners](api.routerstrategy.md#removealllisteners)
+- [removeListener](api.routerstrategy.md#removelistener)
+- [removeURLChangeCallback](api.routerstrategy.md#removeurlchangecallback)
+- [replaceState](api.routerstrategy.md#replacestate)
+- [setMaxListeners](api.routerstrategy.md#setmaxlisteners)
+- [setTitle](api.routerstrategy.md#settitle)
+- [listenerCount](api.routerstrategy.md#listenercount)
 
 ## Constructors
 
@@ -67,12 +69,12 @@
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `router` | [*Router*](router.router-1.md)<[*IRouterProps*](../interfaces/router.irouterprops.md)\> |
 
 **Returns:** [*RouterStrategy*](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:10](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L10)
+Defined in: [src/RouterStrategy.ts:10](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L10)
 
 ## Properties
 
@@ -92,13 +94,13 @@ Fires the [EVENT_URL_CHANGE](../modules/api.md#event_url_change) event
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`url` | *string* |     |
+Name | Type |
+:------ | :------ |
+`url` | *string* |
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:175](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L175)
+Defined in: [src/RouterStrategy.ts:175](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L175)
 
 ___
 
@@ -109,7 +111,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -127,13 +129,13 @@ Listen for URL change events
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`callback` | [*URLChangeCallback*](../modules/routerstrategy.md#urlchangecallback) |     |
+Name | Type |
+:------ | :------ |
+`callback` | [*URLChangeCallback*](../modules/routerstrategy.md#urlchangecallback) |
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:49](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L49)
+Defined in: [src/RouterStrategy.ts:49](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L49)
 
 ___
 
@@ -145,7 +147,7 @@ Navigate the history back one entry. This is an alias for [go(-1)](api.routerstr
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:103](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L103)
+Defined in: [src/RouterStrategy.ts:103](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L103)
 
 ___
 
@@ -158,7 +160,7 @@ This is the same as calling [canGo(-1)](api.routerstrategy.md#cango)
 
 **Returns:** *boolean*
 
-Defined in: [src/RouterStrategy.ts:117](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L117)
+Defined in: [src/RouterStrategy.ts:117](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L117)
 
 ___
 
@@ -171,7 +173,7 @@ This is the same as calling [canGo(1)](api.routerstrategy.md#cango)
 
 **Returns:** *boolean*
 
-Defined in: [src/RouterStrategy.ts:125](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L125)
+Defined in: [src/RouterStrategy.ts:125](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L125)
 
 ___
 
@@ -184,12 +186,12 @@ Returns true, if can be navigated to the given relative index
 #### Parameters:
 
 Name | Type | Description |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `to` | *number* | Must be an integer    |
 
 **Returns:** *boolean*
 
-Defined in: [src/RouterStrategy.ts:111](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L111)
+Defined in: [src/RouterStrategy.ts:111](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L111)
 
 ___
 
@@ -201,7 +203,7 @@ Clears the history stack.
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:169](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L169)
+Defined in: [src/RouterStrategy.ts:169](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L169)
 
 ___
 
@@ -212,7 +214,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `...args` | *any*[] |
 
@@ -240,7 +242,7 @@ navigate the history forward one entry. This is an alias for [go(1)](api.routers
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:96](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L96)
+Defined in: [src/RouterStrategy.ts:96](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L96)
 
 ___
 
@@ -252,7 +254,7 @@ Gets the size of the history stack
 
 **Returns:** *number*
 
-Defined in: [src/RouterStrategy.ts:77](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L77)
+Defined in: [src/RouterStrategy.ts:77](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L77)
 
 ___
 
@@ -265,7 +267,7 @@ This is the same as calling [peek(0)](api.routerstrategy.md#peek)
 
 **Returns:** *string*
 
-Defined in: [src/RouterStrategy.ts:72](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L72)
+Defined in: [src/RouterStrategy.ts:72](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L72)
 
 ___
 
@@ -278,12 +280,12 @@ Gets the URL at the given index in the history stack
 #### Parameters:
 
 Name | Type | Description |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `position` | *number* | index    |
 
 **Returns:** *string*
 
-Defined in: [src/RouterStrategy.ts:66](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L66)
+Defined in: [src/RouterStrategy.ts:66](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L66)
 
 ___
 
@@ -305,7 +307,7 @@ Gets the router
 
 **Returns:** [*Router*](router.router-1.md)<[*IRouterProps*](../interfaces/router.irouterprops.md)\>
 
-Defined in: [src/RouterStrategy.ts:20](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L20)
+Defined in: [src/RouterStrategy.ts:20](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L20)
 
 ___
 
@@ -317,7 +319,7 @@ Gets the scroll restoration
 
 **Returns:** ScrollRestoration
 
-Defined in: [src/RouterStrategy.ts:82](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L82)
+Defined in: [src/RouterStrategy.ts:82](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L82)
 
 ___
 
@@ -330,12 +332,12 @@ Navigates the history
 #### Parameters:
 
 Name | Type | Description |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `to` | *number* | Must be an integer. Negative numbers go back, if possible. Positive goes forward, if possible. Zero does nothing.    |
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:91](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L91)
+Defined in: [src/RouterStrategy.ts:91](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L91)
 
 ___
 
@@ -346,7 +348,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `type` | *string* \| *symbol* |
 
 **Returns:** *number*
@@ -362,7 +364,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 
 **Returns:** Function[]
@@ -378,7 +380,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -395,7 +397,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -412,7 +414,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -431,12 +433,12 @@ Returns the URL stored in the history stack at the given relative index.
 #### Parameters:
 
 Name | Type | Description |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `to` | *number* | Must be an integer    |
 
 **Returns:** *string*
 
-Defined in: [src/RouterStrategy.ts:133](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L133)
+Defined in: [src/RouterStrategy.ts:133](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L133)
 
 ___
 
@@ -449,7 +451,7 @@ This is the same as calling [peek(-1)](api.routerstrategy.md#peek)
 
 **Returns:** *string*
 
-Defined in: [src/RouterStrategy.ts:147](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L147)
+Defined in: [src/RouterStrategy.ts:147](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L147)
 
 ___
 
@@ -462,7 +464,7 @@ This is the same as calling [peek(1)](api.routerstrategy.md#peek)
 
 **Returns:** *string*
 
-Defined in: [src/RouterStrategy.ts:139](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L139)
+Defined in: [src/RouterStrategy.ts:139](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L139)
 
 ___
 
@@ -473,7 +475,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -490,7 +492,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -502,20 +504,20 @@ ___
 
 ### pushState
 
-▸ `Abstract`**pushState**(`url`: *string*, `state?`: *IDictionary*<*any*\>): *void*
+▸ `Abstract`**pushState**(`url`: *string*, `state?`: *IDictionary*<any\>): *void*
 
 Pushes a new entry into the history stack, navigating to the new location.
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`url` | *string* |  |
-`state?` | *IDictionary*<*any*\> |     |
+Name | Type |
+:------ | :------ |
+`url` | *string* |
+`state?` | *IDictionary*<any\> |
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:156](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L156)
+Defined in: [src/RouterStrategy.ts:156](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L156)
 
 ___
 
@@ -526,7 +528,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 
 **Returns:** Function[]
@@ -542,7 +544,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event?` | *string* \| *symbol* |
 
 **Returns:** [*RouterStrategy*](routerstrategy.routerstrategy-1.md)
@@ -558,7 +560,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -576,33 +578,33 @@ Removes an existing listener
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`callback` | [*URLChangeCallback*](../modules/routerstrategy.md#urlchangecallback) |     |
+Name | Type |
+:------ | :------ |
+`callback` | [*URLChangeCallback*](../modules/routerstrategy.md#urlchangecallback) |
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:58](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L58)
+Defined in: [src/RouterStrategy.ts:58](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L58)
 
 ___
 
 ### replaceState
 
-▸ `Abstract`**replaceState**(`url`: *string*, `state?`: *IDictionary*<*any*\>): *void*
+▸ `Abstract`**replaceState**(`url`: *string*, `state?`: *IDictionary*<any\>): *void*
 
 Replaces the current entry in the history stack with the new location.
 This will navigate the screen to the new location.
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`url` | *string* |  |
-`state?` | *IDictionary*<*any*\> |     |
+Name | Type |
+:------ | :------ |
+`url` | *string* |
+`state?` | *IDictionary*<any\> |
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:164](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L164)
+Defined in: [src/RouterStrategy.ts:164](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L164)
 
 ___
 
@@ -613,7 +615,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `n` | *number* |
 
 **Returns:** [*RouterStrategy*](routerstrategy.routerstrategy-1.md)
@@ -630,13 +632,13 @@ Sets the browser title
 
 #### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`title` | *string* |     |
+Name | Type |
+:------ | :------ |
+`title` | *string* |
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:29](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L29)
+Defined in: [src/RouterStrategy.ts:29](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L29)
 
 ___
 
@@ -649,7 +651,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `emitter` | *EventEmitter* |
 `event` | *string* \| *symbol* |
 

@@ -2,8 +2,8 @@
 
 # Module: TransitionStrategy
 
-## Index
+## Table of contents
 
 ### Classes
 
-* [TransitionStrategy](../classes/transitionstrategy.transitionstrategy-1.md)
+- [TransitionStrategy](../classes/transitionstrategy.transitionstrategy-1.md)

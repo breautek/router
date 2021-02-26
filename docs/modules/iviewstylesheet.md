@@ -2,8 +2,8 @@
 
 # Module: IViewStylesheet
 
-## Index
+## Table of contents
 
 ### Interfaces
 
-* [IViewStylesheet](../interfaces/iviewstylesheet.iviewstylesheet-1.md)
+- [IViewStylesheet](../interfaces/iviewstylesheet.iviewstylesheet-1.md)

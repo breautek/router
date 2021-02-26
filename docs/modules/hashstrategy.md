@@ -2,8 +2,8 @@
 
 # Module: HashStrategy
 
-## Index
+## Table of contents
 
 ### Classes
 
-* [HashStrategy](../classes/hashstrategy.hashstrategy-1.md)
+- [HashStrategy](../classes/hashstrategy.hashstrategy-1.md)

@@ -2,17 +2,15 @@
 
 # Interface: IRouterState
 
-## Hierarchy
+[api](../modules/api.md).IRouterState
 
-* **IRouterState**
-
-## Index
+## Table of contents
 
 ### Properties
 
-* [shouldTransition](api.irouterstate.md#shouldtransition)
-* [strategy](api.irouterstate.md#strategy)
-* [url](api.irouterstate.md#url)
+- [shouldTransition](api.irouterstate.md#shouldtransition)
+- [strategy](api.irouterstate.md#strategy)
+- [url](api.irouterstate.md#url)
 
 ## Properties
 
@@ -20,7 +18,7 @@
 
 • **shouldTransition**: *boolean*
 
-Defined in: [src/Router.tsx:23](https://github.com/breautek/router/blob/d7a4785/src/Router.tsx#L23)
+Defined in: [src/Router.tsx:23](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L23)
 
 ___
 
@@ -28,7 +26,7 @@ ___
 
 • **strategy**: [*RouterStrategy*](../classes/routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/Router.tsx:21](https://github.com/breautek/router/blob/d7a4785/src/Router.tsx#L21)
+Defined in: [src/Router.tsx:21](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L21)
 
 ___
 
@@ -36,4 +34,4 @@ ___
 
 • **url**: *string*
 
-Defined in: [src/Router.tsx:22](https://github.com/breautek/router/blob/d7a4785/src/Router.tsx#L22)
+Defined in: [src/Router.tsx:22](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L22)

@@ -2,19 +2,19 @@
 
 # Module: RouterStrategy
 
-## Index
+## Table of contents
 
 ### Classes
 
-* [RouterStrategy](../classes/routerstrategy.routerstrategy-1.md)
+- [RouterStrategy](../classes/routerstrategy.routerstrategy-1.md)
 
 ### Type aliases
 
-* [URLChangeCallback](routerstrategy.md#urlchangecallback)
+- [URLChangeCallback](routerstrategy.md#urlchangecallback)
 
 ### Variables
 
-* [EVENT\_URL\_CHANGE](routerstrategy.md#event_url_change)
+- [EVENT\_URL\_CHANGE](routerstrategy.md#event_url_change)
 
 ## Type aliases
 
@@ -22,7 +22,19 @@
 
 Ƭ **URLChangeCallback**: (`url`: *string*) => *void*
 
-Defined in: [src/RouterStrategy.ts:7](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L7)
+#### Type declaration:
+
+▸ (`url`: *string*): *void*
+
+#### Parameters:
+
+Name | Type |
+:------ | :------ |
+`url` | *string* |
+
+**Returns:** *void*
+
+Defined in: [src/RouterStrategy.ts:7](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L7)
 
 ## Variables
 
@@ -30,4 +42,4 @@ Defined in: [src/RouterStrategy.ts:7](https://github.com/breautek/router/blob/d7
 
 • `Const` **EVENT\_URL\_CHANGE**: *string*= 'urlchange'
 
-Defined in: [src/RouterStrategy.ts:5](https://github.com/breautek/router/blob/d7a4785/src/RouterStrategy.ts#L5)
+Defined in: [src/RouterStrategy.ts:5](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L5)

@@ -2,14 +2,14 @@
 
 # Module: Route
 
-## Index
+## Table of contents
 
 ### Classes
 
-* [Route](../classes/route.route-1.md)
+- [Route](../classes/route.route-1.md)
 
 ### Interfaces
 
-* [IComponentProps](../interfaces/route.icomponentprops.md)
-* [IRouteProps](../interfaces/route.irouteprops.md)
-* [IRouteState](../interfaces/route.iroutestate.md)
+- [IComponentProps](../interfaces/route.icomponentprops.md)
+- [IRouteProps](../interfaces/route.irouteprops.md)
+- [IRouteState](../interfaces/route.iroutestate.md)

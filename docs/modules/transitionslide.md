@@ -2,12 +2,12 @@
 
 # Module: TransitionSlide
 
-## Index
+## Table of contents
 
 ### Enumerations
 
-* [TransitionSlideDirection](../enums/transitionslide.transitionslidedirection.md)
+- [TransitionSlideDirection](../enums/transitionslide.transitionslidedirection.md)
 
 ### Classes
 
-* [TransitionSlide](../classes/transitionslide.transitionslide-1.md)
+- [TransitionSlide](../classes/transitionslide.transitionslide-1.md)

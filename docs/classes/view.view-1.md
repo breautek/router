@@ -2,10 +2,12 @@
 
 # Class: View<TPageProps\>
 
+[View](../modules/view.md).View
+
 ## Type parameters
 
 Name | Type | Default |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `TPageProps` | [*IViewProps*](../interfaces/view.iviewprops.md) | [*IViewProps*](../interfaces/view.iviewprops.md) |
 
 ## Hierarchy
@@ -14,41 +16,41 @@ Name | Type | Default |
 
   ↳ **View**
 
-## Index
+## Table of contents
 
 ### Constructors
 
-* [constructor](view.view-1.md#constructor)
+- [constructor](view.view-1.md#constructor)
 
 ### Properties
 
-* [context](view.view-1.md#context)
-* [props](view.view-1.md#props)
-* [refs](view.view-1.md#refs)
-* [state](view.view-1.md#state)
-* [contextType](view.view-1.md#contexttype)
+- [context](view.view-1.md#context)
+- [props](view.view-1.md#props)
+- [refs](view.view-1.md#refs)
+- [state](view.view-1.md#state)
+- [contextType](view.view-1.md#contexttype)
 
 ### Methods
 
-* [UNSAFE\_componentWillMount](view.view-1.md#unsafe_componentwillmount)
-* [UNSAFE\_componentWillReceiveProps](view.view-1.md#unsafe_componentwillreceiveprops)
-* [UNSAFE\_componentWillUpdate](view.view-1.md#unsafe_componentwillupdate)
-* [\_renderView](view.view-1.md#_renderview)
-* [componentDidCatch](view.view-1.md#componentdidcatch)
-* [componentDidUpdate](view.view-1.md#componentdidupdate)
-* [componentWillMount](view.view-1.md#componentwillmount)
-* [componentWillReceiveProps](view.view-1.md#componentwillreceiveprops)
-* [componentWillUpdate](view.view-1.md#componentwillupdate)
-* [forceUpdate](view.view-1.md#forceupdate)
-* [getCSSClass](view.view-1.md#getcssclass)
-* [getNode](view.view-1.md#getnode)
-* [getSnapshotBeforeUpdate](view.view-1.md#getsnapshotbeforeupdate)
-* [getTitle](view.view-1.md#gettitle)
-* [getViewStyles](view.view-1.md#getviewstyles)
-* [getViewStylesheet](view.view-1.md#getviewstylesheet)
-* [render](view.view-1.md#render)
-* [setState](view.view-1.md#setstate)
-* [shouldComponentUpdate](view.view-1.md#shouldcomponentupdate)
+- [UNSAFE\_componentWillMount](view.view-1.md#unsafe_componentwillmount)
+- [UNSAFE\_componentWillReceiveProps](view.view-1.md#unsafe_componentwillreceiveprops)
+- [UNSAFE\_componentWillUpdate](view.view-1.md#unsafe_componentwillupdate)
+- [\_renderView](view.view-1.md#_renderview)
+- [componentDidCatch](view.view-1.md#componentdidcatch)
+- [componentDidUpdate](view.view-1.md#componentdidupdate)
+- [componentWillMount](view.view-1.md#componentwillmount)
+- [componentWillReceiveProps](view.view-1.md#componentwillreceiveprops)
+- [componentWillUpdate](view.view-1.md#componentwillupdate)
+- [forceUpdate](view.view-1.md#forceupdate)
+- [getCSSClass](view.view-1.md#getcssclass)
+- [getNode](view.view-1.md#getnode)
+- [getSnapshotBeforeUpdate](view.view-1.md#getsnapshotbeforeupdate)
+- [getTitle](view.view-1.md#gettitle)
+- [getViewStyles](view.view-1.md#getviewstyles)
+- [getViewStylesheet](view.view-1.md#getviewstylesheet)
+- [render](view.view-1.md#render)
+- [setState](view.view-1.md#setstate)
+- [shouldComponentUpdate](view.view-1.md#shouldcomponentupdate)
 
 ## Constructors
 
@@ -59,18 +61,18 @@ Name | Type | Default |
 #### Type parameters:
 
 Name | Type | Default |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `TPageProps` | [*IViewProps*](../interfaces/view.iviewprops.md) | [*IViewProps*](../interfaces/view.iviewprops.md) |
 
 #### Parameters:
 
 Name | Type | Description |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `props` | TPageProps | See [IViewProps]    |
 
 **Returns:** [*View*](view.view-1.md)<TPageProps\>
 
-Defined in: [src/View.tsx:21](https://github.com/breautek/router/blob/d7a4785/src/View.tsx#L21)
+Defined in: [src/View.tsx:21](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L21)
 
 ## Properties
 
@@ -92,40 +94,42 @@ declare context: React.ContextType<typeof MyContext>
 
 **`see`** https://reactjs.org/docs/context.html
 
-Defined in: node_modules/@types/react/index.d.ts:476
+Defined in: node_modules/@types/react/index.d.ts:480
 
 ___
 
 ### props
 
-• `Readonly` **props**: *Readonly*<P\> & *Readonly*<{ `children?`: ReactNode  }\>
+• `Readonly` **props**: *Readonly*<TPageProps\> & *Readonly*<{ `children?`: ReactNode  }\>
 
-Defined in: node_modules/@types/react/index.d.ts:501
+Defined in: node_modules/@types/react/index.d.ts:505
 
 ___
 
 ### refs
 
-• **refs**: { [key: string]: ReactInstance;  }
+• **refs**: *object*
 
 **`deprecated`** 
 https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs
 
-Defined in: node_modules/@types/react/index.d.ts:507
+#### Type declaration:
+
+Defined in: node_modules/@types/react/index.d.ts:511
 
 ___
 
 ### state
 
-• **state**: *Readonly*<S\>
+• **state**: *Readonly*<{}\>
 
-Defined in: node_modules/@types/react/index.d.ts:502
+Defined in: node_modules/@types/react/index.d.ts:506
 
 ___
 
 ### contextType
 
-▪ `Optional` `Static` **contextType**: *Context*<*any*\>
+▪ `Optional` `Static` **contextType**: *Context*<any\>
 
 If set, `this.context` will be set at runtime to the current value of the given Context.
 
@@ -146,7 +150,7 @@ class Foo extends React.Component {
 
 **`see`** https://reactjs.org/docs/context.html#classcontexttype
 
-Defined in: node_modules/@types/react/index.d.ts:458
+Defined in: node_modules/@types/react/index.d.ts:462
 
 ## Methods
 
@@ -170,7 +174,7 @@ prevents this from being invoked.
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:712
+Defined in: node_modules/@types/react/index.d.ts:716
 
 ___
 
@@ -198,13 +202,13 @@ prevents this from being invoked.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `nextProps` | *Readonly*<TPageProps\> |
 `nextContext` | *any* |
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:744
+Defined in: node_modules/@types/react/index.d.ts:748
 
 ___
 
@@ -230,14 +234,14 @@ prevents this from being invoked.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `nextProps` | *Readonly*<TPageProps\> |
 `nextState` | *Readonly*<{}\> |
 `nextContext` | *any* |
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:772
+Defined in: node_modules/@types/react/index.d.ts:776
 
 ___
 
@@ -247,7 +251,7 @@ ___
 
 **Returns:** ReactNode
 
-Defined in: [src/View.tsx:91](https://github.com/breautek/router/blob/d7a4785/src/View.tsx#L91)
+Defined in: [src/View.tsx:91](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L91)
 
 ___
 
@@ -261,13 +265,13 @@ the entire component tree to unmount.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `error` | Error |
 `errorInfo` | ErrorInfo |
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:641
+Defined in: node_modules/@types/react/index.d.ts:645
 
 ___
 
@@ -282,14 +286,14 @@ The snapshot is only present if getSnapshotBeforeUpdate is present and returns n
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `prevProps` | *Readonly*<TPageProps\> |
 `prevState` | *Readonly*<{}\> |
 `snapshot?` | *any* |
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:683
+Defined in: node_modules/@types/react/index.d.ts:687
 
 ___
 
@@ -311,7 +315,7 @@ prevents this from being invoked.
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:698
+Defined in: node_modules/@types/react/index.d.ts:702
 
 ___
 
@@ -337,13 +341,13 @@ prevents this from being invoked.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `nextProps` | *Readonly*<TPageProps\> |
 `nextContext` | *any* |
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:727
+Defined in: node_modules/@types/react/index.d.ts:731
 
 ___
 
@@ -367,14 +371,14 @@ prevents this from being invoked.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `nextProps` | *Readonly*<TPageProps\> |
 `nextState` | *Readonly*<{}\> |
 `nextContext` | *any* |
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:757
+Defined in: node_modules/@types/react/index.d.ts:761
 
 ___
 
@@ -385,12 +389,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `callback?` | () => *void* |
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:493
+Defined in: node_modules/@types/react/index.d.ts:497
 
 ___
 
@@ -402,7 +406,7 @@ Return the CSS class on this view
 
 **Returns:** *string*
 
-Defined in: [src/View.tsx:34](https://github.com/breautek/router/blob/d7a4785/src/View.tsx#L34)
+Defined in: [src/View.tsx:34](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L34)
 
 ___
 
@@ -414,7 +418,7 @@ Gets the underlying HTML node for this View
 
 **Returns:** HTMLElement
 
-Defined in: [src/View.tsx:72](https://github.com/breautek/router/blob/d7a4785/src/View.tsx#L72)
+Defined in: [src/View.tsx:72](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L72)
 
 ___
 
@@ -432,38 +436,38 @@ lifecycle events from running.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `prevProps` | *Readonly*<TPageProps\> |
 `prevState` | *Readonly*<{}\> |
 
 **Returns:** *any*
 
-Defined in: node_modules/@types/react/index.d.ts:677
+Defined in: node_modules/@types/react/index.d.ts:681
 
 ___
 
 ### getTitle
 
-▸ **getTitle**(): *Promise*<*string*\>
+▸ **getTitle**(): *Promise*<string\>
 
 Get the title of this view
 
-**Returns:** *Promise*<*string*\>
+**Returns:** *Promise*<string\>
 
-Defined in: [src/View.tsx:79](https://github.com/breautek/router/blob/d7a4785/src/View.tsx#L79)
+Defined in: [src/View.tsx:79](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L79)
 
 ___
 
 ### getViewStyles
 
-▸ **getViewStyles**(): *IDictionary*<*string*\>
+▸ **getViewStyles**(): *IDictionary*<string\>
 
 Get the inline styles for this view.
 Use React style notation.
 
-**Returns:** *IDictionary*<*string*\>
+**Returns:** *IDictionary*<string\>
 
-Defined in: [src/View.tsx:87](https://github.com/breautek/router/blob/d7a4785/src/View.tsx#L87)
+Defined in: [src/View.tsx:87](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L87)
 
 ___
 
@@ -475,7 +479,7 @@ Override to return a webpack API style stylesheet
 
 **Returns:** [*IViewStylesheet*](../interfaces/iviewstylesheet.iviewstylesheet-1.md)
 
-Defined in: [src/View.tsx:41](https://github.com/breautek/router/blob/d7a4785/src/View.tsx#L41)
+Defined in: [src/View.tsx:41](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L41)
 
 ___
 
@@ -485,7 +489,7 @@ ___
 
 **Returns:** ReactNode
 
-Defined in: [src/View.tsx:93](https://github.com/breautek/router/blob/d7a4785/src/View.tsx#L93)
+Defined in: [src/View.tsx:93](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L93)
 
 ___
 
@@ -496,19 +500,19 @@ ___
 #### Type parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `K` | *never* |
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `state` | {} \| (`prevState`: *Readonly*<{}\>, `props`: *Readonly*<TPageProps\>) => {} \| *Pick*<{}, K\> \| *Pick*<{}, K\> |
 `callback?` | () => *void* |
 
 **Returns:** *void*
 
-Defined in: node_modules/@types/react/index.d.ts:488
+Defined in: node_modules/@types/react/index.d.ts:492
 
 ___
 
@@ -528,11 +532,11 @@ and `componentDidUpdate` will not be called.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `nextProps` | *Readonly*<TPageProps\> |
 `nextState` | *Readonly*<{}\> |
 `nextContext` | *any* |
 
 **Returns:** *boolean*
 
-Defined in: node_modules/@types/react/index.d.ts:631
+Defined in: node_modules/@types/react/index.d.ts:635
