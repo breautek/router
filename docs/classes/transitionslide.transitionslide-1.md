@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.0](../README.md) / [Exports](../modules.md) / [TransitionSlide](../modules/transitionslide.md) / TransitionSlide
+[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [TransitionSlide](../modules/transitionslide.md) / TransitionSlide
 
 # Class: TransitionSlide
 
@@ -38,7 +38,7 @@ Name | Type |
 
 Inherited from: [TransitionStrategy](transitionstrategy.transitionstrategy-1.md)
 
-Defined in: [src/TransitionSlide.ts:15](https://github.com/breautek/router/blob/6c82bce/src/TransitionSlide.ts#L15)
+Defined in: [src/TransitionSlide.ts:15](https://github.com/breautek/router/blob/06b4d2d/src/TransitionSlide.ts#L15)
 
 ## Methods
 
@@ -57,7 +57,7 @@ Name | Type |
 
 Overrides: [TransitionStrategy](transitionstrategy.transitionstrategy-1.md)
 
-Defined in: [src/TransitionSlide.ts:24](https://github.com/breautek/router/blob/6c82bce/src/TransitionSlide.ts#L24)
+Defined in: [src/TransitionSlide.ts:24](https://github.com/breautek/router/blob/06b4d2d/src/TransitionSlide.ts#L24)
 
 ___
 
@@ -87,4 +87,4 @@ Name | Type |
 
 Inherited from: [TransitionStrategy](transitionstrategy.transitionstrategy-1.md)
 
-Defined in: [src/TransitionStrategy.ts:21](https://github.com/breautek/router/blob/6c82bce/src/TransitionStrategy.ts#L21)
+Defined in: [src/TransitionStrategy.ts:21](https://github.com/breautek/router/blob/06b4d2d/src/TransitionStrategy.ts#L21)

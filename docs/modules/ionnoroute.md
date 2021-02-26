@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.0](../README.md) / [Exports](../modules.md) / IOnNoRoute
+[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / IOnNoRoute
 
 # Module: IOnNoRoute
 

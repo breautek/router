@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.0](../README.md) / [Exports](../modules.md) / [api](../modules/api.md) / HashStrategy
+[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [api](../modules/api.md) / HashStrategy
 
 # Class: HashStrategy
 
@@ -82,7 +82,7 @@ Name | Type |
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:16](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L16)
+Defined in: [src/HashStrategy.ts:16](https://github.com/breautek/router/blob/06b4d2d/src/HashStrategy.ts#L16)
 
 ## Properties
 
@@ -112,7 +112,7 @@ Name | Type |
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:175](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L175)
+Defined in: [src/RouterStrategy.ts:175](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L175)
 
 ___
 
@@ -151,7 +151,7 @@ Name | Type |
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:49](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L49)
+Defined in: [src/RouterStrategy.ts:49](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L49)
 
 ___
 
@@ -165,7 +165,7 @@ Navigate the history back one entry. This is an alias for [go(-1)](api.hashstrat
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:103](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L103)
+Defined in: [src/RouterStrategy.ts:103](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L103)
 
 ___
 
@@ -180,7 +180,7 @@ This is the same as calling [canGo(-1)](api.hashstrategy.md#cango)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:117](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L117)
+Defined in: [src/RouterStrategy.ts:117](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L117)
 
 ___
 
@@ -195,7 +195,7 @@ This is the same as calling [canGo(1)](api.hashstrategy.md#cango)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:125](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L125)
+Defined in: [src/RouterStrategy.ts:125](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L125)
 
 ___
 
@@ -213,7 +213,7 @@ Name | Type |
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:55](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L55)
+Defined in: [src/HashStrategy.ts:55](https://github.com/breautek/router/blob/06b4d2d/src/HashStrategy.ts#L55)
 
 ___
 
@@ -225,7 +225,7 @@ ___
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:107](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L107)
+Defined in: [src/HashStrategy.ts:107](https://github.com/breautek/router/blob/06b4d2d/src/HashStrategy.ts#L107)
 
 ___
 
@@ -270,7 +270,7 @@ navigate the history forward one entry. This is an alias for [go(1)](api.hashstr
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:96](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L96)
+Defined in: [src/RouterStrategy.ts:96](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L96)
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:47](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L47)
+Defined in: [src/HashStrategy.ts:47](https://github.com/breautek/router/blob/06b4d2d/src/HashStrategy.ts#L47)
 
 ___
 
@@ -294,7 +294,7 @@ ___
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:39](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L39)
+Defined in: [src/HashStrategy.ts:39](https://github.com/breautek/router/blob/06b4d2d/src/HashStrategy.ts#L39)
 
 ___
 
@@ -312,7 +312,7 @@ Name | Type |
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:43](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L43)
+Defined in: [src/HashStrategy.ts:43](https://github.com/breautek/router/blob/06b4d2d/src/HashStrategy.ts#L43)
 
 ___
 
@@ -338,7 +338,7 @@ Gets the router
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:20](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L20)
+Defined in: [src/RouterStrategy.ts:20](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L20)
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:51](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L51)
+Defined in: [src/HashStrategy.ts:51](https://github.com/breautek/router/blob/06b4d2d/src/HashStrategy.ts#L51)
 
 ___
 
@@ -368,7 +368,7 @@ Name | Type |
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:63](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L63)
+Defined in: [src/HashStrategy.ts:63](https://github.com/breautek/router/blob/06b4d2d/src/HashStrategy.ts#L63)
 
 ___
 
@@ -479,7 +479,7 @@ Name | Type |
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:59](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L59)
+Defined in: [src/HashStrategy.ts:59](https://github.com/breautek/router/blob/06b4d2d/src/HashStrategy.ts#L59)
 
 ___
 
@@ -494,7 +494,7 @@ This is the same as calling [peek(-1)](api.hashstrategy.md#peek)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:147](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L147)
+Defined in: [src/RouterStrategy.ts:147](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L147)
 
 ___
 
@@ -509,7 +509,7 @@ This is the same as calling [peek(1)](api.hashstrategy.md#peek)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:139](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L139)
+Defined in: [src/RouterStrategy.ts:139](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L139)
 
 ___
 
@@ -566,7 +566,7 @@ Name | Type |
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:74](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L74)
+Defined in: [src/HashStrategy.ts:74](https://github.com/breautek/router/blob/06b4d2d/src/HashStrategy.ts#L74)
 
 ___
 
@@ -641,7 +641,7 @@ Name | Type |
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:58](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L58)
+Defined in: [src/RouterStrategy.ts:58](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L58)
 
 ___
 
@@ -660,7 +660,7 @@ Name | Type |
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/HashStrategy.ts:92](https://github.com/breautek/router/blob/6c82bce/src/HashStrategy.ts#L92)
+Defined in: [src/HashStrategy.ts:92](https://github.com/breautek/router/blob/06b4d2d/src/HashStrategy.ts#L92)
 
 ___
 
@@ -698,7 +698,7 @@ Name | Type |
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:29](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L29)
+Defined in: [src/RouterStrategy.ts:29](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L29)
 
 ___
 

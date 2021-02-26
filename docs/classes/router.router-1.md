@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.0](../README.md) / [Exports](../modules.md) / [Router](../modules/router.md) / Router
+[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [Router](../modules/router.md) / Router
 
 # Class: Router<TRouterProps\>
 
@@ -71,7 +71,7 @@ Name | Type |
 
 **Returns:** [*Router*](router.router-1.md)<TRouterProps\>
 
-Defined in: [src/Router.tsx:35](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L35)
+Defined in: [src/Router.tsx:35](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L35)
 
 ## Properties
 
@@ -122,7 +122,7 @@ ___
 
 • **state**: [*IRouterState*](../interfaces/router.irouterstate.md)
 
-Defined in: [src/Router.tsx:27](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L27)
+Defined in: [src/Router.tsx:27](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L27)
 
 ___
 
@@ -218,7 +218,7 @@ Go back one step. This is an alias for [pushState(-1)](router.router-1.md#go).
 
 **Returns:** *void*
 
-Defined in: [src/Router.tsx:236](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L236)
+Defined in: [src/Router.tsx:236](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L236)
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/Router.tsx:89](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L89)
+Defined in: [src/Router.tsx:89](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L89)
 
 ___
 
@@ -361,7 +361,7 @@ Go forward one step. This is an alias for [pushState(1)](router.router-1.md#go).
 
 **Returns:** *void*
 
-Defined in: [src/Router.tsx:243](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L243)
+Defined in: [src/Router.tsx:243](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L243)
 
 ___
 
@@ -374,7 +374,7 @@ Only the history kept track during the life-cycle of the app.
 
 **Returns:** *number*
 
-Defined in: [src/Router.tsx:211](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L211)
+Defined in: [src/Router.tsx:211](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L211)
 
 ___
 
@@ -386,7 +386,7 @@ Gets the current routing strategy
 
 **Returns:** [*RouterStrategy*](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/Router.tsx:73](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L73)
+Defined in: [src/Router.tsx:73](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L73)
 
 ___
 
@@ -398,7 +398,7 @@ Gets the scroll restoration mode
 
 **Returns:** ScrollRestoration
 
-Defined in: [src/Router.tsx:218](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L218)
+Defined in: [src/Router.tsx:218](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L218)
 
 ___
 
@@ -438,7 +438,7 @@ Name | Type | Description |
 
 **Returns:** *void*
 
-Defined in: [src/Router.tsx:229](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L229)
+Defined in: [src/Router.tsx:229](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L229)
 
 ___
 
@@ -498,4 +498,4 @@ ___
 
 **Returns:** [*RouterStrategy*](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/Router.tsx:62](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L62)
+Defined in: [src/Router.tsx:62](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L62)

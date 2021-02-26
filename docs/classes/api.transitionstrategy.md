@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.0](../README.md) / [Exports](../modules.md) / [api](../modules/api.md) / TransitionStrategy
+[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [api](../modules/api.md) / TransitionStrategy
 
 # Class: TransitionStrategy
 
@@ -23,7 +23,7 @@
 
 **Returns:** [*TransitionStrategy*](transitionstrategy.transitionstrategy-1.md)
 
-Defined in: [src/TransitionStrategy.ts:3](https://github.com/breautek/router/blob/6c82bce/src/TransitionStrategy.ts#L3)
+Defined in: [src/TransitionStrategy.ts:3](https://github.com/breautek/router/blob/06b4d2d/src/TransitionStrategy.ts#L3)
 
 ## Methods
 
@@ -40,7 +40,7 @@ Name | Type |
 
 **Returns:** *Promise*<void\>
 
-Defined in: [src/TransitionStrategy.ts:25](https://github.com/breautek/router/blob/6c82bce/src/TransitionStrategy.ts#L25)
+Defined in: [src/TransitionStrategy.ts:25](https://github.com/breautek/router/blob/06b4d2d/src/TransitionStrategy.ts#L25)
 
 ___
 
@@ -68,4 +68,4 @@ Name | Type |
 
 **Returns:** *Promise*<void\>
 
-Defined in: [src/TransitionStrategy.ts:21](https://github.com/breautek/router/blob/6c82bce/src/TransitionStrategy.ts#L21)
+Defined in: [src/TransitionStrategy.ts:21](https://github.com/breautek/router/blob/06b4d2d/src/TransitionStrategy.ts#L21)

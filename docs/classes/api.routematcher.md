@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.0](../README.md) / [Exports](../modules.md) / [api](../modules/api.md) / RouteMatcher
+[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [api](../modules/api.md) / RouteMatcher
 
 # Class: RouteMatcher
 
@@ -31,7 +31,7 @@ Name | Type |
 
 **Returns:** [*RouteMatcher*](routematcher.routematcher-1.md)
 
-Defined in: [src/RouteMatcher.ts:24](https://github.com/breautek/router/blob/6c82bce/src/RouteMatcher.ts#L24)
+Defined in: [src/RouteMatcher.ts:24](https://github.com/breautek/router/blob/06b4d2d/src/RouteMatcher.ts#L24)
 
 ## Methods
 
@@ -53,4 +53,4 @@ Name | Type |
 
 **Returns:** *ReactElement*<any, string \| (`props`: *any*) => *ReactElement*<any, any\> \| (`props`: *any*) => *Component*<any, any, any\>\>
 
-Defined in: [src/RouteMatcher.ts:43](https://github.com/breautek/router/blob/6c82bce/src/RouteMatcher.ts#L43)
+Defined in: [src/RouteMatcher.ts:43](https://github.com/breautek/router/blob/06b4d2d/src/RouteMatcher.ts#L43)

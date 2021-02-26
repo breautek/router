@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.0](../README.md) / [Exports](../modules.md) / [Route](../modules/route.md) / Route
+[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [Route](../modules/route.md) / Route
 
 # Class: Route<TComponentProps, TRouteProps, TRouteState\>
 
@@ -74,7 +74,7 @@ Name | Type |
 
 **Returns:** [*Route*](route.route-1.md)<TComponentProps, TRouteProps, TRouteState\>
 
-Defined in: [src/Route.tsx:37](https://github.com/breautek/router/blob/6c82bce/src/Route.tsx#L37)
+Defined in: [src/Route.tsx:37](https://github.com/breautek/router/blob/06b4d2d/src/Route.tsx#L37)
 
 ## Properties
 
@@ -445,7 +445,7 @@ ___
 
 **Returns:** ReactNode
 
-Defined in: [src/Route.tsx:44](https://github.com/breautek/router/blob/6c82bce/src/Route.tsx#L44)
+Defined in: [src/Route.tsx:44](https://github.com/breautek/router/blob/06b4d2d/src/Route.tsx#L44)
 
 ___
 

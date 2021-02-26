@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.0](../README.md) / [Exports](../modules.md) / RouterStrategy
+[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / RouterStrategy
 
 # Module: RouterStrategy
 
@@ -34,7 +34,7 @@ Name | Type |
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:7](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L7)
+Defined in: [src/RouterStrategy.ts:7](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L7)
 
 ## Variables
 
@@ -42,4 +42,4 @@ Defined in: [src/RouterStrategy.ts:7](https://github.com/breautek/router/blob/6c
 
 • `Const` **EVENT\_URL\_CHANGE**: *string*= 'urlchange'
 
-Defined in: [src/RouterStrategy.ts:5](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L5)
+Defined in: [src/RouterStrategy.ts:5](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L5)

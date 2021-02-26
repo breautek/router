@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.0](../README.md) / [Exports](../modules.md) / [api](../modules/api.md) / IRouterProps
+[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [api](../modules/api.md) / IRouterProps
 
 # Interface: IRouterProps
 
@@ -18,7 +18,7 @@
 
 • **component**: *ComponentClass*<any, any\>
 
-Defined in: [src/Router.tsx:16](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L16)
+Defined in: [src/Router.tsx:16](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L16)
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • `Optional` **onNoRoute**: [*IOnNoRoute*](ionnoroute.ionnoroute-1.md)
 
-Defined in: [src/Router.tsx:17](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L17)
+Defined in: [src/Router.tsx:17](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L17)
 
 ___
 
@@ -34,4 +34,4 @@ ___
 
 • `Optional` **strategy**: [*IRouterStrategyClass*](irouterstrategyclass.irouterstrategyclass-1.md)
 
-Defined in: [src/Router.tsx:15](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L15)
+Defined in: [src/Router.tsx:15](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L15)

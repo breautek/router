@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.0](../README.md) / [Exports](../modules.md) / [api](../modules/api.md) / URLStrategy
+[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [api](../modules/api.md) / URLStrategy
 
 # Class: URLStrategy
 
@@ -83,7 +83,7 @@ Name | Type |
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:17](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L17)
+Defined in: [src/URLStrategy.ts:17](https://github.com/breautek/router/blob/06b4d2d/src/URLStrategy.ts#L17)
 
 ## Properties
 
@@ -113,7 +113,7 @@ Name | Type |
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:175](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L175)
+Defined in: [src/RouterStrategy.ts:175](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L175)
 
 ___
 
@@ -152,7 +152,7 @@ Name | Type |
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:49](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L49)
+Defined in: [src/RouterStrategy.ts:49](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L49)
 
 ___
 
@@ -166,7 +166,7 @@ Navigate the history back one entry. This is an alias for [go(-1)](api.urlstrate
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:103](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L103)
+Defined in: [src/RouterStrategy.ts:103](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L103)
 
 ___
 
@@ -181,7 +181,7 @@ This is the same as calling [canGo(-1)](api.urlstrategy.md#cango)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:117](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L117)
+Defined in: [src/RouterStrategy.ts:117](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L117)
 
 ___
 
@@ -196,7 +196,7 @@ This is the same as calling [canGo(1)](api.urlstrategy.md#cango)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:125](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L125)
+Defined in: [src/RouterStrategy.ts:125](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L125)
 
 ___
 
@@ -214,7 +214,7 @@ Name | Type |
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:61](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L61)
+Defined in: [src/URLStrategy.ts:61](https://github.com/breautek/router/blob/06b4d2d/src/URLStrategy.ts#L61)
 
 ___
 
@@ -226,7 +226,7 @@ ___
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:111](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L111)
+Defined in: [src/URLStrategy.ts:111](https://github.com/breautek/router/blob/06b4d2d/src/URLStrategy.ts#L111)
 
 ___
 
@@ -271,7 +271,7 @@ navigate the history forward one entry. This is an alias for [go(1)](api.urlstra
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:96](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L96)
+Defined in: [src/RouterStrategy.ts:96](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L96)
 
 ___
 
@@ -283,7 +283,7 @@ ___
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:49](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L49)
+Defined in: [src/URLStrategy.ts:49](https://github.com/breautek/router/blob/06b4d2d/src/URLStrategy.ts#L49)
 
 ___
 
@@ -295,7 +295,7 @@ ___
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:41](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L41)
+Defined in: [src/URLStrategy.ts:41](https://github.com/breautek/router/blob/06b4d2d/src/URLStrategy.ts#L41)
 
 ___
 
@@ -313,7 +313,7 @@ Name | Type |
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:45](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L45)
+Defined in: [src/URLStrategy.ts:45](https://github.com/breautek/router/blob/06b4d2d/src/URLStrategy.ts#L45)
 
 ___
 
@@ -339,7 +339,7 @@ Gets the router
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:20](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L20)
+Defined in: [src/RouterStrategy.ts:20](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L20)
 
 ___
 
@@ -351,7 +351,7 @@ ___
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:53](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L53)
+Defined in: [src/URLStrategy.ts:53](https://github.com/breautek/router/blob/06b4d2d/src/URLStrategy.ts#L53)
 
 ___
 
@@ -369,7 +369,7 @@ Name | Type |
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:65](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L65)
+Defined in: [src/URLStrategy.ts:65](https://github.com/breautek/router/blob/06b4d2d/src/URLStrategy.ts#L65)
 
 ___
 
@@ -480,7 +480,7 @@ Name | Type |
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:57](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L57)
+Defined in: [src/URLStrategy.ts:57](https://github.com/breautek/router/blob/06b4d2d/src/URLStrategy.ts#L57)
 
 ___
 
@@ -495,7 +495,7 @@ This is the same as calling [peek(-1)](api.urlstrategy.md#peek)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:147](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L147)
+Defined in: [src/RouterStrategy.ts:147](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L147)
 
 ___
 
@@ -510,7 +510,7 @@ This is the same as calling [peek(1)](api.urlstrategy.md#peek)
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:139](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L139)
+Defined in: [src/RouterStrategy.ts:139](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L139)
 
 ___
 
@@ -567,7 +567,7 @@ Name | Type |
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:74](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L74)
+Defined in: [src/URLStrategy.ts:74](https://github.com/breautek/router/blob/06b4d2d/src/URLStrategy.ts#L74)
 
 ___
 
@@ -642,7 +642,7 @@ Name | Type |
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:58](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L58)
+Defined in: [src/RouterStrategy.ts:58](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L58)
 
 ___
 
@@ -661,7 +661,7 @@ Name | Type |
 
 Overrides: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/URLStrategy.ts:92](https://github.com/breautek/router/blob/6c82bce/src/URLStrategy.ts#L92)
+Defined in: [src/URLStrategy.ts:92](https://github.com/breautek/router/blob/06b4d2d/src/URLStrategy.ts#L92)
 
 ___
 
@@ -699,7 +699,7 @@ Name | Type |
 
 Inherited from: [RouterStrategy](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:29](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L29)
+Defined in: [src/RouterStrategy.ts:29](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L29)
 
 ___
 

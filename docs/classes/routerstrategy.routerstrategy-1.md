@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.0](../README.md) / [Exports](../modules.md) / [RouterStrategy](../modules/routerstrategy.md) / RouterStrategy
+[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [RouterStrategy](../modules/routerstrategy.md) / RouterStrategy
 
 # Class: RouterStrategy
 
@@ -82,7 +82,7 @@ Name | Type |
 
 **Returns:** [*RouterStrategy*](routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/RouterStrategy.ts:10](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L10)
+Defined in: [src/RouterStrategy.ts:10](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L10)
 
 ## Properties
 
@@ -108,7 +108,7 @@ Name | Type |
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:175](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L175)
+Defined in: [src/RouterStrategy.ts:175](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L175)
 
 ___
 
@@ -143,7 +143,7 @@ Name | Type |
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:49](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L49)
+Defined in: [src/RouterStrategy.ts:49](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L49)
 
 ___
 
@@ -155,7 +155,7 @@ Navigate the history back one entry. This is an alias for [go(-1)](routerstrateg
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:103](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L103)
+Defined in: [src/RouterStrategy.ts:103](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L103)
 
 ___
 
@@ -168,7 +168,7 @@ This is the same as calling [canGo(-1)](routerstrategy.routerstrategy-1.md#cango
 
 **Returns:** *boolean*
 
-Defined in: [src/RouterStrategy.ts:117](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L117)
+Defined in: [src/RouterStrategy.ts:117](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L117)
 
 ___
 
@@ -181,7 +181,7 @@ This is the same as calling [canGo(1)](routerstrategy.routerstrategy-1.md#cango)
 
 **Returns:** *boolean*
 
-Defined in: [src/RouterStrategy.ts:125](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L125)
+Defined in: [src/RouterStrategy.ts:125](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L125)
 
 ___
 
@@ -199,7 +199,7 @@ Name | Type | Description |
 
 **Returns:** *boolean*
 
-Defined in: [src/RouterStrategy.ts:111](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L111)
+Defined in: [src/RouterStrategy.ts:111](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L111)
 
 ___
 
@@ -211,7 +211,7 @@ Clears the history stack.
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:169](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L169)
+Defined in: [src/RouterStrategy.ts:169](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L169)
 
 ___
 
@@ -250,7 +250,7 @@ navigate the history forward one entry. This is an alias for [go(1)](routerstrat
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:96](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L96)
+Defined in: [src/RouterStrategy.ts:96](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L96)
 
 ___
 
@@ -262,7 +262,7 @@ Gets the size of the history stack
 
 **Returns:** *number*
 
-Defined in: [src/RouterStrategy.ts:77](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L77)
+Defined in: [src/RouterStrategy.ts:77](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L77)
 
 ___
 
@@ -275,7 +275,7 @@ This is the same as calling [peek(0)](routerstrategy.routerstrategy-1.md#peek)
 
 **Returns:** *string*
 
-Defined in: [src/RouterStrategy.ts:72](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L72)
+Defined in: [src/RouterStrategy.ts:72](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L72)
 
 ___
 
@@ -293,7 +293,7 @@ Name | Type | Description |
 
 **Returns:** *string*
 
-Defined in: [src/RouterStrategy.ts:66](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L66)
+Defined in: [src/RouterStrategy.ts:66](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L66)
 
 ___
 
@@ -315,7 +315,7 @@ Gets the router
 
 **Returns:** [*Router*](router.router-1.md)<[*IRouterProps*](../interfaces/router.irouterprops.md)\>
 
-Defined in: [src/RouterStrategy.ts:20](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L20)
+Defined in: [src/RouterStrategy.ts:20](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L20)
 
 ___
 
@@ -327,7 +327,7 @@ Gets the scroll restoration
 
 **Returns:** ScrollRestoration
 
-Defined in: [src/RouterStrategy.ts:82](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L82)
+Defined in: [src/RouterStrategy.ts:82](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L82)
 
 ___
 
@@ -345,7 +345,7 @@ Name | Type | Description |
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:91](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L91)
+Defined in: [src/RouterStrategy.ts:91](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L91)
 
 ___
 
@@ -446,7 +446,7 @@ Name | Type | Description |
 
 **Returns:** *string*
 
-Defined in: [src/RouterStrategy.ts:133](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L133)
+Defined in: [src/RouterStrategy.ts:133](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L133)
 
 ___
 
@@ -459,7 +459,7 @@ This is the same as calling [peek(-1)](routerstrategy.routerstrategy-1.md#peek)
 
 **Returns:** *string*
 
-Defined in: [src/RouterStrategy.ts:147](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L147)
+Defined in: [src/RouterStrategy.ts:147](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L147)
 
 ___
 
@@ -472,7 +472,7 @@ This is the same as calling [peek(1)](routerstrategy.routerstrategy-1.md#peek)
 
 **Returns:** *string*
 
-Defined in: [src/RouterStrategy.ts:139](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L139)
+Defined in: [src/RouterStrategy.ts:139](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L139)
 
 ___
 
@@ -525,7 +525,7 @@ Name | Type |
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:156](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L156)
+Defined in: [src/RouterStrategy.ts:156](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L156)
 
 ___
 
@@ -592,7 +592,7 @@ Name | Type |
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:58](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L58)
+Defined in: [src/RouterStrategy.ts:58](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L58)
 
 ___
 
@@ -612,7 +612,7 @@ Name | Type |
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:164](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L164)
+Defined in: [src/RouterStrategy.ts:164](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L164)
 
 ___
 
@@ -646,7 +646,7 @@ Name | Type |
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:29](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L29)
+Defined in: [src/RouterStrategy.ts:29](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L29)
 
 ___
 

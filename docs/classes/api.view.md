@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.0](../README.md) / [Exports](../modules.md) / [api](../modules/api.md) / View
+[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [api](../modules/api.md) / View
 
 # Class: View<TPageProps\>
 
@@ -72,7 +72,7 @@ Name | Type | Description |
 
 **Returns:** [*View*](view.view-1.md)<TPageProps\>
 
-Defined in: [src/View.tsx:21](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L21)
+Defined in: [src/View.tsx:21](https://github.com/breautek/router/blob/06b4d2d/src/View.tsx#L21)
 
 ## Properties
 
@@ -251,7 +251,7 @@ ___
 
 **Returns:** ReactNode
 
-Defined in: [src/View.tsx:91](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L91)
+Defined in: [src/View.tsx:91](https://github.com/breautek/router/blob/06b4d2d/src/View.tsx#L91)
 
 ___
 
@@ -406,7 +406,7 @@ Return the CSS class on this view
 
 **Returns:** *string*
 
-Defined in: [src/View.tsx:34](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L34)
+Defined in: [src/View.tsx:34](https://github.com/breautek/router/blob/06b4d2d/src/View.tsx#L34)
 
 ___
 
@@ -418,7 +418,7 @@ Gets the underlying HTML node for this View
 
 **Returns:** HTMLElement
 
-Defined in: [src/View.tsx:72](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L72)
+Defined in: [src/View.tsx:72](https://github.com/breautek/router/blob/06b4d2d/src/View.tsx#L72)
 
 ___
 
@@ -454,7 +454,7 @@ Get the title of this view
 
 **Returns:** *Promise*<string\>
 
-Defined in: [src/View.tsx:79](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L79)
+Defined in: [src/View.tsx:79](https://github.com/breautek/router/blob/06b4d2d/src/View.tsx#L79)
 
 ___
 
@@ -467,7 +467,7 @@ Use React style notation.
 
 **Returns:** *IDictionary*<string\>
 
-Defined in: [src/View.tsx:87](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L87)
+Defined in: [src/View.tsx:87](https://github.com/breautek/router/blob/06b4d2d/src/View.tsx#L87)
 
 ___
 
@@ -479,7 +479,7 @@ Override to return a webpack API style stylesheet
 
 **Returns:** [*IViewStylesheet*](../interfaces/iviewstylesheet.iviewstylesheet-1.md)
 
-Defined in: [src/View.tsx:41](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L41)
+Defined in: [src/View.tsx:41](https://github.com/breautek/router/blob/06b4d2d/src/View.tsx#L41)
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 **Returns:** ReactNode
 
-Defined in: [src/View.tsx:93](https://github.com/breautek/router/blob/6c82bce/src/View.tsx#L93)
+Defined in: [src/View.tsx:93](https://github.com/breautek/router/blob/06b4d2d/src/View.tsx#L93)
 
 ___
 

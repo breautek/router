@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.0](../README.md) / [Exports](../modules.md) / [Route](../modules/route.md) / IComponentProps
+[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [Route](../modules/route.md) / IComponentProps
 
 # Interface: IComponentProps
 
@@ -21,7 +21,7 @@
 
 • **router**: [*RouterStrategy*](../classes/routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/Route.tsx:20](https://github.com/breautek/router/blob/6c82bce/src/Route.tsx#L20)
+Defined in: [src/Route.tsx:20](https://github.com/breautek/router/blob/06b4d2d/src/Route.tsx#L20)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • **url**: *string*
 
-Defined in: [src/Route.tsx:19](https://github.com/breautek/router/blob/6c82bce/src/Route.tsx#L19)
+Defined in: [src/Route.tsx:19](https://github.com/breautek/router/blob/06b4d2d/src/Route.tsx#L19)

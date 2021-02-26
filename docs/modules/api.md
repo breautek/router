@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.0](../README.md) / [Exports](../modules.md) / api
+[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / api
 
 # Module: api
 
@@ -63,7 +63,7 @@ Name | Type |
 
 **Returns:** *void*
 
-Defined in: [src/RouterStrategy.ts:7](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L7)
+Defined in: [src/RouterStrategy.ts:7](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L7)
 
 ## Variables
 
@@ -73,7 +73,7 @@ Defined in: [src/RouterStrategy.ts:7](https://github.com/breautek/router/blob/6c
 
 Alias for [HashStrategy](../classes/api.hashstrategy.md)
 
-Defined in: [src/DefaultStrategy.ts:9](https://github.com/breautek/router/blob/6c82bce/src/DefaultStrategy.ts#L9)
+Defined in: [src/DefaultStrategy.ts:9](https://github.com/breautek/router/blob/06b4d2d/src/DefaultStrategy.ts#L9)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 • `Const` **EVENT\_URL\_CHANGE**: *string*= 'urlchange'
 
-Defined in: [src/RouterStrategy.ts:5](https://github.com/breautek/router/blob/6c82bce/src/RouterStrategy.ts#L5)
+Defined in: [src/RouterStrategy.ts:5](https://github.com/breautek/router/blob/06b4d2d/src/RouterStrategy.ts#L5)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 • `Const` **version**: *string*
 
-Defined in: [src/api.ts:21](https://github.com/breautek/router/blob/6c82bce/src/api.ts#L21)
+Defined in: [src/api.ts:21](https://github.com/breautek/router/blob/06b4d2d/src/api.ts#L21)
 
 ## Functions
 
@@ -99,4 +99,4 @@ Defined in: [src/api.ts:21](https://github.com/breautek/router/blob/6c82bce/src/
 
 **Returns:** [*RouterStrategy*](../classes/routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/Router.tsx:279](https://github.com/breautek/router/blob/6c82bce/src/Router.tsx#L279)
+Defined in: [src/Router.tsx:279](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L279)
