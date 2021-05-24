@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [View](../modules/view.md) / View
+[@breautek/router - v1.0.2](../README.md) / [Exports](../modules.md) / [View](../modules/view.md) / View
 
 # Class: View<TPageProps\>
 
@@ -6,13 +6,13 @@
 
 ## Type parameters
 
-Name | Type | Default |
-:------ | :------ | :------ |
-`TPageProps` | [*IViewProps*](../interfaces/view.iviewprops.md) | [*IViewProps*](../interfaces/view.iviewprops.md) |
+| Name | Type | Default |
+| :------ | :------ | :------ |
+| `TPageProps` | [*IViewProps*](../interfaces/view.iviewprops.md) | [*IViewProps*](../interfaces/view.iviewprops.md) |
 
 ## Hierarchy
 
-* *Component*<TPageProps\>
+- *Component*<TPageProps\>
 
   ↳ **View**
 
@@ -58,21 +58,23 @@ Name | Type | Default |
 
 \+ **new View**<TPageProps\>(`props`: TPageProps): [*View*](view.view-1.md)<TPageProps\>
 
-#### Type parameters:
+#### Type parameters
 
-Name | Type | Default |
-:------ | :------ | :------ |
-`TPageProps` | [*IViewProps*](../interfaces/view.iviewprops.md) | [*IViewProps*](../interfaces/view.iviewprops.md) |
+| Name | Type | Default |
+| :------ | :------ | :------ |
+| `TPageProps` | [*IViewProps*](../interfaces/view.iviewprops.md) | [*IViewProps*](../interfaces/view.iviewprops.md) |
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`props` | TPageProps | See [IViewProps]    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `props` | TPageProps | See [IViewProps] |
 
 **Returns:** [*View*](view.view-1.md)<TPageProps\>
 
-Defined in: [src/View.tsx:21](https://github.com/breautek/router/blob/06b4d2d/src/View.tsx#L21)
+Overrides: React.Component&lt;TPageProps\&gt;.constructor
+
+Defined in: [src/View.tsx:21](https://github.com/breautek/router/blob/3a44627/src/View.tsx#L21)
 
 ## Properties
 
@@ -94,6 +96,8 @@ declare context: React.ContextType<typeof MyContext>
 
 **`see`** https://reactjs.org/docs/context.html
 
+Inherited from: React.Component.context
+
 Defined in: node_modules/@types/react/index.d.ts:480
 
 ___
@@ -101,6 +105,8 @@ ___
 ### props
 
 • `Readonly` **props**: *Readonly*<TPageProps\> & *Readonly*<{ `children?`: ReactNode  }\>
+
+Inherited from: React.Component.props
 
 Defined in: node_modules/@types/react/index.d.ts:505
 
@@ -110,10 +116,12 @@ ___
 
 • **refs**: *object*
 
-**`deprecated`** 
+**`deprecated`**
 https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs
 
-#### Type declaration:
+#### Type declaration
+
+Inherited from: React.Component.refs
 
 Defined in: node_modules/@types/react/index.d.ts:511
 
@@ -123,13 +131,15 @@ ___
 
 • **state**: *Readonly*<{}\>
 
+Inherited from: React.Component.state
+
 Defined in: node_modules/@types/react/index.d.ts:506
 
 ___
 
 ### contextType
 
-▪ `Optional` `Static` **contextType**: *Context*<any\>
+▪ `Static` `Optional` **contextType**: *Context*<any\>
 
 If set, `this.context` will be set at runtime to the current value of the given Context.
 
@@ -150,13 +160,15 @@ class Foo extends React.Component {
 
 **`see`** https://reactjs.org/docs/context.html#classcontexttype
 
+Inherited from: React.Component.contextType
+
 Defined in: node_modules/@types/react/index.d.ts:462
 
 ## Methods
 
 ### UNSAFE\_componentWillMount
 
-▸ `Optional`**UNSAFE_componentWillMount**(): *void*
+▸ `Optional` **UNSAFE_componentWillMount**(): *void*
 
 Called immediately before mounting occurs, and before `Component#render`.
 Avoid introducing any side-effects or subscriptions in this method.
@@ -174,13 +186,15 @@ prevents this from being invoked.
 
 **Returns:** *void*
 
+Inherited from: React.Component.UNSAFE\_componentWillMount
+
 Defined in: node_modules/@types/react/index.d.ts:716
 
 ___
 
 ### UNSAFE\_componentWillReceiveProps
 
-▸ `Optional`**UNSAFE_componentWillReceiveProps**(`nextProps`: *Readonly*<TPageProps\>, `nextContext`: *any*): *void*
+▸ `Optional` **UNSAFE_componentWillReceiveProps**(`nextProps`: *Readonly*<TPageProps\>, `nextContext`: *any*): *void*
 
 Called when the component may be receiving new props.
 React may call this even if props have not changed, so be sure to compare new and existing
@@ -199,14 +213,16 @@ prevents this from being invoked.
 
 **`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`nextProps` | *Readonly*<TPageProps\> |
-`nextContext` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `nextProps` | *Readonly*<TPageProps\> |
+| `nextContext` | *any* |
 
 **Returns:** *void*
+
+Inherited from: React.Component.UNSAFE\_componentWillReceiveProps
 
 Defined in: node_modules/@types/react/index.d.ts:748
 
@@ -214,7 +230,7 @@ ___
 
 ### UNSAFE\_componentWillUpdate
 
-▸ `Optional`**UNSAFE_componentWillUpdate**(`nextProps`: *Readonly*<TPageProps\>, `nextState`: *Readonly*<{}\>, `nextContext`: *any*): *void*
+▸ `Optional` **UNSAFE_componentWillUpdate**(`nextProps`: *Readonly*<TPageProps\>, `nextState`: *Readonly*<{}\>, `nextContext`: *any*): *void*
 
 Called immediately before rendering when new props or state is received. Not called for the initial render.
 
@@ -231,15 +247,17 @@ prevents this from being invoked.
 
 **`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`nextProps` | *Readonly*<TPageProps\> |
-`nextState` | *Readonly*<{}\> |
-`nextContext` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `nextProps` | *Readonly*<TPageProps\> |
+| `nextState` | *Readonly*<{}\> |
+| `nextContext` | *any* |
 
 **Returns:** *void*
+
+Inherited from: React.Component.UNSAFE\_componentWillUpdate
 
 Defined in: node_modules/@types/react/index.d.ts:776
 
@@ -247,29 +265,31 @@ ___
 
 ### \_renderView
 
-▸ `Protected` `Abstract`**_renderView**(): ReactNode
+▸ `Protected` `Abstract` **_renderView**(): ReactNode
 
 **Returns:** ReactNode
 
-Defined in: [src/View.tsx:91](https://github.com/breautek/router/blob/06b4d2d/src/View.tsx#L91)
+Defined in: [src/View.tsx:91](https://github.com/breautek/router/blob/3a44627/src/View.tsx#L91)
 
 ___
 
 ### componentDidCatch
 
-▸ `Optional`**componentDidCatch**(`error`: Error, `errorInfo`: ErrorInfo): *void*
+▸ `Optional` **componentDidCatch**(`error`: Error, `errorInfo`: ErrorInfo): *void*
 
 Catches exceptions generated in descendant components. Unhandled exceptions will cause
 the entire component tree to unmount.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`error` | Error |
-`errorInfo` | ErrorInfo |
+| Name | Type |
+| :------ | :------ |
+| `error` | Error |
+| `errorInfo` | ErrorInfo |
 
 **Returns:** *void*
+
+Inherited from: React.Component.componentDidCatch
 
 Defined in: node_modules/@types/react/index.d.ts:645
 
@@ -277,21 +297,23 @@ ___
 
 ### componentDidUpdate
 
-▸ `Optional`**componentDidUpdate**(`prevProps`: *Readonly*<TPageProps\>, `prevState`: *Readonly*<{}\>, `snapshot?`: *any*): *void*
+▸ `Optional` **componentDidUpdate**(`prevProps`: *Readonly*<TPageProps\>, `prevState`: *Readonly*<{}\>, `snapshot?`: *any*): *void*
 
 Called immediately after updating occurs. Not called for the initial render.
 
 The snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`prevProps` | *Readonly*<TPageProps\> |
-`prevState` | *Readonly*<{}\> |
-`snapshot?` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `prevProps` | *Readonly*<TPageProps\> |
+| `prevState` | *Readonly*<{}\> |
+| `snapshot?` | *any* |
 
 **Returns:** *void*
+
+Inherited from: React.Component.componentDidUpdate
 
 Defined in: node_modules/@types/react/index.d.ts:687
 
@@ -299,7 +321,7 @@ ___
 
 ### componentWillMount
 
-▸ `Optional`**componentWillMount**(): *void*
+▸ `Optional` **componentWillMount**(): *void*
 
 Called immediately before mounting occurs, and before `Component#render`.
 Avoid introducing any side-effects or subscriptions in this method.
@@ -315,13 +337,15 @@ prevents this from being invoked.
 
 **Returns:** *void*
 
+Inherited from: React.Component.componentWillMount
+
 Defined in: node_modules/@types/react/index.d.ts:702
 
 ___
 
 ### componentWillReceiveProps
 
-▸ `Optional`**componentWillReceiveProps**(`nextProps`: *Readonly*<TPageProps\>, `nextContext`: *any*): *void*
+▸ `Optional` **componentWillReceiveProps**(`nextProps`: *Readonly*<TPageProps\>, `nextContext`: *any*): *void*
 
 Called when the component may be receiving new props.
 React may call this even if props have not changed, so be sure to compare new and existing
@@ -338,14 +362,16 @@ prevents this from being invoked.
 
 **`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`nextProps` | *Readonly*<TPageProps\> |
-`nextContext` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `nextProps` | *Readonly*<TPageProps\> |
+| `nextContext` | *any* |
 
 **Returns:** *void*
+
+Inherited from: React.Component.componentWillReceiveProps
 
 Defined in: node_modules/@types/react/index.d.ts:731
 
@@ -353,7 +379,7 @@ ___
 
 ### componentWillUpdate
 
-▸ `Optional`**componentWillUpdate**(`nextProps`: *Readonly*<TPageProps\>, `nextState`: *Readonly*<{}\>, `nextContext`: *any*): *void*
+▸ `Optional` **componentWillUpdate**(`nextProps`: *Readonly*<TPageProps\>, `nextState`: *Readonly*<{}\>, `nextContext`: *any*): *void*
 
 Called immediately before rendering when new props or state is received. Not called for the initial render.
 
@@ -368,15 +394,17 @@ prevents this from being invoked.
 
 **`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`nextProps` | *Readonly*<TPageProps\> |
-`nextState` | *Readonly*<{}\> |
-`nextContext` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `nextProps` | *Readonly*<TPageProps\> |
+| `nextState` | *Readonly*<{}\> |
+| `nextContext` | *any* |
 
 **Returns:** *void*
+
+Inherited from: React.Component.componentWillUpdate
 
 Defined in: node_modules/@types/react/index.d.ts:761
 
@@ -386,13 +414,15 @@ ___
 
 ▸ **forceUpdate**(`callback?`: () => *void*): *void*
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`callback?` | () => *void* |
+| Name | Type |
+| :------ | :------ |
+| `callback?` | () => *void* |
 
 **Returns:** *void*
+
+Inherited from: React.Component.forceUpdate
 
 Defined in: node_modules/@types/react/index.d.ts:497
 
@@ -406,7 +436,7 @@ Return the CSS class on this view
 
 **Returns:** *string*
 
-Defined in: [src/View.tsx:34](https://github.com/breautek/router/blob/06b4d2d/src/View.tsx#L34)
+Defined in: [src/View.tsx:34](https://github.com/breautek/router/blob/3a44627/src/View.tsx#L34)
 
 ___
 
@@ -418,13 +448,13 @@ Gets the underlying HTML node for this View
 
 **Returns:** HTMLElement
 
-Defined in: [src/View.tsx:72](https://github.com/breautek/router/blob/06b4d2d/src/View.tsx#L72)
+Defined in: [src/View.tsx:72](https://github.com/breautek/router/blob/3a44627/src/View.tsx#L72)
 
 ___
 
 ### getSnapshotBeforeUpdate
 
-▸ `Optional`**getSnapshotBeforeUpdate**(`prevProps`: *Readonly*<TPageProps\>, `prevState`: *Readonly*<{}\>): *any*
+▸ `Optional` **getSnapshotBeforeUpdate**(`prevProps`: *Readonly*<TPageProps\>, `prevState`: *Readonly*<{}\>): *any*
 
 Runs before React applies the result of `render` to the document, and
 returns an object to be given to componentDidUpdate. Useful for saving
@@ -433,14 +463,16 @@ things such as scroll position before `render` causes changes to it.
 Note: the presence of getSnapshotBeforeUpdate prevents any of the deprecated
 lifecycle events from running.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`prevProps` | *Readonly*<TPageProps\> |
-`prevState` | *Readonly*<{}\> |
+| Name | Type |
+| :------ | :------ |
+| `prevProps` | *Readonly*<TPageProps\> |
+| `prevState` | *Readonly*<{}\> |
 
 **Returns:** *any*
+
+Inherited from: React.Component.getSnapshotBeforeUpdate
 
 Defined in: node_modules/@types/react/index.d.ts:681
 
@@ -454,7 +486,7 @@ Get the title of this view
 
 **Returns:** *Promise*<string\>
 
-Defined in: [src/View.tsx:79](https://github.com/breautek/router/blob/06b4d2d/src/View.tsx#L79)
+Defined in: [src/View.tsx:79](https://github.com/breautek/router/blob/3a44627/src/View.tsx#L79)
 
 ___
 
@@ -467,7 +499,7 @@ Use React style notation.
 
 **Returns:** *IDictionary*<string\>
 
-Defined in: [src/View.tsx:87](https://github.com/breautek/router/blob/06b4d2d/src/View.tsx#L87)
+Defined in: [src/View.tsx:87](https://github.com/breautek/router/blob/3a44627/src/View.tsx#L87)
 
 ___
 
@@ -479,7 +511,7 @@ Override to return a webpack API style stylesheet
 
 **Returns:** [*IViewStylesheet*](../interfaces/iviewstylesheet.iviewstylesheet-1.md)
 
-Defined in: [src/View.tsx:41](https://github.com/breautek/router/blob/06b4d2d/src/View.tsx#L41)
+Defined in: [src/View.tsx:41](https://github.com/breautek/router/blob/3a44627/src/View.tsx#L41)
 
 ___
 
@@ -489,7 +521,9 @@ ___
 
 **Returns:** ReactNode
 
-Defined in: [src/View.tsx:93](https://github.com/breautek/router/blob/06b4d2d/src/View.tsx#L93)
+Overrides: React.Component.render
+
+Defined in: [src/View.tsx:93](https://github.com/breautek/router/blob/3a44627/src/View.tsx#L93)
 
 ___
 
@@ -497,20 +531,22 @@ ___
 
 ▸ **setState**<K\>(`state`: {} \| (`prevState`: *Readonly*<{}\>, `props`: *Readonly*<TPageProps\>) => {} \| *Pick*<{}, K\> \| *Pick*<{}, K\>, `callback?`: () => *void*): *void*
 
-#### Type parameters:
+#### Type parameters
 
-Name | Type |
-:------ | :------ |
-`K` | *never* |
+| Name | Type |
+| :------ | :------ |
+| `K` | *never* |
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`state` | {} \| (`prevState`: *Readonly*<{}\>, `props`: *Readonly*<TPageProps\>) => {} \| *Pick*<{}, K\> \| *Pick*<{}, K\> |
-`callback?` | () => *void* |
+| Name | Type |
+| :------ | :------ |
+| `state` | {} \| (`prevState`: *Readonly*<{}\>, `props`: *Readonly*<TPageProps\>) => {} \| *Pick*<{}, K\> \| *Pick*<{}, K\> |
+| `callback?` | () => *void* |
 
 **Returns:** *void*
+
+Inherited from: React.Component.setState
 
 Defined in: node_modules/@types/react/index.d.ts:492
 
@@ -518,7 +554,7 @@ ___
 
 ### shouldComponentUpdate
 
-▸ `Optional`**shouldComponentUpdate**(`nextProps`: *Readonly*<TPageProps\>, `nextState`: *Readonly*<{}\>, `nextContext`: *any*): *boolean*
+▸ `Optional` **shouldComponentUpdate**(`nextProps`: *Readonly*<TPageProps\>, `nextState`: *Readonly*<{}\>, `nextContext`: *any*): *boolean*
 
 Called to determine whether the change in props and state should trigger a re-render.
 
@@ -529,14 +565,16 @@ props or states have changed.
 If false is returned, `Component#render`, `componentWillUpdate`
 and `componentDidUpdate` will not be called.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`nextProps` | *Readonly*<TPageProps\> |
-`nextState` | *Readonly*<{}\> |
-`nextContext` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `nextProps` | *Readonly*<TPageProps\> |
+| `nextState` | *Readonly*<{}\> |
+| `nextContext` | *any* |
 
 **Returns:** *boolean*
+
+Inherited from: React.Component.shouldComponentUpdate
 
 Defined in: node_modules/@types/react/index.d.ts:635

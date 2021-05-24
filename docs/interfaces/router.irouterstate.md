@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [Router](../modules/router.md) / IRouterState
+[@breautek/router - v1.0.2](../README.md) / [Exports](../modules.md) / [Router](../modules/router.md) / IRouterState
 
 # Interface: IRouterState
 
@@ -18,7 +18,7 @@
 
 • **shouldTransition**: *boolean*
 
-Defined in: [src/Router.tsx:23](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L23)
+Defined in: [src/Router.tsx:23](https://github.com/breautek/router/blob/3a44627/src/Router.tsx#L23)
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • **strategy**: [*RouterStrategy*](../classes/routerstrategy.routerstrategy-1.md)
 
-Defined in: [src/Router.tsx:21](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L21)
+Defined in: [src/Router.tsx:21](https://github.com/breautek/router/blob/3a44627/src/Router.tsx#L21)
 
 ___
 
@@ -34,4 +34,4 @@ ___
 
 • **url**: *string*
 
-Defined in: [src/Router.tsx:22](https://github.com/breautek/router/blob/06b4d2d/src/Router.tsx#L22)
+Defined in: [src/Router.tsx:22](https://github.com/breautek/router/blob/3a44627/src/Router.tsx#L22)

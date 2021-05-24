@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [URLParser](../modules/urlparser.md) / IURLParams
+[@breautek/router - v1.0.2](../README.md) / [Exports](../modules.md) / [URLParser](../modules/urlparser.md) / IURLParams
 
 # Interface: IURLParams
 

@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [IOnNoRoute](../modules/ionnoroute.md) / IOnNoRoute
+[@breautek/router - v1.0.2](../README.md) / [Exports](../modules.md) / [IOnNoRoute](../modules/ionnoroute.md) / IOnNoRoute
 
 # Interface: IOnNoRoute
 
@@ -6,15 +6,15 @@
 
 ## Callable
 
-▸ **IOnNoRoute**(`indexRoute`: *ReactElement*<any, string \| (`props`: *any*) => *ReactElement*<any, any\> \| (`props`: *any*) => *Component*<any, any, any\>\>, `routes`: *ReactElement*<any, string \| (`props`: *any*) => *ReactElement*<any, any\> \| (`props`: *any*) => *Component*<any, any, any\>\>[]): *ReactElement*<any, string \| (`props`: *any*) => *ReactElement*<any, any\> \| (`props`: *any*) => *Component*<any, any, any\>\>
+▸ **IOnNoRoute**(`indexRoute`: *ReactElement*<any, string \| JSXElementConstructor<any\>\>, `routes`: *ReactElement*<any, string \| JSXElementConstructor<any\>\>[]): *ReactElement*<any, string \| JSXElementConstructor<any\>\>
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`indexRoute` | *ReactElement*<any, string \| (`props`: *any*) => *ReactElement*<any, any\> \| (`props`: *any*) => *Component*<any, any, any\>\> |
-`routes` | *ReactElement*<any, string \| (`props`: *any*) => *ReactElement*<any, any\> \| (`props`: *any*) => *Component*<any, any, any\>\>[] |
+| Name | Type |
+| :------ | :------ |
+| `indexRoute` | *ReactElement*<any, string \| JSXElementConstructor<any\>\> |
+| `routes` | *ReactElement*<any, string \| JSXElementConstructor<any\>\>[] |
 
-**Returns:** *ReactElement*<any, string \| (`props`: *any*) => *ReactElement*<any, any\> \| (`props`: *any*) => *Component*<any, any, any\>\>
+**Returns:** *ReactElement*<any, string \| JSXElementConstructor<any\>\>
 
-Defined in: [src/IOnNoRoute.ts:4](https://github.com/breautek/router/blob/06b4d2d/src/IOnNoRoute.ts#L4)
+Defined in: [src/IOnNoRoute.ts:4](https://github.com/breautek/router/blob/3a44627/src/IOnNoRoute.ts#L4)

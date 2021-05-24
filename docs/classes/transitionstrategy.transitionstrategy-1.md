@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [TransitionStrategy](../modules/transitionstrategy.md) / TransitionStrategy
+[@breautek/router - v1.0.2](../README.md) / [Exports](../modules.md) / [TransitionStrategy](../modules/transitionstrategy.md) / TransitionStrategy
 
 # Class: TransitionStrategy
 
@@ -6,11 +6,9 @@
 
 ## Hierarchy
 
-* **TransitionStrategy**
+- **TransitionStrategy**
 
   ↳ [*TransitionSlide*](transitionslide.transitionslide-1.md)
-
-  ↳ [*TransitionSlide*](api.transitionslide.md)
 
 ## Table of contents
 
@@ -31,24 +29,24 @@
 
 **Returns:** [*TransitionStrategy*](transitionstrategy.transitionstrategy-1.md)
 
-Defined in: [src/TransitionStrategy.ts:3](https://github.com/breautek/router/blob/06b4d2d/src/TransitionStrategy.ts#L3)
+Defined in: [src/TransitionStrategy.ts:3](https://github.com/breautek/router/blob/3a44627/src/TransitionStrategy.ts#L3)
 
 ## Methods
 
 ### \_execute
 
-▸ `Protected` `Abstract`**_execute**(`incomingView`: [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\>, `exitingView`: [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\>): *Promise*<void\>
+▸ `Protected` `Abstract` **_execute**(`incomingView`: [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\>, `exitingView`: [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\>): *Promise*<void\>
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`incomingView` | [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\> |
-`exitingView` | [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\> |
+| Name | Type |
+| :------ | :------ |
+| `incomingView` | [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\> |
+| `exitingView` | [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\> |
 
 **Returns:** *Promise*<void\>
 
-Defined in: [src/TransitionStrategy.ts:25](https://github.com/breautek/router/blob/06b4d2d/src/TransitionStrategy.ts#L25)
+Defined in: [src/TransitionStrategy.ts:25](https://github.com/breautek/router/blob/3a44627/src/TransitionStrategy.ts#L25)
 
 ___
 
@@ -67,13 +65,13 @@ Both views will be rendered and are free to be manipulated in anyway that is des
 however, the incomingView should be positioned in it's natural position by the end
 of the transition to avoid "snapping" behaviour.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`incomingView` | [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\> |
-`exitingView` | [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\> |
+| Name | Type |
+| :------ | :------ |
+| `incomingView` | [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\> |
+| `exitingView` | [*View*](view.view-1.md)<[*IViewProps*](../interfaces/view.iviewprops.md)\> |
 
 **Returns:** *Promise*<void\>
 
-Defined in: [src/TransitionStrategy.ts:21](https://github.com/breautek/router/blob/06b4d2d/src/TransitionStrategy.ts#L21)
+Defined in: [src/TransitionStrategy.ts:21](https://github.com/breautek/router/blob/3a44627/src/TransitionStrategy.ts#L21)

@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [IViewStylesheet](../modules/iviewstylesheet.md) / IViewStylesheet
+[@breautek/router - v1.0.2](../README.md) / [Exports](../modules.md) / [IViewStylesheet](../modules/iviewstylesheet.md) / IViewStylesheet
 
 # Interface: IViewStylesheet
 
@@ -17,15 +17,13 @@
 
 • **unuse**: () => *void*
 
-#### Type declaration:
+#### Type declaration
 
 ▸ (): *void*
 
 **Returns:** *void*
 
-Defined in: [src/IViewStylesheet.ts:4](https://github.com/breautek/router/blob/06b4d2d/src/IViewStylesheet.ts#L4)
-
-Defined in: [src/IViewStylesheet.ts:4](https://github.com/breautek/router/blob/06b4d2d/src/IViewStylesheet.ts#L4)
+Defined in: [src/IViewStylesheet.ts:4](https://github.com/breautek/router/blob/3a44627/src/IViewStylesheet.ts#L4)
 
 ___
 
@@ -33,12 +31,10 @@ ___
 
 • **use**: () => *void*
 
-#### Type declaration:
+#### Type declaration
 
 ▸ (): *void*
 
 **Returns:** *void*
 
-Defined in: [src/IViewStylesheet.ts:3](https://github.com/breautek/router/blob/06b4d2d/src/IViewStylesheet.ts#L3)
-
-Defined in: [src/IViewStylesheet.ts:3](https://github.com/breautek/router/blob/06b4d2d/src/IViewStylesheet.ts#L3)
+Defined in: [src/IViewStylesheet.ts:3](https://github.com/breautek/router/blob/3a44627/src/IViewStylesheet.ts#L3)

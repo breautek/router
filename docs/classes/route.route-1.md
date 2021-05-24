@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.1](../README.md) / [Exports](../modules.md) / [Route](../modules/route.md) / Route
+[@breautek/router - v1.0.2](../README.md) / [Exports](../modules.md) / [Route](../modules/route.md) / Route
 
 # Class: Route<TComponentProps, TRouteProps, TRouteState\>
 
@@ -8,15 +8,15 @@ This class represents a route that renders a [View](../modules/view.md) componen
 
 ## Type parameters
 
-Name | Type | Default |
-:------ | :------ | :------ |
-`TComponentProps` | [*IComponentProps*](../interfaces/route.icomponentprops.md) | [*IComponentProps*](../interfaces/route.icomponentprops.md) |
-`TRouteProps` | [*IRouteProps*](../interfaces/route.irouteprops.md)<TComponentProps\> | [*IRouteProps*](../interfaces/route.irouteprops.md)<TComponentProps\> |
-`TRouteState` | [*IRouteState*](../interfaces/route.iroutestate.md) | [*IRouteState*](../interfaces/route.iroutestate.md) |
+| Name | Type | Default |
+| :------ | :------ | :------ |
+| `TComponentProps` | [*IComponentProps*](../interfaces/route.icomponentprops.md) | [*IComponentProps*](../interfaces/route.icomponentprops.md) |
+| `TRouteProps` | [*IRouteProps*](../interfaces/route.irouteprops.md)<TComponentProps\> | [*IRouteProps*](../interfaces/route.irouteprops.md)<TComponentProps\> |
+| `TRouteState` | [*IRouteState*](../interfaces/route.iroutestate.md) | [*IRouteState*](../interfaces/route.iroutestate.md) |
 
 ## Hierarchy
 
-* *Component*<TRouteProps, TRouteState\>
+- *Component*<TRouteProps, TRouteState\>
 
   ↳ **Route**
 
@@ -58,23 +58,25 @@ Name | Type | Default |
 
 \+ **new Route**<TComponentProps, TRouteProps, TRouteState\>(`props`: TRouteProps): [*Route*](route.route-1.md)<TComponentProps, TRouteProps, TRouteState\>
 
-#### Type parameters:
+#### Type parameters
 
-Name | Type | Default |
-:------ | :------ | :------ |
-`TComponentProps` | [*IComponentProps*](../interfaces/route.icomponentprops.md) | [*IComponentProps*](../interfaces/route.icomponentprops.md) |
-`TRouteProps` | [*IRouteProps*](../interfaces/route.irouteprops.md)<TComponentProps, TRouteProps\> | [*IRouteProps*](../interfaces/route.irouteprops.md)<TComponentProps\> |
-`TRouteState` | [*IRouteState*](../interfaces/route.iroutestate.md) | [*IRouteState*](../interfaces/route.iroutestate.md) |
+| Name | Type | Default |
+| :------ | :------ | :------ |
+| `TComponentProps` | [*IComponentProps*](../interfaces/route.icomponentprops.md) | [*IComponentProps*](../interfaces/route.icomponentprops.md) |
+| `TRouteProps` | [*IRouteProps*](../interfaces/route.irouteprops.md)<TComponentProps, TRouteProps\> | [*IRouteProps*](../interfaces/route.irouteprops.md)<TComponentProps\> |
+| `TRouteState` | [*IRouteState*](../interfaces/route.iroutestate.md) | [*IRouteState*](../interfaces/route.iroutestate.md) |
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`props` | TRouteProps |
+| Name | Type |
+| :------ | :------ |
+| `props` | TRouteProps |
 
 **Returns:** [*Route*](route.route-1.md)<TComponentProps, TRouteProps, TRouteState\>
 
-Defined in: [src/Route.tsx:37](https://github.com/breautek/router/blob/06b4d2d/src/Route.tsx#L37)
+Overrides: React.Component&lt;TRouteProps, TRouteState\&gt;.constructor
+
+Defined in: [src/Route.tsx:37](https://github.com/breautek/router/blob/3a44627/src/Route.tsx#L37)
 
 ## Properties
 
@@ -96,6 +98,8 @@ declare context: React.ContextType<typeof MyContext>
 
 **`see`** https://reactjs.org/docs/context.html
 
+Inherited from: React.Component.context
+
 Defined in: node_modules/@types/react/index.d.ts:480
 
 ___
@@ -103,6 +107,8 @@ ___
 ### props
 
 • `Readonly` **props**: *Readonly*<TRouteProps\> & *Readonly*<{ `children?`: ReactNode  }\>
+
+Inherited from: React.Component.props
 
 Defined in: node_modules/@types/react/index.d.ts:505
 
@@ -112,10 +118,12 @@ ___
 
 • **refs**: *object*
 
-**`deprecated`** 
+**`deprecated`**
 https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs
 
-#### Type declaration:
+#### Type declaration
+
+Inherited from: React.Component.refs
 
 Defined in: node_modules/@types/react/index.d.ts:511
 
@@ -125,13 +133,15 @@ ___
 
 • **state**: *Readonly*<TRouteState\>
 
+Inherited from: React.Component.state
+
 Defined in: node_modules/@types/react/index.d.ts:506
 
 ___
 
 ### contextType
 
-▪ `Optional` `Static` **contextType**: *Context*<any\>
+▪ `Static` `Optional` **contextType**: *Context*<any\>
 
 If set, `this.context` will be set at runtime to the current value of the given Context.
 
@@ -152,13 +162,15 @@ class Foo extends React.Component {
 
 **`see`** https://reactjs.org/docs/context.html#classcontexttype
 
+Inherited from: React.Component.contextType
+
 Defined in: node_modules/@types/react/index.d.ts:462
 
 ## Methods
 
 ### UNSAFE\_componentWillMount
 
-▸ `Optional`**UNSAFE_componentWillMount**(): *void*
+▸ `Optional` **UNSAFE_componentWillMount**(): *void*
 
 Called immediately before mounting occurs, and before `Component#render`.
 Avoid introducing any side-effects or subscriptions in this method.
@@ -176,13 +188,15 @@ prevents this from being invoked.
 
 **Returns:** *void*
 
+Inherited from: React.Component.UNSAFE\_componentWillMount
+
 Defined in: node_modules/@types/react/index.d.ts:716
 
 ___
 
 ### UNSAFE\_componentWillReceiveProps
 
-▸ `Optional`**UNSAFE_componentWillReceiveProps**(`nextProps`: *Readonly*<TRouteProps\>, `nextContext`: *any*): *void*
+▸ `Optional` **UNSAFE_componentWillReceiveProps**(`nextProps`: *Readonly*<TRouteProps\>, `nextContext`: *any*): *void*
 
 Called when the component may be receiving new props.
 React may call this even if props have not changed, so be sure to compare new and existing
@@ -201,14 +215,16 @@ prevents this from being invoked.
 
 **`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`nextProps` | *Readonly*<TRouteProps\> |
-`nextContext` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `nextProps` | *Readonly*<TRouteProps\> |
+| `nextContext` | *any* |
 
 **Returns:** *void*
+
+Inherited from: React.Component.UNSAFE\_componentWillReceiveProps
 
 Defined in: node_modules/@types/react/index.d.ts:748
 
@@ -216,7 +232,7 @@ ___
 
 ### UNSAFE\_componentWillUpdate
 
-▸ `Optional`**UNSAFE_componentWillUpdate**(`nextProps`: *Readonly*<TRouteProps\>, `nextState`: *Readonly*<TRouteState\>, `nextContext`: *any*): *void*
+▸ `Optional` **UNSAFE_componentWillUpdate**(`nextProps`: *Readonly*<TRouteProps\>, `nextState`: *Readonly*<TRouteState\>, `nextContext`: *any*): *void*
 
 Called immediately before rendering when new props or state is received. Not called for the initial render.
 
@@ -233,15 +249,17 @@ prevents this from being invoked.
 
 **`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`nextProps` | *Readonly*<TRouteProps\> |
-`nextState` | *Readonly*<TRouteState\> |
-`nextContext` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `nextProps` | *Readonly*<TRouteProps\> |
+| `nextState` | *Readonly*<TRouteState\> |
+| `nextContext` | *any* |
 
 **Returns:** *void*
+
+Inherited from: React.Component.UNSAFE\_componentWillUpdate
 
 Defined in: node_modules/@types/react/index.d.ts:776
 
@@ -249,19 +267,21 @@ ___
 
 ### componentDidCatch
 
-▸ `Optional`**componentDidCatch**(`error`: Error, `errorInfo`: ErrorInfo): *void*
+▸ `Optional` **componentDidCatch**(`error`: Error, `errorInfo`: ErrorInfo): *void*
 
 Catches exceptions generated in descendant components. Unhandled exceptions will cause
 the entire component tree to unmount.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`error` | Error |
-`errorInfo` | ErrorInfo |
+| Name | Type |
+| :------ | :------ |
+| `error` | Error |
+| `errorInfo` | ErrorInfo |
 
 **Returns:** *void*
+
+Inherited from: React.Component.componentDidCatch
 
 Defined in: node_modules/@types/react/index.d.ts:645
 
@@ -269,11 +289,13 @@ ___
 
 ### componentDidMount
 
-▸ `Optional`**componentDidMount**(): *void*
+▸ `Optional` **componentDidMount**(): *void*
 
 Called immediately after a component is mounted. Setting state here will trigger re-rendering.
 
 **Returns:** *void*
+
+Inherited from: React.Component.componentDidMount
 
 Defined in: node_modules/@types/react/index.d.ts:624
 
@@ -281,21 +303,23 @@ ___
 
 ### componentDidUpdate
 
-▸ `Optional`**componentDidUpdate**(`prevProps`: *Readonly*<TRouteProps\>, `prevState`: *Readonly*<TRouteState\>, `snapshot?`: *any*): *void*
+▸ `Optional` **componentDidUpdate**(`prevProps`: *Readonly*<TRouteProps\>, `prevState`: *Readonly*<TRouteState\>, `snapshot?`: *any*): *void*
 
 Called immediately after updating occurs. Not called for the initial render.
 
 The snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`prevProps` | *Readonly*<TRouteProps\> |
-`prevState` | *Readonly*<TRouteState\> |
-`snapshot?` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `prevProps` | *Readonly*<TRouteProps\> |
+| `prevState` | *Readonly*<TRouteState\> |
+| `snapshot?` | *any* |
 
 **Returns:** *void*
+
+Inherited from: React.Component.componentDidUpdate
 
 Defined in: node_modules/@types/react/index.d.ts:687
 
@@ -303,7 +327,7 @@ ___
 
 ### componentWillMount
 
-▸ `Optional`**componentWillMount**(): *void*
+▸ `Optional` **componentWillMount**(): *void*
 
 Called immediately before mounting occurs, and before `Component#render`.
 Avoid introducing any side-effects or subscriptions in this method.
@@ -319,13 +343,15 @@ prevents this from being invoked.
 
 **Returns:** *void*
 
+Inherited from: React.Component.componentWillMount
+
 Defined in: node_modules/@types/react/index.d.ts:702
 
 ___
 
 ### componentWillReceiveProps
 
-▸ `Optional`**componentWillReceiveProps**(`nextProps`: *Readonly*<TRouteProps\>, `nextContext`: *any*): *void*
+▸ `Optional` **componentWillReceiveProps**(`nextProps`: *Readonly*<TRouteProps\>, `nextContext`: *any*): *void*
 
 Called when the component may be receiving new props.
 React may call this even if props have not changed, so be sure to compare new and existing
@@ -342,14 +368,16 @@ prevents this from being invoked.
 
 **`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`nextProps` | *Readonly*<TRouteProps\> |
-`nextContext` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `nextProps` | *Readonly*<TRouteProps\> |
+| `nextContext` | *any* |
 
 **Returns:** *void*
+
+Inherited from: React.Component.componentWillReceiveProps
 
 Defined in: node_modules/@types/react/index.d.ts:731
 
@@ -357,12 +385,14 @@ ___
 
 ### componentWillUnmount
 
-▸ `Optional`**componentWillUnmount**(): *void*
+▸ `Optional` **componentWillUnmount**(): *void*
 
 Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as
 cancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.
 
 **Returns:** *void*
+
+Inherited from: React.Component.componentWillUnmount
 
 Defined in: node_modules/@types/react/index.d.ts:640
 
@@ -370,7 +400,7 @@ ___
 
 ### componentWillUpdate
 
-▸ `Optional`**componentWillUpdate**(`nextProps`: *Readonly*<TRouteProps\>, `nextState`: *Readonly*<TRouteState\>, `nextContext`: *any*): *void*
+▸ `Optional` **componentWillUpdate**(`nextProps`: *Readonly*<TRouteProps\>, `nextState`: *Readonly*<TRouteState\>, `nextContext`: *any*): *void*
 
 Called immediately before rendering when new props or state is received. Not called for the initial render.
 
@@ -385,15 +415,17 @@ prevents this from being invoked.
 
 **`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`nextProps` | *Readonly*<TRouteProps\> |
-`nextState` | *Readonly*<TRouteState\> |
-`nextContext` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `nextProps` | *Readonly*<TRouteProps\> |
+| `nextState` | *Readonly*<TRouteState\> |
+| `nextContext` | *any* |
 
 **Returns:** *void*
+
+Inherited from: React.Component.componentWillUpdate
 
 Defined in: node_modules/@types/react/index.d.ts:761
 
@@ -403,13 +435,15 @@ ___
 
 ▸ **forceUpdate**(`callback?`: () => *void*): *void*
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`callback?` | () => *void* |
+| Name | Type |
+| :------ | :------ |
+| `callback?` | () => *void* |
 
 **Returns:** *void*
+
+Inherited from: React.Component.forceUpdate
 
 Defined in: node_modules/@types/react/index.d.ts:497
 
@@ -417,7 +451,7 @@ ___
 
 ### getSnapshotBeforeUpdate
 
-▸ `Optional`**getSnapshotBeforeUpdate**(`prevProps`: *Readonly*<TRouteProps\>, `prevState`: *Readonly*<TRouteState\>): *any*
+▸ `Optional` **getSnapshotBeforeUpdate**(`prevProps`: *Readonly*<TRouteProps\>, `prevState`: *Readonly*<TRouteState\>): *any*
 
 Runs before React applies the result of `render` to the document, and
 returns an object to be given to componentDidUpdate. Useful for saving
@@ -426,14 +460,16 @@ things such as scroll position before `render` causes changes to it.
 Note: the presence of getSnapshotBeforeUpdate prevents any of the deprecated
 lifecycle events from running.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`prevProps` | *Readonly*<TRouteProps\> |
-`prevState` | *Readonly*<TRouteState\> |
+| Name | Type |
+| :------ | :------ |
+| `prevProps` | *Readonly*<TRouteProps\> |
+| `prevState` | *Readonly*<TRouteState\> |
 
 **Returns:** *any*
+
+Inherited from: React.Component.getSnapshotBeforeUpdate
 
 Defined in: node_modules/@types/react/index.d.ts:681
 
@@ -445,7 +481,9 @@ ___
 
 **Returns:** ReactNode
 
-Defined in: [src/Route.tsx:44](https://github.com/breautek/router/blob/06b4d2d/src/Route.tsx#L44)
+Overrides: React.Component.render
+
+Defined in: [src/Route.tsx:44](https://github.com/breautek/router/blob/3a44627/src/Route.tsx#L44)
 
 ___
 
@@ -453,20 +491,22 @@ ___
 
 ▸ **setState**<K\>(`state`: TRouteState \| (`prevState`: *Readonly*<TRouteState\>, `props`: *Readonly*<TRouteProps\>) => TRouteState \| *Pick*<TRouteState, K\> \| *Pick*<TRouteState, K\>, `callback?`: () => *void*): *void*
 
-#### Type parameters:
+#### Type parameters
 
-Name | Type |
-:------ | :------ |
-`K` | *string* \| *number* \| *symbol* |
+| Name | Type |
+| :------ | :------ |
+| `K` | *string* \| *number* \| *symbol* |
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`state` | TRouteState \| (`prevState`: *Readonly*<TRouteState\>, `props`: *Readonly*<TRouteProps\>) => TRouteState \| *Pick*<TRouteState, K\> \| *Pick*<TRouteState, K\> |
-`callback?` | () => *void* |
+| Name | Type |
+| :------ | :------ |
+| `state` | TRouteState \| (`prevState`: *Readonly*<TRouteState\>, `props`: *Readonly*<TRouteProps\>) => TRouteState \| *Pick*<TRouteState, K\> \| *Pick*<TRouteState, K\> |
+| `callback?` | () => *void* |
 
 **Returns:** *void*
+
+Inherited from: React.Component.setState
 
 Defined in: node_modules/@types/react/index.d.ts:492
 
@@ -474,7 +514,7 @@ ___
 
 ### shouldComponentUpdate
 
-▸ `Optional`**shouldComponentUpdate**(`nextProps`: *Readonly*<TRouteProps\>, `nextState`: *Readonly*<TRouteState\>, `nextContext`: *any*): *boolean*
+▸ `Optional` **shouldComponentUpdate**(`nextProps`: *Readonly*<TRouteProps\>, `nextState`: *Readonly*<TRouteState\>, `nextContext`: *any*): *boolean*
 
 Called to determine whether the change in props and state should trigger a re-render.
 
@@ -485,14 +525,16 @@ props or states have changed.
 If false is returned, `Component#render`, `componentWillUpdate`
 and `componentDidUpdate` will not be called.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`nextProps` | *Readonly*<TRouteProps\> |
-`nextState` | *Readonly*<TRouteState\> |
-`nextContext` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `nextProps` | *Readonly*<TRouteProps\> |
+| `nextState` | *Readonly*<TRouteState\> |
+| `nextContext` | *any* |
 
 **Returns:** *boolean*
+
+Inherited from: React.Component.shouldComponentUpdate
 
 Defined in: node_modules/@types/react/index.d.ts:635
