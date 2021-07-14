@@ -8,8 +8,8 @@ import {DefaultStrategy} from './DefaultStrategy';
 import {RouteMatcher} from './RouteMatcher';
 import { RouterStrategy } from './RouterStrategy';
 import { IRouterStrategyClass } from './IRouterStrategyClass';
-import {View} from './View';
 import {IOnNoRoute} from './IOnNoRoute';
+import { Route } from "./Route";
 
 export interface IRouterProps {
     strategy?: IRouterStrategyClass;
@@ -29,8 +29,8 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
     private _lastRenderedRoute: any;
     private _matcher: RouteMatcher;
     private _awaitingTransition: boolean;
-    private _incomingNode: View;
-    private _exitingNode: View;
+    private _incomingRoute: Route;
+    private _exitingRoute: Route;
 
     private static _instance: Router;
 
@@ -136,16 +136,16 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
             let exiting: React.ReactElement = null;
             if (this._lastRenderedRoute) {
                 exiting = React.cloneElement(this._lastRenderedRoute, {
-                    ref : (node: View) => {
-                        this._exitingNode = node;
+                    ref : (route: Route) => {
+                        this._exitingRoute = route;
                     }
                 });
             }
 
             // Incoming will always be safe to render, hence no defensive checks
             let incoming: React.ReactElement = React.cloneElement(currentRoute, {
-                ref : (node: View) => {
-                    this._incomingNode = node;
+                ref : (route: Route) => {
+                    this._incomingRoute = route;
                 }
             });
 
@@ -178,8 +178,8 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
         if (this._awaitingTransition) {
             this._awaitingTransition = false;
             let exitTransitionPromise: Promise<void> = null;
-            if (this._exitingNode && this._exitingNode.props.exitTransition) {
-                exitTransitionPromise = this._exitingNode.props.exitTransition.execute(this._incomingNode, this._exitingNode);
+            if (this._exitingRoute && this._exitingRoute.props.exitTransition) {
+                exitTransitionPromise = this._exitingRoute.props.exitTransition.execute(this._incomingRoute.getView(), this._exitingRoute.getView());
             }
             else {
                 exitTransitionPromise = Promise.resolve();
@@ -187,8 +187,8 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
 
             exitTransitionPromise.then(() => {
                 let entryTransitionPromise = null;
-                if (this._incomingNode.props.entryTransition) {
-                    entryTransitionPromise = this._incomingNode.props.entryTransition.execute(this._incomingNode, this._exitingNode);
+                if (this._incomingRoute.props.entryTransition) {
+                    entryTransitionPromise = this._incomingRoute.props.entryTransition.execute(this._incomingRoute.getView(), this._exitingRoute.getView());
                 }
                 else {
                     entryTransitionPromise = Promise.resolve();
@@ -197,8 +197,8 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
             }).catch((error: Error) => {
                 console.error(error);
             }).then(() => {
-                this._incomingNode = null;
-                this._exitingNode = null;
+                this._incomingRoute = null;
+                this._exitingRoute = null;
                 this.setState({shouldTransition: false});
             });
         }

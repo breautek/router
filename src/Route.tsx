@@ -1,14 +1,16 @@
 
 import * as React from 'react';
+import { View } from './View';
 import { RouteMatcher } from './RouteMatcher';
 import { RouterStrategy } from './RouterStrategy';
+import { TransitionStrategy } from 'TransitionStrategy';
 
 export interface IRouteProps<T> {
     url: string;
     component: React.ComponentClass<any>;
     index?: boolean;
-    entryTransition?: any;
-    exitTransition?: any;
+    entryTransition?: TransitionStrategy;
+    exitTransition?: TransitionStrategy;
 
     base?: string;
     componentProps?: T;
@@ -34,7 +36,7 @@ export interface IRouteState {
  * This class represents a route that renders a {@link View} component
  */
 export class Route<TComponentProps extends IComponentProps = IComponentProps, TRouteProps extends IRouteProps<TComponentProps> = IRouteProps<TComponentProps>, TRouteState extends IRouteState = IRouteState> extends React.Component<TRouteProps, TRouteState> {
-    private _node: React.Component;
+    private _node: View;
 
     constructor(props: TRouteProps) {
         super(props);
@@ -43,6 +45,10 @@ export class Route<TComponentProps extends IComponentProps = IComponentProps, TR
 
     public render(): React.ReactNode {
         return this._getComponentsToRender(this);
+    }
+
+    public getView(): View {
+        return this._node;
     }
 
     private _getComponentsToRender(component: React.ReactElement | React.Component): React.ReactNode {
@@ -62,7 +68,17 @@ export class Route<TComponentProps extends IComponentProps = IComponentProps, TR
             <ViewComponent
                 {...component.props.componentProps}
                 ref={(node: React.Component) => {
-                    this._node = node;
+                    if (node) {
+                        if (node instanceof View) {
+                            this._node = node;
+                        }
+                        else {
+                            throw new Error('Routed components should be a View, but got ' + Object.getPrototypeOf(node).constructor.name + ' instead.');
+                        }
+                    }
+                    else {
+                        this._node = null;
+                    }
                 }}
             >
                 {child}
