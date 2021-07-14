@@ -1,9 +1,0 @@
-[@breautek/router - v1.0.2](../README.md) / [Exports](../modules.md) / IOnNoRoute
-
-# Module: IOnNoRoute
-
-## Table of contents
-
-### Interfaces
-
-- [IOnNoRoute](../interfaces/ionnoroute.ionnoroute-1.md)

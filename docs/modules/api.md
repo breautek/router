@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.2](../README.md) / [Exports](../modules.md) / api
+[@breautek/router - v1.0.3](../README.md) / [Exports](../modules.md) / api
 
 # Module: api
 
@@ -37,138 +37,140 @@
 
 ### DefaultStrategy
 
-Re-exports: [DefaultStrategy](defaultstrategy.md#defaultstrategy)
+Re-exports: [DefaultStrategy](DefaultStrategy.md#defaultstrategy)
 
 ___
 
 ### EVENT\_URL\_CHANGE
 
-Re-exports: [EVENT\_URL\_CHANGE](routerstrategy.md#event_url_change)
+Re-exports: [EVENT\_URL\_CHANGE](RouterStrategy.md#event_url_change)
 
 ___
 
 ### HashStrategy
 
-Re-exports: [HashStrategy](../classes/hashstrategy.hashstrategy-1.md)
+Re-exports: [HashStrategy](../classes/HashStrategy.HashStrategy-1.md)
 
 ___
 
 ### IComponentProps
 
-Re-exports: [IComponentProps](../interfaces/route.icomponentprops.md)
+Re-exports: [IComponentProps](../interfaces/Route.IComponentProps.md)
 
 ___
 
 ### IOnNoRouteFunction
 
-Re-exports: [IOnNoRouteFunction](../interfaces/routematcher.ionnoroutefunction.md)
+Re-exports: [IOnNoRouteFunction](../interfaces/RouteMatcher.IOnNoRouteFunction.md)
 
 ___
 
 ### IRouteProps
 
-Re-exports: [IRouteProps](../interfaces/route.irouteprops.md)
+Re-exports: [IRouteProps](../interfaces/Route.IRouteProps.md)
 
 ___
 
 ### IRouteState
 
-Re-exports: [IRouteState](../interfaces/route.iroutestate.md)
+Re-exports: [IRouteState](../interfaces/Route.IRouteState.md)
 
 ___
 
 ### IRouterProps
 
-Re-exports: [IRouterProps](../interfaces/router.irouterprops.md)
+Re-exports: [IRouterProps](../interfaces/Router.IRouterProps.md)
 
 ___
 
 ### IRouterState
 
-Re-exports: [IRouterState](../interfaces/router.irouterstate.md)
+Re-exports: [IRouterState](../interfaces/Router.IRouterState.md)
 
 ___
 
 ### IViewProps
 
-Re-exports: [IViewProps](../interfaces/view.iviewprops.md)
+Re-exports: [IViewProps](../interfaces/View.IViewProps.md)
 
 ___
 
 ### IViewStylesheet
 
-Re-exports: [IViewStylesheet](../interfaces/iviewstylesheet.iviewstylesheet-1.md)
+Re-exports: [IViewStylesheet](../interfaces/IViewStylesheet.IViewStylesheet-1.md)
 
 ___
 
 ### Route
 
-Re-exports: [Route](../classes/route.route-1.md)
+Re-exports: [Route](../classes/Route.Route-1.md)
 
 ___
 
 ### RouteMatcher
 
-Re-exports: [RouteMatcher](../classes/routematcher.routematcher-1.md)
+Re-exports: [RouteMatcher](../classes/RouteMatcher.RouteMatcher-1.md)
 
 ___
 
 ### Router
 
-Re-exports: [Router](../classes/router.router-1.md)
+Re-exports: [Router](../classes/Router.Router-1.md)
 
 ___
 
 ### RouterStrategy
 
-Re-exports: [RouterStrategy](../classes/routerstrategy.routerstrategy-1.md)
+Re-exports: [RouterStrategy](../classes/RouterStrategy.RouterStrategy-1.md)
 
 ___
 
 ### TransitionSlide
 
-Re-exports: [TransitionSlide](../classes/transitionslide.transitionslide-1.md)
+Re-exports: [TransitionSlide](../classes/TransitionSlide.TransitionSlide-1.md)
 
 ___
 
 ### TransitionSlideDirection
 
-Re-exports: [TransitionSlideDirection](../enums/transitionslide.transitionslidedirection.md)
+Re-exports: [TransitionSlideDirection](../enums/TransitionSlide.TransitionSlideDirection.md)
 
 ___
 
 ### TransitionStrategy
 
-Re-exports: [TransitionStrategy](../classes/transitionstrategy.transitionstrategy-1.md)
+Re-exports: [TransitionStrategy](../classes/TransitionStrategy.TransitionStrategy-1.md)
 
 ___
 
 ### URLChangeCallback
 
-Re-exports: [URLChangeCallback](routerstrategy.md#urlchangecallback)
+Re-exports: [URLChangeCallback](RouterStrategy.md#urlchangecallback)
 
 ___
 
 ### URLStrategy
 
-Re-exports: [URLStrategy](../classes/urlstrategy.urlstrategy-1.md)
+Re-exports: [URLStrategy](../classes/URLStrategy.URLStrategy-1.md)
 
 ___
 
 ### View
 
-Re-exports: [View](../classes/view.view-1.md)
+Re-exports: [View](../classes/View.View-1.md)
 
 ___
 
 ### getRouter
 
-Re-exports: [getRouter](router.md#getrouter)
+Re-exports: [getRouter](Router.md#getrouter)
 
 ## Variables
 
 ### version
 
-• `Const` **version**: *string*
+• `Const` **version**: `string`
 
-Defined in: [src/api.ts:21](https://github.com/breautek/router/blob/3a44627/src/api.ts#L21)
+#### Defined in
+
+[src/api.ts:21](https://github.com/breautek/router/blob/f2901ca/src/api.ts#L21)

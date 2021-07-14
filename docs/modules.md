@@ -1,23 +1,23 @@
-[@breautek/router - v1.0.2](README.md) / Exports
+[@breautek/router - v1.0.3](README.md) / Exports
 
-# @breautek/router - v1.0.2
+# @breautek/router - v1.0.3
 
 ## Table of contents
 
 ### Modules
 
-- [DefaultStrategy](modules/defaultstrategy.md)
-- [HashStrategy](modules/hashstrategy.md)
-- [IOnNoRoute](modules/ionnoroute.md)
-- [IRouterStrategyClass](modules/irouterstrategyclass.md)
-- [IViewStylesheet](modules/iviewstylesheet.md)
-- [Route](modules/route.md)
-- [RouteMatcher](modules/routematcher.md)
-- [Router](modules/router.md)
-- [RouterStrategy](modules/routerstrategy.md)
-- [TransitionSlide](modules/transitionslide.md)
-- [TransitionStrategy](modules/transitionstrategy.md)
-- [URLParser](modules/urlparser.md)
-- [URLStrategy](modules/urlstrategy.md)
-- [View](modules/view.md)
+- [DefaultStrategy](modules/DefaultStrategy.md)
+- [HashStrategy](modules/HashStrategy.md)
+- [IOnNoRoute](modules/IOnNoRoute.md)
+- [IRouterStrategyClass](modules/IRouterStrategyClass.md)
+- [IViewStylesheet](modules/IViewStylesheet.md)
+- [Route](modules/Route.md)
+- [RouteMatcher](modules/RouteMatcher.md)
+- [Router](modules/Router.md)
+- [RouterStrategy](modules/RouterStrategy.md)
+- [TransitionSlide](modules/TransitionSlide.md)
+- [TransitionStrategy](modules/TransitionStrategy.md)
+- [URLParser](modules/URLParser.md)
+- [URLStrategy](modules/URLStrategy.md)
+- [View](modules/View.md)
 - [api](modules/api.md)
