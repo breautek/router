@@ -7,8 +7,8 @@ export interface IURLParams {
  * Parses the URL for router paths and url-based variables.
  */
 export class URLParser {
-    private _allowPartialMatch: boolean;
-    private _pattern: string;
+    private $allowPartialMatch: boolean;
+    private $pattern: string;
 
     /**
      * 
@@ -18,8 +18,8 @@ export class URLParser {
      *                                      Defaults to false.
      */
     public constructor(pattern: string, allowPartialMatch: boolean = false) {
-        this._allowPartialMatch = allowPartialMatch;
-        this._pattern = this._stripURL(pattern);
+        this.$allowPartialMatch = allowPartialMatch;
+        this.$pattern = this.$stripURL(pattern);
     }
 
     /**
@@ -29,11 +29,11 @@ export class URLParser {
      * @param {string} url The url to test
      */
     public parse(url: string): IURLParams {
-        url = this._stripURL(url);
-        let parts: Array<string> = this._getParts(url);
-        let patternParts: Array<string> = this._getParts(this._pattern);
+        url = this.$stripURL(url);
+        let parts: Array<string> = this.$getParts(url);
+        let patternParts: Array<string> = this.$getParts(this.$pattern);
 
-        if ((!this._allowPartialMatch && parts.length !== patternParts.length) || url === '') {
+        if ((!this.$allowPartialMatch && parts.length !== patternParts.length) || url === '') {
             return null;
         }
 
@@ -66,7 +66,7 @@ export class URLParser {
      * @private
      * @param {string} url URL to strip
      */
-    private _stripURL(url: string): string {
+    private $stripURL(url: string): string {
         while (url.charAt(0) === '/') {
             url = url.slice(1);
         }
@@ -84,8 +84,8 @@ export class URLParser {
      * @private
      * @param {string} url URL to split
      */
-    private _getParts(url: string): Array<string> {
-        url = this._stripURL(url);
+    private $getParts(url: string): Array<string> {
+        url = this.$stripURL(url);
         return url.split('/');
     }
 }

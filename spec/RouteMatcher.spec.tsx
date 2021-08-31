@@ -1,9 +1,7 @@
 
 import * as React from 'react';
-import renderer from 'react-test-renderer';
 import * as Enzyme from 'enzyme';
 import {Route} from '../src/Route';
-// import jasmineEnzyme from 'jasmine-enzyme';
 
 import {
     TestApp,
@@ -14,14 +12,14 @@ import { Router } from '../src/Router';
 import { RouterStrategy } from '../src/RouterStrategy';
 import {RouterWrapper} from './support/RouterWrapper';
 
-let tick = function(fn: Function): void {
+let tick = function(fn: () => void): void {
     setTimeout(fn, 1);
 };
 
 describe('RouteMatcher', () => {
     let app: RouterWrapper;
 
-    const router = (): RouterWrapper => {
+    let router = (): RouterWrapper => {
         if (!app) {
             app = Enzyme.mount<Router>(
                 <Router component={TestApp}>

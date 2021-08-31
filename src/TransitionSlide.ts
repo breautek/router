@@ -10,15 +10,15 @@ export enum TransitionSlideDirection {
 }
 
 export class TransitionSlide extends TransitionStrategy {
-    private _slideDirection: TransitionSlideDirection;
-    private _slideSpeed: number;
-    private _transitionTimeout: number;
+    private $slideDirection: TransitionSlideDirection;
+    private $slideSpeed: number;
+    private $transitionTimeout: number;
 
     public constructor(slideDirection: TransitionSlideDirection, slideSpeed: number) {
         super();
 
-        this._slideDirection = slideDirection || TransitionSlideDirection.LEFT;
-        this._slideSpeed = slideSpeed || 0.25;
+        this.$slideDirection = slideDirection || TransitionSlideDirection.LEFT;
+        this.$slideSpeed = slideSpeed || 0.25;
     }
 
     protected _execute(incoming: View, exiting: View): Promise<void> {
@@ -36,7 +36,7 @@ export class TransitionSlide extends TransitionStrategy {
             exitingNode.style.pointerEvents = 'none';
             exitingNode.style.zIndex = '2';
 
-            switch (this._slideDirection) {
+            switch (this.$slideDirection) {
                 case TransitionSlideDirection.LEFT:
                     incomingNode.style.left = '100%';
                     exitingNode.style.left = '0%';
@@ -56,7 +56,7 @@ export class TransitionSlide extends TransitionStrategy {
             }
 
             //Set the appropriate transition string
-            let transitionString = this._getTransitionString(this._slideDirection);
+            let transitionString = this.$getTransitionString(this.$slideDirection);
             incomingNode.style.transition = transitionString;
             exitingNode.style.transition = transitionString;
 
@@ -88,7 +88,7 @@ export class TransitionSlide extends TransitionStrategy {
 
             //Apply transition logic
             setTimeout(() => {
-                switch (this._slideDirection) {
+                switch (this.$slideDirection) {
                     case TransitionSlideDirection.LEFT:
                         incomingNode.style.left = '0%';
                         exitingNode.style.left = '-100%';
@@ -110,9 +110,9 @@ export class TransitionSlide extends TransitionStrategy {
         });
     }
 
-    private _getTransitionString(direction: TransitionSlideDirection): string {
+    private $getTransitionString(direction: TransitionSlideDirection): string {
         let dir: string = null;
-        let speed: string = `${this._slideSpeed}s`;
+        let speed: string = `${this.$slideSpeed}s`;
         switch (direction) {
             case TransitionSlideDirection.LEFT:
             case TransitionSlideDirection.RIGHT:
@@ -124,10 +124,10 @@ export class TransitionSlide extends TransitionStrategy {
                 break;
         }
 
-        return `${dir} ${speed} ${this._getSlideStyle()}`
+        return `${dir} ${speed} ${this.$getSlideStyle()}`
     }
 
-    private _getSlideStyle(): string {
+    private $getSlideStyle(): string {
         return 'ease-in-out';
     }
 }

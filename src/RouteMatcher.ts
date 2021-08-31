@@ -21,13 +21,13 @@ export interface IOnNoRouteFunction {
  * based on the URL and the route url patterns.
  */
 export class RouteMatcher {
-    private _strategy: RouterStrategy;
+    private $strategy: RouterStrategy;
 
     public constructor(routerStrategy: RouterStrategy) {
-        this._strategy = routerStrategy;
+        this.$strategy = routerStrategy;
     }
 
-    private _defaultNoRouteFunction(indexRoute: React.ReactElement, routes: Array<React.ReactElement>): React.ReactElement {
+    private $defaultNoRouteFunction(indexRoute: React.ReactElement, routes: Array<React.ReactElement>): React.ReactElement {
         return indexRoute;
     }
 
@@ -55,7 +55,7 @@ export class RouteMatcher {
         }
 
         if (!componentToRender) {
-            componentToRender = (onNoRoute ? onNoRoute : this._defaultNoRouteFunction)(indexRoute, children);
+            componentToRender = (onNoRoute ? onNoRoute : this.$defaultNoRouteFunction)(indexRoute, children);
         }
 
         if (!componentToRender) {
@@ -74,7 +74,7 @@ export class RouteMatcher {
             exitTransition: componentToRender.props.exitTransition,
             componentProps: {
                 url : url,
-                router: this._strategy
+                router: this.$strategy
             }
         };
 

@@ -12,16 +12,16 @@ import {
     InnerView
 } from './env';
 
-import {Router, getRouter, IRouterProps} from '../src/Router';
+import {Router, IRouterProps} from '../src/Router';
 import {Route} from '../src/Route';
 import { RouterStrategy } from '../src/RouterStrategy';
 import {RouterWrapper} from './support/RouterWrapper';
 
-var tick = function(fn: Function): void {
+let tick = function(fn: () => void): void {
     setTimeout(fn, 1);
 };
 
-var getTitle = function(): string {
+let getTitle = function(): string {
     return document.head.getElementsByTagName('title')[0].innerText;
 }
 
@@ -32,7 +32,7 @@ describe('@breautek/router', () => {
         component: TestApp
     };
 
-    const router = (): RouterWrapper => {
+    let router = (): RouterWrapper => {
         if (!app) {
             app = Enzyme.mount<Router>(
                 <Router {...props}>
@@ -130,15 +130,16 @@ describe('@breautek/router', () => {
         expect(r.getHistoryLength()).toBe(0);
         expect(r.canBack()).toBe(false);
 
-        let __urlChange = (url: string) => {
+        let isFirstFire: boolean = true;
 
-            if (firstFire) {
+        let urlChange = (url: string) => {
+            if (isFirstFire) {
                 expect(getTitle()).toBe('View1');
-                firstFire = false;
+                isFirstFire = false;
                 return;
             }
 
-            comp.state('strategy').removeURLChangeCallback(__urlChange);
+            comp.state('strategy').removeURLChangeCallback(urlChange);
 
             tick(() => {
                 expect(getTitle()).toBe('View2');
@@ -151,13 +152,10 @@ describe('@breautek/router', () => {
                 done();
             });
         };
-
-        let firstFire: boolean = true;
         
-        comp.state('strategy').addURLChangeCallback(__urlChange);
-
+        comp.state('strategy').addURLChangeCallback(urlChange);
         tick(() => {
-            r.pushState('/page2');	
+            r.pushState('/page2');
         });
     });
 
@@ -176,7 +174,7 @@ describe('@breautek/router', () => {
             tick(() => {
                 r.pushState('/outerView/innerView');
                 tick(() => {
-                    expect(app.html()).toBe('<div class="app"><div class="View"><div>Outer View</div><div class="View">Inner View</div></div></div>'); 
+                    expect(app.html()).toBe('<div class="app"><div class="View"><div>Outer View</div><div class="View">Inner View</div></div></div>');
                     app.unmount();
                     done();
                 });

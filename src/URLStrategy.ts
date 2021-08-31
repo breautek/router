@@ -1,7 +1,6 @@
 
 import {RouterStrategy} from './RouterStrategy';
 import { Router } from './Router';
-import { IDictionary } from '@totalpave/interfaces';
 
 /**
  * @notice Using the URLStrategy requires some backend configuration
@@ -12,9 +11,9 @@ import { IDictionary } from '@totalpave/interfaces';
  * to the application vs other resources such as images.
  */
 export class URLStrategy extends RouterStrategy {
-    private _base: string;
-    private _stack: Array<string>;
-    private _position: number;
+    private $base: string;
+    private $stack: Array<string>;
+    private $position: number;
 
     /**
      * 
@@ -23,18 +22,18 @@ export class URLStrategy extends RouterStrategy {
     public constructor(router: Router) {
         super(router);
 
-        this._base = window.location.origin + '/r'
-        this._stack = [];
-        this._position = -1;
+        this.$base = window.location.origin + '/r'
+        this.$stack = [];
+        this.$position = -1;
 
         window.addEventListener('popstate', () => {
             this._fireURLChange(this.getLocation());
         });
 
-        this._init();
+        this.$init();
     }
 
-    private _init(): void {
+    private $init(): void {
         this.pushState(this.getLocation());
     }
 
@@ -43,7 +42,7 @@ export class URLStrategy extends RouterStrategy {
     }
 
     public getLocationAt(position: number): string {
-        return this._stack[this._position + position];
+        return this.$stack[this.$position + position];
     }
 
     public getHistoryLength(): number {
@@ -55,11 +54,11 @@ export class URLStrategy extends RouterStrategy {
     }
 
     public peek(to: number): string {
-        return this._stack[this._position + to];
+        return this.$stack[this.$position + to];
     }
 
     public canGo(to: number): boolean {
-        return this._stack[this._position + to] !== undefined;
+        return this.$stack[this.$position + to] !== undefined;
     }
 
     public go(to: number): void {
@@ -67,11 +66,11 @@ export class URLStrategy extends RouterStrategy {
             return;
         }
 
-        this._position += to;
-        this._navigate(this._stack[this._position]);
+        this.$position += to;
+        this.$navigate(this.$stack[this.$position]);
     }
 
-    public pushState(url: string, state?: IDictionary): void {
+    public pushState(url: string, state?: Record<any, any>): void {
         if (state) {
             console.warn('Warning: The state parameter is not implemented yet.');
         }
@@ -81,15 +80,15 @@ export class URLStrategy extends RouterStrategy {
             return;
         }
 
-        this._stack[++this._position] = url;
+        this.$stack[++this.$position] = url;
 
         //clear everything after position.
-        this._stack = this._stack.slice(0, this._position + 1);
+        this.$stack = this.$stack.slice(0, this.$position + 1);
 
-        this._navigate(url);
+        this.$navigate(url);
     }
 
-    public replaceState(url: string, state?: IDictionary): void {
+    public replaceState(url: string, state?: Record<any, any>): void {
         if (state) {
             console.warn('Warning: The state parameter is not implemented yet.');
         }
@@ -99,26 +98,26 @@ export class URLStrategy extends RouterStrategy {
             return;
         }
         
-        if (this._position === -1) {
+        if (this.$position === -1) {
             this.pushState(url, state);
         }
         else {
-            this._stack[this._position] = url;
-            this._navigate(url);
+            this.$stack[this.$position] = url;
+            this.$navigate(url);
         }
     }
 
     public clear(): void {
-        this._stack = [];
-        this._position = -1;
+        this.$stack = [];
+        this.$position = -1;
     }
 
-    private _navigate(url: string, replace: boolean = false): void {
+    private $navigate(url: string, replace: boolean = false): void {
         if (replace) {
-            window.history.replaceState({}, null, this._base + url);
+            window.history.replaceState({}, null, this.$base + url);
         }
         else {
-            window.history.pushState({}, null, this._base + url);
+            window.history.pushState({}, null, this.$base + url);
         }
         this._fireURLChange(this.getLocation());
     }

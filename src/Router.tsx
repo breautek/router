@@ -26,13 +26,13 @@ export interface IRouterState {
 export class Router<TRouterProps extends IRouterProps = IRouterProps> extends React.Component<TRouterProps, IRouterState> {
     public state: IRouterState;
     
-    private _lastRenderedRoute: any;
-    private _matcher: RouteMatcher;
-    private _awaitingTransition: boolean;
-    private _incomingRoute: Route;
-    private _exitingRoute: Route;
+    private $lastRenderedRoute: any;
+    private $matcher: RouteMatcher;
+    private $awaitingTransition: boolean;
+    private $incomingRoute: Route;
+    private $exitingRoute: Route;
 
-    private static _instance: Router;
+    private static $instance: Router;
 
     public constructor(props: TRouterProps) {
         super(props);
@@ -54,17 +54,17 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
             shouldTransition: false
         };
 
-        this._lastRenderedRoute = null;
-        this._onURLChange = this._onURLChange.bind(this);
-        this._matcher = new RouteMatcher(strategy);
+        this.$lastRenderedRoute = null;
+        this.$onURLChange = this.$onURLChange.bind(this);
+        this.$matcher = new RouteMatcher(strategy);
     }
 
     public static getInstance(): RouterStrategy {
-        if (!Router._instance) {
+        if (!Router.$instance) {
             return null;
         }
     
-        return Router._instance.getRouterStrategy();
+        return Router.$instance.getRouterStrategy();
     }
 
     /**
@@ -77,7 +77,7 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
     /**
      * @ignore
      */
-    private _onURLChange(url: string): void {
+    private $onURLChange(url: string): void {
         if (url !== this.state.url) {
             this.setState({
                 url: url,
@@ -87,8 +87,8 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
     }
 
     public componentDidMount(): void {
-        Router._instance = this;
-        this.state.strategy.addURLChangeCallback(this._onURLChange);
+        Router.$instance = this;
+        this.state.strategy.addURLChangeCallback(this.$onURLChange);
     }
 
     /**
@@ -96,9 +96,9 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
      */
     public UNSAFE_componentWillReceiveProps(nextProps: TRouterProps): void {
         if (nextProps.strategy && (this.state.strategy instanceof nextProps.strategy)) {
-            this.state.strategy.removeURLChangeCallback(this._onURLChange);
+            this.state.strategy.removeURLChangeCallback(this.$onURLChange);
             let strat: RouterStrategy = new nextProps.strategy(this);
-            strat.addURLChangeCallback(this._onURLChange);
+            strat.addURLChangeCallback(this.$onURLChange);
             this.setState({
                 strategy: strat
             });
@@ -109,15 +109,15 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
      * @ignore
      */
     public componentWillUnmount(): void {
-        Router._instance = null;
-        this.state.strategy.removeURLChangeCallback(this._onURLChange);
+        Router.$instance = null;
+        this.state.strategy.removeURLChangeCallback(this.$onURLChange);
     }
 
     /**
      * @ignore
      */
     public render(): React.ReactNode {
-        let currentRoute: React.ReactElement = this._matcher.match(this.state.url || '/', this._getChildren(), '', this._getIndexRoute(), this.props.onNoRoute);
+        let currentRoute: React.ReactElement = this.$matcher.match(this.state.url || '/', this.$getChildren(), '', this.$getIndexRoute(), this.props.onNoRoute);
         // eslint-disable-next-line @typescript-eslint/naming-convention
         let Root: React.ElementType = null;
         if (this.props.component) {
@@ -127,17 +127,17 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
         if (
             this.state.shouldTransition && (
                 currentRoute.props.entryTransition || (
-                    this._lastRenderedRoute &&
-                    this._lastRenderedRoute.props.exitTransition
+                    this.$lastRenderedRoute &&
+                    this.$lastRenderedRoute.props.exitTransition
                 )
             )
         ) {
-            this._awaitingTransition = true;
+            this.$awaitingTransition = true;
             let exiting: React.ReactElement = null;
-            if (this._lastRenderedRoute) {
-                exiting = React.cloneElement(this._lastRenderedRoute, {
+            if (this.$lastRenderedRoute) {
+                exiting = React.cloneElement(this.$lastRenderedRoute, {
                     ref : (route: Route) => {
-                        this._exitingRoute = route;
+                        this.$exitingRoute = route;
                     }
                 });
             }
@@ -145,7 +145,7 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
             // Incoming will always be safe to render, hence no defensive checks
             let incoming: React.ReactElement = React.cloneElement(currentRoute, {
                 ref : (route: Route) => {
-                    this._incomingRoute = route;
+                    this.$incomingRoute = route;
                 }
             });
 
@@ -157,7 +157,7 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
             }
         }
         else {
-            this._lastRenderedRoute = currentRoute;
+            this.$lastRenderedRoute = currentRoute;
 
             if (Root) {
                 // currentRoute must be rendered as an array; because, exiting and incoming is rendered as an array.
@@ -175,11 +175,11 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
      * @ignore
      */
     public componentDidUpdate(): void {
-        if (this._awaitingTransition) {
-            this._awaitingTransition = false;
+        if (this.$awaitingTransition) {
+            this.$awaitingTransition = false;
             let exitTransitionPromise: Promise<void> = null;
-            if (this._exitingRoute && this._exitingRoute.props.exitTransition) {
-                exitTransitionPromise = this._exitingRoute.props.exitTransition.execute(this._incomingRoute.getView(), this._exitingRoute.getView());
+            if (this.$exitingRoute && this.$exitingRoute.props.exitTransition) {
+                exitTransitionPromise = this.$exitingRoute.props.exitTransition.execute(this.$incomingRoute.getView(), this.$exitingRoute.getView());
             }
             else {
                 exitTransitionPromise = Promise.resolve();
@@ -187,8 +187,8 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
 
             exitTransitionPromise.then(() => {
                 let entryTransitionPromise = null;
-                if (this._incomingRoute.props.entryTransition) {
-                    entryTransitionPromise = this._incomingRoute.props.entryTransition.execute(this._incomingRoute.getView(), this._exitingRoute.getView());
+                if (this.$incomingRoute.props.entryTransition) {
+                    entryTransitionPromise = this.$incomingRoute.props.entryTransition.execute(this.$incomingRoute.getView(), this.$exitingRoute.getView());
                 }
                 else {
                     entryTransitionPromise = Promise.resolve();
@@ -197,8 +197,8 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
             }).catch((error: Error) => {
                 console.error(error);
             }).then(() => {
-                this._incomingRoute = null;
-                this._exitingRoute = null;
+                this.$incomingRoute = null;
+                this.$exitingRoute = null;
                 this.setState({shouldTransition: false});
             });
         }
@@ -247,7 +247,7 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
     /**
      * Gets the potential routes
      */
-    private _getChildren(): React.ReactElement[] {
+    private $getChildren(): React.ReactElement[] {
         let children: React.ReactElement[] = null;
 
         if (this.props.children instanceof Array) {
@@ -263,8 +263,8 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
     /**
      * Finds the index route. Returns null if there are no indexed routes.
      */
-    private _getIndexRoute(): React.ReactElement {
-        let children: React.ReactElement[] = this._getChildren();
+    private $getIndexRoute(): React.ReactElement {
+        let children: React.ReactElement[] = this.$getChildren();
         for (let i: number = 0; i < children.length; i++) {
             let child: React.ReactElement = children[i];
             if (child.props.index) {

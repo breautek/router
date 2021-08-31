@@ -2,7 +2,6 @@
 import * as React from 'react';
 import {View, IViewProps} from '../../src/View';
 
-// eslint-disable-next-line no-use-before-define
 export let instance: VarView;
 
 export interface IVarViewProps extends IViewProps {

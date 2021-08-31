@@ -1,6 +1,5 @@
 
 import {RouterStrategy} from './RouterStrategy';
-import { IDictionary } from '@totalpave/interfaces';
 import { Router } from './Router';
 
 /**
@@ -11,15 +10,15 @@ import { Router } from './Router';
     `/#/mylink` will be produced. 
 */
 export class HashStrategy extends RouterStrategy {
-    private _base: string;
-    private _stack: Array<string>;
-    private _position: number;
+    private $base: string;
+    private $stack: Array<string>;
+    private $position: number;
 
     public constructor(router: Router) {
         super(router);
-        this._base = '#';
-        this._stack = [];
-        this._position = -1;
+        this.$base = '#';
+        this.$stack = [];
+        this.$position = -1;
 
         window.addEventListener('popstate', (ev: PopStateEvent) => {
             this._fireURLChange(this.getLocation());
@@ -29,10 +28,10 @@ export class HashStrategy extends RouterStrategy {
             this._fireURLChange(this.getLocation());
         });
 
-        this._init();
+        this.$init();
     }
 
-    private _init(): void {
+    private $init(): void {
         this.pushState(this.getLocation());
     }
 
@@ -41,11 +40,11 @@ export class HashStrategy extends RouterStrategy {
     }
 
     public getLocationAt(position: number): string {
-        return this._stack[this._position + position];
+        return this.$stack[this.$position + position];
     }
 
     public getHistoryLength(): number {
-        return this._stack.length;
+        return this.$stack.length;
     }
 
     public getScrollRestoration(): ScrollRestoration {
@@ -53,11 +52,11 @@ export class HashStrategy extends RouterStrategy {
     }
 
     public canGo(to: number): boolean {
-        return this._stack[this._position + to] !== undefined;
+        return this.$stack[this.$position + to] !== undefined;
     }
 
     public peek(to: number): string {
-        return this._stack[this._position + to];
+        return this.$stack[this.$position + to];
     }
 
     public go(to: number): void {
@@ -65,52 +64,52 @@ export class HashStrategy extends RouterStrategy {
             return;
         }
 
-        this._position += to;
-        let url: string = this._stack[this._position];
+        this.$position += to;
+        let url: string = this.$stack[this.$position];
 
-        this._navigate(url);
+        this.$navigate(url);
     }
 
-    public pushState(url: string, state?: IDictionary): void {
+    public pushState(url: string, state?: Record<any, any>): void {
         if (url === this.getLocation()) {
             //We are already here, so do nothing.
             return;
         }
 
-        if (this._stack.length === 0) {
-            this._stack[++this._position] = this.getLocation();
+        if (this.$stack.length === 0) {
+            this.$stack[++this.$position] = this.getLocation();
         }
 
-        this._stack[++this._position] = url;
+        this.$stack[++this.$position] = url;
 
         //clear everything after position.
-        this._stack = this._stack.slice(0, this._position + 1);
+        this.$stack = this.$stack.slice(0, this.$position + 1);
 
-        this._navigate(url);
+        this.$navigate(url);
     }
 
-    public replaceState(url: string, state?: IDictionary): void {
+    public replaceState(url: string, state?: Record<any, any>): void {
         if (url === this.getLocation()) {
             //We are already here, so do nothing.
             return;
         }
         
-        if (this._position === -1) {
+        if (this.$position === -1) {
             this.pushState(url, state);
         }
         else {
-            this._stack[this._position] = url;
-            this._navigate(url);
+            this.$stack[this.$position] = url;
+            this.$navigate(url);
         }
     }
 
     public clear(): void {
-        this._stack = [];
-        this._position = -1;
+        this.$stack = [];
+        this.$position = -1;
     }
 
-    private _navigate(url: string): void {
-        window.location.hash = this._base + url;
+    private $navigate(url: string): void {
+        window.location.hash = this.$base + url;
         this._fireURLChange(this.getLocation());
     }
 }

@@ -1,5 +1,4 @@
 import { EventEmitter } from 'events';
-import {IDictionary} from '@totalpave/interfaces';
 import { Router } from './Router';
 
 export const EVENT_URL_CHANGE: string = 'urlchange';
@@ -7,18 +6,18 @@ export const EVENT_URL_CHANGE: string = 'urlchange';
 export type URLChangeCallback = (url: string) => void;
 
 export abstract class RouterStrategy extends EventEmitter {
-    private _router: Router;
+    private $router: Router;
 
     public constructor(router: Router) {
         super();
-        this._router = router;
+        this.$router = router;
     }
 
     /**
      * Gets the router
      */
     public getRouter(): Router {
-        return this._router;
+        return this.$router;
     }
 
     /**
@@ -153,7 +152,7 @@ export abstract class RouterStrategy extends EventEmitter {
      * @param url 
      * @param state 
      */
-    public abstract pushState(url: string, state?: IDictionary): void;
+    public abstract pushState(url: string, state?: Record<any, any>): void;
 
     /**
      * Replaces the current entry in the history stack with the new location.
@@ -161,7 +160,7 @@ export abstract class RouterStrategy extends EventEmitter {
      * @param url
      * @param state 
      */
-    public abstract replaceState(url: string, state?: IDictionary): void;
+    public abstract replaceState(url: string, state?: Record<any, any>): void;
 
     /**
      * Clears the history stack.

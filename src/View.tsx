@@ -5,7 +5,6 @@ import "regenerator-runtime/runtime";
 import * as React from 'react';
 
 import { RouterStrategy } from './RouterStrategy';
-import { IDictionary } from '@totalpave/interfaces';
 import { TransitionStrategy } from './TransitionStrategy';
 import { IViewStylesheet } from './IViewStylesheet';
 
@@ -18,14 +17,14 @@ export interface IViewProps {
 }
 
 export abstract class View<TPageProps extends IViewProps = IViewProps> extends React.Component<TPageProps> {
-    private _node: HTMLDivElement;
+    private $node: HTMLDivElement;
 
     /**
      * @param props See [IViewProps]
      */
     public constructor(props: TPageProps) {
         super(props);
-        this._node = null;
+        this.$node = null;
     }
 
     /**
@@ -70,7 +69,7 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
      * Gets the underlying HTML node for this View
      */
     public getNode(): HTMLElement {
-        return this._node;
+        return this.$node;
     }
 
     /**
@@ -84,7 +83,7 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
      * Get the inline styles for this view.
      * Use React style notation.
      */
-    public getViewStyles(): IDictionary<string> {
+    public getViewStyles(): Record<any, string> {
         return {};
     }
 
@@ -95,7 +94,7 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
         return (
             <div
                 className={`View${cssClass ? ' ' + cssClass : ''}`}
-                ref={(n) => { this._node = n; }}
+                ref={(n) => { this.$node = n; }}
                 style={this.getViewStyles()}
             >
                 {this._renderView()}

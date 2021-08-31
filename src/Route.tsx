@@ -36,7 +36,7 @@ export interface IRouteState {
  * This class represents a route that renders a {@link View} component
  */
 export class Route<TComponentProps extends IComponentProps = IComponentProps, TRouteProps extends IRouteProps<TComponentProps> = IRouteProps<TComponentProps>, TRouteState extends IRouteState = IRouteState> extends React.Component<TRouteProps, TRouteState> {
-    private _node: View;
+    private $node: View;
 
     constructor(props: TRouteProps) {
         super(props);
@@ -44,14 +44,14 @@ export class Route<TComponentProps extends IComponentProps = IComponentProps, TR
     }
 
     public render(): React.ReactNode {
-        return this._getComponentsToRender(this);
+        return this.$getComponentsToRender(this);
     }
 
     public getView(): View {
-        return this._node;
+        return this.$node;
     }
 
-    private _getComponentsToRender(component: React.ReactElement | React.Component): React.ReactNode {
+    private $getComponentsToRender(component: React.ReactElement | React.Component): React.ReactNode {
         let url: string = component.props.url;
         let base: string = component.props.base || '';
 
@@ -59,9 +59,9 @@ export class Route<TComponentProps extends IComponentProps = IComponentProps, TR
         let ViewComponent: React.ElementType = component.props.component;
         let child: React.ReactNode;
 
-        let routeComponent = component.props.matcher.match(url, this._getChildren(component), base);
+        let routeComponent = component.props.matcher.match(url, this.$getChildren(component), base);
         if (routeComponent) {
-            child = this._getComponentsToRender(routeComponent);
+            child = this.$getComponentsToRender(routeComponent);
         }
 
         return (
@@ -70,14 +70,14 @@ export class Route<TComponentProps extends IComponentProps = IComponentProps, TR
                 ref={(node: React.Component) => {
                     if (node) {
                         if (node instanceof View) {
-                            this._node = node;
+                            this.$node = node;
                         }
                         else {
                             throw new Error('Routed components should be a View, but got ' + Object.getPrototypeOf(node).constructor.name + ' instead.');
                         }
                     }
                     else {
-                        this._node = null;
+                        this.$node = null;
                     }
                 }}
             >
@@ -86,7 +86,7 @@ export class Route<TComponentProps extends IComponentProps = IComponentProps, TR
         );
     }
 
-    private _getChildren(component: React.Component | React.ReactElement): React.ReactElement[] {
+    private $getChildren(component: React.Component | React.ReactElement): React.ReactElement[] {
         let children: React.ReactElement[] = null;
 
         if (!component) {

@@ -1,32 +1,32 @@
 import { URLParser } from "../src/URLParser";
 
 describe('URLParser', () => {
-    it('_stripURL', () => {
+    it('$stripURL', () => {
         let parser: URLParser = new URLParser('asd');
-        expect((<any>parser)._stripURL('/login/')).toBe('login');
+        expect((<any>parser).$stripURL('/login/')).toBe('login');
     });
 
-    describe('_getParts', () => {
+    describe('$getParts', () => {
         let parser: URLParser = new URLParser('asd');
 
         it('/login/', () => {
-            expect((<any>parser)._getParts('/login/')).toEqual([ 'login' ]);
+            expect((<any>parser).$getParts('/login/')).toEqual([ 'login' ]);
         });
 
         it('/login', () => {
-            expect((<any>parser)._getParts('/login')).toEqual([ 'login' ]);
+            expect((<any>parser).$getParts('/login')).toEqual([ 'login' ]);
         });
 
         it('login', () => {
-            expect((<any>parser)._getParts('login')).toEqual([ 'login' ]);
+            expect((<any>parser).$getParts('login')).toEqual([ 'login' ]);
         });
 
         it('/login/test', () => {
-            expect((<any>parser)._getParts('/login/test')).toEqual([ 'login', 'test' ]);
+            expect((<any>parser).$getParts('/login/test')).toEqual([ 'login', 'test' ]);
         });
 
         it('/login/:var', () => {
-            expect((<any>parser)._getParts('/login/:var')).toEqual([ 'login', ':var' ]);
+            expect((<any>parser).$getParts('/login/:var')).toEqual([ 'login', ':var' ]);
         });
     });
 
