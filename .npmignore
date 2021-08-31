@@ -1,4 +1,5 @@
 test
+coverage
 spec
 node_modules
 webpack.config.js

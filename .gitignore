@@ -4,3 +4,5 @@ dist
 .*cache
 lib
 .eslintcache
+coverage
+
