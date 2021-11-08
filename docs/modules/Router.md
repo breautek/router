@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.0-beta.0](../README.md) / [Exports](../modules.md) / Router
+[@breautek/router - v2.0.0](../README.md) / [Exports](../modules.md) / Router
 
 # Module: Router
 
@@ -29,4 +29,4 @@
 
 #### Defined in
 
-[src/Router.tsx:279](https://github.com/breautek/router/blob/09c6533/src/Router.tsx#L279)
+[src/Router.tsx:279](https://github.com/breautek/router/blob/04bdd49/src/Router.tsx#L279)

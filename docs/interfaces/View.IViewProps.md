@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.0-beta.0](../README.md) / [Exports](../modules.md) / [View](../modules/View.md) / IViewProps
+[@breautek/router - v2.0.0](../README.md) / [Exports](../modules.md) / [View](../modules/View.md) / IViewProps
 
 # Interface: IViewProps
 
@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[src/View.tsx:15](https://github.com/breautek/router/blob/09c6533/src/View.tsx#L15)
+[src/View.tsx:15](https://github.com/breautek/router/blob/04bdd49/src/View.tsx#L15)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[src/View.tsx:16](https://github.com/breautek/router/blob/09c6533/src/View.tsx#L16)
+[src/View.tsx:16](https://github.com/breautek/router/blob/04bdd49/src/View.tsx#L16)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[src/View.tsx:14](https://github.com/breautek/router/blob/09c6533/src/View.tsx#L14)
+[src/View.tsx:14](https://github.com/breautek/router/blob/04bdd49/src/View.tsx#L14)

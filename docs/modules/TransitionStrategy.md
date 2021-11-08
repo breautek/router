@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.0-beta.0](../README.md) / [Exports](../modules.md) / TransitionStrategy
+[@breautek/router - v2.0.0](../README.md) / [Exports](../modules.md) / TransitionStrategy
 
 # Module: TransitionStrategy
 

@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.0-beta.0](../README.md) / [Exports](../modules.md) / [IViewStylesheet](../modules/IViewStylesheet.md) / IViewStylesheet
+[@breautek/router - v2.0.0](../README.md) / [Exports](../modules.md) / [IViewStylesheet](../modules/IViewStylesheet.md) / IViewStylesheet
 
 # Interface: IViewStylesheet
 
@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[src/IViewStylesheet.ts:4](https://github.com/breautek/router/blob/09c6533/src/IViewStylesheet.ts#L4)
+[src/IViewStylesheet.ts:4](https://github.com/breautek/router/blob/04bdd49/src/IViewStylesheet.ts#L4)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[src/IViewStylesheet.ts:3](https://github.com/breautek/router/blob/09c6533/src/IViewStylesheet.ts#L3)
+[src/IViewStylesheet.ts:3](https://github.com/breautek/router/blob/04bdd49/src/IViewStylesheet.ts#L3)

@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.0-beta.0](../README.md) / [Exports](../modules.md) / IRouterStrategyClass
+[@breautek/router - v2.0.0](../README.md) / [Exports](../modules.md) / IRouterStrategyClass
 
 # Module: IRouterStrategyClass
 

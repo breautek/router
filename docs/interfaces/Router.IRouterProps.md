@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.0-beta.0](../README.md) / [Exports](../modules.md) / [Router](../modules/Router.md) / IRouterProps
+[@breautek/router - v2.0.0](../README.md) / [Exports](../modules.md) / [Router](../modules/Router.md) / IRouterProps
 
 # Interface: IRouterProps
 
@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[src/Router.tsx:16](https://github.com/breautek/router/blob/09c6533/src/Router.tsx#L16)
+[src/Router.tsx:16](https://github.com/breautek/router/blob/04bdd49/src/Router.tsx#L16)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[src/Router.tsx:17](https://github.com/breautek/router/blob/09c6533/src/Router.tsx#L17)
+[src/Router.tsx:17](https://github.com/breautek/router/blob/04bdd49/src/Router.tsx#L17)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[src/Router.tsx:15](https://github.com/breautek/router/blob/09c6533/src/Router.tsx#L15)
+[src/Router.tsx:15](https://github.com/breautek/router/blob/04bdd49/src/Router.tsx#L15)

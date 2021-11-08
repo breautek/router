@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.0-beta.0](../README.md) / [Exports](../modules.md) / [TransitionSlide](../modules/TransitionSlide.md) / TransitionSlide
+[@breautek/router - v2.0.0](../README.md) / [Exports](../modules.md) / [TransitionSlide](../modules/TransitionSlide.md) / TransitionSlide
 
 # Class: TransitionSlide
 
@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[src/TransitionSlide.ts:17](https://github.com/breautek/router/blob/09c6533/src/TransitionSlide.ts#L17)
+[src/TransitionSlide.ts:17](https://github.com/breautek/router/blob/04bdd49/src/TransitionSlide.ts#L17)
 
 ## Methods
 
@@ -65,7 +65,7 @@
 
 #### Defined in
 
-[src/TransitionSlide.ts:24](https://github.com/breautek/router/blob/09c6533/src/TransitionSlide.ts#L24)
+[src/TransitionSlide.ts:24](https://github.com/breautek/router/blob/04bdd49/src/TransitionSlide.ts#L24)
 
 ___
 
@@ -101,4 +101,4 @@ of the transition to avoid "snapping" behaviour.
 
 #### Defined in
 
-[src/TransitionStrategy.ts:21](https://github.com/breautek/router/blob/09c6533/src/TransitionStrategy.ts#L21)
+[src/TransitionStrategy.ts:21](https://github.com/breautek/router/blob/04bdd49/src/TransitionStrategy.ts#L21)

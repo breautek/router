@@ -1,6 +1,6 @@
-[@breautek/router - v2.0.0-beta.0](README.md) / Exports
+[@breautek/router - v2.0.0](README.md) / Exports
 
-# @breautek/router - v2.0.0-beta.0
+# @breautek/router - v2.0.0
 
 ## Table of contents
 

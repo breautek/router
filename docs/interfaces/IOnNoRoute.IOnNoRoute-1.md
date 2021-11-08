@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.0-beta.0](../README.md) / [Exports](../modules.md) / [IOnNoRoute](../modules/IOnNoRoute.md) / IOnNoRoute
+[@breautek/router - v2.0.0](../README.md) / [Exports](../modules.md) / [IOnNoRoute](../modules/IOnNoRoute.md) / IOnNoRoute
 
 # Interface: IOnNoRoute
 
@@ -23,4 +23,4 @@
 
 #### Defined in
 
-[src/IOnNoRoute.ts:5](https://github.com/breautek/router/blob/09c6533/src/IOnNoRoute.ts#L5)
+[src/IOnNoRoute.ts:5](https://github.com/breautek/router/blob/04bdd49/src/IOnNoRoute.ts#L5)
