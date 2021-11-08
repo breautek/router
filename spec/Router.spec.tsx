@@ -130,16 +130,8 @@ describe('@breautek/router', () => {
         expect(r.getHistoryLength()).toBe(0);
         expect(r.canBack()).toBe(false);
 
-        let isFirstFire: boolean = true;
-
         let urlChange = (url: string) => {
-            if (isFirstFire) {
-                expect(getTitle()).toBe('View1');
-                isFirstFire = false;
-                return;
-            }
-
-            comp.state('strategy').removeURLChangeCallback(urlChange);
+            r.removeURLChangeCallback(urlChange);
 
             tick(() => {
                 expect(getTitle()).toBe('View2');
@@ -153,9 +145,28 @@ describe('@breautek/router', () => {
             });
         };
         
-        comp.state('strategy').addURLChangeCallback(urlChange);
+        r.addURLChangeCallback(urlChange);
         tick(() => {
             r.pushState('/page2');
+        });
+    });
+
+    it('URLChangeCallback should fire once per URL change', (done) => {
+        let comp: RouterWrapper = router();
+        let r: RouterStrategy = Router.getInstance();
+        let onUrlChange = jest.fn();
+        comp.update();
+        tick(() => {
+            comp.update();
+            r.addURLChangeCallback(onUrlChange);
+            r.pushState('/page');
+            tick(() => {
+                expect(onUrlChange).toHaveBeenCalledTimes(1);
+                expect(onUrlChange).toHaveBeenCalledWith<[string]>('/page');
+                comp.unmount();
+                r.removeURLChangeCallback(onUrlChange);
+                done();
+            });
         });
     });
 

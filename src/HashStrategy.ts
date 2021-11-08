@@ -13,19 +13,27 @@ export class HashStrategy extends RouterStrategy {
     private $base: string;
     private $stack: Array<string>;
     private $position: number;
+    private $lastFiredLocation: string;
 
     public constructor(router: Router) {
         super(router);
         this.$base = '#';
         this.$stack = [];
         this.$position = -1;
+        this.$lastFiredLocation = null; //this.getLocation();
 
         window.addEventListener('popstate', (ev: PopStateEvent) => {
-            this._fireURLChange(this.getLocation());
+            let location = this.getLocation();
+            if (this.$lastFiredLocation !== location) {
+                this._fireURLChange(location);
+            }
         });
 
         window.addEventListener('hashchange', (e: HashChangeEvent) => {
-            this._fireURLChange(this.getLocation());
+            let location = this.getLocation();
+            if (this.$lastFiredLocation !== location) {
+                this._fireURLChange(location);
+            }
         });
 
         this.$init();
@@ -111,5 +119,10 @@ export class HashStrategy extends RouterStrategy {
     private $navigate(url: string): void {
         window.location.hash = this.$base + url;
         this._fireURLChange(this.getLocation());
+    }
+
+    protected _fireURLChange(url: string): void {
+        this.$lastFiredLocation = url;
+        super._fireURLChange(url);
     }
 }
