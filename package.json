@@ -5,6 +5,9 @@
   "main": "dist/router.js",
   "types": "dist/src/api.d.ts",
   "type": "commonjs",
+  "publishConfig": {
+	"registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "test": "jest",
     "lint": "eslint --ext .ts,.tsx '?(src|spec)/**/*.?(ts|tsx)' --cache",
