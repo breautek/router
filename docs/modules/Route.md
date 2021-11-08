@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.3](../README.md) / [Exports](../modules.md) / Route
+[@breautek/router - v2.0.0-beta.0](../README.md) / [Exports](../modules.md) / Route
 
 # Module: Route
 

@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.3](../README.md) / [Exports](../modules.md) / [RouteMatcher](../modules/RouteMatcher.md) / IOnNoRouteFunction
+[@breautek/router - v2.0.0-beta.0](../README.md) / [Exports](../modules.md) / [RouteMatcher](../modules/RouteMatcher.md) / IOnNoRouteFunction
 
 # Interface: IOnNoRouteFunction
 
@@ -27,4 +27,4 @@ An `ReactElement` of a `Route`
 
 #### Defined in
 
-[src/RouteMatcher.ts:16](https://github.com/breautek/router/blob/f2901ca/src/RouteMatcher.ts#L16)
+[src/RouteMatcher.ts:16](https://github.com/breautek/router/blob/09c6533/src/RouteMatcher.ts#L16)

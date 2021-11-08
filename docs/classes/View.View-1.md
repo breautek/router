@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.3](../README.md) / [Exports](../modules.md) / [View](../modules/View.md) / View
+[@breautek/router - v2.0.0-beta.0](../README.md) / [Exports](../modules.md) / [View](../modules/View.md) / View
 
 # Class: View<TPageProps\>
 
@@ -76,7 +76,7 @@ React.Component&lt;TPageProps\&gt;.constructor
 
 #### Defined in
 
-[src/View.tsx:26](https://github.com/breautek/router/blob/f2901ca/src/View.tsx#L26)
+[src/View.tsx:25](https://github.com/breautek/router/blob/09c6533/src/View.tsx#L25)
 
 ## Properties
 
@@ -315,7 +315,7 @@ ___
 
 #### Defined in
 
-[src/View.tsx:91](https://github.com/breautek/router/blob/f2901ca/src/View.tsx#L91)
+[src/View.tsx:90](https://github.com/breautek/router/blob/09c6533/src/View.tsx#L90)
 
 ___
 
@@ -522,7 +522,7 @@ Return the CSS class on this view
 
 #### Defined in
 
-[src/View.tsx:34](https://github.com/breautek/router/blob/f2901ca/src/View.tsx#L34)
+[src/View.tsx:33](https://github.com/breautek/router/blob/09c6533/src/View.tsx#L33)
 
 ___
 
@@ -538,7 +538,7 @@ Gets the underlying HTML node for this View
 
 #### Defined in
 
-[src/View.tsx:72](https://github.com/breautek/router/blob/f2901ca/src/View.tsx#L72)
+[src/View.tsx:71](https://github.com/breautek/router/blob/09c6533/src/View.tsx#L71)
 
 ___
 
@@ -586,24 +586,24 @@ Get the title of this view
 
 #### Defined in
 
-[src/View.tsx:79](https://github.com/breautek/router/blob/f2901ca/src/View.tsx#L79)
+[src/View.tsx:78](https://github.com/breautek/router/blob/09c6533/src/View.tsx#L78)
 
 ___
 
 ### getViewStyles
 
-▸ **getViewStyles**(): `IDictionary`<`string`\>
+▸ **getViewStyles**(): `Record`<`any`, `string`\>
 
 Get the inline styles for this view.
 Use React style notation.
 
 #### Returns
 
-`IDictionary`<`string`\>
+`Record`<`any`, `string`\>
 
 #### Defined in
 
-[src/View.tsx:87](https://github.com/breautek/router/blob/f2901ca/src/View.tsx#L87)
+[src/View.tsx:86](https://github.com/breautek/router/blob/09c6533/src/View.tsx#L86)
 
 ___
 
@@ -619,7 +619,7 @@ Override to return a webpack API style stylesheet
 
 #### Defined in
 
-[src/View.tsx:41](https://github.com/breautek/router/blob/f2901ca/src/View.tsx#L41)
+[src/View.tsx:40](https://github.com/breautek/router/blob/09c6533/src/View.tsx#L40)
 
 ___
 
@@ -637,7 +637,7 @@ React.Component.render
 
 #### Defined in
 
-[src/View.tsx:93](https://github.com/breautek/router/blob/f2901ca/src/View.tsx#L93)
+[src/View.tsx:92](https://github.com/breautek/router/blob/09c6533/src/View.tsx#L92)
 
 ___
 

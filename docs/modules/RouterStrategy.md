@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.3](../README.md) / [Exports](../modules.md) / RouterStrategy
+[@breautek/router - v2.0.0-beta.0](../README.md) / [Exports](../modules.md) / RouterStrategy
 
 # Module: RouterStrategy
 
@@ -38,7 +38,7 @@
 
 #### Defined in
 
-[src/RouterStrategy.ts:7](https://github.com/breautek/router/blob/f2901ca/src/RouterStrategy.ts#L7)
+[src/RouterStrategy.ts:6](https://github.com/breautek/router/blob/09c6533/src/RouterStrategy.ts#L6)
 
 ## Variables
 
@@ -48,4 +48,4 @@
 
 #### Defined in
 
-[src/RouterStrategy.ts:5](https://github.com/breautek/router/blob/f2901ca/src/RouterStrategy.ts#L5)
+[src/RouterStrategy.ts:4](https://github.com/breautek/router/blob/09c6533/src/RouterStrategy.ts#L4)

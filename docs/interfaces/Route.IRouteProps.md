@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.3](../README.md) / [Exports](../modules.md) / [Route](../modules/Route.md) / IRouteProps
+[@breautek/router - v2.0.0-beta.0](../README.md) / [Exports](../modules.md) / [Route](../modules/Route.md) / IRouteProps
 
 # Interface: IRouteProps<T\>
 
@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[src/Route.tsx:15](https://github.com/breautek/router/blob/f2901ca/src/Route.tsx#L15)
+[src/Route.tsx:15](https://github.com/breautek/router/blob/09c6533/src/Route.tsx#L15)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[src/Route.tsx:10](https://github.com/breautek/router/blob/f2901ca/src/Route.tsx#L10)
+[src/Route.tsx:10](https://github.com/breautek/router/blob/09c6533/src/Route.tsx#L10)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[src/Route.tsx:16](https://github.com/breautek/router/blob/f2901ca/src/Route.tsx#L16)
+[src/Route.tsx:16](https://github.com/breautek/router/blob/09c6533/src/Route.tsx#L16)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[src/Route.tsx:12](https://github.com/breautek/router/blob/f2901ca/src/Route.tsx#L12)
+[src/Route.tsx:12](https://github.com/breautek/router/blob/09c6533/src/Route.tsx#L12)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[src/Route.tsx:13](https://github.com/breautek/router/blob/f2901ca/src/Route.tsx#L13)
+[src/Route.tsx:13](https://github.com/breautek/router/blob/09c6533/src/Route.tsx#L13)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[src/Route.tsx:11](https://github.com/breautek/router/blob/f2901ca/src/Route.tsx#L11)
+[src/Route.tsx:11](https://github.com/breautek/router/blob/09c6533/src/Route.tsx#L11)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[src/Route.tsx:17](https://github.com/breautek/router/blob/f2901ca/src/Route.tsx#L17)
+[src/Route.tsx:17](https://github.com/breautek/router/blob/09c6533/src/Route.tsx#L17)
 
 ___
 
@@ -101,4 +101,4 @@ ___
 
 #### Defined in
 
-[src/Route.tsx:9](https://github.com/breautek/router/blob/f2901ca/src/Route.tsx#L9)
+[src/Route.tsx:9](https://github.com/breautek/router/blob/09c6533/src/Route.tsx#L9)

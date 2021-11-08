@@ -1,4 +1,4 @@
-[@breautek/router - v1.0.3](../README.md) / [Exports](../modules.md) / api
+[@breautek/router - v2.0.0-beta.0](../README.md) / [Exports](../modules.md) / api
 
 # Module: api
 
@@ -173,4 +173,4 @@ Re-exports: [getRouter](Router.md#getrouter)
 
 #### Defined in
 
-[src/api.ts:21](https://github.com/breautek/router/blob/f2901ca/src/api.ts#L21)
+[src/api.ts:21](https://github.com/breautek/router/blob/09c6533/src/api.ts#L21)
