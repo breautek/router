@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.0](../README.md) / [Exports](../modules.md) / [URLParser](../modules/URLParser.md) / URLParser
+[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / [URLParser](../modules/URLParser.md) / URLParser
 
 # Class: URLParser
 
@@ -31,7 +31,7 @@ Parses the URL for router paths and url-based variables.
 
 #### Defined in
 
-[src/URLParser.ts:20](https://github.com/breautek/router/blob/04bdd49/src/URLParser.ts#L20)
+[src/URLParser.ts:20](https://github.com/breautek/router/blob/f6dfe6e/src/URLParser.ts#L20)
 
 ## Methods
 
@@ -54,4 +54,4 @@ Returns null the url does not match the pattern
 
 #### Defined in
 
-[src/URLParser.ts:31](https://github.com/breautek/router/blob/04bdd49/src/URLParser.ts#L31)
+[src/URLParser.ts:31](https://github.com/breautek/router/blob/f6dfe6e/src/URLParser.ts#L31)

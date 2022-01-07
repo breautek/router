@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.0](../README.md) / [Exports](../modules.md) / DefaultStrategy
+[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / DefaultStrategy
 
 # Module: DefaultStrategy
 
@@ -18,4 +18,4 @@ Alias for [HashStrategy](HashStrategy.md)
 
 #### Defined in
 
-[src/DefaultStrategy.ts:9](https://github.com/breautek/router/blob/04bdd49/src/DefaultStrategy.ts#L9)
+[src/DefaultStrategy.ts:9](https://github.com/breautek/router/blob/f6dfe6e/src/DefaultStrategy.ts#L9)

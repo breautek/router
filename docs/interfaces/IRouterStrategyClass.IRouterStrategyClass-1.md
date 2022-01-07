@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.0](../README.md) / [Exports](../modules.md) / [IRouterStrategyClass](../modules/IRouterStrategyClass.md) / IRouterStrategyClass
+[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / [IRouterStrategyClass](../modules/IRouterStrategyClass.md) / IRouterStrategyClass
 
 # Interface: IRouterStrategyClass
 
@@ -26,4 +26,4 @@ An interface to generically reference a [RouterStrategy](../modules/RouterStrate
 
 #### Defined in
 
-[src/IRouterStrategyClass.ts:9](https://github.com/breautek/router/blob/04bdd49/src/IRouterStrategyClass.ts#L9)
+[src/IRouterStrategyClass.ts:9](https://github.com/breautek/router/blob/f6dfe6e/src/IRouterStrategyClass.ts#L9)

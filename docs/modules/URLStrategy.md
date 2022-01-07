@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.0](../README.md) / [Exports](../modules.md) / URLStrategy
+[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / URLStrategy
 
 # Module: URLStrategy
 

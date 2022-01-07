@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.0](../README.md) / [Exports](../modules.md) / [Route](../modules/Route.md) / Route
+[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / [Route](../modules/Route.md) / Route
 
 # Class: Route<TComponentProps, TRouteProps, TRouteState\>
 
@@ -79,7 +79,7 @@ React.Component&lt;TRouteProps, TRouteState\&gt;.constructor
 
 #### Defined in
 
-[src/Route.tsx:41](https://github.com/breautek/router/blob/04bdd49/src/Route.tsx#L41)
+[src/Route.tsx:41](https://github.com/breautek/router/blob/f6dfe6e/src/Route.tsx#L41)
 
 ## Properties
 
@@ -582,7 +582,7 @@ ___
 
 #### Defined in
 
-[src/Route.tsx:50](https://github.com/breautek/router/blob/04bdd49/src/Route.tsx#L50)
+[src/Route.tsx:50](https://github.com/breautek/router/blob/f6dfe6e/src/Route.tsx#L50)
 
 ___
 
@@ -600,7 +600,7 @@ React.Component.render
 
 #### Defined in
 
-[src/Route.tsx:46](https://github.com/breautek/router/blob/04bdd49/src/Route.tsx#L46)
+[src/Route.tsx:46](https://github.com/breautek/router/blob/f6dfe6e/src/Route.tsx#L46)
 
 ___
 
