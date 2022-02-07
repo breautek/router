@@ -3,9 +3,7 @@ module.exports = {
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:@totalpave/recommendedTS",
-        "plugin:@totalpave/recommendedReactTS"
+        "plugin:@typescript-eslint/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -15,8 +13,7 @@ module.exports = {
     },
     "plugins": [
         "react",
-        "@typescript-eslint",
-        "@totalpave"
+        "@typescript-eslint"
     ],
     "settings": {
         "react": {
