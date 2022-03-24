@@ -1,18 +1,16 @@
-[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / [HashStrategy](../modules/HashStrategy.md) / HashStrategy
+[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / HashStrategy
 
 # Class: HashStrategy
 
-[HashStrategy](../modules/HashStrategy.md).HashStrategy
-
-A [RouterStrategy](../modules/RouterStrategy.md) that manages a history stack using inline pound symbols `#`.
+A [RouterStrategy](RouterStrategy.md) that manages a history stack using inline pound symbols `#`.
 URLs will have a starting point `/#/`, as a default base.
 
-For example, if you [pushState("mylink")](HashStrategy.HashStrategy-1.md#pushstate), the url
+For example, if you [pushState("mylink")](HashStrategy.md#pushstate), the url
 `/#/mylink` will be produced.
 
 ## Hierarchy
 
-- [`RouterStrategy`](RouterStrategy.RouterStrategy-1.md)
+- [`RouterStrategy`](RouterStrategy.md)
 
   ↳ **`HashStrategy`**
 
@@ -20,57 +18,58 @@ For example, if you [pushState("mylink")](HashStrategy.HashStrategy-1.md#pushsta
 
 ### Constructors
 
-- [constructor](HashStrategy.HashStrategy-1.md#constructor)
+- [constructor](HashStrategy.md#constructor)
 
 ### Properties
 
-- [captureRejectionSymbol](HashStrategy.HashStrategy-1.md#capturerejectionsymbol)
-- [captureRejections](HashStrategy.HashStrategy-1.md#capturerejections)
-- [defaultMaxListeners](HashStrategy.HashStrategy-1.md#defaultmaxlisteners)
-- [errorMonitor](HashStrategy.HashStrategy-1.md#errormonitor)
+- [captureRejectionSymbol](HashStrategy.md#capturerejectionsymbol)
+- [captureRejections](HashStrategy.md#capturerejections)
+- [defaultMaxListeners](HashStrategy.md#defaultmaxlisteners)
+- [errorMonitor](HashStrategy.md#errormonitor)
 
 ### Methods
 
-- [\_fireURLChange](HashStrategy.HashStrategy-1.md#_fireurlchange)
-- [addListener](HashStrategy.HashStrategy-1.md#addlistener)
-- [addURLChangeCallback](HashStrategy.HashStrategy-1.md#addurlchangecallback)
-- [back](HashStrategy.HashStrategy-1.md#back)
-- [canBack](HashStrategy.HashStrategy-1.md#canback)
-- [canForward](HashStrategy.HashStrategy-1.md#canforward)
-- [canGo](HashStrategy.HashStrategy-1.md#cango)
-- [clear](HashStrategy.HashStrategy-1.md#clear)
-- [emit](HashStrategy.HashStrategy-1.md#emit)
-- [eventNames](HashStrategy.HashStrategy-1.md#eventnames)
-- [forward](HashStrategy.HashStrategy-1.md#forward)
-- [getHistoryLength](HashStrategy.HashStrategy-1.md#gethistorylength)
-- [getLocation](HashStrategy.HashStrategy-1.md#getlocation)
-- [getLocationAt](HashStrategy.HashStrategy-1.md#getlocationat)
-- [getMaxListeners](HashStrategy.HashStrategy-1.md#getmaxlisteners)
-- [getRouter](HashStrategy.HashStrategy-1.md#getrouter)
-- [getScrollRestoration](HashStrategy.HashStrategy-1.md#getscrollrestoration)
-- [go](HashStrategy.HashStrategy-1.md#go)
-- [listenerCount](HashStrategy.HashStrategy-1.md#listenercount)
-- [listeners](HashStrategy.HashStrategy-1.md#listeners)
-- [off](HashStrategy.HashStrategy-1.md#off)
-- [on](HashStrategy.HashStrategy-1.md#on)
-- [once](HashStrategy.HashStrategy-1.md#once)
-- [peek](HashStrategy.HashStrategy-1.md#peek)
-- [peekBack](HashStrategy.HashStrategy-1.md#peekback)
-- [peekForward](HashStrategy.HashStrategy-1.md#peekforward)
-- [prependListener](HashStrategy.HashStrategy-1.md#prependlistener)
-- [prependOnceListener](HashStrategy.HashStrategy-1.md#prependoncelistener)
-- [pushState](HashStrategy.HashStrategy-1.md#pushstate)
-- [rawListeners](HashStrategy.HashStrategy-1.md#rawlisteners)
-- [removeAllListeners](HashStrategy.HashStrategy-1.md#removealllisteners)
-- [removeListener](HashStrategy.HashStrategy-1.md#removelistener)
-- [removeURLChangeCallback](HashStrategy.HashStrategy-1.md#removeurlchangecallback)
-- [replaceState](HashStrategy.HashStrategy-1.md#replacestate)
-- [setMaxListeners](HashStrategy.HashStrategy-1.md#setmaxlisteners)
-- [setTitle](HashStrategy.HashStrategy-1.md#settitle)
-- [getEventListeners](HashStrategy.HashStrategy-1.md#geteventlisteners)
-- [listenerCount](HashStrategy.HashStrategy-1.md#listenercount)
-- [on](HashStrategy.HashStrategy-1.md#on)
-- [once](HashStrategy.HashStrategy-1.md#once)
+- [\_fireURLChange](HashStrategy.md#_fireurlchange)
+- [addListener](HashStrategy.md#addlistener)
+- [addURLChangeCallback](HashStrategy.md#addurlchangecallback)
+- [back](HashStrategy.md#back)
+- [canBack](HashStrategy.md#canback)
+- [canForward](HashStrategy.md#canforward)
+- [canGo](HashStrategy.md#cango)
+- [clear](HashStrategy.md#clear)
+- [emit](HashStrategy.md#emit)
+- [eventNames](HashStrategy.md#eventnames)
+- [forward](HashStrategy.md#forward)
+- [getHistoryLength](HashStrategy.md#gethistorylength)
+- [getLocation](HashStrategy.md#getlocation)
+- [getLocationAt](HashStrategy.md#getlocationat)
+- [getMaxListeners](HashStrategy.md#getmaxlisteners)
+- [getRouter](HashStrategy.md#getrouter)
+- [getScrollRestoration](HashStrategy.md#getscrollrestoration)
+- [go](HashStrategy.md#go)
+- [listenerCount](HashStrategy.md#listenercount)
+- [listeners](HashStrategy.md#listeners)
+- [off](HashStrategy.md#off)
+- [on](HashStrategy.md#on)
+- [once](HashStrategy.md#once)
+- [peek](HashStrategy.md#peek)
+- [peekBack](HashStrategy.md#peekback)
+- [peekForward](HashStrategy.md#peekforward)
+- [prependListener](HashStrategy.md#prependlistener)
+- [prependOnceListener](HashStrategy.md#prependoncelistener)
+- [pushState](HashStrategy.md#pushstate)
+- [rawListeners](HashStrategy.md#rawlisteners)
+- [removeAllListeners](HashStrategy.md#removealllisteners)
+- [removeListener](HashStrategy.md#removelistener)
+- [removeURLChangeCallback](HashStrategy.md#removeurlchangecallback)
+- [replaceState](HashStrategy.md#replacestate)
+- [setMaxListeners](HashStrategy.md#setmaxlisteners)
+- [setTitle](HashStrategy.md#settitle)
+- [getEventListeners](HashStrategy.md#geteventlisteners)
+- [listenerCount](HashStrategy.md#listenercount)
+- [on](HashStrategy.md#on)
+- [once](HashStrategy.md#once)
+- [setMaxListeners](HashStrategy.md#setmaxlisteners)
 
 ## Constructors
 
@@ -82,29 +81,29 @@ For example, if you [pushState("mylink")](HashStrategy.HashStrategy-1.md#pushsta
 
 | Name | Type |
 | :------ | :------ |
-| `router` | [`Router`](Router.Router-1.md)<[`IRouterProps`](../interfaces/Router.IRouterProps.md)\> |
+| `router` | [`Router`](Router.md)<[`IRouterProps`](../interfaces/IRouterProps.md)\> |
 
 #### Overrides
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[constructor](RouterStrategy.RouterStrategy-1.md#constructor)
+[RouterStrategy](RouterStrategy.md).[constructor](RouterStrategy.md#constructor)
 
 #### Defined in
 
-[src/HashStrategy.ts:18](https://github.com/breautek/router/blob/f6dfe6e/src/HashStrategy.ts#L18)
+[src/HashStrategy.ts:18](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L18)
 
 ## Properties
 
 ### captureRejectionSymbol
 
-▪ `Static` `Readonly` **captureRejectionSymbol**: typeof [`captureRejectionSymbol`](HashStrategy.HashStrategy-1.md#capturerejectionsymbol)
+▪ `Static` `Readonly` **captureRejectionSymbol**: typeof [`captureRejectionSymbol`](HashStrategy.md#capturerejectionsymbol)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[captureRejectionSymbol](RouterStrategy.RouterStrategy-1.md#capturerejectionsymbol)
+[RouterStrategy](RouterStrategy.md).[captureRejectionSymbol](RouterStrategy.md#capturerejectionsymbol)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:273
+node_modules/@types/node/events.d.ts:301
 
 ___
 
@@ -116,11 +115,11 @@ Sets or gets the default captureRejection value for all emitters.
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[captureRejections](RouterStrategy.RouterStrategy-1.md#capturerejections)
+[RouterStrategy](RouterStrategy.md).[captureRejections](RouterStrategy.md#capturerejections)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:278
+node_modules/@types/node/events.d.ts:306
 
 ___
 
@@ -130,17 +129,17 @@ ___
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[defaultMaxListeners](RouterStrategy.RouterStrategy-1.md#defaultmaxlisteners)
+[RouterStrategy](RouterStrategy.md).[defaultMaxListeners](RouterStrategy.md#defaultmaxlisteners)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:279
+node_modules/@types/node/events.d.ts:307
 
 ___
 
 ### errorMonitor
 
-▪ `Static` `Readonly` **errorMonitor**: typeof [`errorMonitor`](HashStrategy.HashStrategy-1.md#errormonitor)
+▪ `Static` `Readonly` **errorMonitor**: typeof [`errorMonitor`](HashStrategy.md#errormonitor)
 
 This symbol shall be used to install a listener for only monitoring `'error'`
 events. Listeners installed using this symbol are called before the regular
@@ -152,11 +151,11 @@ regular `'error'` listener is installed.
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[errorMonitor](RouterStrategy.RouterStrategy-1.md#errormonitor)
+[RouterStrategy](RouterStrategy.md).[errorMonitor](RouterStrategy.md#errormonitor)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:272
+node_modules/@types/node/events.d.ts:300
 
 ## Methods
 
@@ -164,7 +163,7 @@ node_modules/@types/node/events.d.ts:272
 
 ▸ `Protected` **_fireURLChange**(`url`): `void`
 
-Fires the [EVENT_URL_CHANGE](../modules/RouterStrategy.md#event_url_change) event
+Fires the [EVENT_URL_CHANGE](../modules.md#event_url_change) event
 
 #### Parameters
 
@@ -178,17 +177,17 @@ Fires the [EVENT_URL_CHANGE](../modules/RouterStrategy.md#event_url_change) even
 
 #### Overrides
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[_fireURLChange](RouterStrategy.RouterStrategy-1.md#_fireurlchange)
+[RouterStrategy](RouterStrategy.md).[_fireURLChange](RouterStrategy.md#_fireurlchange)
 
 #### Defined in
 
-[src/HashStrategy.ts:124](https://github.com/breautek/router/blob/f6dfe6e/src/HashStrategy.ts#L124)
+[src/HashStrategy.ts:124](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L124)
 
 ___
 
 ### addListener
 
-▸ **addListener**(`eventName`, `listener`): [`HashStrategy`](HashStrategy.HashStrategy-1.md)
+▸ **addListener**(`eventName`, `listener`): [`HashStrategy`](HashStrategy.md)
 
 Alias for `emitter.on(eventName, listener)`.
 
@@ -203,15 +202,15 @@ Alias for `emitter.on(eventName, listener)`.
 
 #### Returns
 
-[`HashStrategy`](HashStrategy.HashStrategy-1.md)
+[`HashStrategy`](HashStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[addListener](RouterStrategy.RouterStrategy-1.md#addlistener)
+[RouterStrategy](RouterStrategy.md).[addListener](RouterStrategy.md#addlistener)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:299
+node_modules/@types/node/events.d.ts:327
 
 ___
 
@@ -225,7 +224,7 @@ Listen for URL change events
 
 | Name | Type |
 | :------ | :------ |
-| `callback` | [`URLChangeCallback`](../modules/RouterStrategy.md#urlchangecallback) |
+| `callback` | [`URLChangeCallback`](../modules.md#urlchangecallback) |
 
 #### Returns
 
@@ -233,11 +232,11 @@ Listen for URL change events
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[addURLChangeCallback](RouterStrategy.RouterStrategy-1.md#addurlchangecallback)
+[RouterStrategy](RouterStrategy.md).[addURLChangeCallback](RouterStrategy.md#addurlchangecallback)
 
 #### Defined in
 
-[src/RouterStrategy.ts:48](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L48)
+[src/RouterStrategy.ts:48](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L48)
 
 ___
 
@@ -245,7 +244,7 @@ ___
 
 ▸ **back**(): `void`
 
-Navigate the history back one entry. This is an alias for [go(-1)](HashStrategy.HashStrategy-1.md#go)
+Navigate the history back one entry. This is an alias for [go(-1)](HashStrategy.md#go)
 
 #### Returns
 
@@ -253,11 +252,11 @@ Navigate the history back one entry. This is an alias for [go(-1)](HashStrategy.
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[back](RouterStrategy.RouterStrategy-1.md#back)
+[RouterStrategy](RouterStrategy.md).[back](RouterStrategy.md#back)
 
 #### Defined in
 
-[src/RouterStrategy.ts:102](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L102)
+[src/RouterStrategy.ts:102](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L102)
 
 ___
 
@@ -266,7 +265,7 @@ ___
 ▸ **canBack**(): `boolean`
 
 Returns true if can go back 1 entry.
-This is the same as calling [canGo(-1)](HashStrategy.HashStrategy-1.md#cango)
+This is the same as calling [canGo(-1)](HashStrategy.md#cango)
 
 #### Returns
 
@@ -274,11 +273,11 @@ This is the same as calling [canGo(-1)](HashStrategy.HashStrategy-1.md#cango)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[canBack](RouterStrategy.RouterStrategy-1.md#canback)
+[RouterStrategy](RouterStrategy.md).[canBack](RouterStrategy.md#canback)
 
 #### Defined in
 
-[src/RouterStrategy.ts:116](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L116)
+[src/RouterStrategy.ts:116](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L116)
 
 ___
 
@@ -287,7 +286,7 @@ ___
 ▸ **canForward**(): `boolean`
 
 Returns true if can go forward 1 entry.
-This is the same as calling [canGo(1)](HashStrategy.HashStrategy-1.md#cango)
+This is the same as calling [canGo(1)](HashStrategy.md#cango)
 
 #### Returns
 
@@ -295,11 +294,11 @@ This is the same as calling [canGo(1)](HashStrategy.HashStrategy-1.md#cango)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[canForward](RouterStrategy.RouterStrategy-1.md#canforward)
+[RouterStrategy](RouterStrategy.md).[canForward](RouterStrategy.md#canforward)
 
 #### Defined in
 
-[src/RouterStrategy.ts:124](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L124)
+[src/RouterStrategy.ts:124](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L124)
 
 ___
 
@@ -321,11 +320,11 @@ Returns true, if can be navigated to the given relative index
 
 #### Overrides
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[canGo](RouterStrategy.RouterStrategy-1.md#cango)
+[RouterStrategy](RouterStrategy.md).[canGo](RouterStrategy.md#cango)
 
 #### Defined in
 
-[src/HashStrategy.ts:62](https://github.com/breautek/router/blob/f6dfe6e/src/HashStrategy.ts#L62)
+[src/HashStrategy.ts:62](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L62)
 
 ___
 
@@ -341,11 +340,11 @@ Clears the history stack.
 
 #### Overrides
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[clear](RouterStrategy.RouterStrategy-1.md#clear)
+[RouterStrategy](RouterStrategy.md).[clear](RouterStrategy.md#clear)
 
 #### Defined in
 
-[src/HashStrategy.ts:114](https://github.com/breautek/router/blob/f6dfe6e/src/HashStrategy.ts#L114)
+[src/HashStrategy.ts:114](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L114)
 
 ___
 
@@ -406,11 +405,11 @@ myEmitter.emit('event', 1, 2, 3, 4, 5);
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[emit](RouterStrategy.RouterStrategy-1.md#emit)
+[RouterStrategy](RouterStrategy.md).[emit](RouterStrategy.md#emit)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:555
+node_modules/@types/node/events.d.ts:583
 
 ___
 
@@ -442,11 +441,11 @@ console.log(myEE.eventNames());
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[eventNames](RouterStrategy.RouterStrategy-1.md#eventnames)
+[RouterStrategy](RouterStrategy.md).[eventNames](RouterStrategy.md#eventnames)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:614
+node_modules/@types/node/events.d.ts:642
 
 ___
 
@@ -454,7 +453,7 @@ ___
 
 ▸ **forward**(): `void`
 
-navigate the history forward one entry. This is an alias for [go(1)](HashStrategy.HashStrategy-1.md#go)
+navigate the history forward one entry. This is an alias for [go(1)](HashStrategy.md#go)
 
 #### Returns
 
@@ -462,11 +461,11 @@ navigate the history forward one entry. This is an alias for [go(1)](HashStrateg
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[forward](RouterStrategy.RouterStrategy-1.md#forward)
+[RouterStrategy](RouterStrategy.md).[forward](RouterStrategy.md#forward)
 
 #### Defined in
 
-[src/RouterStrategy.ts:95](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L95)
+[src/RouterStrategy.ts:95](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L95)
 
 ___
 
@@ -482,11 +481,11 @@ Gets the size of the history stack
 
 #### Overrides
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[getHistoryLength](RouterStrategy.RouterStrategy-1.md#gethistorylength)
+[RouterStrategy](RouterStrategy.md).[getHistoryLength](RouterStrategy.md#gethistorylength)
 
 #### Defined in
 
-[src/HashStrategy.ts:54](https://github.com/breautek/router/blob/f6dfe6e/src/HashStrategy.ts#L54)
+[src/HashStrategy.ts:54](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L54)
 
 ___
 
@@ -495,7 +494,7 @@ ___
 ▸ **getLocation**(): `string`
 
 Gets the current location.
-This is the same as calling [peek(0)](HashStrategy.HashStrategy-1.md#peek)
+This is the same as calling [peek(0)](HashStrategy.md#peek)
 
 #### Returns
 
@@ -503,11 +502,11 @@ This is the same as calling [peek(0)](HashStrategy.HashStrategy-1.md#peek)
 
 #### Overrides
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[getLocation](RouterStrategy.RouterStrategy-1.md#getlocation)
+[RouterStrategy](RouterStrategy.md).[getLocation](RouterStrategy.md#getlocation)
 
 #### Defined in
 
-[src/HashStrategy.ts:46](https://github.com/breautek/router/blob/f6dfe6e/src/HashStrategy.ts#L46)
+[src/HashStrategy.ts:46](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L46)
 
 ___
 
@@ -529,11 +528,11 @@ Gets the URL at the given index in the history stack
 
 #### Overrides
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[getLocationAt](RouterStrategy.RouterStrategy-1.md#getlocationat)
+[RouterStrategy](RouterStrategy.md).[getLocationAt](RouterStrategy.md#getlocationat)
 
 #### Defined in
 
-[src/HashStrategy.ts:50](https://github.com/breautek/router/blob/f6dfe6e/src/HashStrategy.ts#L50)
+[src/HashStrategy.ts:50](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L50)
 
 ___
 
@@ -542,7 +541,7 @@ ___
 ▸ **getMaxListeners**(): `number`
 
 Returns the current max listener value for the `EventEmitter` which is either
-set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](HashStrategy.HashStrategy-1.md#defaultmaxlisteners).
+set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](HashStrategy.md#defaultmaxlisteners).
 
 **`since`** v1.0.0
 
@@ -552,31 +551,31 @@ set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](HashStr
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[getMaxListeners](RouterStrategy.RouterStrategy-1.md#getmaxlisteners)
+[RouterStrategy](RouterStrategy.md).[getMaxListeners](RouterStrategy.md#getmaxlisteners)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:471
+node_modules/@types/node/events.d.ts:499
 
 ___
 
 ### getRouter
 
-▸ **getRouter**(): [`Router`](Router.Router-1.md)<[`IRouterProps`](../interfaces/Router.IRouterProps.md)\>
+▸ **getRouter**(): [`Router`](Router.md)<[`IRouterProps`](../interfaces/IRouterProps.md)\>
 
 Gets the router
 
 #### Returns
 
-[`Router`](Router.Router-1.md)<[`IRouterProps`](../interfaces/Router.IRouterProps.md)\>
+[`Router`](Router.md)<[`IRouterProps`](../interfaces/IRouterProps.md)\>
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[getRouter](RouterStrategy.RouterStrategy-1.md#getrouter)
+[RouterStrategy](RouterStrategy.md).[getRouter](RouterStrategy.md#getrouter)
 
 #### Defined in
 
-[src/RouterStrategy.ts:19](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L19)
+[src/RouterStrategy.ts:19](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L19)
 
 ___
 
@@ -592,11 +591,11 @@ Gets the scroll restoration
 
 #### Overrides
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[getScrollRestoration](RouterStrategy.RouterStrategy-1.md#getscrollrestoration)
+[RouterStrategy](RouterStrategy.md).[getScrollRestoration](RouterStrategy.md#getscrollrestoration)
 
 #### Defined in
 
-[src/HashStrategy.ts:58](https://github.com/breautek/router/blob/f6dfe6e/src/HashStrategy.ts#L58)
+[src/HashStrategy.ts:58](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L58)
 
 ___
 
@@ -618,11 +617,11 @@ Navigates the history
 
 #### Overrides
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[go](RouterStrategy.RouterStrategy-1.md#go)
+[RouterStrategy](RouterStrategy.md).[go](RouterStrategy.md#go)
 
 #### Defined in
 
-[src/HashStrategy.ts:70](https://github.com/breautek/router/blob/f6dfe6e/src/HashStrategy.ts#L70)
+[src/HashStrategy.ts:70](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L70)
 
 ___
 
@@ -646,11 +645,11 @@ Returns the number of listeners listening to the event named `eventName`.
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[listenerCount](RouterStrategy.RouterStrategy-1.md#listenercount)
+[RouterStrategy](RouterStrategy.md).[listenerCount](RouterStrategy.md#listenercount)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:561
+node_modules/@types/node/events.d.ts:589
 
 ___
 
@@ -682,17 +681,17 @@ console.log(util.inspect(server.listeners('connection')));
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[listeners](RouterStrategy.RouterStrategy-1.md#listeners)
+[RouterStrategy](RouterStrategy.md).[listeners](RouterStrategy.md#listeners)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:484
+node_modules/@types/node/events.d.ts:512
 
 ___
 
 ### off
 
-▸ **off**(`eventName`, `listener`): [`HashStrategy`](HashStrategy.HashStrategy-1.md)
+▸ **off**(`eventName`, `listener`): [`HashStrategy`](HashStrategy.md)
 
 Alias for `emitter.removeListener()`.
 
@@ -707,21 +706,21 @@ Alias for `emitter.removeListener()`.
 
 #### Returns
 
-[`HashStrategy`](HashStrategy.HashStrategy-1.md)
+[`HashStrategy`](HashStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[off](RouterStrategy.RouterStrategy-1.md#off)
+[RouterStrategy](RouterStrategy.md).[off](RouterStrategy.md#off)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:444
+node_modules/@types/node/events.d.ts:472
 
 ___
 
 ### on
 
-▸ **on**(`eventName`, `listener`): [`HashStrategy`](HashStrategy.HashStrategy-1.md)
+▸ **on**(`eventName`, `listener`): [`HashStrategy`](HashStrategy.md)
 
 Adds the `listener` function to the end of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -760,21 +759,21 @@ myEE.emit('foo');
 
 #### Returns
 
-[`HashStrategy`](HashStrategy.HashStrategy-1.md)
+[`HashStrategy`](HashStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[on](RouterStrategy.RouterStrategy-1.md#on)
+[RouterStrategy](RouterStrategy.md).[on](RouterStrategy.md#on)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:330
+node_modules/@types/node/events.d.ts:358
 
 ___
 
 ### once
 
-▸ **once**(`eventName`, `listener`): [`HashStrategy`](HashStrategy.HashStrategy-1.md)
+▸ **once**(`eventName`, `listener`): [`HashStrategy`](HashStrategy.md)
 
 Adds a **one-time**`listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -811,15 +810,15 @@ myEE.emit('foo');
 
 #### Returns
 
-[`HashStrategy`](HashStrategy.HashStrategy-1.md)
+[`HashStrategy`](HashStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[once](RouterStrategy.RouterStrategy-1.md#once)
+[RouterStrategy](RouterStrategy.md).[once](RouterStrategy.md#once)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:359
+node_modules/@types/node/events.d.ts:387
 
 ___
 
@@ -841,11 +840,11 @@ Returns the URL stored in the history stack at the given relative index.
 
 #### Overrides
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[peek](RouterStrategy.RouterStrategy-1.md#peek)
+[RouterStrategy](RouterStrategy.md).[peek](RouterStrategy.md#peek)
 
 #### Defined in
 
-[src/HashStrategy.ts:66](https://github.com/breautek/router/blob/f6dfe6e/src/HashStrategy.ts#L66)
+[src/HashStrategy.ts:66](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L66)
 
 ___
 
@@ -854,7 +853,7 @@ ___
 ▸ **peekBack**(): `string`
 
 Returns the URL one entry back.
-This is the same as calling [peek(-1)](HashStrategy.HashStrategy-1.md#peek)
+This is the same as calling [peek(-1)](HashStrategy.md#peek)
 
 #### Returns
 
@@ -862,11 +861,11 @@ This is the same as calling [peek(-1)](HashStrategy.HashStrategy-1.md#peek)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[peekBack](RouterStrategy.RouterStrategy-1.md#peekback)
+[RouterStrategy](RouterStrategy.md).[peekBack](RouterStrategy.md#peekback)
 
 #### Defined in
 
-[src/RouterStrategy.ts:146](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L146)
+[src/RouterStrategy.ts:146](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L146)
 
 ___
 
@@ -875,7 +874,7 @@ ___
 ▸ **peekForward**(): `string`
 
 Returns the URL one entry forward.
-This is the same as calling [peek(1)](HashStrategy.HashStrategy-1.md#peek)
+This is the same as calling [peek(1)](HashStrategy.md#peek)
 
 #### Returns
 
@@ -883,17 +882,17 @@ This is the same as calling [peek(1)](HashStrategy.HashStrategy-1.md#peek)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[peekForward](RouterStrategy.RouterStrategy-1.md#peekforward)
+[RouterStrategy](RouterStrategy.md).[peekForward](RouterStrategy.md#peekforward)
 
 #### Defined in
 
-[src/RouterStrategy.ts:138](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L138)
+[src/RouterStrategy.ts:138](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L138)
 
 ___
 
 ### prependListener
 
-▸ **prependListener**(`eventName`, `listener`): [`HashStrategy`](HashStrategy.HashStrategy-1.md)
+▸ **prependListener**(`eventName`, `listener`): [`HashStrategy`](HashStrategy.md)
 
 Adds the `listener` function to the _beginning_ of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -919,21 +918,21 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`HashStrategy`](HashStrategy.HashStrategy-1.md)
+[`HashStrategy`](HashStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[prependListener](RouterStrategy.RouterStrategy-1.md#prependlistener)
+[RouterStrategy](RouterStrategy.md).[prependListener](RouterStrategy.md#prependlistener)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:579
+node_modules/@types/node/events.d.ts:607
 
 ___
 
 ### prependOnceListener
 
-▸ **prependOnceListener**(`eventName`, `listener`): [`HashStrategy`](HashStrategy.HashStrategy-1.md)
+▸ **prependOnceListener**(`eventName`, `listener`): [`HashStrategy`](HashStrategy.md)
 
 Adds a **one-time**`listener` function for the event named `eventName` to the_beginning_ of the listeners array. The next time `eventName` is triggered, this
 listener is removed, and then invoked.
@@ -957,15 +956,15 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`HashStrategy`](HashStrategy.HashStrategy-1.md)
+[`HashStrategy`](HashStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[prependOnceListener](RouterStrategy.RouterStrategy-1.md#prependoncelistener)
+[RouterStrategy](RouterStrategy.md).[prependOnceListener](RouterStrategy.md#prependoncelistener)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:595
+node_modules/@types/node/events.d.ts:623
 
 ___
 
@@ -988,11 +987,11 @@ Pushes a new entry into the history stack, navigating to the new location.
 
 #### Overrides
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[pushState](RouterStrategy.RouterStrategy-1.md#pushstate)
+[RouterStrategy](RouterStrategy.md).[pushState](RouterStrategy.md#pushstate)
 
 #### Defined in
 
-[src/HashStrategy.ts:81](https://github.com/breautek/router/blob/f6dfe6e/src/HashStrategy.ts#L81)
+[src/HashStrategy.ts:81](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L81)
 
 ___
 
@@ -1041,17 +1040,17 @@ emitter.emit('log');
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[rawListeners](RouterStrategy.RouterStrategy-1.md#rawlisteners)
+[RouterStrategy](RouterStrategy.md).[rawListeners](RouterStrategy.md#rawlisteners)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:514
+node_modules/@types/node/events.d.ts:542
 
 ___
 
 ### removeAllListeners
 
-▸ **removeAllListeners**(`event?`): [`HashStrategy`](HashStrategy.HashStrategy-1.md)
+▸ **removeAllListeners**(`event?`): [`HashStrategy`](HashStrategy.md)
 
 Removes all listeners, or those of the specified `eventName`.
 
@@ -1071,21 +1070,21 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`HashStrategy`](HashStrategy.HashStrategy-1.md)
+[`HashStrategy`](HashStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[removeAllListeners](RouterStrategy.RouterStrategy-1.md#removealllisteners)
+[RouterStrategy](RouterStrategy.md).[removeAllListeners](RouterStrategy.md#removealllisteners)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:455
+node_modules/@types/node/events.d.ts:483
 
 ___
 
 ### removeListener
 
-▸ **removeListener**(`eventName`, `listener`): [`HashStrategy`](HashStrategy.HashStrategy-1.md)
+▸ **removeListener**(`eventName`, `listener`): [`HashStrategy`](HashStrategy.md)
 
 Removes the specified `listener` from the listener array for the event named`eventName`.
 
@@ -1175,15 +1174,15 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`HashStrategy`](HashStrategy.HashStrategy-1.md)
+[`HashStrategy`](HashStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[removeListener](RouterStrategy.RouterStrategy-1.md#removelistener)
+[RouterStrategy](RouterStrategy.md).[removeListener](RouterStrategy.md#removelistener)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:439
+node_modules/@types/node/events.d.ts:467
 
 ___
 
@@ -1197,7 +1196,7 @@ Removes an existing listener
 
 | Name | Type |
 | :------ | :------ |
-| `callback` | [`URLChangeCallback`](../modules/RouterStrategy.md#urlchangecallback) |
+| `callback` | [`URLChangeCallback`](../modules.md#urlchangecallback) |
 
 #### Returns
 
@@ -1205,11 +1204,11 @@ Removes an existing listener
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[removeURLChangeCallback](RouterStrategy.RouterStrategy-1.md#removeurlchangecallback)
+[RouterStrategy](RouterStrategy.md).[removeURLChangeCallback](RouterStrategy.md#removeurlchangecallback)
 
 #### Defined in
 
-[src/RouterStrategy.ts:57](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L57)
+[src/RouterStrategy.ts:57](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L57)
 
 ___
 
@@ -1233,17 +1232,17 @@ This will navigate the screen to the new location.
 
 #### Overrides
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[replaceState](RouterStrategy.RouterStrategy-1.md#replacestate)
+[RouterStrategy](RouterStrategy.md).[replaceState](RouterStrategy.md#replacestate)
 
 #### Defined in
 
-[src/HashStrategy.ts:99](https://github.com/breautek/router/blob/f6dfe6e/src/HashStrategy.ts#L99)
+[src/HashStrategy.ts:99](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L99)
 
 ___
 
 ### setMaxListeners
 
-▸ **setMaxListeners**(`n`): [`HashStrategy`](HashStrategy.HashStrategy-1.md)
+▸ **setMaxListeners**(`n`): [`HashStrategy`](HashStrategy.md)
 
 By default `EventEmitter`s will print a warning if more than `10` listeners are
 added for a particular event. This is a useful default that helps finding
@@ -1262,15 +1261,15 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`HashStrategy`](HashStrategy.HashStrategy-1.md)
+[`HashStrategy`](HashStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[setMaxListeners](RouterStrategy.RouterStrategy-1.md#setmaxlisteners)
+[RouterStrategy](RouterStrategy.md).[setMaxListeners](RouterStrategy.md#setmaxlisteners)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:465
+node_modules/@types/node/events.d.ts:493
 
 ___
 
@@ -1292,11 +1291,11 @@ Sets the browser title
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[setTitle](RouterStrategy.RouterStrategy-1.md#settitle)
+[RouterStrategy](RouterStrategy.md).[setTitle](RouterStrategy.md#settitle)
 
 #### Defined in
 
-[src/RouterStrategy.ts:28](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L28)
+[src/RouterStrategy.ts:28](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L28)
 
 ___
 
@@ -1329,7 +1328,7 @@ const { getEventListeners, EventEmitter } = require('events');
 }
 ```
 
-**`since`** v15.2.0
+**`since`** v15.2.0, v14.17.0
 
 #### Parameters
 
@@ -1344,11 +1343,11 @@ const { getEventListeners, EventEmitter } = require('events');
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[getEventListeners](RouterStrategy.RouterStrategy-1.md#geteventlisteners)
+[RouterStrategy](RouterStrategy.md).[getEventListeners](RouterStrategy.md#geteventlisteners)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:262
+node_modules/@types/node/events.d.ts:270
 
 ___
 
@@ -1384,11 +1383,11 @@ console.log(listenerCount(myEmitter, 'event'));
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[listenerCount](RouterStrategy.RouterStrategy-1.md#listenercount)
+[RouterStrategy](RouterStrategy.md).[listenerCount](RouterStrategy.md#listenercount)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:234
+node_modules/@types/node/events.d.ts:242
 
 ___
 
@@ -1468,11 +1467,11 @@ that iterates `eventName` events emitted by the `emitter`
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[on](RouterStrategy.RouterStrategy-1.md#on)
+[RouterStrategy](RouterStrategy.md).[on](RouterStrategy.md#on)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:217
+node_modules/@types/node/events.d.ts:221
 
 ___
 
@@ -1576,7 +1575,7 @@ ee.emit('foo'); // Prints: Waiting for the event was canceled!
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[once](RouterStrategy.RouterStrategy-1.md#once)
+[RouterStrategy](RouterStrategy.md).[once](RouterStrategy.md#once)
 
 #### Defined in
 
@@ -1598,8 +1597,52 @@ node_modules/@types/node/events.d.ts:157
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[once](RouterStrategy.RouterStrategy-1.md#once)
+[RouterStrategy](RouterStrategy.md).[once](RouterStrategy.md#once)
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:158
+node_modules/@types/node/events.d.ts:162
+
+___
+
+### setMaxListeners
+
+▸ `Static` **setMaxListeners**(`n?`, ...`eventTargets`): `void`
+
+By default `EventEmitter`s will print a warning if more than `10` listeners are
+added for a particular event. This is a useful default that helps finding
+memory leaks. The `EventEmitter.setMaxListeners()` method allows the default limit to be
+modified (if eventTargets is empty) or modify the limit specified in every `EventTarget` | `EventEmitter` passed as arguments.
+The value can be set to`Infinity` (or `0`) to indicate an unlimited number of listeners.
+
+```js
+EventEmitter.setMaxListeners(20);
+// Equivalent to
+EventEmitter.defaultMaxListeners = 20;
+
+const eventTarget = new EventTarget();
+// Only way to increase limit for `EventTarget` instances
+// as these doesn't expose its own `setMaxListeners` method
+EventEmitter.setMaxListeners(20, eventTarget);
+```
+
+**`since`** v15.3.0, v14.17.0
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `n?` | `number` |
+| `...eventTargets` | (`DOMEventTarget` \| `EventEmitter`)[] |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+[RouterStrategy](RouterStrategy.md).[setMaxListeners](RouterStrategy.md#setmaxlisteners)
+
+#### Defined in
+
+node_modules/@types/node/events.d.ts:290

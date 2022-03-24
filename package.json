@@ -15,7 +15,7 @@
     "publish-beta": "npm publish --tag beta",
     "prepublishOnly": "npm run build",
     "changelog": "auto-changelog --output CHANGELOG.md -p --release-summary --ignore-commit-pattern chore",
-    "docs": "typedoc --excludePrivate --includeVersion -readme ./README.md --out ./docs ./src",
+    "docs": "typedoc --excludePrivate --includeVersion -readme ./README.md --out ./docs ./src/api.ts",
     "version": "npm run-script build && npm run-script docs && npm run changelog && git add CHANGELOG.md docs && git commit -m 'chore: changelog'",
     "postversion": "git push && git push --tags"
   },

@@ -1,85 +1,80 @@
-[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / [Route](../modules/Route.md) / Route
+[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / View
 
-# Class: Route<TComponentProps, TRouteProps, TRouteState\>
-
-[Route](../modules/Route.md).Route
-
-This class represents a route that renders a [View](../modules/View.md) component
+# Class: View<TPageProps\>
 
 ## Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `TComponentProps` | extends [`IComponentProps`](../interfaces/Route.IComponentProps.md)[`IComponentProps`](../interfaces/Route.IComponentProps.md) |
-| `TRouteProps` | extends [`IRouteProps`](../interfaces/Route.IRouteProps.md)<`TComponentProps`\>[`IRouteProps`](../interfaces/Route.IRouteProps.md)<`TComponentProps`\> |
-| `TRouteState` | extends [`IRouteState`](../interfaces/Route.IRouteState.md)[`IRouteState`](../interfaces/Route.IRouteState.md) |
+| `TPageProps` | extends [`IViewProps`](../interfaces/IViewProps.md) = [`IViewProps`](../interfaces/IViewProps.md) |
 
 ## Hierarchy
 
-- `Component`<`TRouteProps`, `TRouteState`\>
+- `Component`<`TPageProps`\>
 
-  ↳ **`Route`**
+  ↳ **`View`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](Route.Route-1.md#constructor)
+- [constructor](View.md#constructor)
 
 ### Properties
 
-- [context](Route.Route-1.md#context)
-- [props](Route.Route-1.md#props)
-- [refs](Route.Route-1.md#refs)
-- [state](Route.Route-1.md#state)
-- [contextType](Route.Route-1.md#contexttype)
+- [context](View.md#context)
+- [props](View.md#props)
+- [refs](View.md#refs)
+- [state](View.md#state)
+- [contextType](View.md#contexttype)
 
 ### Methods
 
-- [UNSAFE\_componentWillMount](Route.Route-1.md#unsafe_componentwillmount)
-- [UNSAFE\_componentWillReceiveProps](Route.Route-1.md#unsafe_componentwillreceiveprops)
-- [UNSAFE\_componentWillUpdate](Route.Route-1.md#unsafe_componentwillupdate)
-- [componentDidCatch](Route.Route-1.md#componentdidcatch)
-- [componentDidMount](Route.Route-1.md#componentdidmount)
-- [componentDidUpdate](Route.Route-1.md#componentdidupdate)
-- [componentWillMount](Route.Route-1.md#componentwillmount)
-- [componentWillReceiveProps](Route.Route-1.md#componentwillreceiveprops)
-- [componentWillUnmount](Route.Route-1.md#componentwillunmount)
-- [componentWillUpdate](Route.Route-1.md#componentwillupdate)
-- [forceUpdate](Route.Route-1.md#forceupdate)
-- [getSnapshotBeforeUpdate](Route.Route-1.md#getsnapshotbeforeupdate)
-- [getView](Route.Route-1.md#getview)
-- [render](Route.Route-1.md#render)
-- [setState](Route.Route-1.md#setstate)
-- [shouldComponentUpdate](Route.Route-1.md#shouldcomponentupdate)
+- [UNSAFE\_componentWillMount](View.md#unsafe_componentwillmount)
+- [UNSAFE\_componentWillReceiveProps](View.md#unsafe_componentwillreceiveprops)
+- [UNSAFE\_componentWillUpdate](View.md#unsafe_componentwillupdate)
+- [\_renderView](View.md#_renderview)
+- [componentDidCatch](View.md#componentdidcatch)
+- [componentDidUpdate](View.md#componentdidupdate)
+- [componentWillMount](View.md#componentwillmount)
+- [componentWillReceiveProps](View.md#componentwillreceiveprops)
+- [componentWillUpdate](View.md#componentwillupdate)
+- [forceUpdate](View.md#forceupdate)
+- [getCSSClass](View.md#getcssclass)
+- [getNode](View.md#getnode)
+- [getSnapshotBeforeUpdate](View.md#getsnapshotbeforeupdate)
+- [getTitle](View.md#gettitle)
+- [getViewStyles](View.md#getviewstyles)
+- [getViewStylesheet](View.md#getviewstylesheet)
+- [render](View.md#render)
+- [setState](View.md#setstate)
+- [shouldComponentUpdate](View.md#shouldcomponentupdate)
 
 ## Constructors
 
 ### constructor
 
-• **new Route**<`TComponentProps`, `TRouteProps`, `TRouteState`\>(`props`)
+• **new View**<`TPageProps`\>(`props`)
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `TComponentProps` | extends [`IComponentProps`](../interfaces/Route.IComponentProps.md)[`IComponentProps`](../interfaces/Route.IComponentProps.md) |
-| `TRouteProps` | extends [`IRouteProps`](../interfaces/Route.IRouteProps.md)<`TComponentProps`, `TRouteProps`\>[`IRouteProps`](../interfaces/Route.IRouteProps.md)<`TComponentProps`\> |
-| `TRouteState` | extends [`IRouteState`](../interfaces/Route.IRouteState.md)[`IRouteState`](../interfaces/Route.IRouteState.md) |
+| `TPageProps` | extends [`IViewProps`](../interfaces/IViewProps.md) = [`IViewProps`](../interfaces/IViewProps.md) |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | `TRouteProps` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `props` | `TPageProps` | See [IViewProps] |
 
 #### Overrides
 
-React.Component&lt;TRouteProps, TRouteState\&gt;.constructor
+React.Component&lt;TPageProps\&gt;.constructor
 
 #### Defined in
 
-[src/Route.tsx:41](https://github.com/breautek/router/blob/f6dfe6e/src/Route.tsx#L41)
+[src/View.tsx:25](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L25)
 
 ## Properties
 
@@ -113,7 +108,7 @@ ___
 
 ### props
 
-• `Readonly` **props**: `Readonly`<`TRouteProps`\> & `Readonly`<`Object`\>
+• `Readonly` **props**: `Readonly`<`TPageProps`\> & `Readonly`<{ `children?`: `ReactNode`  }\>
 
 #### Inherited from
 
@@ -148,7 +143,7 @@ ___
 
 ### state
 
-• **state**: `Readonly`<`TRouteState`\>
+• **state**: `Readonly`<{}\>
 
 #### Inherited from
 
@@ -250,7 +245,7 @@ prevents this from being invoked.
 
 | Name | Type |
 | :------ | :------ |
-| `nextProps` | `Readonly`<`TRouteProps`\> |
+| `nextProps` | `Readonly`<`TPageProps`\> |
 | `nextContext` | `any` |
 
 #### Returns
@@ -290,8 +285,8 @@ prevents this from being invoked.
 
 | Name | Type |
 | :------ | :------ |
-| `nextProps` | `Readonly`<`TRouteProps`\> |
-| `nextState` | `Readonly`<`TRouteState`\> |
+| `nextProps` | `Readonly`<`TPageProps`\> |
+| `nextState` | `Readonly`<{}\> |
 | `nextContext` | `any` |
 
 #### Returns
@@ -305,6 +300,20 @@ React.Component.UNSAFE\_componentWillUpdate
 #### Defined in
 
 node_modules/@types/react/index.d.ts:776
+
+___
+
+### \_renderView
+
+▸ `Protected` `Abstract` **_renderView**(): `ReactNode`
+
+#### Returns
+
+`ReactNode`
+
+#### Defined in
+
+[src/View.tsx:90](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L90)
 
 ___
 
@@ -336,26 +345,6 @@ node_modules/@types/react/index.d.ts:645
 
 ___
 
-### componentDidMount
-
-▸ `Optional` **componentDidMount**(): `void`
-
-Called immediately after a component is mounted. Setting state here will trigger re-rendering.
-
-#### Returns
-
-`void`
-
-#### Inherited from
-
-React.Component.componentDidMount
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:624
-
-___
-
 ### componentDidUpdate
 
 ▸ `Optional` **componentDidUpdate**(`prevProps`, `prevState`, `snapshot?`): `void`
@@ -368,8 +357,8 @@ The snapshot is only present if getSnapshotBeforeUpdate is present and returns n
 
 | Name | Type |
 | :------ | :------ |
-| `prevProps` | `Readonly`<`TRouteProps`\> |
-| `prevState` | `Readonly`<`TRouteState`\> |
+| `prevProps` | `Readonly`<`TPageProps`\> |
+| `prevState` | `Readonly`<{}\> |
 | `snapshot?` | `any` |
 
 #### Returns
@@ -439,7 +428,7 @@ prevents this from being invoked.
 
 | Name | Type |
 | :------ | :------ |
-| `nextProps` | `Readonly`<`TRouteProps`\> |
+| `nextProps` | `Readonly`<`TPageProps`\> |
 | `nextContext` | `any` |
 
 #### Returns
@@ -453,27 +442,6 @@ React.Component.componentWillReceiveProps
 #### Defined in
 
 node_modules/@types/react/index.d.ts:731
-
-___
-
-### componentWillUnmount
-
-▸ `Optional` **componentWillUnmount**(): `void`
-
-Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as
-cancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.
-
-#### Returns
-
-`void`
-
-#### Inherited from
-
-React.Component.componentWillUnmount
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:640
 
 ___
 
@@ -498,8 +466,8 @@ prevents this from being invoked.
 
 | Name | Type |
 | :------ | :------ |
-| `nextProps` | `Readonly`<`TRouteProps`\> |
-| `nextState` | `Readonly`<`TRouteState`\> |
+| `nextProps` | `Readonly`<`TPageProps`\> |
+| `nextState` | `Readonly`<{}\> |
 | `nextContext` | `any` |
 
 #### Returns
@@ -540,6 +508,38 @@ node_modules/@types/react/index.d.ts:497
 
 ___
 
+### getCSSClass
+
+▸ **getCSSClass**(): `string`
+
+Return the CSS class on this view
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[src/View.tsx:33](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L33)
+
+___
+
+### getNode
+
+▸ **getNode**(): `HTMLElement`
+
+Gets the underlying HTML node for this View
+
+#### Returns
+
+`HTMLElement`
+
+#### Defined in
+
+[src/View.tsx:71](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L71)
+
+___
+
 ### getSnapshotBeforeUpdate
 
 ▸ `Optional` **getSnapshotBeforeUpdate**(`prevProps`, `prevState`): `any`
@@ -555,8 +555,8 @@ lifecycle events from running.
 
 | Name | Type |
 | :------ | :------ |
-| `prevProps` | `Readonly`<`TRouteProps`\> |
-| `prevState` | `Readonly`<`TRouteState`\> |
+| `prevProps` | `Readonly`<`TPageProps`\> |
+| `prevState` | `Readonly`<{}\> |
 
 #### Returns
 
@@ -572,17 +572,52 @@ node_modules/@types/react/index.d.ts:681
 
 ___
 
-### getView
+### getTitle
 
-▸ **getView**(): [`View`](View.View-1.md)<[`IViewProps`](../interfaces/View.IViewProps.md)\>
+▸ **getTitle**(): `Promise`<`string`\>
+
+Get the title of this view
 
 #### Returns
 
-[`View`](View.View-1.md)<[`IViewProps`](../interfaces/View.IViewProps.md)\>
+`Promise`<`string`\>
 
 #### Defined in
 
-[src/Route.tsx:50](https://github.com/breautek/router/blob/f6dfe6e/src/Route.tsx#L50)
+[src/View.tsx:78](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L78)
+
+___
+
+### getViewStyles
+
+▸ **getViewStyles**(): `Record`<`any`, `string`\>
+
+Get the inline styles for this view.
+Use React style notation.
+
+#### Returns
+
+`Record`<`any`, `string`\>
+
+#### Defined in
+
+[src/View.tsx:86](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L86)
+
+___
+
+### getViewStylesheet
+
+▸ **getViewStylesheet**(): [`IViewStylesheet`](../interfaces/IViewStylesheet.md)
+
+Override to return a webpack API style stylesheet
+
+#### Returns
+
+[`IViewStylesheet`](../interfaces/IViewStylesheet.md)
+
+#### Defined in
+
+[src/View.tsx:40](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L40)
 
 ___
 
@@ -600,7 +635,7 @@ React.Component.render
 
 #### Defined in
 
-[src/Route.tsx:46](https://github.com/breautek/router/blob/f6dfe6e/src/Route.tsx#L46)
+[src/View.tsx:92](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L92)
 
 ___
 
@@ -612,13 +647,13 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `K` | extends `string` \| `number` \| `symbol` |
+| `K` | extends `never` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `state` | `TRouteState` \| (`prevState`: `Readonly`<`TRouteState`\>, `props`: `Readonly`<`TRouteProps`\>) => `TRouteState` \| `Pick`<`TRouteState`, `K`\> \| `Pick`<`TRouteState`, `K`\> |
+| `state` | {} \| (`prevState`: `Readonly`<{}\>, `props`: `Readonly`<`TPageProps`\>) => {} \| `Pick`<{}, `K`\> \| `Pick`<{}, `K`\> |
 | `callback?` | () => `void` |
 
 #### Returns
@@ -652,8 +687,8 @@ and `componentDidUpdate` will not be called.
 
 | Name | Type |
 | :------ | :------ |
-| `nextProps` | `Readonly`<`TRouteProps`\> |
-| `nextState` | `Readonly`<`TRouteState`\> |
+| `nextProps` | `Readonly`<`TPageProps`\> |
+| `nextState` | `Readonly`<{}\> |
 | `nextContext` | `any` |
 
 #### Returns

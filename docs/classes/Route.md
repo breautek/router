@@ -1,81 +1,83 @@
-[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / [Router](../modules/Router.md) / Router
+[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / Route
 
-# Class: Router<TRouterProps\>
+# Class: Route<TComponentProps, TRouteProps, TRouteState\>
 
-[Router](../modules/Router.md).Router
+This class represents a route that renders a [View](View.md) component
 
 ## Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `TRouterProps` | extends [`IRouterProps`](../interfaces/Router.IRouterProps.md)[`IRouterProps`](../interfaces/Router.IRouterProps.md) |
+| `TComponentProps` | extends [`IComponentProps`](../interfaces/IComponentProps.md) = [`IComponentProps`](../interfaces/IComponentProps.md) |
+| `TRouteProps` | extends [`IRouteProps`](../interfaces/IRouteProps.md)<`TComponentProps`\> = [`IRouteProps`](../interfaces/IRouteProps.md)<`TComponentProps`\> |
+| `TRouteState` | extends [`IRouteState`](../interfaces/IRouteState.md) = [`IRouteState`](../interfaces/IRouteState.md) |
 
 ## Hierarchy
 
-- `Component`<`TRouterProps`, [`IRouterState`](../interfaces/Router.IRouterState.md)\>
+- `Component`<`TRouteProps`, `TRouteState`\>
 
-  ↳ **`Router`**
+  ↳ **`Route`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](Router.Router-1.md#constructor)
+- [constructor](Route.md#constructor)
 
 ### Properties
 
-- [context](Router.Router-1.md#context)
-- [props](Router.Router-1.md#props)
-- [refs](Router.Router-1.md#refs)
-- [state](Router.Router-1.md#state)
-- [contextType](Router.Router-1.md#contexttype)
+- [context](Route.md#context)
+- [props](Route.md#props)
+- [refs](Route.md#refs)
+- [state](Route.md#state)
+- [contextType](Route.md#contexttype)
 
 ### Methods
 
-- [UNSAFE\_componentWillMount](Router.Router-1.md#unsafe_componentwillmount)
-- [UNSAFE\_componentWillUpdate](Router.Router-1.md#unsafe_componentwillupdate)
-- [back](Router.Router-1.md#back)
-- [componentDidCatch](Router.Router-1.md#componentdidcatch)
-- [componentDidMount](Router.Router-1.md#componentdidmount)
-- [componentWillMount](Router.Router-1.md#componentwillmount)
-- [componentWillReceiveProps](Router.Router-1.md#componentwillreceiveprops)
-- [componentWillUpdate](Router.Router-1.md#componentwillupdate)
-- [forceUpdate](Router.Router-1.md#forceupdate)
-- [forward](Router.Router-1.md#forward)
-- [getHistoryLength](Router.Router-1.md#gethistorylength)
-- [getRouterStrategy](Router.Router-1.md#getrouterstrategy)
-- [getScrollRestoration](Router.Router-1.md#getscrollrestoration)
-- [getSnapshotBeforeUpdate](Router.Router-1.md#getsnapshotbeforeupdate)
-- [go](Router.Router-1.md#go)
-- [setState](Router.Router-1.md#setstate)
-- [shouldComponentUpdate](Router.Router-1.md#shouldcomponentupdate)
-- [getInstance](Router.Router-1.md#getinstance)
+- [UNSAFE\_componentWillMount](Route.md#unsafe_componentwillmount)
+- [UNSAFE\_componentWillReceiveProps](Route.md#unsafe_componentwillreceiveprops)
+- [UNSAFE\_componentWillUpdate](Route.md#unsafe_componentwillupdate)
+- [componentDidCatch](Route.md#componentdidcatch)
+- [componentDidMount](Route.md#componentdidmount)
+- [componentDidUpdate](Route.md#componentdidupdate)
+- [componentWillMount](Route.md#componentwillmount)
+- [componentWillReceiveProps](Route.md#componentwillreceiveprops)
+- [componentWillUnmount](Route.md#componentwillunmount)
+- [componentWillUpdate](Route.md#componentwillupdate)
+- [forceUpdate](Route.md#forceupdate)
+- [getSnapshotBeforeUpdate](Route.md#getsnapshotbeforeupdate)
+- [getView](Route.md#getview)
+- [render](Route.md#render)
+- [setState](Route.md#setstate)
+- [shouldComponentUpdate](Route.md#shouldcomponentupdate)
 
 ## Constructors
 
 ### constructor
 
-• **new Router**<`TRouterProps`\>(`props`)
+• **new Route**<`TComponentProps`, `TRouteProps`, `TRouteState`\>(`props`)
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `TRouterProps` | extends [`IRouterProps`](../interfaces/Router.IRouterProps.md)[`IRouterProps`](../interfaces/Router.IRouterProps.md) |
+| `TComponentProps` | extends [`IComponentProps`](../interfaces/IComponentProps.md) = [`IComponentProps`](../interfaces/IComponentProps.md) |
+| `TRouteProps` | extends [`IRouteProps`](../interfaces/IRouteProps.md)<`TComponentProps`, `TRouteProps`\> = [`IRouteProps`](../interfaces/IRouteProps.md)<`TComponentProps`\> |
+| `TRouteState` | extends [`IRouteState`](../interfaces/IRouteState.md) = [`IRouteState`](../interfaces/IRouteState.md) |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `props` | `TRouterProps` |
+| `props` | `TRouteProps` |
 
 #### Overrides
 
-React.Component&lt;TRouterProps, IRouterState\&gt;.constructor
+React.Component&lt;TRouteProps, TRouteState\&gt;.constructor
 
 #### Defined in
 
-[src/Router.tsx:37](https://github.com/breautek/router/blob/f6dfe6e/src/Router.tsx#L37)
+[src/Route.tsx:41](https://github.com/breautek/router/blob/90a4daa/src/Route.tsx#L41)
 
 ## Properties
 
@@ -109,7 +111,7 @@ ___
 
 ### props
 
-• `Readonly` **props**: `Readonly`<`TRouterProps`\> & `Readonly`<`Object`\>
+• `Readonly` **props**: `Readonly`<`TRouteProps`\> & `Readonly`<{ `children?`: `ReactNode`  }\>
 
 #### Inherited from
 
@@ -144,15 +146,15 @@ ___
 
 ### state
 
-• **state**: [`IRouterState`](../interfaces/Router.IRouterState.md)
+• **state**: `Readonly`<`TRouteState`\>
 
-#### Overrides
+#### Inherited from
 
 React.Component.state
 
 #### Defined in
 
-[src/Router.tsx:27](https://github.com/breautek/router/blob/f6dfe6e/src/Router.tsx#L27)
+node_modules/@types/react/index.d.ts:506
 
 ___
 
@@ -221,6 +223,48 @@ node_modules/@types/react/index.d.ts:716
 
 ___
 
+### UNSAFE\_componentWillReceiveProps
+
+▸ `Optional` **UNSAFE_componentWillReceiveProps**(`nextProps`, `nextContext`): `void`
+
+Called when the component may be receiving new props.
+React may call this even if props have not changed, so be sure to compare new and existing
+props if you only want to handle changes.
+
+Calling `Component#setState` generally does not trigger this method.
+
+This method will not stop working in React 17.
+
+Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+prevents this from being invoked.
+
+**`deprecated`** 16.3, use static getDerivedStateFromProps instead
+
+**`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
+
+**`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `nextProps` | `Readonly`<`TRouteProps`\> |
+| `nextContext` | `any` |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+React.Component.UNSAFE\_componentWillReceiveProps
+
+#### Defined in
+
+node_modules/@types/react/index.d.ts:748
+
+___
+
 ### UNSAFE\_componentWillUpdate
 
 ▸ `Optional` **UNSAFE_componentWillUpdate**(`nextProps`, `nextState`, `nextContext`): `void`
@@ -244,8 +288,8 @@ prevents this from being invoked.
 
 | Name | Type |
 | :------ | :------ |
-| `nextProps` | `Readonly`<`TRouterProps`\> |
-| `nextState` | `Readonly`<[`IRouterState`](../interfaces/Router.IRouterState.md)\> |
+| `nextProps` | `Readonly`<`TRouteProps`\> |
+| `nextState` | `Readonly`<`TRouteState`\> |
 | `nextContext` | `any` |
 
 #### Returns
@@ -259,22 +303,6 @@ React.Component.UNSAFE\_componentWillUpdate
 #### Defined in
 
 node_modules/@types/react/index.d.ts:776
-
-___
-
-### back
-
-▸ **back**(): `void`
-
-Go back one step. This is an alias for [pushState(-1)](Router.Router-1.md#go).
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[src/Router.tsx:236](https://github.com/breautek/router/blob/f6dfe6e/src/Router.tsx#L236)
 
 ___
 
@@ -308,19 +336,51 @@ ___
 
 ### componentDidMount
 
-▸ **componentDidMount**(): `void`
+▸ `Optional` **componentDidMount**(): `void`
+
+Called immediately after a component is mounted. Setting state here will trigger re-rendering.
 
 #### Returns
 
 `void`
 
-#### Overrides
+#### Inherited from
 
 React.Component.componentDidMount
 
 #### Defined in
 
-[src/Router.tsx:89](https://github.com/breautek/router/blob/f6dfe6e/src/Router.tsx#L89)
+node_modules/@types/react/index.d.ts:624
+
+___
+
+### componentDidUpdate
+
+▸ `Optional` **componentDidUpdate**(`prevProps`, `prevState`, `snapshot?`): `void`
+
+Called immediately after updating occurs. Not called for the initial render.
+
+The snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `prevProps` | `Readonly`<`TRouteProps`\> |
+| `prevState` | `Readonly`<`TRouteState`\> |
+| `snapshot?` | `any` |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+React.Component.componentDidUpdate
+
+#### Defined in
+
+node_modules/@types/react/index.d.ts:687
 
 ___
 
@@ -377,7 +437,7 @@ prevents this from being invoked.
 
 | Name | Type |
 | :------ | :------ |
-| `nextProps` | `Readonly`<`TRouterProps`\> |
+| `nextProps` | `Readonly`<`TRouteProps`\> |
 | `nextContext` | `any` |
 
 #### Returns
@@ -391,6 +451,27 @@ React.Component.componentWillReceiveProps
 #### Defined in
 
 node_modules/@types/react/index.d.ts:731
+
+___
+
+### componentWillUnmount
+
+▸ `Optional` **componentWillUnmount**(): `void`
+
+Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as
+cancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+React.Component.componentWillUnmount
+
+#### Defined in
+
+node_modules/@types/react/index.d.ts:640
 
 ___
 
@@ -415,8 +496,8 @@ prevents this from being invoked.
 
 | Name | Type |
 | :------ | :------ |
-| `nextProps` | `Readonly`<`TRouterProps`\> |
-| `nextState` | `Readonly`<[`IRouterState`](../interfaces/Router.IRouterState.md)\> |
+| `nextProps` | `Readonly`<`TRouteProps`\> |
+| `nextState` | `Readonly`<`TRouteState`\> |
 | `nextContext` | `any` |
 
 #### Returns
@@ -457,71 +538,6 @@ node_modules/@types/react/index.d.ts:497
 
 ___
 
-### forward
-
-▸ **forward**(): `void`
-
-Go forward one step. This is an alias for [pushState(1)](Router.Router-1.md#go).
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[src/Router.tsx:243](https://github.com/breautek/router/blob/f6dfe6e/src/Router.tsx#L243)
-
-___
-
-### getHistoryLength
-
-▸ **getHistoryLength**(): `number`
-
-Gets the number of history entries. Note this does not count the browser history.
-Only the history kept track during the life-cycle of the app.
-
-#### Returns
-
-`number`
-
-#### Defined in
-
-[src/Router.tsx:211](https://github.com/breautek/router/blob/f6dfe6e/src/Router.tsx#L211)
-
-___
-
-### getRouterStrategy
-
-▸ **getRouterStrategy**(): [`RouterStrategy`](RouterStrategy.RouterStrategy-1.md)
-
-Gets the current routing strategy
-
-#### Returns
-
-[`RouterStrategy`](RouterStrategy.RouterStrategy-1.md)
-
-#### Defined in
-
-[src/Router.tsx:73](https://github.com/breautek/router/blob/f6dfe6e/src/Router.tsx#L73)
-
-___
-
-### getScrollRestoration
-
-▸ **getScrollRestoration**(): `ScrollRestoration`
-
-Gets the scroll restoration mode
-
-#### Returns
-
-`ScrollRestoration`
-
-#### Defined in
-
-[src/Router.tsx:218](https://github.com/breautek/router/blob/f6dfe6e/src/Router.tsx#L218)
-
-___
-
 ### getSnapshotBeforeUpdate
 
 ▸ `Optional` **getSnapshotBeforeUpdate**(`prevProps`, `prevState`): `any`
@@ -537,8 +553,8 @@ lifecycle events from running.
 
 | Name | Type |
 | :------ | :------ |
-| `prevProps` | `Readonly`<`TRouterProps`\> |
-| `prevState` | `Readonly`<[`IRouterState`](../interfaces/Router.IRouterState.md)\> |
+| `prevProps` | `Readonly`<`TRouteProps`\> |
+| `prevState` | `Readonly`<`TRouteState`\> |
 
 #### Returns
 
@@ -554,23 +570,35 @@ node_modules/@types/react/index.d.ts:681
 
 ___
 
-### go
+### getView
 
-▸ **go**(`to`): `void`
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `to` | `number` | An integer, positive means go forward, negative means go backwards. E.g:              `1`  move forward one step              `-1` move backward one step              `0`  navigate to the current page (This is essentially a no-op) |
+▸ **getView**(): [`View`](View.md)<[`IViewProps`](../interfaces/IViewProps.md)\>
 
 #### Returns
 
-`void`
+[`View`](View.md)<[`IViewProps`](../interfaces/IViewProps.md)\>
 
 #### Defined in
 
-[src/Router.tsx:229](https://github.com/breautek/router/blob/f6dfe6e/src/Router.tsx#L229)
+[src/Route.tsx:50](https://github.com/breautek/router/blob/90a4daa/src/Route.tsx#L50)
+
+___
+
+### render
+
+▸ **render**(): `ReactNode`
+
+#### Returns
+
+`ReactNode`
+
+#### Overrides
+
+React.Component.render
+
+#### Defined in
+
+[src/Route.tsx:46](https://github.com/breautek/router/blob/90a4daa/src/Route.tsx#L46)
 
 ___
 
@@ -582,13 +610,13 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `K` | extends keyof [`IRouterState`](../interfaces/Router.IRouterState.md) |
+| `K` | extends `string` \| `number` \| `symbol` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `state` | [`IRouterState`](../interfaces/Router.IRouterState.md) \| (`prevState`: `Readonly`<[`IRouterState`](../interfaces/Router.IRouterState.md)\>, `props`: `Readonly`<`TRouterProps`\>) => [`IRouterState`](../interfaces/Router.IRouterState.md) \| `Pick`<[`IRouterState`](../interfaces/Router.IRouterState.md), `K`\> \| `Pick`<[`IRouterState`](../interfaces/Router.IRouterState.md), `K`\> |
+| `state` | `TRouteState` \| (`prevState`: `Readonly`<`TRouteState`\>, `props`: `Readonly`<`TRouteProps`\>) => `TRouteState` \| `Pick`<`TRouteState`, `K`\> \| `Pick`<`TRouteState`, `K`\> |
 | `callback?` | () => `void` |
 
 #### Returns
@@ -622,8 +650,8 @@ and `componentDidUpdate` will not be called.
 
 | Name | Type |
 | :------ | :------ |
-| `nextProps` | `Readonly`<`TRouterProps`\> |
-| `nextState` | `Readonly`<[`IRouterState`](../interfaces/Router.IRouterState.md)\> |
+| `nextProps` | `Readonly`<`TRouteProps`\> |
+| `nextState` | `Readonly`<`TRouteState`\> |
 | `nextContext` | `any` |
 
 #### Returns
@@ -637,17 +665,3 @@ React.Component.shouldComponentUpdate
 #### Defined in
 
 node_modules/@types/react/index.d.ts:635
-
-___
-
-### getInstance
-
-▸ `Static` **getInstance**(): [`RouterStrategy`](RouterStrategy.RouterStrategy-1.md)
-
-#### Returns
-
-[`RouterStrategy`](RouterStrategy.RouterStrategy-1.md)
-
-#### Defined in
-
-[src/Router.tsx:62](https://github.com/breautek/router/blob/f6dfe6e/src/Router.tsx#L62)

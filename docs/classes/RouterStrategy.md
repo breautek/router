@@ -1,111 +1,107 @@
-[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / [URLStrategy](../modules/URLStrategy.md) / URLStrategy
+[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / RouterStrategy
 
-# Class: URLStrategy
-
-[URLStrategy](../modules/URLStrategy.md).URLStrategy
-
-**`notice`** Using the URLStrategy requires some backend configuration
-to route URLs back to application.
-
-To make this easier, by default these URLs are prefixed with
-`/r/` to easily differentiate between URLs that needs to be re-routed back
-to the application vs other resources such as images.
+# Class: RouterStrategy
 
 ## Hierarchy
 
-- [`RouterStrategy`](RouterStrategy.RouterStrategy-1.md)
+- `EventEmitter`
 
-  ↳ **`URLStrategy`**
+  ↳ **`RouterStrategy`**
+
+  ↳↳ [`HashStrategy`](HashStrategy.md)
+
+  ↳↳ [`URLStrategy`](URLStrategy.md)
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](URLStrategy.URLStrategy-1.md#constructor)
+- [constructor](RouterStrategy.md#constructor)
 
 ### Properties
 
-- [captureRejectionSymbol](URLStrategy.URLStrategy-1.md#capturerejectionsymbol)
-- [captureRejections](URLStrategy.URLStrategy-1.md#capturerejections)
-- [defaultMaxListeners](URLStrategy.URLStrategy-1.md#defaultmaxlisteners)
-- [errorMonitor](URLStrategy.URLStrategy-1.md#errormonitor)
+- [captureRejectionSymbol](RouterStrategy.md#capturerejectionsymbol)
+- [captureRejections](RouterStrategy.md#capturerejections)
+- [defaultMaxListeners](RouterStrategy.md#defaultmaxlisteners)
+- [errorMonitor](RouterStrategy.md#errormonitor)
 
 ### Methods
 
-- [\_fireURLChange](URLStrategy.URLStrategy-1.md#_fireurlchange)
-- [addListener](URLStrategy.URLStrategy-1.md#addlistener)
-- [addURLChangeCallback](URLStrategy.URLStrategy-1.md#addurlchangecallback)
-- [back](URLStrategy.URLStrategy-1.md#back)
-- [canBack](URLStrategy.URLStrategy-1.md#canback)
-- [canForward](URLStrategy.URLStrategy-1.md#canforward)
-- [canGo](URLStrategy.URLStrategy-1.md#cango)
-- [clear](URLStrategy.URLStrategy-1.md#clear)
-- [emit](URLStrategy.URLStrategy-1.md#emit)
-- [eventNames](URLStrategy.URLStrategy-1.md#eventnames)
-- [forward](URLStrategy.URLStrategy-1.md#forward)
-- [getHistoryLength](URLStrategy.URLStrategy-1.md#gethistorylength)
-- [getLocation](URLStrategy.URLStrategy-1.md#getlocation)
-- [getLocationAt](URLStrategy.URLStrategy-1.md#getlocationat)
-- [getMaxListeners](URLStrategy.URLStrategy-1.md#getmaxlisteners)
-- [getRouter](URLStrategy.URLStrategy-1.md#getrouter)
-- [getScrollRestoration](URLStrategy.URLStrategy-1.md#getscrollrestoration)
-- [go](URLStrategy.URLStrategy-1.md#go)
-- [listenerCount](URLStrategy.URLStrategy-1.md#listenercount)
-- [listeners](URLStrategy.URLStrategy-1.md#listeners)
-- [off](URLStrategy.URLStrategy-1.md#off)
-- [on](URLStrategy.URLStrategy-1.md#on)
-- [once](URLStrategy.URLStrategy-1.md#once)
-- [peek](URLStrategy.URLStrategy-1.md#peek)
-- [peekBack](URLStrategy.URLStrategy-1.md#peekback)
-- [peekForward](URLStrategy.URLStrategy-1.md#peekforward)
-- [prependListener](URLStrategy.URLStrategy-1.md#prependlistener)
-- [prependOnceListener](URLStrategy.URLStrategy-1.md#prependoncelistener)
-- [pushState](URLStrategy.URLStrategy-1.md#pushstate)
-- [rawListeners](URLStrategy.URLStrategy-1.md#rawlisteners)
-- [removeAllListeners](URLStrategy.URLStrategy-1.md#removealllisteners)
-- [removeListener](URLStrategy.URLStrategy-1.md#removelistener)
-- [removeURLChangeCallback](URLStrategy.URLStrategy-1.md#removeurlchangecallback)
-- [replaceState](URLStrategy.URLStrategy-1.md#replacestate)
-- [setMaxListeners](URLStrategy.URLStrategy-1.md#setmaxlisteners)
-- [setTitle](URLStrategy.URLStrategy-1.md#settitle)
-- [getEventListeners](URLStrategy.URLStrategy-1.md#geteventlisteners)
-- [listenerCount](URLStrategy.URLStrategy-1.md#listenercount)
-- [on](URLStrategy.URLStrategy-1.md#on)
-- [once](URLStrategy.URLStrategy-1.md#once)
+- [\_fireURLChange](RouterStrategy.md#_fireurlchange)
+- [addListener](RouterStrategy.md#addlistener)
+- [addURLChangeCallback](RouterStrategy.md#addurlchangecallback)
+- [back](RouterStrategy.md#back)
+- [canBack](RouterStrategy.md#canback)
+- [canForward](RouterStrategy.md#canforward)
+- [canGo](RouterStrategy.md#cango)
+- [clear](RouterStrategy.md#clear)
+- [emit](RouterStrategy.md#emit)
+- [eventNames](RouterStrategy.md#eventnames)
+- [forward](RouterStrategy.md#forward)
+- [getHistoryLength](RouterStrategy.md#gethistorylength)
+- [getLocation](RouterStrategy.md#getlocation)
+- [getLocationAt](RouterStrategy.md#getlocationat)
+- [getMaxListeners](RouterStrategy.md#getmaxlisteners)
+- [getRouter](RouterStrategy.md#getrouter)
+- [getScrollRestoration](RouterStrategy.md#getscrollrestoration)
+- [go](RouterStrategy.md#go)
+- [listenerCount](RouterStrategy.md#listenercount)
+- [listeners](RouterStrategy.md#listeners)
+- [off](RouterStrategy.md#off)
+- [on](RouterStrategy.md#on)
+- [once](RouterStrategy.md#once)
+- [peek](RouterStrategy.md#peek)
+- [peekBack](RouterStrategy.md#peekback)
+- [peekForward](RouterStrategy.md#peekforward)
+- [prependListener](RouterStrategy.md#prependlistener)
+- [prependOnceListener](RouterStrategy.md#prependoncelistener)
+- [pushState](RouterStrategy.md#pushstate)
+- [rawListeners](RouterStrategy.md#rawlisteners)
+- [removeAllListeners](RouterStrategy.md#removealllisteners)
+- [removeListener](RouterStrategy.md#removelistener)
+- [removeURLChangeCallback](RouterStrategy.md#removeurlchangecallback)
+- [replaceState](RouterStrategy.md#replacestate)
+- [setMaxListeners](RouterStrategy.md#setmaxlisteners)
+- [setTitle](RouterStrategy.md#settitle)
+- [getEventListeners](RouterStrategy.md#geteventlisteners)
+- [listenerCount](RouterStrategy.md#listenercount)
+- [on](RouterStrategy.md#on)
+- [once](RouterStrategy.md#once)
+- [setMaxListeners](RouterStrategy.md#setmaxlisteners)
 
 ## Constructors
 
 ### constructor
 
-• **new URLStrategy**(`router`)
+• **new RouterStrategy**(`router`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `router` | [`Router`](Router.Router-1.md)<[`IRouterProps`](../interfaces/Router.IRouterProps.md)\> |
+| `router` | [`Router`](Router.md)<[`IRouterProps`](../interfaces/IRouterProps.md)\> |
 
 #### Overrides
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[constructor](RouterStrategy.RouterStrategy-1.md#constructor)
+EventEmitter.constructor
 
 #### Defined in
 
-[src/URLStrategy.ts:22](https://github.com/breautek/router/blob/f6dfe6e/src/URLStrategy.ts#L22)
+[src/RouterStrategy.ts:11](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L11)
 
 ## Properties
 
 ### captureRejectionSymbol
 
-▪ `Static` `Readonly` **captureRejectionSymbol**: typeof [`captureRejectionSymbol`](HashStrategy.HashStrategy-1.md#capturerejectionsymbol)
+▪ `Static` `Readonly` **captureRejectionSymbol**: typeof [`captureRejectionSymbol`](HashStrategy.md#capturerejectionsymbol)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[captureRejectionSymbol](RouterStrategy.RouterStrategy-1.md#capturerejectionsymbol)
+EventEmitter.captureRejectionSymbol
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:273
+node_modules/@types/node/events.d.ts:301
 
 ___
 
@@ -117,11 +113,11 @@ Sets or gets the default captureRejection value for all emitters.
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[captureRejections](RouterStrategy.RouterStrategy-1.md#capturerejections)
+EventEmitter.captureRejections
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:278
+node_modules/@types/node/events.d.ts:306
 
 ___
 
@@ -131,17 +127,17 @@ ___
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[defaultMaxListeners](RouterStrategy.RouterStrategy-1.md#defaultmaxlisteners)
+EventEmitter.defaultMaxListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:279
+node_modules/@types/node/events.d.ts:307
 
 ___
 
 ### errorMonitor
 
-▪ `Static` `Readonly` **errorMonitor**: typeof [`errorMonitor`](HashStrategy.HashStrategy-1.md#errormonitor)
+▪ `Static` `Readonly` **errorMonitor**: typeof [`errorMonitor`](HashStrategy.md#errormonitor)
 
 This symbol shall be used to install a listener for only monitoring `'error'`
 events. Listeners installed using this symbol are called before the regular
@@ -153,11 +149,11 @@ regular `'error'` listener is installed.
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[errorMonitor](RouterStrategy.RouterStrategy-1.md#errormonitor)
+EventEmitter.errorMonitor
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:272
+node_modules/@types/node/events.d.ts:300
 
 ## Methods
 
@@ -165,7 +161,7 @@ node_modules/@types/node/events.d.ts:272
 
 ▸ `Protected` **_fireURLChange**(`url`): `void`
 
-Fires the [EVENT_URL_CHANGE](../modules/RouterStrategy.md#event_url_change) event
+Fires the [EVENT_URL_CHANGE](../modules.md#event_url_change) event
 
 #### Parameters
 
@@ -177,19 +173,15 @@ Fires the [EVENT_URL_CHANGE](../modules/RouterStrategy.md#event_url_change) even
 
 `void`
 
-#### Inherited from
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[_fireURLChange](RouterStrategy.RouterStrategy-1.md#_fireurlchange)
-
 #### Defined in
 
-[src/RouterStrategy.ts:174](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L174)
+[src/RouterStrategy.ts:174](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L174)
 
 ___
 
 ### addListener
 
-▸ **addListener**(`eventName`, `listener`): [`URLStrategy`](URLStrategy.URLStrategy-1.md)
+▸ **addListener**(`eventName`, `listener`): [`RouterStrategy`](RouterStrategy.md)
 
 Alias for `emitter.on(eventName, listener)`.
 
@@ -204,15 +196,15 @@ Alias for `emitter.on(eventName, listener)`.
 
 #### Returns
 
-[`URLStrategy`](URLStrategy.URLStrategy-1.md)
+[`RouterStrategy`](RouterStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[addListener](RouterStrategy.RouterStrategy-1.md#addlistener)
+EventEmitter.addListener
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:299
+node_modules/@types/node/events.d.ts:327
 
 ___
 
@@ -226,19 +218,15 @@ Listen for URL change events
 
 | Name | Type |
 | :------ | :------ |
-| `callback` | [`URLChangeCallback`](../modules/RouterStrategy.md#urlchangecallback) |
+| `callback` | [`URLChangeCallback`](../modules.md#urlchangecallback) |
 
 #### Returns
 
 `void`
 
-#### Inherited from
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[addURLChangeCallback](RouterStrategy.RouterStrategy-1.md#addurlchangecallback)
-
 #### Defined in
 
-[src/RouterStrategy.ts:48](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L48)
+[src/RouterStrategy.ts:48](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L48)
 
 ___
 
@@ -246,19 +234,15 @@ ___
 
 ▸ **back**(): `void`
 
-Navigate the history back one entry. This is an alias for [go(-1)](URLStrategy.URLStrategy-1.md#go)
+Navigate the history back one entry. This is an alias for [go(-1)](RouterStrategy.md#go)
 
 #### Returns
 
 `void`
 
-#### Inherited from
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[back](RouterStrategy.RouterStrategy-1.md#back)
-
 #### Defined in
 
-[src/RouterStrategy.ts:102](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L102)
+[src/RouterStrategy.ts:102](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L102)
 
 ___
 
@@ -267,19 +251,15 @@ ___
 ▸ **canBack**(): `boolean`
 
 Returns true if can go back 1 entry.
-This is the same as calling [canGo(-1)](URLStrategy.URLStrategy-1.md#cango)
+This is the same as calling [canGo(-1)](RouterStrategy.md#cango)
 
 #### Returns
 
 `boolean`
 
-#### Inherited from
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[canBack](RouterStrategy.RouterStrategy-1.md#canback)
-
 #### Defined in
 
-[src/RouterStrategy.ts:116](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L116)
+[src/RouterStrategy.ts:116](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L116)
 
 ___
 
@@ -288,51 +268,43 @@ ___
 ▸ **canForward**(): `boolean`
 
 Returns true if can go forward 1 entry.
-This is the same as calling [canGo(1)](URLStrategy.URLStrategy-1.md#cango)
+This is the same as calling [canGo(1)](RouterStrategy.md#cango)
 
 #### Returns
 
 `boolean`
 
-#### Inherited from
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[canForward](RouterStrategy.RouterStrategy-1.md#canforward)
-
 #### Defined in
 
-[src/RouterStrategy.ts:124](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L124)
+[src/RouterStrategy.ts:124](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L124)
 
 ___
 
 ### canGo
 
-▸ **canGo**(`to`): `boolean`
+▸ `Abstract` **canGo**(`to`): `boolean`
 
 Returns true, if can be navigated to the given relative index
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `to` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `to` | `number` | Must be an integer |
 
 #### Returns
 
 `boolean`
 
-#### Overrides
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[canGo](RouterStrategy.RouterStrategy-1.md#cango)
-
 #### Defined in
 
-[src/URLStrategy.ts:60](https://github.com/breautek/router/blob/f6dfe6e/src/URLStrategy.ts#L60)
+[src/RouterStrategy.ts:110](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L110)
 
 ___
 
 ### clear
 
-▸ **clear**(): `void`
+▸ `Abstract` **clear**(): `void`
 
 Clears the history stack.
 
@@ -340,13 +312,9 @@ Clears the history stack.
 
 `void`
 
-#### Overrides
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[clear](RouterStrategy.RouterStrategy-1.md#clear)
-
 #### Defined in
 
-[src/URLStrategy.ts:110](https://github.com/breautek/router/blob/f6dfe6e/src/URLStrategy.ts#L110)
+[src/RouterStrategy.ts:168](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L168)
 
 ___
 
@@ -407,11 +375,11 @@ myEmitter.emit('event', 1, 2, 3, 4, 5);
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[emit](RouterStrategy.RouterStrategy-1.md#emit)
+EventEmitter.emit
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:555
+node_modules/@types/node/events.d.ts:583
 
 ___
 
@@ -443,11 +411,11 @@ console.log(myEE.eventNames());
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[eventNames](RouterStrategy.RouterStrategy-1.md#eventnames)
+EventEmitter.eventNames
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:614
+node_modules/@types/node/events.d.ts:642
 
 ___
 
@@ -455,25 +423,21 @@ ___
 
 ▸ **forward**(): `void`
 
-navigate the history forward one entry. This is an alias for [go(1)](URLStrategy.URLStrategy-1.md#go)
+navigate the history forward one entry. This is an alias for [go(1)](RouterStrategy.md#go)
 
 #### Returns
 
 `void`
 
-#### Inherited from
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[forward](RouterStrategy.RouterStrategy-1.md#forward)
-
 #### Defined in
 
-[src/RouterStrategy.ts:95](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L95)
+[src/RouterStrategy.ts:95](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L95)
 
 ___
 
 ### getHistoryLength
 
-▸ **getHistoryLength**(): `number`
+▸ `Abstract` **getHistoryLength**(): `number`
 
 Gets the size of the history stack
 
@@ -481,60 +445,48 @@ Gets the size of the history stack
 
 `number`
 
-#### Overrides
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[getHistoryLength](RouterStrategy.RouterStrategy-1.md#gethistorylength)
-
 #### Defined in
 
-[src/URLStrategy.ts:48](https://github.com/breautek/router/blob/f6dfe6e/src/URLStrategy.ts#L48)
+[src/RouterStrategy.ts:76](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L76)
 
 ___
 
 ### getLocation
 
-▸ **getLocation**(): `string`
+▸ `Abstract` **getLocation**(): `string`
 
 Gets the current location.
-This is the same as calling [peek(0)](URLStrategy.URLStrategy-1.md#peek)
+This is the same as calling [peek(0)](RouterStrategy.md#peek)
 
 #### Returns
 
 `string`
 
-#### Overrides
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[getLocation](RouterStrategy.RouterStrategy-1.md#getlocation)
-
 #### Defined in
 
-[src/URLStrategy.ts:40](https://github.com/breautek/router/blob/f6dfe6e/src/URLStrategy.ts#L40)
+[src/RouterStrategy.ts:71](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L71)
 
 ___
 
 ### getLocationAt
 
-▸ **getLocationAt**(`position`): `string`
+▸ `Abstract` **getLocationAt**(`position`): `string`
 
 Gets the URL at the given index in the history stack
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `position` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `position` | `number` | index |
 
 #### Returns
 
 `string`
 
-#### Overrides
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[getLocationAt](RouterStrategy.RouterStrategy-1.md#getlocationat)
-
 #### Defined in
 
-[src/URLStrategy.ts:44](https://github.com/breautek/router/blob/f6dfe6e/src/URLStrategy.ts#L44)
+[src/RouterStrategy.ts:65](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L65)
 
 ___
 
@@ -543,7 +495,7 @@ ___
 ▸ **getMaxListeners**(): `number`
 
 Returns the current max listener value for the `EventEmitter` which is either
-set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](URLStrategy.URLStrategy-1.md#defaultmaxlisteners).
+set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](RouterStrategy.md#defaultmaxlisteners).
 
 **`since`** v1.0.0
 
@@ -553,37 +505,33 @@ set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](URLStra
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[getMaxListeners](RouterStrategy.RouterStrategy-1.md#getmaxlisteners)
+EventEmitter.getMaxListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:471
+node_modules/@types/node/events.d.ts:499
 
 ___
 
 ### getRouter
 
-▸ **getRouter**(): [`Router`](Router.Router-1.md)<[`IRouterProps`](../interfaces/Router.IRouterProps.md)\>
+▸ **getRouter**(): [`Router`](Router.md)<[`IRouterProps`](../interfaces/IRouterProps.md)\>
 
 Gets the router
 
 #### Returns
 
-[`Router`](Router.Router-1.md)<[`IRouterProps`](../interfaces/Router.IRouterProps.md)\>
-
-#### Inherited from
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[getRouter](RouterStrategy.RouterStrategy-1.md#getrouter)
+[`Router`](Router.md)<[`IRouterProps`](../interfaces/IRouterProps.md)\>
 
 #### Defined in
 
-[src/RouterStrategy.ts:19](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L19)
+[src/RouterStrategy.ts:19](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L19)
 
 ___
 
 ### getScrollRestoration
 
-▸ **getScrollRestoration**(): `ScrollRestoration`
+▸ `Abstract` **getScrollRestoration**(): `ScrollRestoration`
 
 Gets the scroll restoration
 
@@ -591,39 +539,31 @@ Gets the scroll restoration
 
 `ScrollRestoration`
 
-#### Overrides
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[getScrollRestoration](RouterStrategy.RouterStrategy-1.md#getscrollrestoration)
-
 #### Defined in
 
-[src/URLStrategy.ts:52](https://github.com/breautek/router/blob/f6dfe6e/src/URLStrategy.ts#L52)
+[src/RouterStrategy.ts:81](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L81)
 
 ___
 
 ### go
 
-▸ **go**(`to`): `void`
+▸ `Abstract` **go**(`to`): `void`
 
 Navigates the history
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `to` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `to` | `number` | Must be an integer. Negative numbers go back, if possible. Positive goes forward, if possible. Zero does nothing. |
 
 #### Returns
 
 `void`
 
-#### Overrides
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[go](RouterStrategy.RouterStrategy-1.md#go)
-
 #### Defined in
 
-[src/URLStrategy.ts:64](https://github.com/breautek/router/blob/f6dfe6e/src/URLStrategy.ts#L64)
+[src/RouterStrategy.ts:90](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L90)
 
 ___
 
@@ -647,11 +587,11 @@ Returns the number of listeners listening to the event named `eventName`.
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[listenerCount](RouterStrategy.RouterStrategy-1.md#listenercount)
+EventEmitter.listenerCount
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:561
+node_modules/@types/node/events.d.ts:589
 
 ___
 
@@ -683,17 +623,17 @@ console.log(util.inspect(server.listeners('connection')));
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[listeners](RouterStrategy.RouterStrategy-1.md#listeners)
+EventEmitter.listeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:484
+node_modules/@types/node/events.d.ts:512
 
 ___
 
 ### off
 
-▸ **off**(`eventName`, `listener`): [`URLStrategy`](URLStrategy.URLStrategy-1.md)
+▸ **off**(`eventName`, `listener`): [`RouterStrategy`](RouterStrategy.md)
 
 Alias for `emitter.removeListener()`.
 
@@ -708,21 +648,21 @@ Alias for `emitter.removeListener()`.
 
 #### Returns
 
-[`URLStrategy`](URLStrategy.URLStrategy-1.md)
+[`RouterStrategy`](RouterStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[off](RouterStrategy.RouterStrategy-1.md#off)
+EventEmitter.off
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:444
+node_modules/@types/node/events.d.ts:472
 
 ___
 
 ### on
 
-▸ **on**(`eventName`, `listener`): [`URLStrategy`](URLStrategy.URLStrategy-1.md)
+▸ **on**(`eventName`, `listener`): [`RouterStrategy`](RouterStrategy.md)
 
 Adds the `listener` function to the end of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -761,21 +701,21 @@ myEE.emit('foo');
 
 #### Returns
 
-[`URLStrategy`](URLStrategy.URLStrategy-1.md)
+[`RouterStrategy`](RouterStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[on](RouterStrategy.RouterStrategy-1.md#on)
+EventEmitter.on
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:330
+node_modules/@types/node/events.d.ts:358
 
 ___
 
 ### once
 
-▸ **once**(`eventName`, `listener`): [`URLStrategy`](URLStrategy.URLStrategy-1.md)
+▸ **once**(`eventName`, `listener`): [`RouterStrategy`](RouterStrategy.md)
 
 Adds a **one-time**`listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -812,41 +752,37 @@ myEE.emit('foo');
 
 #### Returns
 
-[`URLStrategy`](URLStrategy.URLStrategy-1.md)
+[`RouterStrategy`](RouterStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[once](RouterStrategy.RouterStrategy-1.md#once)
+EventEmitter.once
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:359
+node_modules/@types/node/events.d.ts:387
 
 ___
 
 ### peek
 
-▸ **peek**(`to`): `string`
+▸ `Abstract` **peek**(`to`): `string`
 
 Returns the URL stored in the history stack at the given relative index.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `to` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `to` | `number` | Must be an integer |
 
 #### Returns
 
 `string`
 
-#### Overrides
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[peek](RouterStrategy.RouterStrategy-1.md#peek)
-
 #### Defined in
 
-[src/URLStrategy.ts:56](https://github.com/breautek/router/blob/f6dfe6e/src/URLStrategy.ts#L56)
+[src/RouterStrategy.ts:132](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L132)
 
 ___
 
@@ -855,19 +791,15 @@ ___
 ▸ **peekBack**(): `string`
 
 Returns the URL one entry back.
-This is the same as calling [peek(-1)](URLStrategy.URLStrategy-1.md#peek)
+This is the same as calling [peek(-1)](RouterStrategy.md#peek)
 
 #### Returns
 
 `string`
 
-#### Inherited from
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[peekBack](RouterStrategy.RouterStrategy-1.md#peekback)
-
 #### Defined in
 
-[src/RouterStrategy.ts:146](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L146)
+[src/RouterStrategy.ts:146](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L146)
 
 ___
 
@@ -876,25 +808,21 @@ ___
 ▸ **peekForward**(): `string`
 
 Returns the URL one entry forward.
-This is the same as calling [peek(1)](URLStrategy.URLStrategy-1.md#peek)
+This is the same as calling [peek(1)](RouterStrategy.md#peek)
 
 #### Returns
 
 `string`
 
-#### Inherited from
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[peekForward](RouterStrategy.RouterStrategy-1.md#peekforward)
-
 #### Defined in
 
-[src/RouterStrategy.ts:138](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L138)
+[src/RouterStrategy.ts:138](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L138)
 
 ___
 
 ### prependListener
 
-▸ **prependListener**(`eventName`, `listener`): [`URLStrategy`](URLStrategy.URLStrategy-1.md)
+▸ **prependListener**(`eventName`, `listener`): [`RouterStrategy`](RouterStrategy.md)
 
 Adds the `listener` function to the _beginning_ of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -920,21 +848,21 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`URLStrategy`](URLStrategy.URLStrategy-1.md)
+[`RouterStrategy`](RouterStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[prependListener](RouterStrategy.RouterStrategy-1.md#prependlistener)
+EventEmitter.prependListener
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:579
+node_modules/@types/node/events.d.ts:607
 
 ___
 
 ### prependOnceListener
 
-▸ **prependOnceListener**(`eventName`, `listener`): [`URLStrategy`](URLStrategy.URLStrategy-1.md)
+▸ **prependOnceListener**(`eventName`, `listener`): [`RouterStrategy`](RouterStrategy.md)
 
 Adds a **one-time**`listener` function for the event named `eventName` to the_beginning_ of the listeners array. The next time `eventName` is triggered, this
 listener is removed, and then invoked.
@@ -958,21 +886,21 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`URLStrategy`](URLStrategy.URLStrategy-1.md)
+[`RouterStrategy`](RouterStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[prependOnceListener](RouterStrategy.RouterStrategy-1.md#prependoncelistener)
+EventEmitter.prependOnceListener
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:595
+node_modules/@types/node/events.d.ts:623
 
 ___
 
 ### pushState
 
-▸ **pushState**(`url`, `state?`): `void`
+▸ `Abstract` **pushState**(`url`, `state?`): `void`
 
 Pushes a new entry into the history stack, navigating to the new location.
 
@@ -987,13 +915,9 @@ Pushes a new entry into the history stack, navigating to the new location.
 
 `void`
 
-#### Overrides
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[pushState](RouterStrategy.RouterStrategy-1.md#pushstate)
-
 #### Defined in
 
-[src/URLStrategy.ts:73](https://github.com/breautek/router/blob/f6dfe6e/src/URLStrategy.ts#L73)
+[src/RouterStrategy.ts:155](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L155)
 
 ___
 
@@ -1042,17 +966,17 @@ emitter.emit('log');
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[rawListeners](RouterStrategy.RouterStrategy-1.md#rawlisteners)
+EventEmitter.rawListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:514
+node_modules/@types/node/events.d.ts:542
 
 ___
 
 ### removeAllListeners
 
-▸ **removeAllListeners**(`event?`): [`URLStrategy`](URLStrategy.URLStrategy-1.md)
+▸ **removeAllListeners**(`event?`): [`RouterStrategy`](RouterStrategy.md)
 
 Removes all listeners, or those of the specified `eventName`.
 
@@ -1072,21 +996,21 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`URLStrategy`](URLStrategy.URLStrategy-1.md)
+[`RouterStrategy`](RouterStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[removeAllListeners](RouterStrategy.RouterStrategy-1.md#removealllisteners)
+EventEmitter.removeAllListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:455
+node_modules/@types/node/events.d.ts:483
 
 ___
 
 ### removeListener
 
-▸ **removeListener**(`eventName`, `listener`): [`URLStrategy`](URLStrategy.URLStrategy-1.md)
+▸ **removeListener**(`eventName`, `listener`): [`RouterStrategy`](RouterStrategy.md)
 
 Removes the specified `listener` from the listener array for the event named`eventName`.
 
@@ -1176,15 +1100,15 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`URLStrategy`](URLStrategy.URLStrategy-1.md)
+[`RouterStrategy`](RouterStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[removeListener](RouterStrategy.RouterStrategy-1.md#removelistener)
+EventEmitter.removeListener
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:439
+node_modules/@types/node/events.d.ts:467
 
 ___
 
@@ -1198,25 +1122,21 @@ Removes an existing listener
 
 | Name | Type |
 | :------ | :------ |
-| `callback` | [`URLChangeCallback`](../modules/RouterStrategy.md#urlchangecallback) |
+| `callback` | [`URLChangeCallback`](../modules.md#urlchangecallback) |
 
 #### Returns
 
 `void`
 
-#### Inherited from
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[removeURLChangeCallback](RouterStrategy.RouterStrategy-1.md#removeurlchangecallback)
-
 #### Defined in
 
-[src/RouterStrategy.ts:57](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L57)
+[src/RouterStrategy.ts:57](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L57)
 
 ___
 
 ### replaceState
 
-▸ **replaceState**(`url`, `state?`): `void`
+▸ `Abstract` **replaceState**(`url`, `state?`): `void`
 
 Replaces the current entry in the history stack with the new location.
 This will navigate the screen to the new location.
@@ -1232,19 +1152,15 @@ This will navigate the screen to the new location.
 
 `void`
 
-#### Overrides
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[replaceState](RouterStrategy.RouterStrategy-1.md#replacestate)
-
 #### Defined in
 
-[src/URLStrategy.ts:91](https://github.com/breautek/router/blob/f6dfe6e/src/URLStrategy.ts#L91)
+[src/RouterStrategy.ts:163](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L163)
 
 ___
 
 ### setMaxListeners
 
-▸ **setMaxListeners**(`n`): [`URLStrategy`](URLStrategy.URLStrategy-1.md)
+▸ **setMaxListeners**(`n`): [`RouterStrategy`](RouterStrategy.md)
 
 By default `EventEmitter`s will print a warning if more than `10` listeners are
 added for a particular event. This is a useful default that helps finding
@@ -1263,15 +1179,15 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`URLStrategy`](URLStrategy.URLStrategy-1.md)
+[`RouterStrategy`](RouterStrategy.md)
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[setMaxListeners](RouterStrategy.RouterStrategy-1.md#setmaxlisteners)
+EventEmitter.setMaxListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:465
+node_modules/@types/node/events.d.ts:493
 
 ___
 
@@ -1291,13 +1207,9 @@ Sets the browser title
 
 `void`
 
-#### Inherited from
-
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[setTitle](RouterStrategy.RouterStrategy-1.md#settitle)
-
 #### Defined in
 
-[src/RouterStrategy.ts:28](https://github.com/breautek/router/blob/f6dfe6e/src/RouterStrategy.ts#L28)
+[src/RouterStrategy.ts:28](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L28)
 
 ___
 
@@ -1330,7 +1242,7 @@ const { getEventListeners, EventEmitter } = require('events');
 }
 ```
 
-**`since`** v15.2.0
+**`since`** v15.2.0, v14.17.0
 
 #### Parameters
 
@@ -1345,11 +1257,11 @@ const { getEventListeners, EventEmitter } = require('events');
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[getEventListeners](RouterStrategy.RouterStrategy-1.md#geteventlisteners)
+EventEmitter.getEventListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:262
+node_modules/@types/node/events.d.ts:270
 
 ___
 
@@ -1385,11 +1297,11 @@ console.log(listenerCount(myEmitter, 'event'));
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[listenerCount](RouterStrategy.RouterStrategy-1.md#listenercount)
+EventEmitter.listenerCount
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:234
+node_modules/@types/node/events.d.ts:242
 
 ___
 
@@ -1469,11 +1381,11 @@ that iterates `eventName` events emitted by the `emitter`
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[on](RouterStrategy.RouterStrategy-1.md#on)
+EventEmitter.on
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:217
+node_modules/@types/node/events.d.ts:221
 
 ___
 
@@ -1577,7 +1489,7 @@ ee.emit('foo'); // Prints: Waiting for the event was canceled!
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[once](RouterStrategy.RouterStrategy-1.md#once)
+EventEmitter.once
 
 #### Defined in
 
@@ -1599,8 +1511,52 @@ node_modules/@types/node/events.d.ts:157
 
 #### Inherited from
 
-[RouterStrategy](RouterStrategy.RouterStrategy-1.md).[once](RouterStrategy.RouterStrategy-1.md#once)
+EventEmitter.once
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:158
+node_modules/@types/node/events.d.ts:162
+
+___
+
+### setMaxListeners
+
+▸ `Static` **setMaxListeners**(`n?`, ...`eventTargets`): `void`
+
+By default `EventEmitter`s will print a warning if more than `10` listeners are
+added for a particular event. This is a useful default that helps finding
+memory leaks. The `EventEmitter.setMaxListeners()` method allows the default limit to be
+modified (if eventTargets is empty) or modify the limit specified in every `EventTarget` | `EventEmitter` passed as arguments.
+The value can be set to`Infinity` (or `0`) to indicate an unlimited number of listeners.
+
+```js
+EventEmitter.setMaxListeners(20);
+// Equivalent to
+EventEmitter.defaultMaxListeners = 20;
+
+const eventTarget = new EventTarget();
+// Only way to increase limit for `EventTarget` instances
+// as these doesn't expose its own `setMaxListeners` method
+EventEmitter.setMaxListeners(20, eventTarget);
+```
+
+**`since`** v15.3.0, v14.17.0
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `n?` | `number` |
+| `...eventTargets` | (`DOMEventTarget` \| `EventEmitter`)[] |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+EventEmitter.setMaxListeners
+
+#### Defined in
+
+node_modules/@types/node/events.d.ts:290
