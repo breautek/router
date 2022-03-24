@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / IViewProps
+[@breautek/router - v2.0.2](../README.md) / [Exports](../modules.md) / IViewProps
 
 # Interface: IViewProps
 
@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[src/View.tsx:15](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L15)
+[src/View.tsx:15](https://github.com/breautek/router/blob/f657f43/src/View.tsx#L15)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[src/View.tsx:16](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L16)
+[src/View.tsx:16](https://github.com/breautek/router/blob/f657f43/src/View.tsx#L16)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[src/View.tsx:14](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L14)
+[src/View.tsx:14](https://github.com/breautek/router/blob/f657f43/src/View.tsx#L14)

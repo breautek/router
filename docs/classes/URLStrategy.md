@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / URLStrategy
+[@breautek/router - v2.0.2](../README.md) / [Exports](../modules.md) / URLStrategy
 
 # Class: URLStrategy
 
@@ -90,7 +90,7 @@ to the application vs other resources such as images.
 
 #### Defined in
 
-[src/URLStrategy.ts:22](https://github.com/breautek/router/blob/90a4daa/src/URLStrategy.ts#L22)
+[src/URLStrategy.ts:22](https://github.com/breautek/router/blob/f657f43/src/URLStrategy.ts#L22)
 
 ## Properties
 
@@ -182,7 +182,7 @@ Fires the [EVENT_URL_CHANGE](../modules.md#event_url_change) event
 
 #### Defined in
 
-[src/RouterStrategy.ts:174](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L174)
+[src/RouterStrategy.ts:174](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L174)
 
 ___
 
@@ -237,7 +237,7 @@ Listen for URL change events
 
 #### Defined in
 
-[src/RouterStrategy.ts:48](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L48)
+[src/RouterStrategy.ts:48](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L48)
 
 ___
 
@@ -257,7 +257,7 @@ Navigate the history back one entry. This is an alias for [go(-1)](URLStrategy.m
 
 #### Defined in
 
-[src/RouterStrategy.ts:102](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L102)
+[src/RouterStrategy.ts:102](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L102)
 
 ___
 
@@ -278,7 +278,7 @@ This is the same as calling [canGo(-1)](URLStrategy.md#cango)
 
 #### Defined in
 
-[src/RouterStrategy.ts:116](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L116)
+[src/RouterStrategy.ts:116](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L116)
 
 ___
 
@@ -299,7 +299,7 @@ This is the same as calling [canGo(1)](URLStrategy.md#cango)
 
 #### Defined in
 
-[src/RouterStrategy.ts:124](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L124)
+[src/RouterStrategy.ts:124](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L124)
 
 ___
 
@@ -325,7 +325,7 @@ Returns true, if can be navigated to the given relative index
 
 #### Defined in
 
-[src/URLStrategy.ts:60](https://github.com/breautek/router/blob/90a4daa/src/URLStrategy.ts#L60)
+[src/URLStrategy.ts:60](https://github.com/breautek/router/blob/f657f43/src/URLStrategy.ts#L60)
 
 ___
 
@@ -345,7 +345,7 @@ Clears the history stack.
 
 #### Defined in
 
-[src/URLStrategy.ts:110](https://github.com/breautek/router/blob/90a4daa/src/URLStrategy.ts#L110)
+[src/URLStrategy.ts:110](https://github.com/breautek/router/blob/f657f43/src/URLStrategy.ts#L110)
 
 ___
 
@@ -466,7 +466,7 @@ navigate the history forward one entry. This is an alias for [go(1)](URLStrategy
 
 #### Defined in
 
-[src/RouterStrategy.ts:95](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L95)
+[src/RouterStrategy.ts:95](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L95)
 
 ___
 
@@ -486,7 +486,7 @@ Gets the size of the history stack
 
 #### Defined in
 
-[src/URLStrategy.ts:48](https://github.com/breautek/router/blob/90a4daa/src/URLStrategy.ts#L48)
+[src/URLStrategy.ts:48](https://github.com/breautek/router/blob/f657f43/src/URLStrategy.ts#L48)
 
 ___
 
@@ -507,7 +507,7 @@ This is the same as calling [peek(0)](URLStrategy.md#peek)
 
 #### Defined in
 
-[src/URLStrategy.ts:40](https://github.com/breautek/router/blob/90a4daa/src/URLStrategy.ts#L40)
+[src/URLStrategy.ts:40](https://github.com/breautek/router/blob/f657f43/src/URLStrategy.ts#L40)
 
 ___
 
@@ -533,7 +533,7 @@ Gets the URL at the given index in the history stack
 
 #### Defined in
 
-[src/URLStrategy.ts:44](https://github.com/breautek/router/blob/90a4daa/src/URLStrategy.ts#L44)
+[src/URLStrategy.ts:44](https://github.com/breautek/router/blob/f657f43/src/URLStrategy.ts#L44)
 
 ___
 
@@ -576,7 +576,7 @@ Gets the router
 
 #### Defined in
 
-[src/RouterStrategy.ts:19](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L19)
+[src/RouterStrategy.ts:19](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L19)
 
 ___
 
@@ -596,7 +596,7 @@ Gets the scroll restoration
 
 #### Defined in
 
-[src/URLStrategy.ts:52](https://github.com/breautek/router/blob/90a4daa/src/URLStrategy.ts#L52)
+[src/URLStrategy.ts:52](https://github.com/breautek/router/blob/f657f43/src/URLStrategy.ts#L52)
 
 ___
 
@@ -622,7 +622,7 @@ Navigates the history
 
 #### Defined in
 
-[src/URLStrategy.ts:64](https://github.com/breautek/router/blob/90a4daa/src/URLStrategy.ts#L64)
+[src/URLStrategy.ts:64](https://github.com/breautek/router/blob/f657f43/src/URLStrategy.ts#L64)
 
 ___
 
@@ -845,7 +845,7 @@ Returns the URL stored in the history stack at the given relative index.
 
 #### Defined in
 
-[src/URLStrategy.ts:56](https://github.com/breautek/router/blob/90a4daa/src/URLStrategy.ts#L56)
+[src/URLStrategy.ts:56](https://github.com/breautek/router/blob/f657f43/src/URLStrategy.ts#L56)
 
 ___
 
@@ -866,7 +866,7 @@ This is the same as calling [peek(-1)](URLStrategy.md#peek)
 
 #### Defined in
 
-[src/RouterStrategy.ts:146](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L146)
+[src/RouterStrategy.ts:146](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L146)
 
 ___
 
@@ -887,7 +887,7 @@ This is the same as calling [peek(1)](URLStrategy.md#peek)
 
 #### Defined in
 
-[src/RouterStrategy.ts:138](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L138)
+[src/RouterStrategy.ts:138](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L138)
 
 ___
 
@@ -992,7 +992,7 @@ Pushes a new entry into the history stack, navigating to the new location.
 
 #### Defined in
 
-[src/URLStrategy.ts:73](https://github.com/breautek/router/blob/90a4daa/src/URLStrategy.ts#L73)
+[src/URLStrategy.ts:73](https://github.com/breautek/router/blob/f657f43/src/URLStrategy.ts#L73)
 
 ___
 
@@ -1209,7 +1209,7 @@ Removes an existing listener
 
 #### Defined in
 
-[src/RouterStrategy.ts:57](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L57)
+[src/RouterStrategy.ts:57](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L57)
 
 ___
 
@@ -1237,7 +1237,7 @@ This will navigate the screen to the new location.
 
 #### Defined in
 
-[src/URLStrategy.ts:91](https://github.com/breautek/router/blob/90a4daa/src/URLStrategy.ts#L91)
+[src/URLStrategy.ts:91](https://github.com/breautek/router/blob/f657f43/src/URLStrategy.ts#L91)
 
 ___
 
@@ -1296,7 +1296,7 @@ Sets the browser title
 
 #### Defined in
 
-[src/RouterStrategy.ts:28](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L28)
+[src/RouterStrategy.ts:28](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L28)
 
 ___
 

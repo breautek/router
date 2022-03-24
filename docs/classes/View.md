@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / View
+[@breautek/router - v2.0.2](../README.md) / [Exports](../modules.md) / View
 
 # Class: View<TPageProps\>
 
@@ -74,7 +74,7 @@ React.Component&lt;TPageProps\&gt;.constructor
 
 #### Defined in
 
-[src/View.tsx:25](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L25)
+[src/View.tsx:25](https://github.com/breautek/router/blob/f657f43/src/View.tsx#L25)
 
 ## Properties
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-[src/View.tsx:90](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L90)
+[src/View.tsx:90](https://github.com/breautek/router/blob/f657f43/src/View.tsx#L90)
 
 ___
 
@@ -520,7 +520,7 @@ Return the CSS class on this view
 
 #### Defined in
 
-[src/View.tsx:33](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L33)
+[src/View.tsx:33](https://github.com/breautek/router/blob/f657f43/src/View.tsx#L33)
 
 ___
 
@@ -536,7 +536,7 @@ Gets the underlying HTML node for this View
 
 #### Defined in
 
-[src/View.tsx:71](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L71)
+[src/View.tsx:71](https://github.com/breautek/router/blob/f657f43/src/View.tsx#L71)
 
 ___
 
@@ -584,7 +584,7 @@ Get the title of this view
 
 #### Defined in
 
-[src/View.tsx:78](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L78)
+[src/View.tsx:78](https://github.com/breautek/router/blob/f657f43/src/View.tsx#L78)
 
 ___
 
@@ -601,7 +601,7 @@ Use React style notation.
 
 #### Defined in
 
-[src/View.tsx:86](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L86)
+[src/View.tsx:86](https://github.com/breautek/router/blob/f657f43/src/View.tsx#L86)
 
 ___
 
@@ -617,7 +617,7 @@ Override to return a webpack API style stylesheet
 
 #### Defined in
 
-[src/View.tsx:40](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L40)
+[src/View.tsx:40](https://github.com/breautek/router/blob/f657f43/src/View.tsx#L40)
 
 ___
 
@@ -635,7 +635,7 @@ React.Component.render
 
 #### Defined in
 
-[src/View.tsx:92](https://github.com/breautek/router/blob/90a4daa/src/View.tsx#L92)
+[src/View.tsx:92](https://github.com/breautek/router/blob/f657f43/src/View.tsx#L92)
 
 ___
 

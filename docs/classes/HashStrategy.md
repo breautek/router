@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / HashStrategy
+[@breautek/router - v2.0.2](../README.md) / [Exports](../modules.md) / HashStrategy
 
 # Class: HashStrategy
 
@@ -89,7 +89,7 @@ For example, if you [pushState("mylink")](HashStrategy.md#pushstate), the url
 
 #### Defined in
 
-[src/HashStrategy.ts:18](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L18)
+[src/HashStrategy.ts:18](https://github.com/breautek/router/blob/f657f43/src/HashStrategy.ts#L18)
 
 ## Properties
 
@@ -181,7 +181,7 @@ Fires the [EVENT_URL_CHANGE](../modules.md#event_url_change) event
 
 #### Defined in
 
-[src/HashStrategy.ts:124](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L124)
+[src/HashStrategy.ts:124](https://github.com/breautek/router/blob/f657f43/src/HashStrategy.ts#L124)
 
 ___
 
@@ -236,7 +236,7 @@ Listen for URL change events
 
 #### Defined in
 
-[src/RouterStrategy.ts:48](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L48)
+[src/RouterStrategy.ts:48](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L48)
 
 ___
 
@@ -256,7 +256,7 @@ Navigate the history back one entry. This is an alias for [go(-1)](HashStrategy.
 
 #### Defined in
 
-[src/RouterStrategy.ts:102](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L102)
+[src/RouterStrategy.ts:102](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L102)
 
 ___
 
@@ -277,7 +277,7 @@ This is the same as calling [canGo(-1)](HashStrategy.md#cango)
 
 #### Defined in
 
-[src/RouterStrategy.ts:116](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L116)
+[src/RouterStrategy.ts:116](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L116)
 
 ___
 
@@ -298,7 +298,7 @@ This is the same as calling [canGo(1)](HashStrategy.md#cango)
 
 #### Defined in
 
-[src/RouterStrategy.ts:124](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L124)
+[src/RouterStrategy.ts:124](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L124)
 
 ___
 
@@ -324,7 +324,7 @@ Returns true, if can be navigated to the given relative index
 
 #### Defined in
 
-[src/HashStrategy.ts:62](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L62)
+[src/HashStrategy.ts:62](https://github.com/breautek/router/blob/f657f43/src/HashStrategy.ts#L62)
 
 ___
 
@@ -344,7 +344,7 @@ Clears the history stack.
 
 #### Defined in
 
-[src/HashStrategy.ts:114](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L114)
+[src/HashStrategy.ts:114](https://github.com/breautek/router/blob/f657f43/src/HashStrategy.ts#L114)
 
 ___
 
@@ -465,7 +465,7 @@ navigate the history forward one entry. This is an alias for [go(1)](HashStrateg
 
 #### Defined in
 
-[src/RouterStrategy.ts:95](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L95)
+[src/RouterStrategy.ts:95](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L95)
 
 ___
 
@@ -485,7 +485,7 @@ Gets the size of the history stack
 
 #### Defined in
 
-[src/HashStrategy.ts:54](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L54)
+[src/HashStrategy.ts:54](https://github.com/breautek/router/blob/f657f43/src/HashStrategy.ts#L54)
 
 ___
 
@@ -506,7 +506,7 @@ This is the same as calling [peek(0)](HashStrategy.md#peek)
 
 #### Defined in
 
-[src/HashStrategy.ts:46](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L46)
+[src/HashStrategy.ts:46](https://github.com/breautek/router/blob/f657f43/src/HashStrategy.ts#L46)
 
 ___
 
@@ -532,7 +532,7 @@ Gets the URL at the given index in the history stack
 
 #### Defined in
 
-[src/HashStrategy.ts:50](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L50)
+[src/HashStrategy.ts:50](https://github.com/breautek/router/blob/f657f43/src/HashStrategy.ts#L50)
 
 ___
 
@@ -575,7 +575,7 @@ Gets the router
 
 #### Defined in
 
-[src/RouterStrategy.ts:19](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L19)
+[src/RouterStrategy.ts:19](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L19)
 
 ___
 
@@ -595,7 +595,7 @@ Gets the scroll restoration
 
 #### Defined in
 
-[src/HashStrategy.ts:58](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L58)
+[src/HashStrategy.ts:58](https://github.com/breautek/router/blob/f657f43/src/HashStrategy.ts#L58)
 
 ___
 
@@ -621,7 +621,7 @@ Navigates the history
 
 #### Defined in
 
-[src/HashStrategy.ts:70](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L70)
+[src/HashStrategy.ts:70](https://github.com/breautek/router/blob/f657f43/src/HashStrategy.ts#L70)
 
 ___
 
@@ -844,7 +844,7 @@ Returns the URL stored in the history stack at the given relative index.
 
 #### Defined in
 
-[src/HashStrategy.ts:66](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L66)
+[src/HashStrategy.ts:66](https://github.com/breautek/router/blob/f657f43/src/HashStrategy.ts#L66)
 
 ___
 
@@ -865,7 +865,7 @@ This is the same as calling [peek(-1)](HashStrategy.md#peek)
 
 #### Defined in
 
-[src/RouterStrategy.ts:146](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L146)
+[src/RouterStrategy.ts:146](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L146)
 
 ___
 
@@ -886,7 +886,7 @@ This is the same as calling [peek(1)](HashStrategy.md#peek)
 
 #### Defined in
 
-[src/RouterStrategy.ts:138](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L138)
+[src/RouterStrategy.ts:138](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L138)
 
 ___
 
@@ -991,7 +991,7 @@ Pushes a new entry into the history stack, navigating to the new location.
 
 #### Defined in
 
-[src/HashStrategy.ts:81](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L81)
+[src/HashStrategy.ts:81](https://github.com/breautek/router/blob/f657f43/src/HashStrategy.ts#L81)
 
 ___
 
@@ -1208,7 +1208,7 @@ Removes an existing listener
 
 #### Defined in
 
-[src/RouterStrategy.ts:57](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L57)
+[src/RouterStrategy.ts:57](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L57)
 
 ___
 
@@ -1236,7 +1236,7 @@ This will navigate the screen to the new location.
 
 #### Defined in
 
-[src/HashStrategy.ts:99](https://github.com/breautek/router/blob/90a4daa/src/HashStrategy.ts#L99)
+[src/HashStrategy.ts:99](https://github.com/breautek/router/blob/f657f43/src/HashStrategy.ts#L99)
 
 ___
 
@@ -1295,7 +1295,7 @@ Sets the browser title
 
 #### Defined in
 
-[src/RouterStrategy.ts:28](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L28)
+[src/RouterStrategy.ts:28](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L28)
 
 ___
 

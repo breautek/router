@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / TransitionSlideDirection
+[@breautek/router - v2.0.2](../README.md) / [Exports](../modules.md) / TransitionSlideDirection
 
 # Enumeration: TransitionSlideDirection
 
@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[src/TransitionSlide.ts:9](https://github.com/breautek/router/blob/90a4daa/src/TransitionSlide.ts#L9)
+[src/TransitionSlide.ts:9](https://github.com/breautek/router/blob/f657f43/src/TransitionSlide.ts#L9)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[src/TransitionSlide.ts:6](https://github.com/breautek/router/blob/90a4daa/src/TransitionSlide.ts#L6)
+[src/TransitionSlide.ts:6](https://github.com/breautek/router/blob/f657f43/src/TransitionSlide.ts#L6)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[src/TransitionSlide.ts:7](https://github.com/breautek/router/blob/90a4daa/src/TransitionSlide.ts#L7)
+[src/TransitionSlide.ts:7](https://github.com/breautek/router/blob/f657f43/src/TransitionSlide.ts#L7)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[src/TransitionSlide.ts:8](https://github.com/breautek/router/blob/90a4daa/src/TransitionSlide.ts#L8)
+[src/TransitionSlide.ts:8](https://github.com/breautek/router/blob/f657f43/src/TransitionSlide.ts#L8)

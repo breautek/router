@@ -1,6 +1,6 @@
-[@breautek/router - v2.0.1](README.md) / Exports
+[@breautek/router - v2.0.2](README.md) / Exports
 
-# @breautek/router - v2.0.1
+# @breautek/router - v2.0.2
 
 ## Table of contents
 
@@ -67,7 +67,7 @@
 
 #### Defined in
 
-[src/RouterStrategy.ts:6](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L6)
+[src/RouterStrategy.ts:6](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L6)
 
 ## Variables
 
@@ -79,7 +79,7 @@ Alias for [HashStrategy](classes/HashStrategy.md)
 
 #### Defined in
 
-[src/DefaultStrategy.ts:9](https://github.com/breautek/router/blob/90a4daa/src/DefaultStrategy.ts#L9)
+[src/DefaultStrategy.ts:9](https://github.com/breautek/router/blob/f657f43/src/DefaultStrategy.ts#L9)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[src/RouterStrategy.ts:4](https://github.com/breautek/router/blob/90a4daa/src/RouterStrategy.ts#L4)
+[src/RouterStrategy.ts:4](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L4)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[src/api.ts:21](https://github.com/breautek/router/blob/90a4daa/src/api.ts#L21)
+[src/api.ts:21](https://github.com/breautek/router/blob/f657f43/src/api.ts#L21)
 
 ## Functions
 
@@ -113,4 +113,4 @@ ___
 
 #### Defined in
 
-[src/Router.tsx:279](https://github.com/breautek/router/blob/90a4daa/src/Router.tsx#L279)
+[src/Router.tsx:279](https://github.com/breautek/router/blob/f657f43/src/Router.tsx#L279)

@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.1](../README.md) / [Exports](../modules.md) / IComponentProps
+[@breautek/router - v2.0.2](../README.md) / [Exports](../modules.md) / IComponentProps
 
 # Interface: IComponentProps
 
@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[src/Route.tsx:22](https://github.com/breautek/router/blob/90a4daa/src/Route.tsx#L22)
+[src/Route.tsx:22](https://github.com/breautek/router/blob/f657f43/src/Route.tsx#L22)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[src/Route.tsx:21](https://github.com/breautek/router/blob/90a4daa/src/Route.tsx#L21)
+[src/Route.tsx:21](https://github.com/breautek/router/blob/f657f43/src/Route.tsx#L21)
