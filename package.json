@@ -1,6 +1,6 @@
 {
   "name": "@breautek/router",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "An alternate react router.",
   "main": "dist/router.js",
   "types": "dist/src/api.d.ts",
