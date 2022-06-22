@@ -1,6 +1,6 @@
 {
   "name": "@breautek/router",
-  "version": "2.0.2",
+  "version": "3.0.0-dev",
   "description": "An alternate react router.",
   "main": "dist/router.js",
   "types": "dist/src/api.d.ts",
@@ -59,7 +59,6 @@
     "ajv": "8.11.0",
     "auto-changelog": "2.4.0",
     "babel-jest": "27.5.1",
-    "core-js": "3.22.5",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.6",
     "eslint": "8.15.0",
