@@ -1,52 +1,52 @@
-[@breautek/router - v2.0.2](../README.md) / [Exports](../modules.md) / TransitionSlideDirection
+[@breautek/router - v3.0.0-dev](../README.md) / [Exports](../modules.md) / TransitionSlideDirection
 
 # Enumeration: TransitionSlideDirection
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [DOWN](TransitionSlideDirection.md#down)
 - [LEFT](TransitionSlideDirection.md#left)
 - [RIGHT](TransitionSlideDirection.md#right)
 - [UP](TransitionSlideDirection.md#up)
 
-## Enumeration members
+## Enumeration Members
 
 ### DOWN
 
-• **DOWN** = `4`
+• **DOWN**
 
 #### Defined in
 
-[src/TransitionSlide.ts:9](https://github.com/breautek/router/blob/f657f43/src/TransitionSlide.ts#L9)
+[src/TransitionSlide.ts:9](https://github.com/breautek/router/blob/758f475/src/TransitionSlide.ts#L9)
 
 ___
 
 ### LEFT
 
-• **LEFT** = `1`
+• **LEFT**
 
 #### Defined in
 
-[src/TransitionSlide.ts:6](https://github.com/breautek/router/blob/f657f43/src/TransitionSlide.ts#L6)
+[src/TransitionSlide.ts:6](https://github.com/breautek/router/blob/758f475/src/TransitionSlide.ts#L6)
 
 ___
 
 ### RIGHT
 
-• **RIGHT** = `2`
+• **RIGHT**
 
 #### Defined in
 
-[src/TransitionSlide.ts:7](https://github.com/breautek/router/blob/f657f43/src/TransitionSlide.ts#L7)
+[src/TransitionSlide.ts:7](https://github.com/breautek/router/blob/758f475/src/TransitionSlide.ts#L7)
 
 ___
 
 ### UP
 
-• **UP** = `3`
+• **UP**
 
 #### Defined in
 
-[src/TransitionSlide.ts:8](https://github.com/breautek/router/blob/f657f43/src/TransitionSlide.ts#L8)
+[src/TransitionSlide.ts:8](https://github.com/breautek/router/blob/758f475/src/TransitionSlide.ts#L8)

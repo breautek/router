@@ -1,6 +1,6 @@
-[@breautek/router - v2.0.2](README.md) / Exports
+[@breautek/router - v3.0.0-dev](README.md) / Exports
 
-# @breautek/router - v2.0.2
+# @breautek/router - v3.0.0-dev
 
 ## Table of contents
 
@@ -31,7 +31,7 @@
 - [IViewProps](interfaces/IViewProps.md)
 - [IViewStylesheet](interfaces/IViewStylesheet.md)
 
-### Type aliases
+### Type Aliases
 
 - [URLChangeCallback](modules.md#urlchangecallback)
 
@@ -45,7 +45,7 @@
 
 - [getRouter](modules.md#getrouter)
 
-## Type aliases
+## Type Aliases
 
 ### URLChangeCallback
 
@@ -67,7 +67,7 @@
 
 #### Defined in
 
-[src/RouterStrategy.ts:6](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L6)
+[src/RouterStrategy.ts:6](https://github.com/breautek/router/blob/758f475/src/RouterStrategy.ts#L6)
 
 ## Variables
 
@@ -79,7 +79,7 @@ Alias for [HashStrategy](classes/HashStrategy.md)
 
 #### Defined in
 
-[src/DefaultStrategy.ts:9](https://github.com/breautek/router/blob/f657f43/src/DefaultStrategy.ts#L9)
+[src/DefaultStrategy.ts:9](https://github.com/breautek/router/blob/758f475/src/DefaultStrategy.ts#L9)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[src/RouterStrategy.ts:4](https://github.com/breautek/router/blob/f657f43/src/RouterStrategy.ts#L4)
+[src/RouterStrategy.ts:4](https://github.com/breautek/router/blob/758f475/src/RouterStrategy.ts#L4)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[src/api.ts:21](https://github.com/breautek/router/blob/f657f43/src/api.ts#L21)
+[src/api.ts:16](https://github.com/breautek/router/blob/758f475/src/api.ts#L16)
 
 ## Functions
 
@@ -113,4 +113,4 @@ ___
 
 #### Defined in
 
-[src/Router.tsx:279](https://github.com/breautek/router/blob/f657f43/src/Router.tsx#L279)
+[src/Router.tsx:278](https://github.com/breautek/router/blob/758f475/src/Router.tsx#L278)

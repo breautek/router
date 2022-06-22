@@ -1,4 +1,4 @@
-[@breautek/router - v2.0.2](../README.md) / [Exports](../modules.md) / Router
+[@breautek/router - v3.0.0-dev](../README.md) / [Exports](../modules.md) / Router
 
 # Class: Router<TRouterProps\>
 
@@ -73,7 +73,7 @@ React.Component&lt;TRouterProps, IRouterState\&gt;.constructor
 
 #### Defined in
 
-[src/Router.tsx:37](https://github.com/breautek/router/blob/f657f43/src/Router.tsx#L37)
+[src/Router.tsx:36](https://github.com/breautek/router/blob/758f475/src/Router.tsx#L36)
 
 ## Properties
 
@@ -150,7 +150,7 @@ React.Component.state
 
 #### Defined in
 
-[src/Router.tsx:27](https://github.com/breautek/router/blob/f657f43/src/Router.tsx#L27)
+[src/Router.tsx:26](https://github.com/breautek/router/blob/758f475/src/Router.tsx#L26)
 
 ___
 
@@ -272,7 +272,7 @@ Go back one step. This is an alias for [pushState(-1)](Router.md#go).
 
 #### Defined in
 
-[src/Router.tsx:236](https://github.com/breautek/router/blob/f657f43/src/Router.tsx#L236)
+[src/Router.tsx:235](https://github.com/breautek/router/blob/758f475/src/Router.tsx#L235)
 
 ___
 
@@ -318,7 +318,7 @@ React.Component.componentDidMount
 
 #### Defined in
 
-[src/Router.tsx:89](https://github.com/breautek/router/blob/f657f43/src/Router.tsx#L89)
+[src/Router.tsx:88](https://github.com/breautek/router/blob/758f475/src/Router.tsx#L88)
 
 ___
 
@@ -467,7 +467,7 @@ Go forward one step. This is an alias for [pushState(1)](Router.md#go).
 
 #### Defined in
 
-[src/Router.tsx:243](https://github.com/breautek/router/blob/f657f43/src/Router.tsx#L243)
+[src/Router.tsx:242](https://github.com/breautek/router/blob/758f475/src/Router.tsx#L242)
 
 ___
 
@@ -484,7 +484,7 @@ Only the history kept track during the life-cycle of the app.
 
 #### Defined in
 
-[src/Router.tsx:211](https://github.com/breautek/router/blob/f657f43/src/Router.tsx#L211)
+[src/Router.tsx:210](https://github.com/breautek/router/blob/758f475/src/Router.tsx#L210)
 
 ___
 
@@ -500,7 +500,7 @@ Gets the current routing strategy
 
 #### Defined in
 
-[src/Router.tsx:73](https://github.com/breautek/router/blob/f657f43/src/Router.tsx#L73)
+[src/Router.tsx:72](https://github.com/breautek/router/blob/758f475/src/Router.tsx#L72)
 
 ___
 
@@ -516,7 +516,7 @@ Gets the scroll restoration mode
 
 #### Defined in
 
-[src/Router.tsx:218](https://github.com/breautek/router/blob/f657f43/src/Router.tsx#L218)
+[src/Router.tsx:217](https://github.com/breautek/router/blob/758f475/src/Router.tsx#L217)
 
 ___
 
@@ -568,7 +568,7 @@ ___
 
 #### Defined in
 
-[src/Router.tsx:229](https://github.com/breautek/router/blob/f657f43/src/Router.tsx#L229)
+[src/Router.tsx:228](https://github.com/breautek/router/blob/758f475/src/Router.tsx#L228)
 
 ___
 
@@ -648,4 +648,4 @@ ___
 
 #### Defined in
 
-[src/Router.tsx:62](https://github.com/breautek/router/blob/f657f43/src/Router.tsx#L62)
+[src/Router.tsx:61](https://github.com/breautek/router/blob/758f475/src/Router.tsx#L61)
