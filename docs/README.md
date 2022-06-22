@@ -1,4 +1,4 @@
-@breautek/router - v3.0.0-dev / [Exports](modules.md)
+@breautek/router - v3.0.0 / [Exports](modules.md)
 
 # @breautek/router
 

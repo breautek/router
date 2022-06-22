@@ -1,4 +1,4 @@
-[@breautek/router - v3.0.0-dev](../README.md) / [Exports](../modules.md) / IRouterState
+[@breautek/router - v3.0.0](../README.md) / [Exports](../modules.md) / IRouterState
 
 # Interface: IRouterState
 
@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[src/Router.tsx:22](https://github.com/breautek/router/blob/758f475/src/Router.tsx#L22)
+[src/Router.tsx:22](https://github.com/breautek/router/blob/18557bc/src/Router.tsx#L22)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[src/Router.tsx:20](https://github.com/breautek/router/blob/758f475/src/Router.tsx#L20)
+[src/Router.tsx:20](https://github.com/breautek/router/blob/18557bc/src/Router.tsx#L20)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[src/Router.tsx:21](https://github.com/breautek/router/blob/758f475/src/Router.tsx#L21)
+[src/Router.tsx:21](https://github.com/breautek/router/blob/18557bc/src/Router.tsx#L21)

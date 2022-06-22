@@ -1,4 +1,4 @@
-[@breautek/router - v3.0.0-dev](../README.md) / [Exports](../modules.md) / TransitionStrategy
+[@breautek/router - v3.0.0](../README.md) / [Exports](../modules.md) / TransitionStrategy
 
 # Class: TransitionStrategy
 
@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[src/TransitionStrategy.ts:4](https://github.com/breautek/router/blob/758f475/src/TransitionStrategy.ts#L4)
+[src/TransitionStrategy.ts:4](https://github.com/breautek/router/blob/18557bc/src/TransitionStrategy.ts#L4)
 
 ## Methods
 
@@ -48,7 +48,7 @@
 
 #### Defined in
 
-[src/TransitionStrategy.ts:25](https://github.com/breautek/router/blob/758f475/src/TransitionStrategy.ts#L25)
+[src/TransitionStrategy.ts:25](https://github.com/breautek/router/blob/18557bc/src/TransitionStrategy.ts#L25)
 
 ___
 
@@ -80,4 +80,4 @@ of the transition to avoid "snapping" behaviour.
 
 #### Defined in
 
-[src/TransitionStrategy.ts:21](https://github.com/breautek/router/blob/758f475/src/TransitionStrategy.ts#L21)
+[src/TransitionStrategy.ts:21](https://github.com/breautek/router/blob/18557bc/src/TransitionStrategy.ts#L21)

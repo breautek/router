@@ -1,6 +1,6 @@
-[@breautek/router - v3.0.0-dev](README.md) / Exports
+[@breautek/router - v3.0.0](README.md) / Exports
 
-# @breautek/router - v3.0.0-dev
+# @breautek/router - v3.0.0
 
 ## Table of contents
 
@@ -67,7 +67,7 @@
 
 #### Defined in
 
-[src/RouterStrategy.ts:6](https://github.com/breautek/router/blob/758f475/src/RouterStrategy.ts#L6)
+[src/RouterStrategy.ts:6](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L6)
 
 ## Variables
 
@@ -79,7 +79,7 @@ Alias for [HashStrategy](classes/HashStrategy.md)
 
 #### Defined in
 
-[src/DefaultStrategy.ts:9](https://github.com/breautek/router/blob/758f475/src/DefaultStrategy.ts#L9)
+[src/DefaultStrategy.ts:9](https://github.com/breautek/router/blob/18557bc/src/DefaultStrategy.ts#L9)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[src/RouterStrategy.ts:4](https://github.com/breautek/router/blob/758f475/src/RouterStrategy.ts#L4)
+[src/RouterStrategy.ts:4](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L4)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[src/api.ts:16](https://github.com/breautek/router/blob/758f475/src/api.ts#L16)
+[src/api.ts:16](https://github.com/breautek/router/blob/18557bc/src/api.ts#L16)
 
 ## Functions
 
@@ -113,4 +113,4 @@ ___
 
 #### Defined in
 
-[src/Router.tsx:278](https://github.com/breautek/router/blob/758f475/src/Router.tsx#L278)
+[src/Router.tsx:278](https://github.com/breautek/router/blob/18557bc/src/Router.tsx#L278)
