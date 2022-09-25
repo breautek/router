@@ -13,6 +13,7 @@ export interface IViewProps {
     router: RouterStrategy;
     entryTransition?: TransitionStrategy;
     exitTransition?: TransitionStrategy;
+    children?: React.ReactNode;
 }
 
 export abstract class View<TPageProps extends IViewProps = IViewProps> extends React.Component<TPageProps> {

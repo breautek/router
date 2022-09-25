@@ -13,6 +13,7 @@ import { Route } from "./Route";
 export interface IRouterProps {
     strategy?: IRouterStrategyClass;
     component: React.ComponentClass<any>;
+    children?: React.ReactNode;
     onNoRoute?: IOnNoRoute;
 }
 
@@ -45,7 +46,7 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
             Strategy = props.strategy;
         }
 
-        let strategy: RouterStrategy = new Strategy(this);
+        const strategy: RouterStrategy = new Strategy(this);
 
         this.state = {
             strategy: strategy,
@@ -96,7 +97,7 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
     public UNSAFE_componentWillReceiveProps(nextProps: TRouterProps): void {
         if (nextProps.strategy && (this.state.strategy instanceof nextProps.strategy)) {
             this.state.strategy.removeURLChangeCallback(this.$onURLChange);
-            let strat: RouterStrategy = new nextProps.strategy(this);
+            const strat: RouterStrategy = new nextProps.strategy(this);
             strat.addURLChangeCallback(this.$onURLChange);
             this.setState({
                 strategy: strat
@@ -263,9 +264,9 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
      * Finds the index route. Returns null if there are no indexed routes.
      */
     private $getIndexRoute(): React.ReactElement {
-        let children: React.ReactElement[] = this.$getChildren();
+        const children: React.ReactElement[] = this.$getChildren();
         for (let i: number = 0; i < children.length; i++) {
-            let child: React.ReactElement = children[i];
+            const child: React.ReactElement = children[i];
             if (child.props.index) {
                 return child;
             }
@@ -273,9 +274,4 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
 
         return null;
     }
-}
-
-export let getRouter = (): RouterStrategy => {
-    console.warn('getRouter() is deprecated. use Router.getInstance() instead.');
-    return Router.getInstance();
 }

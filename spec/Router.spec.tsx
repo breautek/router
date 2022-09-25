@@ -1,7 +1,6 @@
 
 import * as React from 'react';
-import * as Enzyme from 'enzyme';
-
+import renderer, {ReactTestRenderer} from 'react-test-renderer';
 import {
     TestApp,
     View1,
@@ -15,26 +14,25 @@ import {
 import {Router, IRouterProps} from '../src/Router';
 import {Route} from '../src/Route';
 import { RouterStrategy } from '../src/RouterStrategy';
-import {RouterWrapper} from './support/RouterWrapper';
 
-let tick = function(fn: () => void): void {
+const tick = function(fn: () => void): void {
     setTimeout(fn, 1);
 };
 
-let getTitle = function(): string {
+const getTitle = function(): string {
     return document.head.getElementsByTagName('title')[0].innerText;
 }
 
 describe('@breautek/router', () => {
-    let app: RouterWrapper;
+    let app: ReactTestRenderer | undefined;
 
     let props: IRouterProps = {
         component: TestApp
     };
 
-    let router = (): RouterWrapper => {
+    const router = (): ReactTestRenderer => {
         if (!app) {
-            app = Enzyme.mount<Router>(
+            app = renderer.create(
                 <Router {...props}>
                     <Route key="page1" url="/page1" component={View1} index />
                     <Route key="page2" url="/page2" component={View2} />
@@ -48,7 +46,6 @@ describe('@breautek/router', () => {
     }
 
     beforeEach(() => {
-        // jasmineEnzyme();
         window.location.hash = '/';
         app = undefined;
         props = {
@@ -56,10 +53,14 @@ describe('@breautek/router', () => {
         };
     });
 
+    afterEach(() => {
+        jest.restoreAllMocks();
+    });
+
     describe('on no routes', () => {
         it('It renders index page', (done) => {
-            let comp: RouterWrapper = router();
-            expect(comp.html()).toBe('<div class="app"><div class="View View1">View1</div></div>');
+            const comp: ReactTestRenderer = router();
+            expect(comp.toJSON()).toMatchSnapshot();
             tick(() => {
                 expect(getTitle()).toBe('View1');
                 comp.unmount();
@@ -71,10 +72,10 @@ describe('@breautek/router', () => {
             props.onNoRoute = (index: React.ReactElement, routes: React.ReactElement[]): React.ReactElement => {
                 return index;
             };
-            spyOn(props, 'onNoRoute').and.callThrough();
+            jest.spyOn(props, 'onNoRoute');
 
-            let comp: RouterWrapper = router();
-            expect(comp.html()).toBe('<div class="app"><div class="View View1">View1</div></div>');
+            const comp: ReactTestRenderer = router();
+            expect(comp.toJSON()).toMatchSnapshot();
             tick(() => {
                 expect(props.onNoRoute).toHaveBeenCalled();
                 expect(getTitle()).toBe('View1');
@@ -84,14 +85,14 @@ describe('@breautek/router', () => {
         });
 
         it('renders null for index through onNoRoute hook', (done) => {
-            props.onNoRoute = (index: React.ReactElement, routes: React.ReactElement[]): React.ReactElement => {
+            props.onNoRoute = (index: React.ReactElement, routes: React.ReactElement[]): React.ReactElement | null => {
                 return null;
             };
-            spyOn(props, 'onNoRoute').and.callThrough();
-            spyOn(console, 'warn');
+            jest.spyOn(props, 'onNoRoute');
+            jest.spyOn(console, 'warn').mockImplementation(() => {});
 
-            let comp: RouterWrapper = router();
-            expect(comp.html()).toBe('<div class="app"></div>');
+            const comp: ReactTestRenderer = router();
+            expect(comp.toJSON()).toMatchSnapshot();
             tick(() => {
                 expect(props.onNoRoute).toHaveBeenCalled();
                 expect(console.warn).toHaveBeenCalledWith('No routes matched, and no index route available.');
@@ -104,10 +105,10 @@ describe('@breautek/router', () => {
             props.onNoRoute = (index: React.ReactElement, routes: React.ReactElement[]): React.ReactElement => {
                 return routes[2]
             };
-            spyOn(props, 'onNoRoute').and.callThrough();
+            jest.spyOn(props, 'onNoRoute');
 
-            let comp: RouterWrapper = router();
-            expect(comp.html()).toBe('<div class="app"><div class="View">View3</div></div>');
+            const comp: ReactTestRenderer = router();
+            expect(comp.toJSON()).toMatchSnapshot();
             tick(() => {
                 expect(props.onNoRoute).toHaveBeenCalled();
                 comp.unmount();
@@ -118,19 +119,26 @@ describe('@breautek/router', () => {
 
     it('getInstance()', () => {
         expect(Router.getInstance()).toBe(null);
-        let comp: RouterWrapper = router();
-        expect(comp.instance().state.strategy).toBe(Router.getInstance());
+        const comp: ReactTestRenderer = router();
+
+        // Ideally we want to ensure the internal state matches what is returned
+        // in the public API, but Facebook testing mantra is to test props and
+        // their behaviour of those props rather than concerning itself with
+        // implementation details, which state is considered an implementation
+        // detail of a component.
+        // https://stackoverflow.com/a/61813414/4685664
+        expect(Router.getInstance()).toBeInstanceOf(RouterStrategy);
         comp.unmount();
     });
 
     it('can navigate pages', (done) => {
-        let comp: RouterWrapper = router();
+        const comp: ReactTestRenderer = router();
 
-        let r: RouterStrategy = Router.getInstance();
+        const r: RouterStrategy = Router.getInstance();
         expect(r.getHistoryLength()).toBe(0);
         expect(r.canBack()).toBe(false);
 
-        let urlChange = (url: string) => {
+        const urlChange = (url: string) => {
             r.removeURLChangeCallback(urlChange);
 
             tick(() => {
@@ -138,7 +146,7 @@ describe('@breautek/router', () => {
                 expect(url).toBe('/page2');
                 expect(r.canBack()).toBe(true);
                 expect(r.getHistoryLength()).toBe(2);
-                expect(comp.html()).toBe('<div class="app"><div class="View">View2</div></div>');
+                expect(comp.toJSON()).toMatchSnapshot();
 
                 comp.unmount();
                 done();
@@ -152,12 +160,11 @@ describe('@breautek/router', () => {
     });
 
     it('URLChangeCallback should fire once per URL change', (done) => {
-        let comp: RouterWrapper = router();
-        let r: RouterStrategy = Router.getInstance();
-        let onUrlChange = jest.fn();
-        comp.update();
+        const comp: ReactTestRenderer = router();
+        const r: RouterStrategy = Router.getInstance();
+        const onUrlChange = jest.fn();
+        
         tick(() => {
-            comp.update();
             r.addURLChangeCallback(onUrlChange);
             r.pushState('/page');
             tick(() => {
@@ -172,7 +179,7 @@ describe('@breautek/router', () => {
 
     describe('subviews', () => {
         it('can render subviews', (done) => {
-            app = Enzyme.mount<Router>(
+            app = renderer.create(
                 <Router component={TestApp}>
                     <Route key="outer" url="/outerView" component={OuterView} index>
                         <Route key="inner" url="/innerView" component={InnerView} />
@@ -180,12 +187,12 @@ describe('@breautek/router', () => {
                 </Router>
             );
     
-            let r: RouterStrategy = Router.getInstance();
+            const r: RouterStrategy = Router.getInstance();
 
             tick(() => {
                 r.pushState('/outerView/innerView');
                 tick(() => {
-                    expect(app.html()).toBe('<div class="app"><div class="View"><div>Outer View</div><div class="View">Inner View</div></div></div>');
+                    expect(app.toJSON()).toMatchSnapshot();
                     app.unmount();
                     done();
                 });

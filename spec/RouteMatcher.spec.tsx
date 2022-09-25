@@ -1,8 +1,7 @@
 
 import * as React from 'react';
-import * as Enzyme from 'enzyme';
 import {Route} from '../src/Route';
-
+import renderer, {ReactTestRenderer} from 'react-test-renderer';
 import {
     TestApp,
     VarView
@@ -10,18 +9,17 @@ import {
 import {instance} from './env/VarView';
 import { Router } from '../src/Router';
 import { RouterStrategy } from '../src/RouterStrategy';
-import {RouterWrapper} from './support/RouterWrapper';
 
-let tick = function(fn: () => void): void {
+const tick = function(fn: () => void): void {
     setTimeout(fn, 1);
 };
 
 describe('RouteMatcher', () => {
-    let app: RouterWrapper;
+    let app: ReactTestRenderer | undefined;
 
-    let router = (): RouterWrapper => {
+    const router = (): ReactTestRenderer => {
         if (!app) {
-            app = Enzyme.mount<Router>(
+            app = renderer.create(
                 <Router component={TestApp}>
                     <Route key="page1" url="/page1/:var" component={VarView} index />
                 </Router>
@@ -32,14 +30,13 @@ describe('RouteMatcher', () => {
     }
 
     beforeEach(() => {
-        // jasmineEnzyme();
         window.location.hash = '/page1';
         app = undefined;
     });
     
     it('can pass vars', (done) => {
-        let comp: RouterWrapper = router();
-        let r: RouterStrategy = Router.getInstance();
+        const comp: ReactTestRenderer = router();
+        const r: RouterStrategy = Router.getInstance();
         tick(() => {
             r.pushState('/page1/test');
             tick(() => {
@@ -51,8 +48,8 @@ describe('RouteMatcher', () => {
     });
 
     it('can pass vars with underscores', (done) => {
-        let comp: RouterWrapper = router();
-        let r: RouterStrategy = Router.getInstance();
+        const comp: ReactTestRenderer = router();
+        const r: RouterStrategy = Router.getInstance();
         tick(() => {
             r.pushState('/page1/test_123');
             tick(() => {
@@ -64,8 +61,8 @@ describe('RouteMatcher', () => {
     });
 
     it('can pass vars with dots', (done) => {
-        let comp: RouterWrapper = router();
-        let r: RouterStrategy = Router.getInstance();
+        const comp: ReactTestRenderer = router();
+        const r: RouterStrategy = Router.getInstance();
         tick(() => {
             r.pushState('/page1/3fQ.-64');
             tick(() => {

@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@breautek/router can navigate pages 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="View"
+    style={{}}
+  >
+    View2
+  </div>
+</div>
+`;
+
+exports[`@breautek/router on no routes It renders index page 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="View View1"
+    style={{}}
+  >
+    View1
+  </div>
+</div>
+`;
+
+exports[`@breautek/router on no routes renders a different view for index through onNoRoute hook 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="View"
+    style={{}}
+  >
+    View3
+  </div>
+</div>
+`;
+
+exports[`@breautek/router on no routes renders index through onNoRoute hook 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="View View1"
+    style={{}}
+  >
+    View1
+  </div>
+</div>
+`;
+
+exports[`@breautek/router on no routes renders null for index through onNoRoute hook 1`] = `
+<div
+  className="app"
+/>
+`;
+
+exports[`@breautek/router subviews can render subviews 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="View"
+    style={{}}
+  >
+    <div>
+      Outer View
+    </div>
+    <div
+      className="View"
+      style={{}}
+    >
+      Inner View
+    </div>
+  </div>
+</div>
+`;
