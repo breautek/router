@@ -1,4 +1,4 @@
-[@breautek/router - v3.0.0](../README.md) / [Exports](../modules.md) / RouterStrategy
+[@breautek/router - v3.0.1](../README.md) / [Exports](../modules.md) / RouterStrategy
 
 # Class: RouterStrategy
 
@@ -87,7 +87,7 @@ EventEmitter.constructor
 
 #### Defined in
 
-[src/RouterStrategy.ts:11](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L11)
+[src/RouterStrategy.ts:11](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L11)
 
 ## Properties
 
@@ -101,7 +101,7 @@ EventEmitter.captureRejectionSymbol
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:291
+node_modules/@types/node/ts4.8/events.d.ts:328
 
 ___
 
@@ -117,7 +117,7 @@ EventEmitter.captureRejections
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:296
+node_modules/@types/node/ts4.8/events.d.ts:333
 
 ___
 
@@ -131,7 +131,7 @@ EventEmitter.defaultMaxListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:297
+node_modules/@types/node/ts4.8/events.d.ts:334
 
 ___
 
@@ -153,7 +153,7 @@ EventEmitter.errorMonitor
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:290
+node_modules/@types/node/ts4.8/events.d.ts:327
 
 ## Methods
 
@@ -175,7 +175,7 @@ Fires the [EVENT_URL_CHANGE](../modules.md#event_url_change) event
 
 #### Defined in
 
-[src/RouterStrategy.ts:174](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L174)
+[src/RouterStrategy.ts:174](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L174)
 
 ___
 
@@ -204,7 +204,7 @@ EventEmitter.addListener
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:317
+node_modules/@types/node/ts4.8/events.d.ts:354
 
 ___
 
@@ -226,7 +226,7 @@ Listen for URL change events
 
 #### Defined in
 
-[src/RouterStrategy.ts:48](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L48)
+[src/RouterStrategy.ts:48](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L48)
 
 ___
 
@@ -242,7 +242,7 @@ Navigate the history back one entry. This is an alias for [go(-1)](RouterStrateg
 
 #### Defined in
 
-[src/RouterStrategy.ts:102](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L102)
+[src/RouterStrategy.ts:102](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L102)
 
 ___
 
@@ -259,7 +259,7 @@ This is the same as calling [canGo(-1)](RouterStrategy.md#cango)
 
 #### Defined in
 
-[src/RouterStrategy.ts:116](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L116)
+[src/RouterStrategy.ts:116](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L116)
 
 ___
 
@@ -276,7 +276,7 @@ This is the same as calling [canGo(1)](RouterStrategy.md#cango)
 
 #### Defined in
 
-[src/RouterStrategy.ts:124](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L124)
+[src/RouterStrategy.ts:124](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L124)
 
 ___
 
@@ -298,7 +298,7 @@ Returns true, if can be navigated to the given relative index
 
 #### Defined in
 
-[src/RouterStrategy.ts:110](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L110)
+[src/RouterStrategy.ts:110](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L110)
 
 ___
 
@@ -314,7 +314,7 @@ Clears the history stack.
 
 #### Defined in
 
-[src/RouterStrategy.ts:168](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L168)
+[src/RouterStrategy.ts:168](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L168)
 
 ___
 
@@ -379,7 +379,7 @@ EventEmitter.emit
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:573
+node_modules/@types/node/ts4.8/events.d.ts:610
 
 ___
 
@@ -415,7 +415,7 @@ EventEmitter.eventNames
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:632
+node_modules/@types/node/ts4.8/events.d.ts:669
 
 ___
 
@@ -431,7 +431,7 @@ navigate the history forward one entry. This is an alias for [go(1)](RouterStrat
 
 #### Defined in
 
-[src/RouterStrategy.ts:95](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L95)
+[src/RouterStrategy.ts:95](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L95)
 
 ___
 
@@ -447,7 +447,7 @@ Gets the size of the history stack
 
 #### Defined in
 
-[src/RouterStrategy.ts:76](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L76)
+[src/RouterStrategy.ts:76](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L76)
 
 ___
 
@@ -464,7 +464,7 @@ This is the same as calling [peek(0)](RouterStrategy.md#peek)
 
 #### Defined in
 
-[src/RouterStrategy.ts:71](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L71)
+[src/RouterStrategy.ts:71](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L71)
 
 ___
 
@@ -486,7 +486,7 @@ Gets the URL at the given index in the history stack
 
 #### Defined in
 
-[src/RouterStrategy.ts:65](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L65)
+[src/RouterStrategy.ts:65](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L65)
 
 ___
 
@@ -509,7 +509,7 @@ EventEmitter.getMaxListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:489
+node_modules/@types/node/ts4.8/events.d.ts:526
 
 ___
 
@@ -525,7 +525,7 @@ Gets the router
 
 #### Defined in
 
-[src/RouterStrategy.ts:19](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L19)
+[src/RouterStrategy.ts:19](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L19)
 
 ___
 
@@ -541,7 +541,7 @@ Gets the scroll restoration
 
 #### Defined in
 
-[src/RouterStrategy.ts:81](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L81)
+[src/RouterStrategy.ts:81](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L81)
 
 ___
 
@@ -563,7 +563,7 @@ Navigates the history
 
 #### Defined in
 
-[src/RouterStrategy.ts:90](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L90)
+[src/RouterStrategy.ts:90](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L90)
 
 ___
 
@@ -591,7 +591,7 @@ EventEmitter.listenerCount
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:579
+node_modules/@types/node/ts4.8/events.d.ts:616
 
 ___
 
@@ -627,7 +627,7 @@ EventEmitter.listeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:502
+node_modules/@types/node/ts4.8/events.d.ts:539
 
 ___
 
@@ -656,7 +656,7 @@ EventEmitter.off
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:462
+node_modules/@types/node/ts4.8/events.d.ts:499
 
 ___
 
@@ -709,7 +709,7 @@ EventEmitter.on
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:348
+node_modules/@types/node/ts4.8/events.d.ts:385
 
 ___
 
@@ -760,7 +760,7 @@ EventEmitter.once
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:377
+node_modules/@types/node/ts4.8/events.d.ts:414
 
 ___
 
@@ -782,7 +782,7 @@ Returns the URL stored in the history stack at the given relative index.
 
 #### Defined in
 
-[src/RouterStrategy.ts:132](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L132)
+[src/RouterStrategy.ts:132](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L132)
 
 ___
 
@@ -799,7 +799,7 @@ This is the same as calling [peek(-1)](RouterStrategy.md#peek)
 
 #### Defined in
 
-[src/RouterStrategy.ts:146](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L146)
+[src/RouterStrategy.ts:146](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L146)
 
 ___
 
@@ -816,7 +816,7 @@ This is the same as calling [peek(1)](RouterStrategy.md#peek)
 
 #### Defined in
 
-[src/RouterStrategy.ts:138](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L138)
+[src/RouterStrategy.ts:138](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L138)
 
 ___
 
@@ -856,7 +856,7 @@ EventEmitter.prependListener
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:597
+node_modules/@types/node/ts4.8/events.d.ts:634
 
 ___
 
@@ -864,7 +864,7 @@ ___
 
 ▸ **prependOnceListener**(`eventName`, `listener`): [`RouterStrategy`](RouterStrategy.md)
 
-Adds a **one-time**`listener` function for the event named `eventName` to the_beginning_ of the listeners array. The next time `eventName` is triggered, this
+Adds a **one-time**`listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this
 listener is removed, and then invoked.
 
 ```js
@@ -894,7 +894,7 @@ EventEmitter.prependOnceListener
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:613
+node_modules/@types/node/ts4.8/events.d.ts:650
 
 ___
 
@@ -917,7 +917,7 @@ Pushes a new entry into the history stack, navigating to the new location.
 
 #### Defined in
 
-[src/RouterStrategy.ts:155](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L155)
+[src/RouterStrategy.ts:155](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L155)
 
 ___
 
@@ -970,7 +970,7 @@ EventEmitter.rawListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:532
+node_modules/@types/node/ts4.8/events.d.ts:569
 
 ___
 
@@ -1004,7 +1004,7 @@ EventEmitter.removeAllListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:473
+node_modules/@types/node/ts4.8/events.d.ts:510
 
 ___
 
@@ -1029,8 +1029,8 @@ listener array for the specified `eventName`, then `removeListener()` must be
 called multiple times to remove each instance.
 
 Once an event is emitted, all listeners attached to it at the
-time of emitting are called in order. This implies that any`removeListener()` or `removeAllListeners()` calls _after_ emitting and_before_ the last listener finishes execution will
-not remove them from`emit()` in progress. Subsequent events behave as expected.
+time of emitting are called in order. This implies that any`removeListener()` or `removeAllListeners()` calls _after_ emitting and _before_ the last listener finishes execution
+will not remove them from`emit()` in progress. Subsequent events behave as expected.
 
 ```js
 const myEmitter = new MyEmitter();
@@ -1108,7 +1108,7 @@ EventEmitter.removeListener
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:457
+node_modules/@types/node/ts4.8/events.d.ts:494
 
 ___
 
@@ -1130,7 +1130,7 @@ Removes an existing listener
 
 #### Defined in
 
-[src/RouterStrategy.ts:57](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L57)
+[src/RouterStrategy.ts:57](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L57)
 
 ___
 
@@ -1154,7 +1154,7 @@ This will navigate the screen to the new location.
 
 #### Defined in
 
-[src/RouterStrategy.ts:163](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L163)
+[src/RouterStrategy.ts:163](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L163)
 
 ___
 
@@ -1187,7 +1187,7 @@ EventEmitter.setMaxListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:483
+node_modules/@types/node/ts4.8/events.d.ts:520
 
 ___
 
@@ -1209,7 +1209,7 @@ Sets the browser title
 
 #### Defined in
 
-[src/RouterStrategy.ts:28](https://github.com/breautek/router/blob/18557bc/src/RouterStrategy.ts#L28)
+[src/RouterStrategy.ts:28](https://github.com/breautek/router/blob/c2e6307/src/RouterStrategy.ts#L28)
 
 ___
 
@@ -1248,7 +1248,7 @@ const { getEventListeners, EventEmitter } = require('events');
 
 | Name | Type |
 | :------ | :------ |
-| `emitter` | `DOMEventTarget` \| `EventEmitter` |
+| `emitter` | `_DOMEventTarget` \| `EventEmitter` |
 | `name` | `string` \| `symbol` |
 
 #### Returns
@@ -1261,7 +1261,7 @@ EventEmitter.getEventListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:262
+node_modules/@types/node/ts4.8/events.d.ts:299
 
 ___
 
@@ -1301,7 +1301,7 @@ EventEmitter.listenerCount
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:234
+node_modules/@types/node/ts4.8/events.d.ts:271
 
 ___
 
@@ -1385,7 +1385,7 @@ EventEmitter.on
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:217
+node_modules/@types/node/ts4.8/events.d.ts:254
 
 ___
 
@@ -1479,7 +1479,7 @@ ee.emit('foo'); // Prints: Waiting for the event was canceled!
 
 | Name | Type |
 | :------ | :------ |
-| `emitter` | `NodeEventTarget` |
+| `emitter` | `_NodeEventTarget` |
 | `eventName` | `string` \| `symbol` |
 | `options?` | `StaticEventEmitterOptions` |
 
@@ -1493,7 +1493,7 @@ EventEmitter.once
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:157
+node_modules/@types/node/ts4.8/events.d.ts:194
 
 ▸ `Static` **once**(`emitter`, `eventName`, `options?`): `Promise`<`any`[]\>
 
@@ -1501,7 +1501,7 @@ node_modules/@types/node/events.d.ts:157
 
 | Name | Type |
 | :------ | :------ |
-| `emitter` | `DOMEventTarget` |
+| `emitter` | `_DOMEventTarget` |
 | `eventName` | `string` |
 | `options?` | `StaticEventEmitterOptions` |
 
@@ -1515,7 +1515,7 @@ EventEmitter.once
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:158
+node_modules/@types/node/ts4.8/events.d.ts:195
 
 ___
 
@@ -1542,7 +1542,7 @@ setMaxListeners(5, target, emitter);
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `n?` | `number` | A non-negative number. The maximum number of listeners per `EventTarget` event. |
-| `...eventTargets` | (`DOMEventTarget` \| `EventEmitter`)[] | - |
+| `...eventTargets` | (`_DOMEventTarget` \| `EventEmitter`)[] | - |
 
 #### Returns
 
@@ -1554,4 +1554,4 @@ EventEmitter.setMaxListeners
 
 #### Defined in
 
-node_modules/@types/node/events.d.ts:280
+node_modules/@types/node/ts4.8/events.d.ts:317

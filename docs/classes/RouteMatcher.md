@@ -1,4 +1,4 @@
-[@breautek/router - v3.0.0](../README.md) / [Exports](../modules.md) / RouteMatcher
+[@breautek/router - v3.0.1](../README.md) / [Exports](../modules.md) / RouteMatcher
 
 # Class: RouteMatcher
 
@@ -29,7 +29,7 @@ based on the URL and the route url patterns.
 
 #### Defined in
 
-[src/RouteMatcher.ts:26](https://github.com/breautek/router/blob/18557bc/src/RouteMatcher.ts#L26)
+[src/RouteMatcher.ts:26](https://github.com/breautek/router/blob/c2e6307/src/RouteMatcher.ts#L26)
 
 ## Methods
 
@@ -55,4 +55,4 @@ Matches the url to the appropriate renderable route
 
 #### Defined in
 
-[src/RouteMatcher.ts:43](https://github.com/breautek/router/blob/18557bc/src/RouteMatcher.ts#L43)
+[src/RouteMatcher.ts:43](https://github.com/breautek/router/blob/c2e6307/src/RouteMatcher.ts#L43)
