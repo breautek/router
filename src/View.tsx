@@ -1,8 +1,5 @@
 
-import "regenerator-runtime/runtime";
-
 import * as React from 'react';
-
 import { RouterStrategy } from './RouterStrategy';
 import { TransitionStrategy } from './TransitionStrategy';
 import { IViewStylesheet } from './IViewStylesheet';

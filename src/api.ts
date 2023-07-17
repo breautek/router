@@ -1,6 +1,4 @@
 
-import "regenerator-runtime/runtime";
-
 export * from './Router';
 export * from './DefaultStrategy';
 export * from './HashStrategy';

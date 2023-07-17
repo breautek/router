@@ -1,6 +1,4 @@
 
-import "regenerator-runtime/runtime";
-
 import {URLParser, IURLParams} from './URLParser';
 import {cloneElement} from 'react';
 import {IComponentProps, IRouteProps} from './Route';
