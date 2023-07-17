@@ -14,8 +14,7 @@
     "build": "rollup -c rollup.config.js",
     "publish-beta": "npm publish --tag beta",
     "prepublishOnly": "npm run build",
-    "docs": "typedoc --excludePrivate --includeVersion -readme ./README.md --out ./docs ./src/api.ts",
-    "version": "npm run-script build && npm run-script docs && git add docs && git commit -m 'chore: docs'",
+    "version": "npm run-script build",
     "postversion": "git push && git push --tags"
   },
   "repository": {
@@ -74,8 +73,6 @@
     "rollup-plugin-typescript2": "0.32.1",
     "ts-jest": "27.1.3",
     "ts-node": "10.8.1",
-    "typedoc": "0.22.17",
-    "typedoc-plugin-markdown": "3.12.1",
     "typescript": "4.6.4"
   }
 }
