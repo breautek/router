@@ -11,7 +11,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint --ext .ts,.tsx '?(src|spec)/**/*.?(ts|tsx)' --cache",
-    "build": "rollup -c rollup.config.js",
+    "build": "rollup -c rollup.config.js --bundleConfigAsCjs",
     "publish-beta": "npm publish --tag beta",
     "prepublishOnly": "npm run build",
     "version": "npm run-script build",
