@@ -49,6 +49,8 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
         if (stylesheet) {
             stylesheet.use();
         }
+
+        this.props.router.__onViewMount(this);
     }
 
     /**
@@ -59,6 +61,7 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
         if (stylesheet) {
             stylesheet.unuse();
         }
+        this.props.router.__onViewUnmount(this);
     }
 
     /**

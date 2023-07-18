@@ -172,4 +172,34 @@ describe('@breautek/router', () => {
             expect(rendered.container.innerHTML).toBe('<div class="app"><div class="View"><div>Outer View</div><div class="View">Inner View</div></div></div>');
         });
     });
+
+    describe('view mounting hooks', () => {
+        it('will invoke mout and unmount hooks', () => {
+            rendered = doRender(props);
+
+            let r: RouterStrategy = Router.getInstance();
+            let onMount = jest.fn();
+            let onUnmount = jest.fn();
+
+            r.addViewMountCallback(onMount);
+            r.addViewUnmountCallback(onUnmount);
+
+            expect(r.getHistoryLength()).toBe(0);
+            expect(r.canBack()).toBe(false);
+
+            act(() => {
+                r.pushState('/page2');
+            });
+
+            expect(onUnmount.mock.lastCall[0]).toBeInstanceOf(View1);
+            expect(onMount.mock.lastCall[0]).toBeInstanceOf(View2);
+
+            act(() => {
+                r.pushState('/page3');
+            });
+
+            expect(onUnmount.mock.lastCall[0]).toBeInstanceOf(View2);
+            expect(onMount.mock.lastCall[0]).toBeInstanceOf(View3);
+        });
+    });
 });

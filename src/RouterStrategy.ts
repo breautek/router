@@ -1,16 +1,69 @@
 import { EventEmitter } from 'events';
 import { Router } from './Router';
+import {View} from './View';
 
 export const EVENT_URL_CHANGE: string = 'urlchange';
 
 export type URLChangeCallback = (url: string) => void;
 
+/**
+ * Invoked when the view's componentDidMount/componentWillUnmount fires.
+ */
+export type ViewMountChangeCallback = (view: View) => void;
+
 export abstract class RouterStrategy extends EventEmitter {
     private $router: Router;
+
+    private $viewMountListeners: ViewMountChangeCallback[];
+    private $viewUnmountListneners: ViewMountChangeCallback[];
 
     public constructor(router: Router) {
         super();
         this.$router = router;
+        this.$viewMountListeners = [];
+        this.$viewUnmountListneners = [];
+    }
+
+    public addViewMountCallback(cb: ViewMountChangeCallback): void {
+        this.$viewMountListeners.push(cb);
+    }
+
+    public removeViewMountCallback(cb: ViewMountChangeCallback): void {
+        let idx: number = this.$viewMountListeners.indexOf(cb);
+        if (idx > -1) {
+            this.$viewMountListeners.splice(idx, 1);
+        }
+    }
+
+    public addViewUnmountCallback(cb: ViewMountChangeCallback): void {
+        this.$viewUnmountListneners.push(cb);
+    }
+
+    public removeViewUnmountCallback(cb: ViewMountChangeCallback): void {
+        let idx: number = this.$viewUnmountListneners.indexOf(cb);
+        if (idx > -1) {
+            this.$viewUnmountListneners.splice(idx, 1);
+        }
+    }
+
+    /**
+     * @internal
+     * @param view 
+     */
+    public __onViewMount(view: View): void {
+        for (let i: number = 0; i < this.$viewMountListeners.length; i++) {
+            this.$viewMountListeners[i](view);
+        }
+    }
+
+    /**
+     * @internal
+     * @param view 
+     */
+    public __onViewUnmount(view: View): void {
+        for (let i: number = 0; i < this.$viewUnmountListneners.length; i++) {
+            this.$viewUnmountListneners[i](view);
+        }
     }
 
     /**
