@@ -119,6 +119,7 @@ export class URLStrategy extends RouterStrategy {
         else {
             window.history.pushState({}, null, this.$base + url);
         }
+
         this._fireURLChange(this.getLocation());
     }
 }

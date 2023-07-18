@@ -20,7 +20,7 @@ export class HashStrategy extends RouterStrategy {
         this.$base = '#';
         this.$stack = [];
         this.$position = -1;
-        this.$lastFiredLocation = null; //this.getLocation();
+        this.$lastFiredLocation = null;
 
         window.addEventListener('popstate', (ev: PopStateEvent) => {
             let location = this.getLocation();

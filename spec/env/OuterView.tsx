@@ -1,8 +1,12 @@
 
 import * as React from 'react';
-import {View} from '../../src/View';
+import {IViewProps, View} from '../../src/View';
 
-export class OuterView extends View {
+interface IOuterViewProps extends IViewProps {
+    children?: React.ReactNode;
+}
+
+export class OuterView extends View<IOuterViewProps> {
     public getClassName(): string {
         return 'OuterView';
     }

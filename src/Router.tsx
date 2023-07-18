@@ -11,6 +11,7 @@ import { Route } from "./Route";
 export interface IRouterProps {
     strategy?: IRouterStrategyClass;
     component: React.ComponentClass<any>;
+    children?: React.ReactNode;
     onNoRoute?: IOnNoRoute;
 }
 
@@ -273,6 +274,10 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
     }
 }
 
+/**
+ * @deprecated Use Router.getInstance() instead.
+ * @returns {RouterStrategy}
+ */
 export let getRouter = (): RouterStrategy => {
     console.warn('getRouter() is deprecated. use Router.getInstance() instead.');
     return Router.getInstance();

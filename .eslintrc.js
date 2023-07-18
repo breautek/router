@@ -26,6 +26,9 @@ module.exports = {
     },
     "rules": {
         "no-use-before-define": "off",
-        "@typescript-eslint/no-use-before-define": "error"
+        "prefer-const": "off",
+        "@typescript-eslint/no-use-before-define": "error",
+        "@typescript-eslint/no-inferrable-types": "off",
+        "@typescript-eslint/no-empty-function": "off"
     }
 };
