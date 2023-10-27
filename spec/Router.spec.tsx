@@ -114,12 +114,16 @@ describe('@breautek/router', () => {
         expect(r.getHistoryLength()).toBe(0);
         expect(r.canBack()).toBe(false);
 
+        expect(document.body.classList.contains('View1-body')).toBeTruthy();
+
         let p: Promise<void> = new Promise((resolve, reject) => {
             let urlChange = (url: string) => {
                 r.removeURLChangeCallback(urlChange);
 
                 setTimeout(() => {
                     expect(getTitle()).toBe('View2');
+                    expect(document.body.classList.contains('View1-body')).toBeFalsy();
+                    expect(document.body.classList.contains('View2-body')).toBeTruthy();
                     expect(url).toBe('/page2');
                     expect(r.canBack()).toBe(true);
                     expect(r.getHistoryLength()).toBe(2);
@@ -168,6 +172,9 @@ describe('@breautek/router', () => {
             act(() => {
                 r.pushState('/outerView/innerView');
             });
+
+            expect(document.body.classList.contains('OuterView-body')).toBeTruthy();
+            expect(document.body.classList.contains('InnerView-body')).toBeTruthy();
             
             expect(rendered.container.innerHTML).toBe('<div class="app"><div class="View"><div>Outer View</div><div class="View">Inner View</div></div></div>');
         });

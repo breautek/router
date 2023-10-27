@@ -37,10 +37,16 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
         return null;
     }
 
+    protected _getViewBodyClass(): string {
+        return this.constructor.name;
+    }
+
     public componentDidMount(): void {
         this.getTitle().then((title: string) => {
             this.props.router.setTitle(title);
         });
+
+        document.body.classList.add(this.$getViewBodyClass());
 
         let stylesheet: IViewStylesheet = this.getViewStylesheet();
         if (stylesheet) {
@@ -50,7 +56,12 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
         this.props.router.__onViewMount(this);
     }
 
+    private $getViewBodyClass(): string {
+        return `${this._getViewBodyClass()}-body`;
+    }
+
     public componentWillUnmount(): void {
+        document.body.classList.remove(this.$getViewBodyClass());
         let stylesheet: IViewStylesheet = this.getViewStylesheet();
         if (stylesheet) {
             stylesheet.unuse();
