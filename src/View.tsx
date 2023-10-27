@@ -37,9 +37,6 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
         return null;
     }
 
-    /**
-     * @ignore
-     */
     public componentDidMount(): void {
         this.getTitle().then((title: string) => {
             this.props.router.setTitle(title);
@@ -53,9 +50,6 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
         this.props.router.__onViewMount(this);
     }
 
-    /**
-     * @ignore
-     */
     public componentWillUnmount(): void {
         let stylesheet: IViewStylesheet = this.getViewStylesheet();
         if (stylesheet) {
