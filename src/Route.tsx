@@ -3,7 +3,7 @@ import * as React from 'react';
 import { View } from './View';
 import { RouteMatcher } from './RouteMatcher';
 import { RouterStrategy } from './RouterStrategy';
-import { TransitionStrategy } from 'TransitionStrategy';
+import { TransitionStrategy } from './TransitionStrategy';
 
 export interface IRouteProps<T> {
     url: string;
