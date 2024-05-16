@@ -185,7 +185,7 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
 
             exitTransitionPromise.then(() => {
                 let entryTransitionPromise = null;
-                if (this.$incomingRoute.props.entryTransition) {
+                if (this.$incomingRoute && this.$incomingRoute.props.entryTransition) {
                     entryTransitionPromise = this.$incomingRoute.props.entryTransition.execute(this.$incomingRoute.getView(), this.$exitingRoute.getView());
                 }
                 else {
