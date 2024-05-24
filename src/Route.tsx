@@ -12,8 +12,19 @@ export interface IRouteProps<T> {
     entryTransition?: TransitionStrategy;
     exitTransition?: TransitionStrategy;
 
+    /**
+     * @internal
+     */
     base?: string;
+
+    /**
+     * @internal
+     */
     componentProps?: T;
+
+    /**
+     * @internal
+     */
     matcher?: RouteMatcher;
 }
 
