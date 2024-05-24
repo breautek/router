@@ -90,6 +90,7 @@ export class Route<TComponentProps extends IComponentProps = IComponentProps, TR
         let children: React.ReactElement[] = null;
 
         if (!component) {
+            // eslint-disable-next-line @typescript-eslint/no-this-alias
             component = this;
         }
         
