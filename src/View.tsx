@@ -87,7 +87,7 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
      * Get the inline styles for this view.
      * Use React style notation.
      */
-    public getViewStyles(): Record<any, string> {
+    public getViewStyles(): React.CSSProperties {
         return {};
     }
 
