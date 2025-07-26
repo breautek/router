@@ -12,7 +12,7 @@ import { Router } from './Router';
  */
 export class URLStrategy extends RouterStrategy {
     private $base: string;
-    private $stack: Array<string>;
+    private $stack: string[];
     private $position: number;
 
     /**

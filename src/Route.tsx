@@ -5,12 +5,15 @@ import { RouteMatcher } from './RouteMatcher';
 import { RouterStrategy } from './RouterStrategy';
 import { TransitionStrategy } from './TransitionStrategy';
 
-export interface IRouteProps<T> {
+export interface IRouteProps<T extends IComponentProps = IComponentProps> {
     url: string;
     component: React.ComponentClass<any>;
     index?: boolean;
     entryTransition?: TransitionStrategy;
     exitTransition?: TransitionStrategy;
+    children?: React.ReactElement<IRouteProps> | React.ReactElement<IRouteProps>[];
+
+    ref?: React.Ref<Route>;
 
     /**
      * @internal
@@ -38,10 +41,7 @@ export interface IComponentProps {
     [key: string]: any;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface IRouteState {
-
-}
+export interface IRouteState {}
 
 /**
  * This class represents a route that renders a {@link View} component
@@ -62,7 +62,7 @@ export class Route<TComponentProps extends IComponentProps = IComponentProps, TR
         return this.$node;
     }
 
-    private $getComponentsToRender(component: React.ReactElement | React.Component): React.ReactNode {
+    private $getComponentsToRender(component: React.ReactElement<IRouteProps> | React.Component<IRouteProps>): React.ReactNode {
         let url: string = component.props.url;
         let base: string = component.props.base || '';
 
@@ -70,14 +70,14 @@ export class Route<TComponentProps extends IComponentProps = IComponentProps, TR
         let ViewComponent: React.ElementType = component.props.component;
         let child: React.ReactNode;
 
-        let routeComponent = component.props.matcher.match(url, this.$getChildren(component), base);
+        let routeComponent: React.ReactElement<IRouteProps> = component.props.matcher.match(url, this.$getChildren(component), base);
         if (routeComponent) {
             child = this.$getComponentsToRender(routeComponent);
         }
 
         return (
             <ViewComponent
-                {...component.props.componentProps}
+                {...component.props.componentProps as any}
                 ref={(node: React.Component) => {
                     if (node) {
                         if (node instanceof View) {
@@ -97,11 +97,10 @@ export class Route<TComponentProps extends IComponentProps = IComponentProps, TR
         );
     }
 
-    private $getChildren(component: React.Component | React.ReactElement): React.ReactElement[] {
-        let children: React.ReactElement[] = null;
+    private $getChildren(component: React.Component<IRouteProps> | React.ReactElement<IRouteProps>): React.ReactElement<IRouteProps>[] {
+        let children: React.ReactElement<IRouteProps>[] = null;
 
         if (!component) {
-            // eslint-disable-next-line @typescript-eslint/no-this-alias
             component = this;
         }
         
@@ -110,10 +109,10 @@ export class Route<TComponentProps extends IComponentProps = IComponentProps, TR
         }
 
         if (component.props.children instanceof Array) {
-            children = component.props.children as React.ReactElement[];
+            children = component.props.children as React.ReactElement<IRouteProps>[];
         }
         else {
-            children = [ component.props.children as React.ReactElement ];
+            children = [ component.props.children as React.ReactElement<IRouteProps> ];
         }
 
         return children;

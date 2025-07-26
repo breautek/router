@@ -1,0 +1,7 @@
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - node-sass
+  - unrs-resolver
+
+publicHoistPattern:
+  - eslint

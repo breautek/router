@@ -15,10 +15,10 @@ import {
     InnerView
 } from './env';
 import {Router, IRouterProps} from '../src/Router';
-import {Route} from '../src/Route';
+import {IRouteProps, Route} from '../src/Route';
 import { RouterStrategy } from '../src/RouterStrategy';
 
-const getTitle = function(): string {
+let getTitle = function(): string {
     return document.head.getElementsByTagName('title')[0].innerText;
 }
 
@@ -26,8 +26,8 @@ describe('@breautek/router', () => {
     let props: IRouterProps;
     let rendered: RenderResult = null;
 
-    const doRender = (props: IRouterProps): RenderResult => {
-        const renderResult = render(
+    let doRender = (props: IRouterProps): RenderResult => {
+        let renderResult = render(
             <Router {...(props as IRouterProps)}>
                 <Route key="page1" url="/page1" component={View1} index />
                 <Route key="page2" url="/page2" component={View2} />
@@ -58,7 +58,7 @@ describe('@breautek/router', () => {
         });
 
         it('renders index through onNoRoute hook', async () => {
-            props.onNoRoute = (index: React.ReactElement, routes: React.ReactElement[]): React.ReactElement => {
+            props.onNoRoute = (index: React.ReactElement<IRouteProps>, routes: React.ReactElement<IRouteProps>[]): React.ReactElement<IRouteProps> => {
                 return index;
             };
             
@@ -73,7 +73,7 @@ describe('@breautek/router', () => {
         });
 
         it('renders null for index through onNoRoute hook', async () => {
-            props.onNoRoute = (index: React.ReactElement, routes: React.ReactElement[]): React.ReactElement => {
+            props.onNoRoute = (index: React.ReactElement<IRouteProps>, routes: React.ReactElement<IRouteProps>[]): React.ReactElement<IRouteProps> => {
                 return null;
             };
 
@@ -88,7 +88,7 @@ describe('@breautek/router', () => {
         });
 
         it('renders a different view for index through onNoRoute hook', async () => {
-            props.onNoRoute = (index: React.ReactElement, routes: React.ReactElement[]): React.ReactElement => {
+            props.onNoRoute = (index: React.ReactElement<IRouteProps>, routes: React.ReactElement<IRouteProps>[]): React.ReactElement<IRouteProps> => {
                 return routes[2]
             };
             jest.spyOn(props, 'onNoRoute')
@@ -117,7 +117,7 @@ describe('@breautek/router', () => {
         expect(document.body.classList.contains('View1-body')).toBeTruthy();
 
         let p: Promise<void> = new Promise((resolve, reject) => {
-            let urlChange = (url: string) => {
+            let urlChange = (url: string): void => {
                 r.removeURLChangeCallback(urlChange);
 
                 setTimeout(() => {

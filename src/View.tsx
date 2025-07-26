@@ -44,6 +44,8 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
     public componentDidMount(): void {
         this.getTitle().then((title: string) => {
             this.props.router.setTitle(title);
+        }).catch((e) => {
+            console.error(e);
         });
 
         document.body.classList.add(this.$getViewBodyClass());

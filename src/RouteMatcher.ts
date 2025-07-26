@@ -11,7 +11,7 @@ import {RouterStrategy} from './RouterStrategy';
  * @returns {React.ReactElement} An `ReactElement` of a `Route`
  */
 export interface IOnNoRouteFunction {
-    (indexRoute: React.ReactElement, routes: Array<React.ReactElement>): React.ReactElement;
+    (indexRoute: React.ReactElement, routes: React.ReactElement<IRouteProps>[]): React.ReactElement<IRouteProps>;
 }
 
 /**
@@ -25,7 +25,7 @@ export class RouteMatcher {
         this.$strategy = routerStrategy;
     }
 
-    private $defaultNoRouteFunction(indexRoute: React.ReactElement, routes: Array<React.ReactElement>): React.ReactElement {
+    private $defaultNoRouteFunction(indexRoute: React.ReactElement<IRouteProps>, routes: React.ReactElement<IRouteProps>[]): React.ReactElement<IRouteProps> {
         return indexRoute;
     }
 
@@ -38,11 +38,11 @@ export class RouteMatcher {
      * @param indexRoute 
      * @param onNoRoute
      */
-    public match(url: string, children: Array<React.ReactElement>, base: string, indexRoute?: React.ReactElement, onNoRoute?: IOnNoRouteFunction): React.ReactElement {
-        let componentToRender: React.ReactElement = null;
+    public match(url: string, children: React.ReactElement<IRouteProps>[], base: string, indexRoute?: React.ReactElement<IRouteProps>, onNoRoute?: IOnNoRouteFunction): React.ReactElement<IRouteProps> {
+        let componentToRender: React.ReactElement<IRouteProps> = null;
         let params: IURLParams = null;
         for (let i: number = 0; i < children.length; i++) {
-            let route: React.ReactElement = children[i];
+            let route: React.ReactElement<IRouteProps> = children[i];
             let shouldAllowPartialMatching: boolean = !!route.props.children;
             let parser: URLParser = new URLParser(base + route.props.url, shouldAllowPartialMatching);
             params = parser.parse(url);

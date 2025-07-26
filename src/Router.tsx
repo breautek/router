@@ -6,7 +6,7 @@ import {RouteMatcher} from './RouteMatcher';
 import { RouterStrategy } from './RouterStrategy';
 import { IRouterStrategyClass } from './IRouterStrategyClass';
 import {IOnNoRoute} from './IOnNoRoute';
-import { Route } from "./Route";
+import { IRouteProps, Route } from "./Route";
 
 export interface IRouterProps {
     strategy?: IRouterStrategyClass;
@@ -115,7 +115,7 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
      * @ignore
      */
     public render(): React.ReactNode {
-        let currentRoute: React.ReactElement = this.$matcher.match(this.state.url || '/', this.$getChildren(), '', this.$getIndexRoute(), this.props.onNoRoute);
+        let currentRoute: React.ReactElement<IRouteProps> = this.$matcher.match(this.state.url || '/', this.$getChildren(), '', this.$getIndexRoute(), this.props.onNoRoute);
         // eslint-disable-next-line @typescript-eslint/naming-convention
         let Root: React.ElementType = null;
         if (this.props.component) {
@@ -141,7 +141,7 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
             }
 
             // Incoming will always be safe to render, hence no defensive checks
-            let incoming: React.ReactElement = React.cloneElement(currentRoute, {
+            let incoming: React.ReactElement<IRouteProps> = React.cloneElement(currentRoute, {
                 ref : (route: Route) => {
                     this.$incomingRoute = route;
                 }
@@ -198,6 +198,8 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
                 this.$incomingRoute = null;
                 this.$exitingRoute = null;
                 this.setState({shouldTransition: false});
+            }).catch((error: Error) => {
+                console.error(error);
             });
         }
     }
@@ -245,14 +247,14 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
     /**
      * Gets the potential routes
      */
-    private $getChildren(): React.ReactElement[] {
-        let children: React.ReactElement[] = null;
+    private $getChildren(): React.ReactElement<IRouteProps>[] {
+        let children: React.ReactElement<IRouteProps>[] = null;
 
         if (this.props.children instanceof Array) {
-            children = this.props.children as React.ReactElement[];
+            children = this.props.children as React.ReactElement<IRouteProps>[];
         }
         else {
-            children = [ this.props.children as React.ReactElement ];
+            children = [ this.props.children as React.ReactElement<IRouteProps> ];
         }
 
         return children;
@@ -261,10 +263,10 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
     /**
      * Finds the index route. Returns null if there are no indexed routes.
      */
-    private $getIndexRoute(): React.ReactElement {
-        let children: React.ReactElement[] = this.$getChildren();
+    private $getIndexRoute(): React.ReactElement<IRouteProps> {
+        let children: React.ReactElement<IRouteProps>[] = this.$getChildren();
         for (let i: number = 0; i < children.length; i++) {
-            let child: React.ReactElement = children[i];
+            let child: React.ReactElement<IRouteProps> = children[i];
             if (child.props.index) {
                 return child;
             }

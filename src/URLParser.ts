@@ -30,8 +30,8 @@ export class URLParser {
      */
     public parse(url: string): IURLParams {
         url = this.$stripURL(url);
-        let parts: Array<string> = this.$getParts(url);
-        let patternParts: Array<string> = this.$getParts(this.$pattern);
+        let parts: string[] = this.$getParts(url);
+        let patternParts: string[] = this.$getParts(this.$pattern);
 
         if ((!this.$allowPartialMatch && parts.length !== patternParts.length) || url === '') {
             return null;
@@ -84,7 +84,7 @@ export class URLParser {
      * @private
      * @param {string} url URL to split
      */
-    private $getParts(url: string): Array<string> {
+    private $getParts(url: string): string[] {
         url = this.$stripURL(url);
         return url.split('/');
     }

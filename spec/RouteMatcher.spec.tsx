@@ -18,8 +18,8 @@ describe('RouteMatcher', () => {
 
     let rendered: RenderResult = null;
 
-    const doRender = (): RenderResult => {
-        const renderResult = render(
+    let doRender = (): RenderResult => {
+        let renderResult = render(
             <Router component={TestApp}>
                 <Route key="page1" url="/page1/:var" component={VarView} index />
             </Router>

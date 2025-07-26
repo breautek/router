@@ -11,7 +11,7 @@ import { Router } from './Router';
 */
 export class HashStrategy extends RouterStrategy {
     private $base: string;
-    private $stack: Array<string>;
+    private $stack: string[];
     private $position: number;
     private $lastFiredLocation: string;
 

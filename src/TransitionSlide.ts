@@ -61,7 +61,7 @@ export class TransitionSlide extends TransitionStrategy {
             exitingNode.style.transition = transitionString;
 
             //Add transition listener
-            let onTransitionEnd = () => {
+            let onTransitionEnd = (): void => {
                 //cleanup
                 incomingNode.removeEventListener('transitionend', onTransitionEnd);
                 
