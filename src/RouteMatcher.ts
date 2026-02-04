@@ -63,14 +63,16 @@ export class RouteMatcher {
             return null;
         }
 
-        let props: IRouteProps<IComponentProps> = {
+        let props: IRouteProps<any, IComponentProps> = {
             url : url,
-            base: base + componentToRender.props.url,
-            matcher: this,
+            __base: base + componentToRender.props.url,
+            __matcher: this,
             component: componentToRender.props.component,
             entryTransition: componentToRender.props.entryTransition,
             exitTransition: componentToRender.props.exitTransition,
-            componentProps: {
+            componentProps: componentToRender.props.componentProps,
+            __componentProps: {
+                ...componentToRender.props.componentProps,
                 url : url,
                 router: this.$strategy
             }
@@ -78,7 +80,7 @@ export class RouteMatcher {
 
         if (params) {
             for (let i in params) {
-                props.componentProps[i] = params[i];
+                props.__componentProps[i] = params[i];
             }
         }
 

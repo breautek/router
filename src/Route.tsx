@@ -5,30 +5,30 @@ import { RouteMatcher } from './RouteMatcher';
 import { RouterStrategy } from './RouterStrategy';
 import { TransitionStrategy } from './TransitionStrategy';
 
-export interface IRouteProps<T extends IComponentProps = IComponentProps> {
+export interface IRouteProps<TUserProps = any, TInternalProps extends IComponentProps = IComponentProps> {
     url: string;
     component: React.ComponentClass<any>;
     index?: boolean;
     entryTransition?: TransitionStrategy;
     exitTransition?: TransitionStrategy;
     children?: React.ReactElement<IRouteProps> | React.ReactElement<IRouteProps>[];
-
+    componentProps?: TUserProps;
     ref?: React.Ref<Route>;
 
     /**
      * @internal
      */
-    base?: string;
+    __base?: string;
 
     /**
      * @internal
      */
-    componentProps?: T;
+    __componentProps?: TInternalProps;
 
     /**
      * @internal
      */
-    matcher?: RouteMatcher;
+    __matcher?: RouteMatcher;
 }
 
 export interface IComponentProps {
@@ -64,20 +64,23 @@ export class Route<TComponentProps extends IComponentProps = IComponentProps, TR
 
     private $getComponentsToRender(component: React.ReactElement<IRouteProps> | React.Component<IRouteProps>): React.ReactNode {
         let url: string = component.props.url;
-        let base: string = component.props.base || '';
+        let base: string = component.props.__base || '';
 
         // eslint-disable-next-line @typescript-eslint/naming-convention
         let ViewComponent: React.ElementType = component.props.component;
         let child: React.ReactNode;
 
-        let routeComponent: React.ReactElement<IRouteProps> = component.props.matcher.match(url, this.$getChildren(component), base);
+        let routeComponent: React.ReactElement<IRouteProps> = component.props.__matcher.match(url, this.$getChildren(component), base);
         if (routeComponent) {
             child = this.$getComponentsToRender(routeComponent);
         }
 
         return (
             <ViewComponent
-                {...component.props.componentProps as any}
+                {...{
+                    ...component.props.componentProps,
+                    ...component.props.__componentProps
+                }}
                 ref={(node: React.Component) => {
                     if (node) {
                         if (node instanceof View) {

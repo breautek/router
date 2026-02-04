@@ -1,7 +1,7 @@
 
 import * as api from '../src/api';
 import packageInfo from '../package.json';
-import {Router, getRouter} from '../src/Router';
+import {Router} from '../src/Router';
 import {DefaultStrategy} from '../src/DefaultStrategy';
 import {HashStrategy} from '../src/HashStrategy';
 import {URLStrategy} from '../src/URLStrategy';
@@ -21,10 +21,6 @@ describe('Public API', () => {
 
     it('Router', () => {
         expect(api.Router).toBe(Router);
-    });
-
-    it('getRouter', () => {
-        expect(api.getRouter).toBe(getRouter);
     });
 
     it('DefaultStrategy', () => {

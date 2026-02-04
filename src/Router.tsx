@@ -8,9 +8,10 @@ import { IRouterStrategyClass } from './IRouterStrategyClass';
 import {IOnNoRoute} from './IOnNoRoute';
 import { IRouteProps, Route } from "./Route";
 
-export interface IRouterProps {
+export interface IRouterProps<T = any> {
     strategy?: IRouterStrategyClass;
     component: React.ComponentClass<any>;
+    componentProps?: T;
     children?: React.ReactNode;
     onNoRoute?: IOnNoRoute;
 }
@@ -21,7 +22,7 @@ export interface IRouterState {
     shouldTransition: boolean;
 }
 
-export class Router<TRouterProps extends IRouterProps = IRouterProps> extends React.Component<TRouterProps, IRouterState> {
+export class Router<TUserProps = any, TRouterProps extends IRouterProps<TUserProps> = IRouterProps<TUserProps>> extends React.Component<TRouterProps, IRouterState> {
     public state: IRouterState;
     
     private $lastRenderedRoute: any;
@@ -161,7 +162,7 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
                 // currentRoute must be rendered as an array; because, exiting and incoming is rendered as an array.
                 // if currentRoute is not rendered as an array, a bug happens where the exiting screen is reloaded 
                 // calling the constructor again.
-                return <Root router={this.getRouterStrategy()} url={this.state.url}>{[ currentRoute ]}</Root>;
+                return <Root {...this.props.componentProps} router={this.getRouterStrategy()} url={this.state.url}>{[ currentRoute ]}</Root>;
             }
             else {
                 return currentRoute;
@@ -274,13 +275,4 @@ export class Router<TRouterProps extends IRouterProps = IRouterProps> extends Re
 
         return null;
     }
-}
-
-/**
- * @deprecated Use Router.getInstance() instead.
- * @returns {RouterStrategy}
- */
-export let getRouter = (): RouterStrategy => {
-    console.warn('getRouter() is deprecated. use Router.getInstance() instead.');
-    return Router.getInstance();
 }
