@@ -58,4 +58,16 @@ describe('Public API', () => {
     it('View', () => {
         expect(api.View).toBe(View);
     });
+
+    it('IViewProps', () => {
+        let x: api.IViewProps;
+    });
+
+    it('IViewState', () => {
+        let x: api.IViewState;
+    });
+
+    it('IViewSnapshotState', () => {
+        let x: api.IViewSnapshotState;
+    });
 });

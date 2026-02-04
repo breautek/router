@@ -1,8 +1,12 @@
 
 import * as React from 'react';
-import {View} from '../../src/View';
+import {View, IViewState} from '../../src/View';
 
 export class InnerView extends View {
+    protected override _initState(): IViewState {
+        return {};
+    }
+
     public getClassName(): string {
         return 'InnerView';
     }

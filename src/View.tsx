@@ -12,7 +12,11 @@ export interface IViewProps {
     exitTransition?: TransitionStrategy;
 }
 
-export abstract class View<TPageProps extends IViewProps = IViewProps> extends React.Component<TPageProps> {
+export interface IViewState {}
+
+export interface IViewSnapshotState {}
+
+export abstract class View<TPageProps extends IViewProps = IViewProps, TPageState extends IViewState = IViewState, TPageSnapshotState extends IViewSnapshotState = IViewSnapshotState> extends React.Component<TPageProps, TPageState, TPageSnapshotState> {
     private $node: HTMLDivElement;
 
     /**
@@ -21,7 +25,10 @@ export abstract class View<TPageProps extends IViewProps = IViewProps> extends R
     public constructor(props: TPageProps) {
         super(props);
         this.$node = null;
+        this.state = this._initState();
     }
+
+    protected abstract _initState(): TPageState;
 
     /**
      * Return the CSS class on this view

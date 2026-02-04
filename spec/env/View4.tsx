@@ -1,8 +1,12 @@
 
 import * as React from 'react';
-import {View} from '../../src/View';
+import {IViewState, View} from '../../src/View';
 
 export class View4 extends View {
+    protected override _initState(): IViewState {
+        return {};
+    }
+
     public getClassName(): string {
         return 'View4';
     }

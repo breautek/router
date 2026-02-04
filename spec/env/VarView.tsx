@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-import {View, IViewProps} from '../../src/View';
+import {View, IViewState, IViewProps} from '../../src/View';
 
 export let instance: VarView;
 
@@ -12,6 +12,10 @@ export class VarView extends View<IVarViewProps> {
     constructor(props: IVarViewProps) {
         super(props);
         instance = this;
+    }
+
+    protected override _initState(): IViewState {
+        return {};
     }
 
     public getClassName(): string {
