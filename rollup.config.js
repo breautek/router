@@ -3,7 +3,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
 import sass from 'rollup-plugin-sass';
-import typescript from 'rollup-plugin-typescript2';
+import typescript from '@rollup/plugin-typescript';
 import progress from 'rollup-plugin-progress';
 
 export default [
@@ -17,8 +17,8 @@ export default [
         ],
         output: [
             {
-                file: 'dist/router.js',
-                format: 'cjs',
+                file: 'dist/router.mjs',
+                format: 'es',
                 sourcemap: true
             }
         ],
@@ -26,13 +26,15 @@ export default [
             resolve({
                 preferBuiltins: true
             }),
-            typescript(),
+            json(),
+            typescript({
+                outputToFilesystem: true
+            }),
             sass({
                 insert: true
             }),
             // Order matters, most plugins needs to be above commonjs
             commonjs(),
-            json(),
             progress()
         ]
     }
