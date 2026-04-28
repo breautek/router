@@ -2,9 +2,16 @@
   "name": "@breautek/router",
   "version": "5.0.1",
   "description": "An alternate react router.",
-  "main": "dist/router.mjs",
+  "main": "dist/router.cjs",
+  "exports": {
+    ".": {
+      "types": "./dist/src/api.d.ts",
+      "import": "./dist/router.mjs",
+      "require": "./dist/router.cjs"
+    }
+  },
   "types": "dist/src/api.d.ts",
-  "type": "commonjs",
+  "type": "module",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },

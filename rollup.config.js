@@ -20,6 +20,11 @@ export default [
                 file: 'dist/router.mjs',
                 format: 'es',
                 sourcemap: true
+            },
+            {
+                file: 'dist/router.cjs',
+                format: 'commonjs',
+                sourcemap: true
             }
         ],
         plugins: [
