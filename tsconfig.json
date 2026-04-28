@@ -12,10 +12,10 @@
         "noImplicitThis": true,
         "alwaysStrict": true,
         "moduleResolution": "bundler",
-        "rootDir": "./src/",
+        "rootDir": ".",
         "plugins": [],
         "incremental": true,
-        "resolveJsonModule": false,
+        "resolveJsonModule": true,
         "esModuleInterop": true
     },
     "include": [

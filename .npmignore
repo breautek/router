@@ -11,7 +11,10 @@ test-context.js
 tsconfig.json
 tsconfig-tests.json
 .travis.yml
-.eslintrc.js
+eslint.config.js
+pnpm-workspace.yaml
+.rollup.cache
+.vscode
 .nojekyll
 .eslintcache
 enzyme.js
