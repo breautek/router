@@ -6,8 +6,7 @@
   "exports": {
     ".": {
       "types": "./dist/src/api.d.ts",
-      "import": "./dist/router.mjs",
-      "require": "./dist/router.cjs"
+      "default": "./dist/router.cjs"
     }
   },
   "types": "dist/src/api.d.ts",
